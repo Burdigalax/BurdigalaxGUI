@@ -1,0 +1,10 @@
+export const paymentError = "@Burdigalax-shop:paymentError";
+export const paymentSuccess = "@Burdigalax-shop:paymentSuccess";
+export const config = "@Burdigalax-shop:config";
+export const cashPayment = "@Burdigalax-shop:cashPayment";
+export const contactLessPayment = "@Burdigalax-shop:contactLessPayment";
+export const cardPayment = "@Burdigalax-shop:cardPayment";
+export const onClose = "@Burdigalax-shop:onClose";
+export const resetBasket = "@Burdigalax-shop:resetBasket";
+export const updateArticles = "@Burdigalax-shop:updateArticles";
+export const updatePlayer = "@Burdigalax-player:updatePlayer";
