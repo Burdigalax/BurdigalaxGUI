@@ -35,7 +35,10 @@ const getData = () =>
 
       const quantitiesAvailables = range(1, maxQuantity + 1);
       const quantitiesAvailablesFiltered = filter(
-        val => val === 1 || (val / intervalQuantityForSelect) % 1 === 0,
+        val =>
+          val === 1 ||
+          maxQuantity - intervalQuantityForSelect < 0 ||
+          (val / intervalQuantityForSelect) % 1 === 0,
         quantitiesAvailables
       );
 
