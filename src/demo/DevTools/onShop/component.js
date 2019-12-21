@@ -6,7 +6,7 @@ import LiveDemo from "./components/LiveDemo";
 const DevToolComponent = ({}) => {
   return (
     <Wrapper>
-      Readme: Check github project :{" "}
+      <strong>Readme:</strong> Check github project :{" "}
       <a href="https://github.com/Burdigalax/BurdigalaxGUI" target="_blank">
         https://github.com/Burdigalax/BurdigalaxGUI
       </a>

@@ -4,6 +4,7 @@ export default {
     enabledStockLimitation: false,
     enabledWeightControl: true,
     maxQuantityForSelect: 50,
+    intervalQuantityForSelect: 5,
     maxAmountContactLess: 300,
     iconsUrl: {
       addToCart:

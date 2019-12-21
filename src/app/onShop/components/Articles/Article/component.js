@@ -1,7 +1,7 @@
 import React from "react";
 import { map } from "ramda";
 import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
+import InputBase from "@material-ui/core/InputBase";
 
 import {
   AddButton,
@@ -10,8 +10,8 @@ import {
   NameCol,
   QuantityCol,
   PriceCol,
-  ActionCol
-  // Select
+  ActionCol,
+  MenuItem
 } from "./styles";
 import Icon from "../../../../common/components/Icon";
 import { BTN_VARIANT } from "../../../../common/components/BurdiButton/constants";
@@ -19,9 +19,9 @@ import { green, red } from "../../../../common/colors";
 
 const renderOptions = quantitiesAvailables =>
   map(
-    index => (
-      <MenuItem key={`quantity-${index}`} value={index}>
-        {index}
+    val => (
+      <MenuItem key={`quantity-${val}`} value={val}>
+        {val}
       </MenuItem>
     ),
     quantitiesAvailables
@@ -73,11 +73,7 @@ export default ({
         {!isInStock ? (
           <Icon url={emptyBoxUrl} size={25} color={redColor} />
         ) : (
-          /*<Select onChange={onChange} defaultValue={count}>
-            {renderOptions(quantitiesAvailables)}
-          </Select>*/
-
-          <Select value={count} onChange={onChange} displayEmpty>
+          <Select value={count} onChange={onChange} input={<InputBase />}>
             {renderOptions(quantitiesAvailables)}
           </Select>
         )}

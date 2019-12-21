@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { MenuItem as MenuItemMaterial, withStyles } from "@material-ui/core";
 
 import { black, red } from "../../../../common/colors";
 import BurdiButton from "../../../../common/components/BurdiButton";
-import BurdiSelect from "../../../../common/components/BurdiSelect";
 
 export const AddButton = styled(BurdiButton)`
   padding: 7px 4px 7px 6px;
@@ -40,6 +40,8 @@ export const PriceCol = styled.td`
   width: 75px;
 `;
 
-export const Select = styled(BurdiSelect)`
-  min-width: 50px;
-`;
+export const MenuItem = withStyles({
+  root: {
+    padding: "3px"
+  }
+})(MenuItemMaterial);

@@ -6,7 +6,7 @@ import {
   withState
 } from "recompose";
 import { connect } from "react-redux";
-import { path, range } from "ramda";
+import { filter, path, range } from "ramda";
 import { createSelector } from "reselect";
 
 import ArticleComponent from "./component";
@@ -23,18 +23,26 @@ const getData = () =>
     [getArticle, selectConfig, selectWordingFromConfig],
     (article, config, wording) => {
       const { quantity } = article;
-      const { enabledStockLimitation, maxQuantityForSelect } = config;
+      const {
+        enabledStockLimitation,
+        maxQuantityForSelect,
+        intervalQuantityForSelect
+      } = config;
       const maxQuantity =
         enabledStockLimitation && quantity <= maxQuantityForSelect
           ? quantity
           : maxQuantityForSelect;
 
       const quantitiesAvailables = range(1, maxQuantity + 1);
+      const quantitiesAvailablesFiltered = filter(
+        val => val === 1 || (val / intervalQuantityForSelect) % 1 === 0,
+        quantitiesAvailables
+      );
 
       return {
         ...article,
         enabledStockLimitation,
-        quantitiesAvailables,
+        quantitiesAvailables: quantitiesAvailablesFiltered,
         isInStock: !enabledStockLimitation || article.quantity > 0,
         hasTaxEnabled: config.hasTaxEnabled,
         addToCartIconUrl: path(["iconsUrl", "addToCart"], config),
