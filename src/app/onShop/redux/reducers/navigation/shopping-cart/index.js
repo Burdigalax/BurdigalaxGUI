@@ -10,7 +10,8 @@ import {
 
 import {
   ADD_ARTICLE_SUCCESS,
-  DELETE_ARTICLE_SUCCESS
+  DELETE_ARTICLE_SUCCESS,
+  UPDATE_SHOPPING_CART
 } from "../../../actions/shopping-cart";
 import { SET_PAYMENT_SUCCESS } from "../../../actions/payment";
 import { RESET_SUCCESS } from "../../../actions/reset";
@@ -64,6 +65,11 @@ export default (state = INITIAL_STATE, action) => {
         ...state,
         articles,
         ...action.data
+      };
+    case UPDATE_SHOPPING_CART:
+      const { shoppingCart } = action;
+      return {
+        ...shoppingCart
       };
     case RESET_SUCCESS:
     case SET_PAYMENT_SUCCESS:

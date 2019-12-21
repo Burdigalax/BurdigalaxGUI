@@ -3,6 +3,7 @@ export const ADD_ARTICLE_SUCCESS = "ADD_ARTICLE_SUCCESS";
 export const DELETE_ARTICLE_REQUEST = "DELETE_ARTICLE_REQUEST";
 export const DELETE_ARTICLE_SUCCESS = "DELETE_ARTICLE_SUCCESS";
 export const DELETE_ARTICLES_SUCCESS = "DELETE_ARTICLES_SUCCESS";
+export const UPDATE_SHOPPING_CART = "UPDATE_SHOPPING_CART";
 
 export const addArticleRequest = (id, quantity) => ({
   type: ADD_ARTICLE_REQUEST,
@@ -30,4 +31,9 @@ export const deleteArticleSuccess = (removedArticle, data) => ({
 export const deleteArticlesSuccess = removedArticles => ({
   type: DELETE_ARTICLES_SUCCESS,
   removedArticles
+});
+
+export const updateShoppingCart = shoppingCart => ({
+  type: UPDATE_SHOPPING_CART,
+  shoppingCart
 });

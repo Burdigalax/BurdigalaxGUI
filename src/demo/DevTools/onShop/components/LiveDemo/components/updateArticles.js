@@ -7,8 +7,10 @@ import { BTN_COLOR } from "../../../../../../app/common/components/BurdiButton/c
 export default ({ defaultCode }) => {
   const [codeUpdateArticles, setCodeUpdateArticles] = useState(defaultCode);
 
-  const onSendUpdateArticles = data => {
-    window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateArticles](JSON.parse(data));
+  const onSendUpdateArticles = () => {
+    window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateArticles](
+      JSON.parse(codeUpdateArticles)
+    );
   };
 
   return (

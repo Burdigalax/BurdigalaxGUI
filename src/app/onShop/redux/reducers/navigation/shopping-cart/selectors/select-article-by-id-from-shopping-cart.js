@@ -1,7 +1,7 @@
-import { pipe, find, path } from "ramda";
+import { pipe, find, pathOr } from "ramda";
 
 export default (state, id) =>
   pipe(
-    path(["navigation", "shoppingCart", "articles"]),
+    pathOr([], ["navigation", "shoppingCart", "articles"]),
     find(article => article.id === id)
   )(state);

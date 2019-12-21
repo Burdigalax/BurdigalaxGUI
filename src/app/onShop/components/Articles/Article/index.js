@@ -10,6 +10,7 @@ import { filter, path, range } from "ramda";
 import { createSelector } from "reselect";
 
 import ArticleComponent from "./component";
+import getQuantityAvailableByArticleId from "../../../redux/reducers/entities/articles/getters/get-quantity-available-by-article-id";
 import selectArticleById from "../../../redux/reducers/entities/articles/selectors/select-article-by-id";
 import { addArticleRequest } from "../../../redux/actions/shopping-cart";
 import { selectArticle } from "../../../redux/actions/articles";
@@ -20,17 +21,21 @@ const getArticle = (state, props) => selectArticleById(state, props.id);
 
 const getData = () =>
   createSelector(
-    [getArticle, selectConfig, selectWordingFromConfig],
-    (article, config, wording) => {
-      const { quantity } = article;
+    [
+      getArticle,
+      selectConfig,
+      selectWordingFromConfig,
+      (state, props, quantityAvailable) => quantityAvailable
+    ],
+    (article, config, wording, quantityAvailable) => {
       const {
         enabledStockLimitation,
         maxQuantityForSelect,
         intervalQuantityForSelect
       } = config;
       const maxQuantity =
-        enabledStockLimitation && quantity <= maxQuantityForSelect
-          ? quantity
+        enabledStockLimitation && quantityAvailable <= maxQuantityForSelect
+          ? quantityAvailable
           : maxQuantityForSelect;
 
       const quantitiesAvailables = range(1, maxQuantity + 1);
@@ -45,8 +50,9 @@ const getData = () =>
       return {
         ...article,
         enabledStockLimitation,
+        quantityAvailable: quantityAvailable,
         quantitiesAvailables: quantitiesAvailablesFiltered,
-        isInStock: !enabledStockLimitation || article.quantity > 0,
+        isInStock: !enabledStockLimitation || quantityAvailable > 0,
         hasTaxEnabled: config.hasTaxEnabled,
         addToCartIconUrl: path(["iconsUrl", "addToCart"], config),
         emptyBoxUrl: path(["iconsUrl", "emptyBox"], config),
@@ -60,7 +66,8 @@ const getData = () =>
 const makeMapStateToProps = () => {
   const getDataMemoize = getData();
   const mapStateToPropsTest = (state, props) => {
-    return getDataMemoize(state, props);
+    const quantityAvailable = getQuantityAvailableByArticleId(state, props.id);
+    return getDataMemoize(state, props, quantityAvailable);
   };
   return mapStateToPropsTest;
 };
@@ -79,13 +86,15 @@ const ArticleContainer = compose(
       const {
         count,
         isInStock,
-        quantity,
+        quantityAvailable,
         enabledStockLimitation,
         setCount
       } = this.props;
       if (
         prevProps.isInStock !== isInStock ||
-        (count > quantity && enabledStockLimitation && quantity > 0)
+        (count > quantityAvailable &&
+          enabledStockLimitation &&
+          quantityAvailable > 0)
       ) {
         setCount(1);
       }
@@ -96,7 +105,6 @@ const ArticleContainer = compose(
       addArticleRequest(id, count);
     },
     onChange: ({ setCount }) => event => {
-      console.log("change", event);
       setCount(parseInt(event.target.value));
     },
     onClickOnArticle: ({ id, selectArticle }) => () => {

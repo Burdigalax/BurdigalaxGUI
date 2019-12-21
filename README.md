@@ -34,7 +34,7 @@ module.exports = {
 yarn build
 ```
 
-- Copy generate files on folder `dist/` to your server to `{serverPackageName}/client/gui/onShop/` 
+- Copy generate files on folder `dist/` to your server to `{serverPackageName}/client/gui/onShop/`  
 /!\ List of generated files to copy : 
     - onShop.html
     - onShop.burdigalax.js
@@ -441,8 +441,6 @@ BURDIGALAX_onShop.updatePlayer({
 
 #### updateArticles 
 
-**/!\ WARNING:** Update Articles not update basket for this moment. I recommend using it with action : `BURDIGALAX_onShop.resetBasket();`
-
 ```js 
 BURDIGALAX_onShop.updateArticles(
   [
@@ -453,5 +451,6 @@ BURDIGALAX_onShop.updateArticles(
   ]
 );
 ```
+
 ### Contact
 > Discord: RomBurdi#9770

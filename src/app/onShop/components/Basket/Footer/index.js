@@ -28,7 +28,9 @@ const mapStateToProps = state => {
 
   const totalStorage = selectFreeStorageFromPlayer(state);
   const busyStorage = selectBusyStorageFromShoppingCart(state);
-  const isOverWeight = busyStorage > totalStorage;
+  const isOverWeight = config.enabledWeightControl
+    ? busyStorage > totalStorage
+    : false;
 
   const { greenColor, redColor, backgroundColor } = selectStyleFromConfig(
     state
