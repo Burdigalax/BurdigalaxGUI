@@ -1,6 +1,10 @@
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ProgressBarPlugin = require("progress-bar-webpack-plugin");
+
+const config = require("./config.js");
+const serverPackageName = config.serverPackageName;
 
 const getConfig = env => ({
   entry: {
@@ -12,7 +16,7 @@ const getConfig = env => ({
     path: path.resolve(__dirname, "dist"),
     filename: "[name].burdigalax.js",
     publicPath: env.production
-      ? "http://asset/burdigalax/client/gui/"
+      ? `http://asset/${serverPackageName}/client/gui/onShop/`
       : undefined
   },
   module: {
@@ -34,6 +38,7 @@ const getConfig = env => ({
     contentBase: "./dist"
   },
   plugins: [
+    new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
       template: require("html-webpack-template"),
       inject: false,
@@ -42,7 +47,7 @@ const getConfig = env => ({
     new HtmlWebpackPlugin({
       filename: "onShop.html",
       template: "src/onShop.html",
-      chunks: ["onShop", "vendors", "commons", "runtime"]
+      chunks: ["onShop", "vendors", "commons"]
     })
   ],
   optimization: {
@@ -54,10 +59,10 @@ const getConfig = env => ({
           chunks: "initial",
           name: "demo-vendors"
         },
-        common: {
+        commons: {
           test: /[\\/]node_modules[\\/]((?!(react-ace)).*)[\\/]/,
-          name: "commons",
-          chunks: "initial"
+          chunks: "initial",
+          name: "commons"
         }
       }
     }

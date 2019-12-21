@@ -1,15 +1,12 @@
 import { takeEvery } from "@redux-saga/core/effects";
 
 import { SET_CODE } from "../actions";
-import { config as configEvent } from "../../../../../app/onShop/events";
+import { JS_FUNCTIONS } from "../../../../../app/onShop/events";
 
 function* setCode({ newCode }) {
   if (!newCode) return;
 
-  const event = new CustomEvent(configEvent, {
-    detail: newCode
-  });
-  window.dispatchEvent(event);
+  window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.setConfig](newCode);
 }
 
 export default function*() {

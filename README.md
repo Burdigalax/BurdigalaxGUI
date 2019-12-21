@@ -8,30 +8,48 @@ First install dependencies:
 
 ```sh
 npm install
+// or
+yarn
 ```
 
-To run in hot module reloading mode:
+To run in hot module reloading mode on localhost browser:
 
 ```sh
-npm start
+npm run start 
+// or 
+yarn start
 ```
 
 To create a production build:
 
-```sh
-npm run build-prod
+- Edit **config.js** file for specify your package server name.
+```js
+module.exports = {
+  serverPackageName: "burdigalax"
+};
 ```
 
-To create a development build:
-
+- Execute build 
 ```sh
-npm run build-dev
+yarn build
 ```
 
-## Running
-
-Open the file `dist/index.html` in your browser
-
+- Copy generate files on folder `dist/` to your server to `{serverPackageName}/client/gui/onShop/` 
+/!\ List of generated files to copy : 
+    - onShop.html
+    - onShop.burdigalax.js
+    - vendors.burdigalax.js
+    - commons.burdigalax.js
+    
+- For **Onset** game declare this files on your `package.json` server.
+```json
+  "files": [
+    "client/gui/onShop/onShop.html",
+    "client/gui/onShop/onShop.burdigalax.js",
+    "client/gui/onShop/vendors.burdigalax.js",
+    "client/gui/onShop/commons.burdigalax.js",
+  ]
+```
 
 # Burdigalax RP - Shop Exemple 
 
@@ -49,23 +67,23 @@ Full readme and live demo of exemple usage shop module on : http://rom444.free.f
 
 - List of issuables events : 
 ```
- @Burdigalax-shop:onClose
- @Burdigalax-shop:cashPayment
- @Burdigalax-shop:contactLessPayment
- @Burdigalax-shop:cardPayment
+ BURDIGALAX_onShop_onClose
+ BURDIGALAX_onShop_onCashPayment
+ BURDIGALAX_onShop_onContactLessPayment
+ BURDIGALAX_onShop_onCardPayment
 ```
 
 - List of listened events 
 ```
- @Burdigalax-shop:config
- @Burdigalax-shop:paymentError
- @Burdigalax-shop:paymentSuccess
- @Burdigalax-shop:resetBasket
- @Burdigalax-player:updatePlayer
- @Burdigalax-shop:updateArticles
+ BURDIGALAX_onShop.setConfig(JSON);
+ BURDIGALAX_onShop.setPaymentError(title, message, iconUrl);
+ BURDIGALAX_onShop.setPaymentSuccess(title, message, iconUrl);
+ BURDIGALAX_onShop.resetBasket
+ BURDIGALAX_onShop.updatePlayer(JSON);
+ BURDIGALAX_onShop.updateArticles(JSON);
 ```
 
-##### cashPayment, contactLessPayment, cardPayment:
+##### onCashPayment, onContactLessPayment, onCardPayment:
 
 Object receive for these events :
 ```json
@@ -92,10 +110,10 @@ Object receive for these events :
 I recommend  use only articles with id and quantity.  
 **WARNING** : You must recalculate the total price on the server side for security /!\ 
 
-##### config
+##### setConfig
 
 Send config for show IHM :  
-`window.dispatchEvent(new CustomEvent("@Burdigalax-shop:config", { detail: JSON }));`
+`BURDIGALAX_onShop.setConfig(JSON);`
 
 The configuration you send will be merged with the default configuration :
 - Default config : 
@@ -371,54 +389,52 @@ The configuration you send will be merged with the default configuration :
 }
 ```
 
-#### paymentError
+#### setPaymentError
 
 ```js
-window.dispatchEvent(new CustomEvent("@Burdigalax-shop:paymentError", { detail: 
-  { title: 'Erreur', message: "Vous n'avez pas assez d'argent", iconUrl: "//Optional use for override config."} 
-}));
+BURDIGALAX_onShop.setPaymentError(title, message, iconUrl);
+// exemple
+BURDIGALAX_onShop.setPaymentError('Erreur', "Vous n'avez pas assez d'argent", "//Optional use for override config.");
 ```
 
 #### paymentSuccess
 
 ```js 
-window.dispatchEvent(new CustomEvent("@Burdigalax-shop:paymentSuccess", { detail: 
-  { title: 'Félicitation', message: "Paiement validé", iconUrl: "//Optional use for override config."} 
-}));
+BURDIGALAX_onShop.setPaymentSuccess(title, message, iconUrl);
+// exemple
+BURDIGALAX_onShop.setPaymentSuccess('Félicitation', "Paiement validé", "//Optional use for override config.");
 ```
 
 #### resetBasket
 
 ```js 
-window.dispatchEvent(new CustomEvent("@Burdigalax-shop:resetBasket"));
+BURDIGALAX_onShop.resetBasket();
 ```
 
 #### updatePlayer
 
 ```js 
-window.dispatchEvent(new CustomEvent("@Burdigalax-player:updatePlayer", { detail: 
-  {
-     "money": {
-        "cash": 500
-     },
-     "freeStorageSpace": 200
-  } 
-}));
+BURDIGALAX_onShop.updatePlayer({
+    "money": {
+       "cash": 500
+    },
+    "freeStorageSpace": 200
+});
 ```
 
 #### updateArticles 
 
-**WARNING:** Update Articles not update basket for this moment. I recommend using it with action : @Burdigalax-shop:resetBasket
+**/!\ WARNING:** Update Articles not update basket for this moment. I recommend using it with action : `BURDIGALAX_onShop.resetBasket();`
 
 ```js 
-window.dispatchEvent(new CustomEvent("@Burdigalax-shop:updateArticles", { detail: 
+BURDIGALAX_onShop.updateArticles(
   [
     {
         "id": 1,
         "quantity": 10,
     },
   ]
-}));
+);
 ```
 ### Contact
 > Discord: RomBurdi#9770

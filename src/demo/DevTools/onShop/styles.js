@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import React from "react";
 
-export const EditTool = styled.div``;
-
 export const Link = styled.a`
   color: blue !important;
   cursor: pointer;

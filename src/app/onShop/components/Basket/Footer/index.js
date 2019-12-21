@@ -13,7 +13,7 @@ import selectWordingFromConfig from "../../../redux/reducers/config/selectors/se
 import selectFreeStorageFromPlayer from "../../../redux/reducers/entities/player/selectors/select-free-storage-from-player";
 import selectBusyStorageFromShoppingCart from "../../../redux/reducers/navigation/shopping-cart/selectors/select-busy-storage-from-shopping-cart";
 import selectStyleFromConfig from "../../../redux/reducers/config/selectors/select-style-from-config";
-import { cashPayment, cardPayment, contactLessPayment } from "../../../events";
+import { LUA_FUNCTIONS } from "../../../events";
 
 const mapStateToProps = state => {
   const config = selectConfig(state);
@@ -55,24 +55,16 @@ const mapStateToProps = state => {
   };
 };
 
-const emitPaymentEvent = (name, data) => {
-  window.dispatchEvent(
-    new CustomEvent(name, {
-      detail: data
-    })
-  );
-};
-
 const FooterContainer = compose(
   connect(mapStateToProps),
   withHandlers({
     onCashPayment: ({ shoppingCart }) => () =>
-      emitPaymentEvent(cashPayment, shoppingCart),
+      LUA_FUNCTIONS.onCashPayment(shoppingCart),
     onBankPayment: ({ hasContactLessAvailable, shoppingCart }) => () => {
       if (hasContactLessAvailable)
-        return emitPaymentEvent(contactLessPayment, shoppingCart);
+        return LUA_FUNCTIONS.onContactLessPayment(shoppingCart);
 
-      return emitPaymentEvent(cardPayment, shoppingCart);
+      return LUA_FUNCTIONS.onCardPayment(shoppingCart);
     }
   }),
   mapProps(omit(["shoppingCart"]))

@@ -1,6 +1,6 @@
 import { Provider, connect } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
-import { compose, lifecycle, withHandlers } from "recompose";
+import { compose, lifecycle } from "recompose";
 import createSagaMiddleware from "redux-saga";
 import React from "react";
 
@@ -9,12 +9,7 @@ import shopSaga from "../redux/sagas";
 import ShopComponent from "./component";
 import { initShop } from "../redux/actions/init";
 import selectStyleFromConfig from "../redux/reducers/config/selectors/select-style-from-config";
-import {
-  config as configEvent,
-  resetBasket as resetBasketEvent,
-  updatePlayer as updatePlayerEvent,
-  updateArticles as updateArticlesEvent
-} from "../events";
+import { JS_FUNCTIONS } from "../events";
 import { resetRequest } from "../redux/actions/reset";
 import { updateArticlesSuccess } from "../redux/actions/shop";
 import { updatePlayerSuccess } from "../redux/actions/player";
@@ -44,38 +39,22 @@ const mapStateToProps = state => {
 
 const ShopContainer = compose(
   connect(mapStateToProps, mapDispatchToProps),
-  withHandlers({
-    setConfig: ({ initShop }) => config => initShop(config.detail),
-    resetBasketRequest: ({ resetRequest }) => () => resetRequest(),
-    updateArticlesRequest: ({ updateArticlesSuccess }) => data =>
-      updateArticlesSuccess(data.detail),
-    updatePlayerRequest: ({ updatePlayerSuccess }) => data =>
-      updatePlayerSuccess(data.detail)
-  }),
   lifecycle({
     componentDidMount() {
       const {
-        setConfig,
-        resetBasketRequest,
-        updatePlayerRequest,
-        updateArticlesRequest
+        initShop,
+        resetRequest,
+        updatePlayerSuccess,
+        updateArticlesSuccess
       } = this.props;
-      window.addEventListener(configEvent, setConfig);
-      window.addEventListener(resetBasketEvent, resetBasketRequest);
-      window.addEventListener(updateArticlesEvent, updateArticlesRequest);
-      window.addEventListener(updatePlayerEvent, updatePlayerRequest);
-    },
-    componentWillUnmount() {
-      const {
-        setConfig,
-        resetBasketRequest,
-        updateArticlesRequest,
-        updatePlayerRequest
-      } = this.props;
-      window.removeEventListener(configEvent, setConfig);
-      window.removeEventListener(resetBasketEvent, resetBasketRequest);
-      window.addEventListener(updateArticlesEvent, updateArticlesRequest);
-      window.addEventListener(updatePlayerEvent, updatePlayerRequest);
+
+      window[JS_FUNCTIONS.prefix] = {
+        ...window[JS_FUNCTIONS.prefix],
+        [JS_FUNCTIONS.setConfig]: initShop,
+        [JS_FUNCTIONS.resetBasket]: resetRequest,
+        [JS_FUNCTIONS.updatePlayer]: updatePlayerSuccess,
+        [JS_FUNCTIONS.updateArticles]: updateArticlesSuccess
+      };
     }
   })
 )(ShopComponent);

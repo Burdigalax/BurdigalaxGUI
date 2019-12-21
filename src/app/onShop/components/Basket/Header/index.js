@@ -1,5 +1,4 @@
 import { connect } from "react-redux";
-import { map, sum } from "ramda";
 import React from "react";
 
 import HeaderComponent from "./component";

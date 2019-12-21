@@ -1,13 +1,13 @@
 {
   "name": "Burdigalax",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "author": "Rom Burdi",
   "license": "ISC",
   "scripts": {
     "build-dev": "webpack -d --mode development --env.dev",
-    "build-prod": "webpack -p --mode production --env.production",
+    "build": "webpack -p --mode production --env.production",
     "start": "webpack-dev-server --hot --mode development --env.dev"
   },
   "dependencies": {
@@ -38,9 +38,10 @@
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-template": "^6.2.0",
     "prettier": "^1.19.1",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "react-ace": "^8.0.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1",
-    "react-ace": "^8.0.0"
+    "webpack-dev-server": "^3.10.1"
   }
 }

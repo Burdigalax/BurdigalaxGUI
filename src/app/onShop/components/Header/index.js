@@ -7,7 +7,7 @@ import { BTN_VARIANT } from "../../../common/components/BurdiButton/constants";
 import selectShop from "../../redux/reducers/entities/shop/selectors/select-shop";
 import Icon from "../../../common/components/Icon";
 import selectStyleFromConfig from "../../redux/reducers/config/selectors/select-style-from-config";
-import { onClose } from "../../events";
+import { LUA_FUNCTIONS } from "../../events";
 
 const HeaderComponent = ({
   name,
@@ -41,7 +41,6 @@ const mapStateToProps = state => {
 export default compose(
   connect(mapStateToProps),
   withHandlers({
-    onClose: ({ shoppingCart }) => () =>
-      window.dispatchEvent(new CustomEvent(onClose))
+    onClose: () => () => LUA_FUNCTIONS.onClose()
   })
 )(HeaderComponent);
