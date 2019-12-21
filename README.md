@@ -116,13 +116,17 @@ Object receive for these events :
 I recommend  use only articles with id and quantity.  
 **WARNING** : You must recalculate the total price on the server side for security /!\ 
 
-##### setConfig
+#### setConfig
 
 Send config for show IHM :  
 `BURDIGALAX_onShop.setConfig(JSON);`
 
 The configuration you send will be merged with the default configuration :
 - Default config : 
+
+<details>
+    <summary>SHOW / HIDE JSON</summary>
+    
 ```json
 {
    "config": {
@@ -184,8 +188,12 @@ The configuration you send will be merged with the default configuration :
    "effects": {}
 }
 ```
+</details>
 
 - List of all editable parameters :
+
+<details>
+    <summary>SHOW / HIDE JSON</summary>
 
 ```json
 {
@@ -394,6 +402,7 @@ The configuration you send will be merged with the default configuration :
    }
 }
 ```
+</details>
 
 #### setPaymentError
 
