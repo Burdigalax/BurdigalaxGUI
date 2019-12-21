@@ -86,6 +86,10 @@ Full readme and live demo of exemple usage shop module on : http://rom444.free.f
 ##### onCashPayment, onContactLessPayment, onCardPayment:
 
 Object receive for these events :
+
+<details>
+    <summary>SHOW / HIDE JSON</summary>
+
 ```json
 {
    "articles": [
@@ -106,6 +110,8 @@ Object receive for these events :
    "totalTTC": 41.62
 }
 ```
+
+</details>
 
 I recommend  use only articles with id and quantity.  
 **WARNING** : You must recalculate the total price on the server side for security /!\ 
