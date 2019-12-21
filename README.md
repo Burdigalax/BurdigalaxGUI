@@ -110,11 +110,12 @@ Object receive for these events :
    "totalTTC": 41.62
 }
 ```
-
 </details>
 
 I recommend  use only articles with id and quantity.  
 **WARNING** : You must recalculate the total price on the server side for security /!\ 
+
+------
 
 #### setConfig
 
