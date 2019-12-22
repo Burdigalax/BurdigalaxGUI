@@ -1,7 +1,7 @@
 export const prefix = "BURDIGALAX_onShop";
 
 export const setConfig = "setConfig";
-export const resetBasket = "resetBasket";
+export const reset = "reset";
 export const updateArticles = "updateArticles";
 export const updatePlayer = "updatePlayer";
 export const setPaymentError = "setPaymentError";
@@ -15,7 +15,7 @@ export const onCashPayment = "BURDIGALAX_onShop_onCashPayment";
 export const JS_FUNCTIONS = {
   prefix,
   setConfig,
-  resetBasket,
+  reset,
   updateArticles,
   updatePlayer,
   setPaymentError,
@@ -24,7 +24,7 @@ export const JS_FUNCTIONS = {
 
 const callEvent = (name, value) => {
   console.log("callEvent :", name, value);
-  ue.game.callevent(name, value);
+  ue.game.callevent(name, JSON.stringify(value));
 };
 
 export const LUA_FUNCTIONS = {

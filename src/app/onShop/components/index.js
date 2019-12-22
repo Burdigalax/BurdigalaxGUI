@@ -53,7 +53,7 @@ const ShopContainer = compose(
       window[JS_FUNCTIONS.prefix] = {
         ...window[JS_FUNCTIONS.prefix],
         [JS_FUNCTIONS.setConfig]: initShop,
-        [JS_FUNCTIONS.resetBasket]: resetRequest,
+        [JS_FUNCTIONS.reset]: resetRequest,
         [JS_FUNCTIONS.updatePlayer]: updatePlayerSuccess,
         [JS_FUNCTIONS.updateArticles]: updateArticlesSuccess
       };

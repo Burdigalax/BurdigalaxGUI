@@ -12,6 +12,7 @@ import {
 } from "ramda";
 
 import { GET_ARTICLES_SUCCESS } from "../../../actions/shop";
+import { RESET_REQUEST } from "../../../actions/reset";
 
 const INITIAL_STATE = {};
 
@@ -35,6 +36,8 @@ export default (state = INITIAL_STATE, action) => {
         ...omit(["articles"], action.data),
         articlesIdsByCategory
       };
+    case RESET_REQUEST:
+      return INITIAL_STATE;
     default:
       return state;
   }
