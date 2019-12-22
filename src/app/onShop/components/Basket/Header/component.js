@@ -1,4 +1,6 @@
 import React from "react";
+import pluralize from "pluralize";
+
 import { CloseButton, Title, Tag, Wrapper, EndSection } from "./styles";
 import { BTN_VARIANT } from "../../../../common/components/BurdiButton/constants";
 
@@ -12,7 +14,8 @@ export default ({
     <Title>{wording.basket}</Title>
     <EndSection>
       <Tag textBasketColor={textBasketColor}>
-        <strong>{quantity} </strong> {wording.basketArticles}
+        <strong>{quantity} </strong>
+        {wording.basketArticle && pluralize(wording.basketArticle, quantity)}
       </Tag>
       <CloseButton
         label="X"

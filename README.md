@@ -182,7 +182,7 @@ The configuration you send will be merged with the default configuration :
          "totalAll": "Total TTC",
          "total": "Total",
          "moneySymbol": "$",
-         "basketArticles": "articles",
+         "basketArticle": "article",
          "backBasket": "Retour au panier"
       }
    },

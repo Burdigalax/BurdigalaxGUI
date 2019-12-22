@@ -57,7 +57,7 @@ export default {
       totalAll: "Total",
       total: "Total",
       moneySymbol: "$",
-      basketArticles: "articles",
+      basketArticle: "article",
       backBasket: "Retour au panier"
     }
   },
