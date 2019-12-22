@@ -63,24 +63,15 @@ function* deleteArticleRequestSaga({ id }) {
     selectArticleByIdFromShoppingCart(state, id)
   );
 
-  const removedArticle = yield select(state =>
-    selectArticleById(state, removedShoppingCartLine.id)
-  );
   const { busyStorage = 0, total = 0, tax = 0, totalTTC = 0 } = yield select(
     selectShoppingCart
   );
 
-  const removedTotal = removedArticle.price * removedShoppingCartLine.quantity;
-  const removedTax = (removedArticle.tax * removedTotal) / 100;
-  const removedBusyStorage = formatNumber(
-    busyStorage - removedShoppingCartLine.quantity * removedArticle.storageCost
-  );
-
   const data = {
-    total: formatNumber(total - removedTotal),
-    tax: formatNumber(tax - removedTax),
-    totalTTC: formatNumber(totalTTC - (removedTotal + removedTax)),
-    busyStorage: removedBusyStorage
+    total: formatNumber(total - removedShoppingCartLine.total),
+    tax: formatNumber(tax - removedShoppingCartLine.tax),
+    totalTTC: formatNumber(totalTTC - removedShoppingCartLine.totalTTC),
+    busyStorage: formatNumber(busyStorage - removedShoppingCartLine.busyStorage)
   };
 
   yield put(deleteArticleSuccess(removedShoppingCartLine, data));
