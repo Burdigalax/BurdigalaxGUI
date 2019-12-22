@@ -410,6 +410,9 @@ BURDIGALAX_onShop.setPaymentSuccess('Félicitation', "Paiement validé", "//Opti
 
 #### reset
 
+Reset all config (except style). 
+You can execute this function on `BURDIGALAX_onShop_onClose()` for exemple.
+
 ```js 
 BURDIGALAX_onShop.reset();
 ```
@@ -426,6 +429,8 @@ BURDIGALAX_onShop.updatePlayer({
 ```
 
 #### updateArticles 
+
+:warning: `id` of the article is mandatory for its update.
 
 ```js 
 BURDIGALAX_onShop.updateArticles(
