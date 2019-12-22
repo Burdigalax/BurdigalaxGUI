@@ -11,15 +11,17 @@ export default ({
   onDelete,
   removeIconUrl,
   wording,
-  redColor = red
+  redColor = red,
+  textBasketColor = "#3d7b56"
 }) => (
   <tr>
     <td>
       <DeleteButton
         iconLeftUrl={removeIconUrl}
         iconLeftSize={20}
-        color={redColor}
-        variant={BTN_VARIANT.none}
+        color={textBasketColor}
+        hoverColor={redColor}
+        variant={BTN_VARIANT.special}
         onClick={onDelete}
       />
     </td>

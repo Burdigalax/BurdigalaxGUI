@@ -7,6 +7,7 @@ export const DeleteButton = styled(BurdiButton)`
   padding: 5px;
 `;
 
-export const TextCol = styled.td({
-  fontSize: "14px"
-});
+export const TextCol = styled.td`
+  font-size: 13px;
+  font-weight: 600;
+`;

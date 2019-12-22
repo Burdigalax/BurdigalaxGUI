@@ -61,12 +61,15 @@ const FooterContainer = compose(
   connect(mapStateToProps),
   withHandlers({
     onCashPayment: ({ shoppingCart }) => () =>
-      LUA_FUNCTIONS.onCashPayment(shoppingCart),
+      LUA_FUNCTIONS.onCashPayment({ type: "cash", data: shoppingCart }),
     onBankPayment: ({ hasContactLessAvailable, shoppingCart }) => () => {
       if (hasContactLessAvailable)
-        return LUA_FUNCTIONS.onContactLessPayment(shoppingCart);
+        return LUA_FUNCTIONS.onContactLessPayment({
+          type: "contact_less",
+          data: shoppingCart
+        });
 
-      return LUA_FUNCTIONS.onCardPayment(shoppingCart);
+      return LUA_FUNCTIONS.onCardPayment({ type: "card", data: shoppingCart });
     }
   }),
   mapProps(omit(["shoppingCart"]))

@@ -31,12 +31,19 @@ export default {
         "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 28 28' style='enable-background:new 0 0 28 28;' xml:space='preserve'%3E%3Cg%3E%3Cg id='x'%3E%3Cg%3E%3Cpolygon style='fill:%23030104;' points='28,22.398 19.594,14 28,5.602 22.398,0 14,8.402 5.598,0 0,5.602 8.398,14 0,22.398 5.598,28 14,19.598 22.398,28 '/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E"
     },
     style: {
-      backgroundColor: "#2a6041",
-      headerBackgroundColor: "#5da95708",
+      header: {
+        iconColor: "#ffffff",
+        titleColor: "#ffffff",
+        backgroundColor: "#2a6041",
+        iconSize: 40
+      },
       titleColor: "#86a593",
-      greenColor: "#28a745",
+      greenColor: "#5fbd5f",
       redColor: "#d02e22",
-      basketBackgroundColor: "#acd4bc"
+      basket: {
+        textColor: "#3d7b56",
+        backgroundColor: "#acd4bc"
+      }
     },
     wording: {
       informations: "Informations",
@@ -47,17 +54,17 @@ export default {
       article: "Article",
       priceExcludingTax: "Prix HT",
       price: "Prix",
-      taxName: "TVA",
+      taxName: "Taxe",
       unitPrice: "Prix U",
       quantity: "Quantité",
       action: "Action",
       basket: "Panier",
       emptyBasket: "Panier vide",
       totalExcludingTax: "Total HT",
-      totalAll: "Total TTC",
+      totalAll: "Total",
       total: "Total",
       moneySymbol: "$",
-      basketArticles: "articles",
+      basketArticle: "article",
       backBasket: "Retour au panier"
     }
   },

@@ -21,7 +21,8 @@ const mapStateToProps = state => {
     totalStorage,
     isOverweight: busyStorage > totalStorage,
     enabledWeightControl: config.enabledWeightControl,
-    redColor: style.redColor
+    redColor: style.redColor,
+    textBasketColor: style.basket.textColor
   };
 };
 

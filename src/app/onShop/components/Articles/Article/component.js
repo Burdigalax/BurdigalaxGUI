@@ -1,11 +1,11 @@
 import React from "react";
 import { map } from "ramda";
 import Select from "@material-ui/core/Select";
-import InputBase from "@material-ui/core/InputBase";
+import { withStyles, InputBase } from "@material-ui/core";
 
 import {
   AddButton,
-  IconCol,
+  StyledIcon,
   TaxCol,
   NameCol,
   QuantityCol,
@@ -13,9 +13,15 @@ import {
   ActionCol,
   MenuItem
 } from "./styles";
-import Icon from "../../../../common/components/Icon";
 import { BTN_VARIANT } from "../../../../common/components/BurdiButton/constants";
 import { green, red } from "../../../../common/colors";
+import Icon from "../../../../common/components/Icon";
+
+const StyledInputBase = withStyles({
+  root: {
+    color: "#A6A6A6"
+  }
+})(InputBase);
 
 const renderOptions = quantitiesAvailables =>
   map(
@@ -48,10 +54,8 @@ export default ({
 }) => {
   return (
     <tr>
-      <IconCol>
-        <Icon url={iconUrl} size={30} />
-      </IconCol>
       <NameCol onClick={onClickOnArticle} color={greenColor}>
+        <StyledIcon url={iconUrl} size={30} />
         {name}
       </NameCol>
       <PriceCol>
@@ -73,7 +77,7 @@ export default ({
         {!isInStock ? (
           <Icon url={emptyBoxUrl} size={25} color={redColor} />
         ) : (
-          <Select value={count} onChange={onChange} input={<InputBase />}>
+          <Select value={count} onChange={onChange} input={<StyledInputBase />}>
             {renderOptions(quantitiesAvailables)}
           </Select>
         )}
@@ -84,8 +88,9 @@ export default ({
           iconLeftUrl={addToCartIconUrl}
           onClick={onAddToCart}
           iconLeftSize={25}
-          color={isInStock ? greenColor : redColor}
-          variant={BTN_VARIANT.secondary}
+          color={isInStock ? "#A6A6A6" : redColor}
+          hoverColor={greenColor}
+          variant={BTN_VARIANT.special}
         />
       </ActionCol>
     </tr>

@@ -30,10 +30,23 @@ const Demo = () => {
         onClick={toggleShop}
       />
       {hasShopOpen && (
-        <div style={{ marginLeft: "15px" }}>
+        <div
+          style={{
+            marginLeft: "15px"
+          }}
+        >
           <h1>Shop :</h1>
           <DevToolShop />
-          <OnShop />
+          <div
+            style={{
+              padding: "15px",
+              background:
+                "url('http://bastienwilmotte.be/aieki/on7/shop-bg.jpg') no-repeat center center",
+              backgroundSize: "cover"
+            }}
+          >
+            <OnShop />
+          </div>
         </div>
       )}
     </div>

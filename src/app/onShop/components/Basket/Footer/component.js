@@ -1,8 +1,6 @@
 import React from "react";
 import { BuyButtons, Separtor } from "../../styles";
-import { Wrapper, PaymentButton, Resume } from "./styles";
-import BurdiButton from "../../../../common/components/BurdiButton";
-import { BTN_COLOR } from "../../../../common/components/BurdiButton/constants";
+import { Wrapper, PaymentButton, Resume, TotalTTC, SubLine } from "./styles";
 import WeightControl from "./WeightControl";
 import { red, green } from "../../../../common/colors";
 
@@ -39,21 +37,29 @@ export default ({
       <Separtor color={bgColor} />
       <Resume>
         {hasTaxEnabled && (
-          <span>
-            {wording.totalExcludingTax}: {total} {wording.moneySymbol}
-          </span>
+          <SubLine>
+            <span>{wording.totalExcludingTax}</span>
+            <span>
+              {" "}
+              {total} {wording.moneySymbol}
+            </span>
+          </SubLine>
         )}
         {hasTaxEnabled && (
-          <span>
-            {wording.taxName}: {tax} {wording.moneySymbol}
-          </span>
+          <SubLine>
+            <span>{wording.taxName} </span>
+            <span>
+              {tax} {wording.moneySymbol}
+            </span>
+          </SubLine>
         )}
-        <strong>
-          {hasTaxEnabled ? wording.totalAll : wording.total}: {totalTTC}{" "}
-          {wording.moneySymbol}
-        </strong>
+        <TotalTTC>
+          <span>{hasTaxEnabled ? wording.totalAll : wording.total} </span>
+          <span>
+            {totalTTC} {wording.moneySymbol}
+          </span>
+        </TotalTTC>
       </Resume>
-      <Separtor color={bgColor} />
       <BuyButtons>
         <PaymentButton
           disabled={!hasMoneyAvailable || !hasPaymentAvailable}
@@ -63,10 +69,10 @@ export default ({
           iconLeftSize={40}
           color={greenColor}
         />
-        <BurdiButton
+        <PaymentButton
+          isLastButton
           isFullWidth
           disabled={!hasPaymentAvailable || hasCardBreakdown}
-          // label={hasCardBreakdown ? "En panne" : "Payer"}
           onClick={onBankPayment}
           color={hasCardBreakdown ? redColor : greenColor}
           iconLeftUrl={getPaymentCardIconUrl()}

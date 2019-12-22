@@ -9,15 +9,20 @@ export default ({
   totalStorage,
   busyStorage,
   isOverweight = false,
-  redColor = red
+  redColor = red,
+  textBasketColor = "#3d7b56"
 }) => (
   <Wrapper>
     <Icon
       url={weightIconUrl}
-      color={isOverweight ? redColor : black}
+      color={isOverweight ? redColor : textBasketColor}
       size={16}
     />
-    <Text isOverweight={isOverweight} redColor={redColor}>
+    <Text
+      isOverweight={isOverweight}
+      redColor={redColor}
+      textBasketColor={textBasketColor}
+    >
       {busyStorage} / {totalStorage}
     </Text>
   </Wrapper>

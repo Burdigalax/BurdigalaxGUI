@@ -1,22 +1,37 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import {
   ActionCol,
-  IconCol,
   QuantityCol,
   NameCol,
   TaxCol,
   Table,
   PriceCol,
-  Wrapper
+  Wrapper,
+  CategoryStep,
+  Hr
 } from "./styles";
 import ArticleContainer from "./Article";
 import Informations from "./Informations";
 
 const renderArticle = id => <ArticleContainer id={id} key={id} />;
 
+const renderCategory = category => (
+  <Fragment>
+    {category.name && (
+      <CategoryStep key={`cat-${category.name}`}>
+        <td>
+          <div>{category.name}</div>
+          <Hr />
+        </td>
+      </CategoryStep>
+    )}
+    {category.articlesIds.map(renderArticle)}
+  </Fragment>
+);
+
 const ArticlesComponent = ({
-  articlesIds,
+  articlesIdsByCategory,
   className,
   hasTaxEnabled = false,
   wording,
@@ -27,7 +42,6 @@ const ArticlesComponent = ({
     <Table titleColor={titleColor}>
       <thead>
         <tr>
-          <IconCol></IconCol>
           <NameCol>{wording.article}</NameCol>
           {hasTaxEnabled && <PriceCol>{wording.priceExcludingTax}</PriceCol>}
           {hasTaxEnabled && <TaxCol>{wording.taxName}</TaxCol>}
@@ -36,7 +50,7 @@ const ArticlesComponent = ({
           <ActionCol>{wording.action}</ActionCol>
         </tr>
       </thead>
-      <tbody>{articlesIds.map(renderArticle)}</tbody>
+      <tbody>{articlesIdsByCategory.map(renderCategory)}</tbody>
     </Table>
   </Wrapper>
 );

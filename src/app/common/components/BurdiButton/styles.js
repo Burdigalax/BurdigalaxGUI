@@ -19,13 +19,14 @@ const getBgColor = ({ color, variant }) => {
       return color;
     case BTN_VARIANT.secondary:
     case BTN_VARIANT.none:
+    case BTN_VARIANT.special:
       return transparent;
     default:
       return color;
   }
 };
 
-export const getTextHoverColor = ({ color, variant, disabled }) => {
+export const getTextHoverColor = ({ color, hoverColor, variant, disabled }) => {
   if (disabled) return getTextColor({ color, variant });
 
   switch (variant) {
@@ -34,7 +35,9 @@ export const getTextHoverColor = ({ color, variant, disabled }) => {
     case BTN_VARIANT.secondary:
       return color !== BTN_COLOR.white ? white : black;
     case BTN_VARIANT.none:
-      return color;
+      return hoverColor || color;
+    case BTN_VARIANT.special:
+      return hoverColor;
     default:
       return color;
   }
@@ -42,7 +45,8 @@ export const getTextHoverColor = ({ color, variant, disabled }) => {
 
 const getBgHoverColor = ({ color, variant, disabled }) => {
   if (disabled) return getBgColor({ color, variant });
-  if (variant === BTN_VARIANT.none) return transparent;
+  if (variant === BTN_VARIANT.none || variant === BTN_VARIANT.special)
+    return transparent;
   if (variant === BTN_VARIANT.secondary) return color;
 
   return color;
@@ -64,7 +68,14 @@ const getHoverFilter = ({ variant, disabled }) => {
     (variant !== BTN_VARIANT.none && variant !== BTN_VARIANT.primary)
   )
     return "none";
+
   return "brightness(1.2)";
+};
+
+const getBorder = ({ variant, color }) => {
+  if (variant === BTN_VARIANT.none || variant === BTN_VARIANT.special)
+    return "none";
+  return `1px solid ${color}`;
 };
 
 export const StyledButton = styled.button`
@@ -72,8 +83,7 @@ export const StyledButton = styled.button`
   flex: ${props => (props.isFullWidth ? 1 : 0)};
   opacity: ${props => (props.disabled ? 0.6 : 1)};
   background-color: ${props => getBgColor(props)};
-  border: ${props =>
-    props.variant !== BTN_VARIANT.none ? `1px solid ${props.color}` : "none"};
+  border: ${props => getBorder(props)};
   cursor: pointer;
   border-radius: 7px;
   font-size: 16px;

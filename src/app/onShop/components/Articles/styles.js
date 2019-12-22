@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   flex-direction: row;
   display: flex;
+  color: #a6a6a6;
 `;
 
 export const Table = styled.table`
@@ -11,12 +12,8 @@ export const Table = styled.table`
   flex-direction: column;
   flex: 1;
   height: 100%;
-  border-left: 1px solid gray;
   border-top: none;
   width: 100%;
-  > tbody > tr:nth-child(odd) {
-    background-color: #f7f7f7;
-  }
   > tbody {
     border-bottom-right-radius: 10px;
     max-height: 500px;
@@ -26,10 +23,12 @@ export const Table = styled.table`
       flex-direction: row;
       display: flex;
       align-items: center;
+      margin: 8px 0;
     }
     & td {
       text-align: center;
       width: 100%;
+      font-size: 14px;
     }
   }
   > thead > tr {
@@ -37,12 +36,12 @@ export const Table = styled.table`
     flex: 1;
   }
   > thead th {
-    border: 1px solid #2a604114;
-    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 10px;
     color: ${({ titleColor }) => titleColor};
     border-top: none;
     text-align: center;
-    padding: 2px 5px;
+    padding: 10px 5px;
     width: auto !important;
     display: flex;
     flex: 1;
@@ -58,11 +57,7 @@ export const Table = styled.table`
 `;
 
 export const NameCol = styled.th`
-  min-width: 110px;
-`;
-
-export const IconCol = styled.th`
-  width: 50px;
+  min-width: 160px;
 `;
 
 export const TaxCol = styled.th`
@@ -70,13 +65,43 @@ export const TaxCol = styled.th`
 `;
 
 export const QuantityCol = styled.th`
-  width: 80px;
+  max-width: 70px;
 `;
 
 export const ActionCol = styled.th`
-  width: 65px;
+  max-width: 60px;
 `;
 
 export const PriceCol = styled.th`
   width: 75px;
+`;
+
+export const CategoryStep = styled.tr`
+  padding: 9px 0;
+  &:first-child {
+    padding-top: 0;
+  }
+  > td {
+    text-align: left !important;
+    padding-left: 50px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: row;
+    opacity: 0.4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 10px !important;
+    font-weight: 700;
+  }
+`;
+
+export const Hr = styled.hr`
+  flex: 1;
+  border-bottom: 0;
+  border-top: 1.4px solid;
+  border-left: 0;
+  border-right: 0;
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
 `;
