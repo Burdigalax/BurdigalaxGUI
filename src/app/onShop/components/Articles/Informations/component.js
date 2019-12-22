@@ -20,7 +20,7 @@ const renderEffects = (effects, wording) => {
   return (
     <ListEffects>
       <EffectsLiTitle>
-        <EffectsTitle>{wording.effects}:</EffectsTitle>
+        <EffectsTitle>{wording.effects}</EffectsTitle>
       </EffectsLiTitle>
       {effects.map(effect => (
         <EffectContainer key={effect.id} id={effect.id} value={effect.value} />

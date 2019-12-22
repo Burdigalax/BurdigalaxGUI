@@ -65,7 +65,7 @@ Full readme and live demo of exemple usage shop module on : http://rom444.free.f
 
 ### API
 
-- List of issuables events : 
+- List of functions called : 
 ```
  BURDIGALAX_onShop_onClose
  BURDIGALAX_onShop_onCashPayment
@@ -73,7 +73,7 @@ Full readme and live demo of exemple usage shop module on : http://rom444.free.f
  BURDIGALAX_onShop_onCardPayment
 ```
 
-- List of listened events 
+- List of callable functions : 
 ```
  BURDIGALAX_onShop.setConfig(JSON);
  BURDIGALAX_onShop.setPaymentError(title, message, iconUrl);
@@ -92,22 +92,28 @@ Object receive for these events :
 
 ```json
 {
-   "articles": [
-      {
-         "id": 7,
-         "quantity": 1,
-         "total": 30
-      },
-      {
-         "id": 1,
-         "quantity": 1,
-         "total": 5.3
-      }
-   ],
-   "busyStorage": 4,
-   "tax": 6.32,
-   "total": 35.3,
-   "totalTTC": 41.62
+  "articles": [
+    {
+      "id": 7,
+      "quantity": 1,
+      "total": 30,
+      "tax": 5,
+      "totalTTC":35,
+      "busyStorage": 1
+    },
+    {
+      "id": 1,
+      "quantity": 1,
+      "total": 5.3,
+      "tax": 2,
+      "totalTTC":7.3,
+      "busyStorage": 1
+    }
+  ],
+  "busyStorage": 4,
+  "tax": 6.32,
+  "total": 35.3,
+  "totalTTC": 41.62
 }
 ```
 </details>

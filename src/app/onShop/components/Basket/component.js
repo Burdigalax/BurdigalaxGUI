@@ -29,11 +29,12 @@ const renderBody = articles => {
 export default ({
   articles = [],
   bgColor = "#8fb19d",
+  textBasketColor = "#3d7b56",
   successPayment,
   errorPayment,
   hasBody = true
 }) => (
-  <Wrapper bgColor={bgColor}>
+  <Wrapper bgColor={bgColor} color={textBasketColor}>
     <Header />
     <SuccessPayment />
     <ErrorPayment />

@@ -6,10 +6,14 @@ import selectIconsUrlFromConfig from "../../../redux/reducers/config/selectors/s
 import Icon from "../../../../common/components/Icon";
 import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
 
-const EmptyBasket = ({ emptyBasketIconUrl = "", wording }) => (
+const EmptyBasket = ({
+  emptyBasketIconUrl = "",
+  wording,
+  textBasketColor = "#3d7b56"
+}) => (
   <Wrapper>
     <h3>{wording.emptyBasket}</h3>
-    <Icon url={emptyBasketIconUrl} size={60} />
+    <Icon url={emptyBasketIconUrl} size={60} color={textBasketColor} />
   </Wrapper>
 );
 

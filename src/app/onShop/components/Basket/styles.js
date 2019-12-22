@@ -16,10 +16,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex: 0.27;
   flex-direction: column;
-  padding: 5px 5px 0;
   background-color: ${({ bgColor }) => bgColor};
+  color: ${({ color }) => color};
   align-self: stretch;
-  border-radius: 10px;
+  border-radius: 0px 10px 10px 0;
 `;
 
 export const Body = styled.div`

@@ -4,19 +4,19 @@ import { branch, compose, renderComponent, setDisplayName } from "recompose";
 import { path } from "ramda";
 
 import ArticlesComponent from "./component";
-import selectArticlesIdsFromShop from "../../redux/reducers/entities/shop/selectors/select-articlesIds-from-shop";
+import selectArticlesIdsByCategoryFromShop from "../../redux/reducers/entities/shop/selectors/select-articles-Ids-by-category-from-shop";
 import EmptyShop from "./EmptyShop";
 import selectConfig from "../../redux/reducers/config/selectors/select-config";
 import selectWordingFromConfig from "../../redux/reducers/config/selectors/select-wording-from-config";
 
 const mapStateToProps = state => {
-  const articlesIds = selectArticlesIdsFromShop(state);
+  const articlesIdsByCategory = selectArticlesIdsByCategoryFromShop(state);
   const config = selectConfig(state);
   const wording = selectWordingFromConfig(state);
 
   return {
-    articlesIds,
-    isEmpty: articlesIds.length <= 0,
+    articlesIdsByCategory,
+    isEmpty: articlesIdsByCategory.length <= 0,
     hasTaxEnabled: config.hasTaxEnabled,
     wording,
     titleColor: path(["style", "titleColor"], config)

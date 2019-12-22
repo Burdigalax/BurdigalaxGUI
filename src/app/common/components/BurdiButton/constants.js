@@ -10,5 +10,6 @@ export const BTN_COLOR = {
 export const BTN_VARIANT = {
   secondary: "secondary",
   primary: "primary",
+  special: "special",
   none: "none"
 };

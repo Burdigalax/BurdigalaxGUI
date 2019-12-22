@@ -16,6 +16,7 @@ export default {
       {
         id: 1,
         name: "Bouteille d'eau",
+        categoryName: "Consommables",
         price: 5,
         quantity: 100,
         description: "Eau de la ville, avec un léger coût de javel.",
@@ -32,6 +33,7 @@ export default {
       {
         id: 7,
         name: "Bandage",
+        categoryName: "Santé",
         price: 25,
         quantity: 25,
         description: "",
@@ -48,6 +50,7 @@ export default {
       {
         id: 6,
         name: "Jerrican d'essence",
+        categoryName: "Outillage",
         price: 50,
         quantity: 2,
         description: "",
@@ -64,6 +67,7 @@ export default {
       {
         id: 4,
         name: "Médicament",
+        categoryName: "Santé",
         price: 15,
         quantity: 10,
         description: "",
@@ -80,9 +84,10 @@ export default {
       {
         id: 5,
         name: "Chocolatine",
+        categoryName: "Consommables",
         price: 1,
         quantity: 50,
-        description: "",
+        description: "Meilleure qu'un pain au chocolat !",
         iconUrl: "https://pbs.twimg.com/media/C45FiwpWYAAW_dm.png",
         storageCost: 1,
         tax: 6,
@@ -100,6 +105,7 @@ export default {
       {
         id: 2,
         name: "Pomme",
+        categoryName: "Consommables",
         price: 0.5,
         quantity: 5,
         description: "",
@@ -120,6 +126,7 @@ export default {
       {
         id: 3,
         name: "Téléphone",
+        categoryName: "Outillage",
         price: 500,
         quantity: 0,
         description: "",

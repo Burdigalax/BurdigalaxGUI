@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 10px;
+  padding: 10px;
+  background-color: #FAFAFA;
+  border-radius: 10px 0px 0px 10px
   flex: 0.3;
   display: flex;
   flex-direction: column;
@@ -17,7 +19,8 @@ export const Information = styled.h5`
 `;
 
 export const Description = styled.div`
-  font-size: 13px;
+  font-size: 12px;
+  color: #808080;
 `;
 
 export const StyledIcon = styled.div`
@@ -27,19 +30,22 @@ export const StyledIcon = styled.div`
 
 export const Title = styled.h5`
   text-align: center;
-  font-size: 17px;
+  font-size: 14px;
+  color: #808080;
+  font-weight: 500;
   margin: 10px 5px;
 `;
 
 export const EffectsTitle = styled.h6`
-  font-size: 14px;
+  font-size: 12px;
+  text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 400;
 `;
 
 export const EffectsLiTitle = styled.li`
-  position: relative;
-  left: 15px;
+  list-style: none;
 `;
 
 export const ListEffects = styled.ul`

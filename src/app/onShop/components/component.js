@@ -5,7 +5,7 @@ import Header from "./Header/";
 import Basket from "./Basket";
 
 export default ({ bgColor = "#2a6041" }) => (
-  <Interface bgColor={bgColor}>
+  <Interface>
     <Header color={bgColor} />
     <Row bgColor={bgColor}>
       <StyledArticles />

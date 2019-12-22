@@ -6,23 +6,33 @@ import { black, red } from "../../../../common/colors";
 import BurdiButton from "../../../../common/components/BurdiButton";
 
 export const AddButton = styled(BurdiButton)`
-  padding: 7px 4px 7px 6px;
-  border-radius: 100px;
+  margin: 0;
+  padding: 0;
 `;
 
 export const QuantityCol = styled.td`
-  width: 80px;
+  max-width: 70px;
   color: ${props => (props.isInStock ? black : red)};
 `;
 
 export const ActionCol = styled.td`
-  width: 65px;
+  justify-content: center;
+  display: flex;
+  max-width: 60px;
 `;
 
 export const NameCol = styled.td`
-  min-width: 110px;
+  min-width: 160px;
+  line-height: 1;
   color: ${({ color }) => color};
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: justify !important;
+  > img {
+    padding: 0px 10px 0px 7px;
+  }
 `;
 
 export const TaxCol = styled.td`
@@ -32,7 +42,7 @@ export const TaxCol = styled.td`
 `;
 
 export const IconCol = styled.td`
-  width: 50px;
+  width: 40px;
   text-align: center;
 `;
 
