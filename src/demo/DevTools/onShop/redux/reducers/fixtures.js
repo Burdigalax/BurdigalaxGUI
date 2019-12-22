@@ -12,6 +12,10 @@ export default {
   },
   shop: {
     hasPaymentTerminalBroken: true,
+    name: "",
+    iconColor: "",
+    iconSize: 160,
+    iconUrl: "http://bastienwilmotte.be/aieki/on7/on77shop-logo@2x.png",
     articles: [
       {
         id: 1,

@@ -1,16 +1,21 @@
 import React from "react";
 import { connect } from "react-redux";
-import { compose, withHandlers } from "recompose";
+import { compose } from "recompose";
 
 import { Title, Header } from "./styles";
 import selectShop from "../../redux/reducers/entities/shop/selectors/select-shop";
 import Icon from "../../../common/components/Icon";
 import selectStyleFromConfig from "../../redux/reducers/config/selectors/select-style-from-config";
-import { LUA_FUNCTIONS } from "../../events";
 
-const HeaderComponent = ({ name, iconUrl = "", color }) => (
+const HeaderComponent = ({
+  name,
+  iconUrl = "",
+  color,
+  iconColor,
+  iconSize = 40
+}) => (
   <Header>
-    <Icon url={iconUrl} color={color} size={40} />
+    <Icon url={iconUrl} color={iconColor} size={iconSize} />
     <Title color={color}>{name}</Title>
   </Header>
 );
@@ -21,6 +26,8 @@ const mapStateToProps = state => {
   return {
     name: shop.name,
     iconUrl: shop.iconUrl,
+    iconColor: shop.iconColor,
+    iconSize: shop.iconSize,
     bgColor: style.headerBackgroundColor
   };
 };

@@ -10,7 +10,7 @@ export const Header = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  padding: 5px;
+  padding-bottom: 10px;
   border-radius: 13px 13px 0 0;
 `;
 
