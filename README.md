@@ -1,6 +1,6 @@
-# Burdigalax-project
+# Burdigalax-project v3
 
-Burdigalax project.
+Burdigalax project. 
 
 ## Building and running on localhost
 
