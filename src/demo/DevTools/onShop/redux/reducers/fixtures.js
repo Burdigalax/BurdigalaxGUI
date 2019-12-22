@@ -16,6 +16,7 @@ export default {
       {
         id: 1,
         name: "Bouteille d'eau",
+        pluralName: "Bouteilles d'eau",
         categoryName: "Consommables",
         price: 5,
         quantity: 100,
@@ -50,6 +51,7 @@ export default {
       {
         id: 6,
         name: "Jerrican d'essence",
+        pluralName: "Jerricans d'essence",
         categoryName: "Outillage",
         price: 50,
         quantity: 2,

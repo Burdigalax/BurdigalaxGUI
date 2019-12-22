@@ -198,216 +198,174 @@ The configuration you send will be merged with the default configuration :
 ```
 </details>
 
-- List of all editable parameters :
+- List of all OTHERS parameters :
 
 <details>
     <summary>SHOW / HIDE JSON</summary>
 
 ```json
 {
-   "config": {
-      "hasTaxEnabled": true,
-      "enabledStockLimitation": true,
-      "enabledWeightControl": true,
-      "maxQuantityForSelect": 50,
-      "maxAmountContactLess": 300,
-      "iconsUrl": {
-         "addToCart": "dataURI",
-         "removeToCart": "dataURI",
-         "paymentCash": "dataURI",
-         "paymentContactLess": "dataURI",
-         "paymentCard":"dataURI",
-         "emptyBasket": "dataURI",
-         "emptyBox": "dataURI",
-         "breakdown": "dataURI",
-         "weight": "dataURI",
-         "successPayment": "dataURI",
-         "errorPayment": "dataURI"
-      },
-      "style": {
-         "backgroundColor": "#2a6041",
-         "headerBackgroundColor": "#5da95708",
-         "titleColor": "#86a593",
-         "greenColor": "#28a745",
-         "redColor": "#d02e22",
-         "basketBackgroundColor": "#acd4bc"
-      },
-      "wording": {
-         "informations": "Informations",
-         "descriptionInformations": "Cliquer sur un produit pour avoir des informations supplémentaires.",
-         "noInformation": "Aucune information",
-         "effects": "Effets",
-         "article": "Article",
-         "priceExcludingTax": "Prix HT",
-         "price": "Prix",
-         "taxName": "TVA",
-         "unitPrice": "Prix U",
-         "quantity": "Quantité",
-         "action": "Action",
-         "basket": "Panier",
-         "emptyBasket": "Panier vide",
-         "totalExcludingTax": "Total HT",
-         "totalAll": "Total TTC",
-         "total": "Total",
-         "moneySymbol": "$",
-         "basketArticles": "articles",
-         "backBasket": "Retour au panier"
-      }
-   },
-   "player": {
-      "money": {
+     "player": {
+       "money": {
          "cash": 300
-      },
-      "freeStorageSpace": 20
-   },
-   "shop": {
-      "name": "On7/7",
-      "iconUrl": "dataURI",
-      "hasPaymentTerminalBroken": true,
-      "articles": [
+       },
+       "freeStorageSpace": 20
+     },
+     "shop": {
+       "articles": [
          {
-            "id": 1,
-            "name": "Bouteille d'eau",
-            "price": 5,
-            "quantity": 100,
-            "description": "Eau de la ville, avec un léger coût de javel.",
-            "iconUrl": "dataURI",
-            "storageCost": 2,
-            "tax": 6,
-            "effects": [
-               {
-                  "id": "hydration",
-                  "value": 40
-               }
-            ]
+           "id": 1,
+           "name": "Bouteille d'eau",
+           "pluralName": "Bouteilles d'eau",
+           "categoryName": "Consommables",
+           "price": 5,
+           "quantity": 100,
+           "description": "Eau de la ville, avec un léger coût de javel.",
+           "iconUrl": "https://image.flaticon.com/icons/svg/824/824239.svg",
+           "storageCost": 2,
+           "tax": 6,
+           "effects": [
+             {
+               "id": "hydration",
+               "value": 40
+             }
+           ]
          },
          {
-            "id": 7,
-            "name": "Bandage",
-            "price": 25,
-            "quantity": 25,
-            "description": "",
-            "iconUrl": "dataURI",
-            "storageCost": 2,
-            "tax": 20,
-            "effects": [
-               {
-                  "id": "bleeding",
-                  "value": -70
-               }
-            ]
+           "id": 7,
+           "name": "Bandage",
+           "categoryName": "Santé",
+           "price": 25,
+           "quantity": 25,
+           "description": "",
+           "iconUrl": "https://image.flaticon.com/icons/svg/1546/1546109.svg",
+           "storageCost": 2,
+           "tax": 20,
+           "effects": [
+             {
+               "id": "bleeding",
+               "value": -70
+             }
+           ]
          },
          {
-            "id": 6,
-            "name": "Jerrican d'essence",
-            "price": 50,
-            "quantity": 2,
-            "description": "",
-            "iconUrl": "dataURI",
-            "storageCost": 5,
-            "tax": 35,
-            "effects": [
-               {
-                  "id": "petrol",
-                  "value": 15
-               }
-            ]
+           "id": 6,
+           "name": "Jerrican d'essence",
+           "pluralName": "Jerricans d'essence",
+           "categoryName": "Outillage",
+           "price": 50,
+           "quantity": 2,
+           "description": "",
+           "iconUrl": "https://image.flaticon.com/icons/svg/140/140638.svg",
+           "storageCost": 5,
+           "tax": 35,
+           "effects": [
+             {
+               "id": "petrol",
+               "value": 15
+             }
+           ]
          },
          {
-            "id": 4,
-            "name": "Médicament",
-            "price": 15,
-            "quantity": 10,
-            "description": "",
-            "iconUrl": "dataURI",
-            "storageCost": 2,
-            "tax": 20,
-            "effects": [
-               {
-                  "id": "health",
-                  "value": 20
-               }
-            ]
+           "id": 4,
+           "name": "Médicament",
+           "categoryName": "Santé",
+           "price": 15,
+           "quantity": 10,
+           "description": "",
+           "iconUrl": "https://image.flaticon.com/icons/svg/1546/1546140.svg",
+           "storageCost": 2,
+           "tax": 20,
+           "effects": [
+             {
+               "id": "health",
+               "value": 20
+             }
+           ]
          },
          {
-            "id": 5,
-            "name": "Chocolatine",
-            "price": 1,
-            "quantity": 50,
-            "description": "",
-            "iconUrl": "dataURI",
-            "storageCost": 1,
-            "tax": 6,
-            "effects": [
-               {
-                  "id": "food",
-                  "value": 20
-               },
-               {
-                  "id": "hydration",
-                  "value": -5
-               }
-            ]
+           "id": 5,
+           "name": "Chocolatine",
+           "categoryName": "Consommables",
+           "price": 1,
+           "quantity": 50,
+           "description": "Meilleure qu'un pain au chocolat !",
+           "iconUrl": "https://pbs.twimg.com/media/C45FiwpWYAAW_dm.png",
+           "storageCost": 1,
+           "tax": 6,
+           "effects": [
+             {
+               "id": "food",
+               "value": 20
+             },
+             {
+               "id": "hydration",
+               "value": -5
+             }
+           ]
          },
          {
-            "id": 2,
-            "name": "Pomme",
-            "price": 0.5,
-            "quantity": 5,
-            "description": "",
-            "iconUrl": "dataURI",
-            "storageCost": 1,
-            "tax": -15,
-            "effects": [
-               {
-                  "id": "food",
-                  "value": 7
-               },
-               {
-                  "id": "hydration",
-                  "value": 5
-               }
-            ]
+           "id": 2,
+           "name": "Pomme",
+           "categoryName": "Consommables",
+           "price": 0.5,
+           "quantity": 5,
+           "description": "",
+           "iconUrl": "https://image.flaticon.com/icons/svg/415/415682.svg",
+           "storageCost": 1,
+           "tax": -15,
+           "effects": [
+             {
+               "id": "food",
+               "value": 7
+             },
+             {
+               "id": "hydration",
+               "value": 5
+             }
+           ]
          },
          {
-            "id": 3,
-            "name": "Téléphone",
-            "price": 500,
-            "quantity": 0,
-            "description": "",
-            "iconUrl": "dataURI",
-            "storageCost": 1,
-            "tax": 20
+           "id": 3,
+           "name": "Téléphone",
+           "categoryName": "Outillage",
+           "price": 500,
+           "quantity": 0,
+           "description": "",
+           "iconUrl": "https://image.flaticon.com/icons/svg/186/186239.svg",
+           "storageCost": 1,
+           "tax": 20
          }
-      ]
-   },
-   "effects": {
-      "hydration": {
+       ]
+     },
+     "effects": {
+       "hydration": {
          "name": "Hydratation",
          "unit": "%",
-         "iconUrl": "dataURI"
-      },
-      "petrol": {
+         "iconUrl": "https://image.flaticon.com/icons/svg/414/414974.svg"
+       },
+       "petrol": {
          "name": "Essence",
          "unit": "L",
-         "iconUrl": "dataURI"
-      },
-      "food": {
+         "iconUrl":
+           "http://free-pictures-hosting.org/upload/2019-11-20-23-51-10-203080-petrol.svg"
+       },
+       "food": {
          "name": "Alimentation",
-         "iconUrl": "dataURI",
+         "iconUrl": "https://image.flaticon.com/icons/svg/1046/1046755.svg",
          "unit": "%"
-      },
-      "health": {
+       },
+       "health": {
          "name": "Santé",
-         "iconUrl": "dataURI",
+         "iconUrl": "https://image.flaticon.com/icons/svg/148/148838.svg",
          "unit": "%"
-      },
-      "bleeding": {
+       },
+       "bleeding": {
          "name": "Saignement",
-         "iconUrl": "dataURI",
+         "iconUrl": "https://image.flaticon.com/icons/svg/1101/1101334.svg",
          "unit": "%"
-      }
-   }
+       }
+     }
 }
 ```
 </details>
