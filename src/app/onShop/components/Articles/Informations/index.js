@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { path } from "ramda";
 
 import InformationComponent from "./component";
 import selectArticleIdSelected from "../../../redux/reducers/navigation/articles/selectors/select-article-id-selected";
@@ -10,14 +11,20 @@ import selectStyleFromConfig from "../../../redux/reducers/config/selectors/sele
 const mapStateToProps = state => {
   const articleIdSelected = selectArticleIdSelected(state);
   const wording = selectWordingFromConfig(state);
-  const { titleColor } = selectStyleFromConfig(state);
-  if (!articleIdSelected) return { wording, titleColor };
+  const { titleColor, header } = selectStyleFromConfig(state);
+
+  const props = {
+    wording,
+    titleColor,
+    hasBgHeader: header.backgroundColor
+  };
+
+  if (!articleIdSelected) return { ...props };
 
   const articleSelected = selectArticleById(state, articleIdSelected);
   return {
     ...articleSelected,
-    wording: wording,
-    titleColor
+    ...props
   };
 };
 

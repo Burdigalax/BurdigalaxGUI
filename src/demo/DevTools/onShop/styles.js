@@ -8,7 +8,7 @@ export const Link = styled.a`
 `;
 
 export const Wrapper = styled.div`
-  font-family: arial;
+  font-family: Montserrat;
   margin: 20px;
   font-size: 15px;
 `;

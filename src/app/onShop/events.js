@@ -1,18 +1,7 @@
-// export const paymentError = "@Burdigalax-shop:paymentError";
-// export const paymentSuccess = "@Burdigalax-shop:paymentSuccess";
-// export const config = "@Burdigalax-shop:config";
-// export const cashPayment = "@Burdigalax-shop:cashPayment";
-// export const contactLessPayment = "@Burdigalax-shop:contactLessPayment";
-// export const cardPayment = "@Burdigalax-shop:cardPayment";
-// export const onClose = "@Burdigalax-shop:onClose";
-// export const resetBasket = "@Burdigalax-shop:resetBasket";
-// export const updateArticles = "@Burdigalax-shop:updateArticles";
-// export const updatePlayer = "@Burdigalax-player:updatePlayer";
-
 export const prefix = "BURDIGALAX_onShop";
 
 export const setConfig = "setConfig";
-export const resetBasket = "resetBasket";
+export const reset = "reset";
 export const updateArticles = "updateArticles";
 export const updatePlayer = "updatePlayer";
 export const setPaymentError = "setPaymentError";
@@ -26,7 +15,7 @@ export const onCashPayment = "BURDIGALAX_onShop_onCashPayment";
 export const JS_FUNCTIONS = {
   prefix,
   setConfig,
-  resetBasket,
+  reset,
   updateArticles,
   updatePlayer,
   setPaymentError,
@@ -35,7 +24,7 @@ export const JS_FUNCTIONS = {
 
 const callEvent = (name, value) => {
   console.log("callEvent :", name, value);
-  ue.game.callevent(name, value);
+  ue.game.callevent(name, JSON.stringify(value));
 };
 
 export const LUA_FUNCTIONS = {

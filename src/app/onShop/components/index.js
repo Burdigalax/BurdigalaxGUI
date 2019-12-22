@@ -1,5 +1,6 @@
 import { Provider, connect } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
+import { path } from "ramda";
 import { compose, lifecycle } from "recompose";
 import createSagaMiddleware from "redux-saga";
 import React from "react";
@@ -33,7 +34,8 @@ const mapDispatchToProps = {
 const mapStateToProps = state => {
   const style = selectStyleFromConfig(state);
   return {
-    bgColor: style.backgroundColor
+    bgColor: style.backgroundColor,
+    hasBgHeader: path(["header", "backgroundColor"], style)
   };
 };
 
@@ -51,7 +53,7 @@ const ShopContainer = compose(
       window[JS_FUNCTIONS.prefix] = {
         ...window[JS_FUNCTIONS.prefix],
         [JS_FUNCTIONS.setConfig]: initShop,
-        [JS_FUNCTIONS.resetBasket]: resetRequest,
+        [JS_FUNCTIONS.reset]: resetRequest,
         [JS_FUNCTIONS.updatePlayer]: updatePlayerSuccess,
         [JS_FUNCTIONS.updateArticles]: updateArticlesSuccess
       };

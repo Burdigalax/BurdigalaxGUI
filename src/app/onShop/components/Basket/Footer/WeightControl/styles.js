@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Text = styled.div`
-  font-size: 14px;
-  color: ${({ isOverweight, redColor }) => (isOverweight ? redColor : black)};
+  font-size: 13px;
+  font-weight: 600;
+  color: ${({ isOverweight, textBasketColor, redColor }) =>
+    isOverweight ? redColor : textBasketColor};
 `;

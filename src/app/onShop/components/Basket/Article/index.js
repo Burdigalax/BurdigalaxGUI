@@ -1,6 +1,7 @@
 import { compose, mapProps, setDisplayName, withHandlers } from "recompose";
 import { connect } from "react-redux";
 import React from "react";
+import pluralize from "pluralize";
 
 import ArticleComponent from "./component";
 import selectArticleById from "../../../redux/reducers/entities/articles/selectors/select-article-by-id";
@@ -16,12 +17,16 @@ const mapStateToProps = (state, props) => {
   const wording = selectWordingFromConfig(state);
   if (!article) return { wording };
 
-  const { redColor } = selectStyleFromConfig(state);
+  const { redColor, basket } = selectStyleFromConfig(state);
   return {
-    name: article.name,
+    name:
+      quantity > 1
+        ? article.pluralName || pluralize(article.name, quantity)
+        : article.name,
     quantity: quantity,
     total: parseFloat((article.price * quantity).toFixed(2)),
     removeIconUrl: iconsUrl.removeToCart,
+    textBasketColor: basket.textColor,
     wording,
     redColor
   };

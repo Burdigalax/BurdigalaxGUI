@@ -17,6 +17,7 @@ const renderIcon = (icon, url, size, props) => {
     color = BTN_COLOR.business,
     variant = BTN_VARIANT.primary,
     disabled,
+    hoverColor,
     isHover
   } = props;
   const SvgIcon = icon;
@@ -28,7 +29,7 @@ const renderIcon = (icon, url, size, props) => {
           url={url}
           color={
             isHover
-              ? getTextHoverColor({ color, variant, disabled })
+              ? getTextHoverColor({ color, hoverColor, variant, disabled })
               : getTextColor({ color, variant })
           }
         />
@@ -42,6 +43,7 @@ const renderIcon = (icon, url, size, props) => {
 const BurdiButton = props => {
   const {
     color = BTN_COLOR.business,
+    hoverColor,
     label,
     iconLeft,
     iconLeftUrl,
@@ -62,6 +64,7 @@ const BurdiButton = props => {
       disabled={disabled}
       onClick={onClick}
       color={color}
+      hoverColor={hoverColor}
       variant={variant}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

@@ -8,21 +8,14 @@ export const Header = styled.div`
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 2rem;
-  padding: 5px;
-  background-color: ${({ bgColor }) => bgColor};
+  padding: 10px;
   border-radius: 13px 13px 0 0;
-`;
-
-export const CloseButton = styled(BurdiButton)`
-  padding: 5px 10px;
-  border-width: 2px;
-  border-radius: 10px;
-  border-color: ${({ color }) => color};
+  background-color: ${({ bgColor }) => bgColor};
 `;
 
 export const Title = styled.h4`
-  margin: auto;
+  margin: 0 15px;
   color: ${({ color }) => color};
 `;

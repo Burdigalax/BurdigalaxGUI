@@ -4,14 +4,14 @@ import BurdiButton from "../../../../../../app/common/components/BurdiButton";
 import React from "react";
 
 export default ({}) => {
-  const onResetBasket = () => {
-    window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.resetBasket]();
+  const onReset = () => {
+    window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.reset]();
   };
   return (
     <div>
       <BurdiButton
-        onClick={onResetBasket}
-        label={`${JS_FUNCTIONS.prefix}.${JS_FUNCTIONS.resetBasket}()`}
+        onClick={onReset}
+        label={`${JS_FUNCTIONS.prefix}.${JS_FUNCTIONS.reset}()`}
         color={BTN_COLOR.info}
       />
     </div>

@@ -6,13 +6,13 @@ import {
   Title,
   EffectsLiTitle,
   Information,
-  Wrapper
+  Wrapper,
+  WrapperIcon
 } from "./styles";
 import { isEmpty } from "ramda";
 import React from "react";
 
 import EffectContainer from "./Effect";
-import Icon from "../../../../common/components/Icon";
 
 const renderEffects = (effects, wording) => {
   if (!effects) return null;
@@ -20,7 +20,7 @@ const renderEffects = (effects, wording) => {
   return (
     <ListEffects>
       <EffectsLiTitle>
-        <EffectsTitle>{wording.effects}:</EffectsTitle>
+        <EffectsTitle>{wording.effects}</EffectsTitle>
       </EffectsLiTitle>
       {effects.map(effect => (
         <EffectContainer key={effect.id} id={effect.id} value={effect.value} />
@@ -35,19 +35,19 @@ export default ({
   description = "",
   effects,
   wording,
+  hasBgHeader,
   titleColor = "#86a593"
 }) => (
-  <Wrapper>
+  <Wrapper hasBgHeader={hasBgHeader}>
     <Information titleColor={titleColor}>{wording.informations}</Information>
     <Description>
       {!name ? (
         <em>{wording.descriptionInformations}</em>
       ) : (
         <div>
-          <StyledIcon>
-            {" "}
-            <Icon url={iconUrl} size={50} />
-          </StyledIcon>
+          <WrapperIcon>
+            <StyledIcon url={iconUrl} size={50} />
+          </WrapperIcon>
           <Title>{name}</Title>
           <em>{isEmpty(description) ? wording.noInformation : description}</em>
           {renderEffects(effects, wording)}

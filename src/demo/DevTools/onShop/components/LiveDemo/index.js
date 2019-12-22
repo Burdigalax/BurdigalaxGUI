@@ -7,7 +7,7 @@ import selectCodeFromDevTool from "../../redux/reducers/selectors/select-code-fr
 import SetConfig from "./components/setConfig";
 import SetPaymentError from "./components/setPaymentError";
 import SetPaymentSuccess from "./components/setPaymentSuccess";
-import ResetBasket from "./components/resetBasket";
+import Reset from "./components/reset";
 import UpdatePlayer from "./components/updatePlayer";
 import UpdateArticles from "./components/updateArticles";
 
@@ -21,7 +21,7 @@ const LiveDemo = ({
   const [hasSetConfigOpen, setSetConfigOpen] = useState(false);
   const [hasSetPaymentErrorOpen, setSetPaymentErrorOpen] = useState(false);
   const [hasSetPaymentSuccessOpen, setSetPaymentSuccessOpen] = useState(false);
-  const [hasResetBasketOpen, setResetBasketOpen] = useState(false);
+  const [hasResetOpen, setResetOpen] = useState(false);
   const [hasUdpatePlayerOpen, setUdpatePlayerOpen] = useState(false);
   const [hasUdpateArticlesOpen, setUdpateArticlesOpen] = useState(false);
 
@@ -30,7 +30,7 @@ const LiveDemo = ({
     setSetPaymentErrorOpen(!hasSetPaymentErrorOpen);
   const toggleSetPaymentSuccess = () =>
     setSetPaymentSuccessOpen(!hasSetPaymentSuccessOpen);
-  const toggleResetBasket = () => setResetBasketOpen(!hasResetBasketOpen);
+  const toggleReset = () => setResetOpen(!hasResetOpen);
   const toggleUpdatePlayer = () => setUdpatePlayerOpen(!hasUdpatePlayerOpen);
   const toggleUpdateArticles = () =>
     setUdpateArticlesOpen(!hasUdpateArticlesOpen);
@@ -55,8 +55,8 @@ const LiveDemo = ({
         <SetPaymentSuccess defaultCode={defaultCodePaymentSuccess} />
       )}
       <br />
-      <Button onClick={toggleResetBasket}>{JS_FUNCTIONS.resetBasket}</Button>
-      {hasResetBasketOpen && <ResetBasket />}
+      <Button onClick={toggleReset}>{JS_FUNCTIONS.reset}</Button>
+      {hasResetOpen && <Reset />}
       <br />
       <Button onClick={toggleUpdatePlayer}>{JS_FUNCTIONS.updatePlayer}</Button>
       {hasUdpatePlayerOpen && (
