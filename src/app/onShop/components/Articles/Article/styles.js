@@ -4,6 +4,7 @@ import { MenuItem as MenuItemMaterial, withStyles } from "@material-ui/core";
 
 import { black, red } from "../../../../common/colors";
 import BurdiButton from "../../../../common/components/BurdiButton";
+import Icon from "../../../../common/components/Icon";
 
 export const AddButton = styled(BurdiButton)`
   margin: 0;
@@ -41,11 +42,6 @@ export const TaxCol = styled.td`
   opacity: 0.5;
 `;
 
-export const IconCol = styled.td`
-  width: 40px;
-  text-align: center;
-`;
-
 export const PriceCol = styled.td`
   width: 75px;
 `;
@@ -55,3 +51,7 @@ export const MenuItem = withStyles({
     padding: "3px"
   }
 })(MenuItemMaterial);
+
+export const StyledIcon = styled(Icon)`
+  max-height: 30px;
+`;

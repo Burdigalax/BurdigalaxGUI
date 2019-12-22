@@ -19,8 +19,10 @@ const mapStateToProps = state => {
 
   return {
     ...shoppingCart,
-    bgColor: style.basketBackgroundColor,
-    hasBody: !payment.error && !payment.success
+    bgColor: style.basket.backgroundColor,
+    hasBgHeader: style.header.backgroundColor,
+    hasBody: !payment.error && !payment.success,
+    textBasketColor: style.basket.textColor
   };
 };
 

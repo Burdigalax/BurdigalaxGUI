@@ -1,5 +1,6 @@
 import { Provider, connect } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
+import { path } from "ramda";
 import { compose, lifecycle } from "recompose";
 import createSagaMiddleware from "redux-saga";
 import React from "react";
@@ -33,7 +34,8 @@ const mapDispatchToProps = {
 const mapStateToProps = state => {
   const style = selectStyleFromConfig(state);
   return {
-    bgColor: style.backgroundColor
+    bgColor: style.backgroundColor,
+    hasBgHeader: path(["header", "backgroundColor"], style)
   };
 };
 

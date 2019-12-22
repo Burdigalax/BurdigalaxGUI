@@ -1,6 +1,11 @@
-import { SET_CONFIG } from "../../actions/config";
+import { path } from "ramda";
 
-const INITIAL_STATE = {};
+import { SET_CONFIG } from "../../actions/config";
+import fixturesShop from "./fixturesShop";
+
+const INITIAL_STATE = {
+  style: path(["config", "style"], fixturesShop)
+};
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {

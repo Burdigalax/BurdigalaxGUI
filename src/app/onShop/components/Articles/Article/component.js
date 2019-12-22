@@ -5,7 +5,7 @@ import { withStyles, InputBase } from "@material-ui/core";
 
 import {
   AddButton,
-  IconCol,
+  StyledIcon,
   TaxCol,
   NameCol,
   QuantityCol,
@@ -13,9 +13,9 @@ import {
   ActionCol,
   MenuItem
 } from "./styles";
-import Icon from "../../../../common/components/Icon";
 import { BTN_VARIANT } from "../../../../common/components/BurdiButton/constants";
 import { green, red } from "../../../../common/colors";
+import Icon from "../../../../common/components/Icon";
 
 const StyledInputBase = withStyles({
   root: {
@@ -55,7 +55,7 @@ export default ({
   return (
     <tr>
       <NameCol onClick={onClickOnArticle} color={greenColor}>
-        <Icon url={iconUrl} size={30} />
+        <StyledIcon url={iconUrl} size={30} />
         {name}
       </NameCol>
       <PriceCol>

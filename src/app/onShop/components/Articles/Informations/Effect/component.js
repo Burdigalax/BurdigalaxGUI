@@ -12,7 +12,7 @@ const EffectComponent = ({
   redColor = red
 }) => (
   <Wrapper value={value} greenColor={greenColor} redColor={redColor}>
-    <EffectIcon size={15} url={iconUrl} /> {name} {value > 0 ? "+" : ""} {value}
+    <EffectIcon size={20} url={iconUrl} /> {name} {value > 0 ? "+" : ""} {value}
     {unit}
   </Wrapper>
 );

@@ -10,11 +10,12 @@ export const Header = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  padding-bottom: 10px;
+  padding: 10px;
   border-radius: 13px 13px 0 0;
+  background-color: ${({ bgColor }) => bgColor};
 `;
 
 export const Title = styled.h4`
-  margin: 15px;
+  margin: 0 15px;
   color: ${({ color }) => color};
 `;

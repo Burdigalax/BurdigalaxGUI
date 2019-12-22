@@ -10,13 +10,14 @@ import selectStyleFromConfig from "../../redux/reducers/config/selectors/select-
 const HeaderComponent = ({
   name,
   iconUrl = "",
-  color,
+  titleColor,
   iconColor,
+  bgColor,
   iconSize = 40
 }) => (
-  <Header>
+  <Header bgColor={bgColor}>
     <Icon url={iconUrl} color={iconColor} size={iconSize} />
-    <Title color={color}>{name}</Title>
+    <Title color={titleColor}>{name}</Title>
   </Header>
 );
 
@@ -26,9 +27,10 @@ const mapStateToProps = state => {
   return {
     name: shop.name,
     iconUrl: shop.iconUrl,
-    iconColor: shop.iconColor,
-    iconSize: shop.iconSize,
-    bgColor: style.headerBackgroundColor
+    iconColor: style.header.iconColor,
+    iconSize: style.header.iconSize,
+    bgColor: style.header.backgroundColor,
+    titleColor: style.header.titleColor
   };
 };
 

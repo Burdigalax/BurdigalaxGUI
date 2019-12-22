@@ -19,7 +19,8 @@ export const Wrapper = styled.div`
   background-color: ${({ bgColor }) => bgColor};
   color: ${({ color }) => color};
   align-self: stretch;
-  border-radius: 0px 10px 10px 0;
+  border-radius: ${({ hasBgHeader }) =>
+    hasBgHeader ? "0px 0px 10px 0px" : "0px 10px 10px 0"};
 `;
 
 export const Body = styled.div`

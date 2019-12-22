@@ -47,7 +47,8 @@ export const Separtor = styled.hr`
 
 export const StyledArticles = styled(Articles)`
   flex: 0.8;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: ${({ hasBgHeader }) =>
+    hasBgHeader ? "0 0 0 10px" : "10px 0px 0px 10px"};
   background-color: white;
   justify-content: center;
 `;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import Icon from "../../../../common/components/Icon";
 
 export const Wrapper = styled.div`
   padding: 10px;
-  background-color: #FAFAFA;
-  border-radius: 10px 0px 0px 10px
+  background-color: #fafafa;
+  border-radius: ${({ hasBgHeader }) =>
+    hasBgHeader ? "0 0 0 10px" : "10px 0px 0px 10px"};
   flex: 0.3;
   display: flex;
   flex-direction: column;
@@ -23,9 +25,12 @@ export const Description = styled.div`
   color: #808080;
 `;
 
-export const StyledIcon = styled.div`
+export const WrapperIcon = styled.div`
   text-align: center;
   margin-bottom: 5px;
+`;
+export const StyledIcon = styled(Icon)`
+  max-height: 50px;
 `;
 
 export const Title = styled.h5`

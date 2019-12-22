@@ -19,7 +19,8 @@ const mapStateToProps = state => {
     isEmpty: articlesIdsByCategory.length <= 0,
     hasTaxEnabled: config.hasTaxEnabled,
     wording,
-    titleColor: path(["style", "titleColor"], config)
+    titleColor: path(["style", "titleColor"], config),
+    hasBgHeader: path(["style", "header", "backgroundColor"], config)
   };
 };
 

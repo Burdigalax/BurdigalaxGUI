@@ -4,11 +4,11 @@ import { Interface, Row, StyledArticles, Wrapper } from "./styles";
 import Header from "./Header/";
 import Basket from "./Basket";
 
-export default ({ bgColor = "#2a6041" }) => (
+export default ({ bgColor = "#2a6041", hasBgHeader }) => (
   <Interface>
     <Header color={bgColor} />
     <Row bgColor={bgColor}>
-      <StyledArticles />
+      <StyledArticles hasBgHeader={hasBgHeader} />
       <Basket />
     </Row>
   </Interface>

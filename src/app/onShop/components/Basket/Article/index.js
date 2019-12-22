@@ -17,7 +17,7 @@ const mapStateToProps = (state, props) => {
   const wording = selectWordingFromConfig(state);
   if (!article) return { wording };
 
-  const { redColor } = selectStyleFromConfig(state);
+  const { redColor, basket } = selectStyleFromConfig(state);
   return {
     name:
       quantity > 1
@@ -26,6 +26,7 @@ const mapStateToProps = (state, props) => {
     quantity: quantity,
     total: parseFloat((article.price * quantity).toFixed(2)),
     removeIconUrl: iconsUrl.removeToCart,
+    textBasketColor: basket.textColor,
     wording,
     redColor
   };

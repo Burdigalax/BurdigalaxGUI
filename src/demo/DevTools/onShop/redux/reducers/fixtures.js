@@ -1,4 +1,4 @@
-export default {
+const fixtures = {
   config: {
     hasTaxEnabled: true,
     enabledStockLimitation: true,
@@ -12,10 +12,7 @@ export default {
   },
   shop: {
     hasPaymentTerminalBroken: true,
-    name: "",
-    iconColor: "",
-    iconSize: 160,
-    iconUrl: "http://bastienwilmotte.be/aieki/on7/on77shop-logo@2x.png",
+    name: "On7/7",
     articles: [
       {
         id: 1,
@@ -114,7 +111,8 @@ export default {
         categoryName: "Consommables",
         price: 0.5,
         quantity: 5,
-        description: "",
+        description:
+          "La pomme est un fruit comestible à pépins d'un goût sucré et acidulé et à la propriété plus ou moins astringente selon les variétés.",
         iconUrl: "https://image.flaticon.com/icons/svg/415/415682.svg",
         storageCost: 1,
         tax: -15,
@@ -171,3 +169,5 @@ export default {
     }
   }
 };
+
+export default fixtures;
