@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import { Wrapper } from "./styles";
 import Icon from "../../../../common/components/Icon";
-import selectIconsUrlFromConfig from "../../../redux/reducers/config/selectors/select-icons-from-config";
+import selectIconsUrlFromConfig from "../../../../redux/reducers/config/selectors/select-icons-from-config";
 
 const EmptyShop = ({ className, emptyBoxUrl }) => (
   <Wrapper className={className}>

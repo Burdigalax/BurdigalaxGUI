@@ -2,7 +2,7 @@ import { SET_CODE } from "../actions";
 import { mergeDeepRight } from "ramda";
 
 import fixtures from "./fixtures";
-import defaultFixtures from "../../../../../app/onShop/redux/reducers/config/fixturesShop";
+import defaultFixtures from "../../../../../app/onShop/redux/sagas/fixtures/shop";
 
 const INITIAL_STATE = {
   module: {

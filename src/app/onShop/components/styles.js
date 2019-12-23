@@ -39,9 +39,9 @@ export const BuyButtons = styled.div`
 export const Separtor = styled.hr`
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  width: 90%;
   border-color: ${({ color }) => color};
   border-style: dashed;
+  width: 100%;
   opacity: 0.3;
 `;
 

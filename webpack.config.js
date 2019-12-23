@@ -16,7 +16,7 @@ const getConfig = env => ({
     path: path.resolve(__dirname, "dist"),
     filename: "[name].burdigalax.js",
     publicPath: env.production
-      ? `http://asset/${serverPackageName}/client/gui/onShop/`
+      ? `http://asset/${serverPackageName}/client/gui/`
       : undefined
   },
   module: {

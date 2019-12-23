@@ -14,8 +14,8 @@ import getQuantityAvailableByArticleId from "../../../redux/reducers/entities/ar
 import selectArticleById from "../../../redux/reducers/entities/articles/selectors/select-article-by-id";
 import { addArticleRequest } from "../../../redux/actions/shopping-cart";
 import { selectArticle } from "../../../redux/actions/articles";
-import selectConfig from "../../../redux/reducers/config/selectors/select-config";
-import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
+import selectConfig from "../../../../redux/reducers/config/selectors/select-config";
+import selectWordingFromConfig from "../../../../redux/reducers/config/selectors/select-wording-from-config";
 
 const getArticle = (state, props) => selectArticleById(state, props.id);
 

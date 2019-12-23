@@ -4,7 +4,7 @@ import { compose, setDisplayName } from "recompose";
 
 import EffectComponent from "./component";
 import selectEffectById from "../../../../redux/reducers/entities/effects/selectors/select-effect-by-id";
-import selectStyleFromConfig from "../../../../redux/reducers/config/selectors/select-style-from-config";
+import selectStyleFromConfig from "../../../../../redux/reducers/config/selectors/select-style-from-config";
 
 const mapStateToProps = (state, { id, value }) => {
   const effect = selectEffectById(state, id);
