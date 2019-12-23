@@ -1,4 +1,4 @@
-# Burdigalax-project v3
+# Burdigalax-project v3.1.0
 
 Burdigalax project. 
 
@@ -407,6 +407,8 @@ BURDIGALAX_onShop.setPaymentSuccess(title, message, iconUrl);
 // exemple
 BURDIGALAX_onShop.setPaymentSuccess('Félicitation', "Paiement validé", "//Optional use for override config.");
 ```
+
+**Update 3.1.0** : After payment success, close button is displayed rather than the back button.
 
 #### reset
 

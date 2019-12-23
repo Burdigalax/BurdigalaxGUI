@@ -65,7 +65,8 @@ export default {
       total: "Total",
       moneySymbol: "$",
       basketArticle: "article",
-      backBasket: "Retour au panier"
+      backBasket: "Retour au panier",
+      exit: "Quitter"
     }
   },
   player: {},
