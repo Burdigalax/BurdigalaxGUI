@@ -12,7 +12,8 @@ const HeaderComponent = ({
   bgColor,
   iconSize = 40,
   onClose,
-  hasCloseButton = false
+  hasCloseButton = false,
+  closeButtonColor
 }) => (
   <Header bgColor={bgColor}>
     <FirstBloc>
@@ -23,7 +24,7 @@ const HeaderComponent = ({
       <CloseButton
         label="X"
         variant={BTN_VARIANT.secondary}
-        color={"#b52222"}
+        color={closeButtonColor}
         onClick={onClose}
       />
     )}

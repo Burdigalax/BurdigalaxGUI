@@ -1,4 +1,4 @@
-import { compose, mapProps, setDisplayName, withHandlers } from "recompose";
+import { compose, setDisplayName, withHandlers } from "recompose";
 import { connect } from "react-redux";
 import React from "react";
 import pluralize from "pluralize";

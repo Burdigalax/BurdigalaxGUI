@@ -14,7 +14,8 @@ const mapStateToProps = state => {
     iconColor: style.header.iconColor,
     iconSize: style.header.iconSize,
     bgColor: style.header.backgroundColor,
-    titleColor: style.header.titleColor
+    titleColor: style.header.titleColor,
+    closeButtonColor: style.header.closeButtonColor
   };
 };
 
