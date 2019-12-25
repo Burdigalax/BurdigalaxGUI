@@ -1,16 +1,26 @@
 import { GaugeEmpty, GaugeFull, StaticGaugeEmpty } from "./styles";
 import FuelIcon from "./Fuel";
+import ElectricIcon from "./Electric";
 import React, { Fragment } from "react";
 
-export default ({ value = 0, bgColor = "#656565" }) => (
+export default ({
+  value = 0,
+  bgColor = "#656565",
+  maxValue = 100,
+  type = "fuel"
+}) => (
   <Fragment>
     <StaticGaugeEmpty>
-      <GaugeEmpty value={value}>
-        <FuelIcon />
+      <GaugeEmpty value={value} maxValue={maxValue}>
+        {type === "electric" ? <ElectricIcon /> : <FuelIcon />}
       </GaugeEmpty>
     </StaticGaugeEmpty>
     <GaugeFull>
-      <FuelIcon bgColor={bgColor} />
+      {type === "electric" ? (
+        <ElectricIcon bgColor={bgColor} />
+      ) : (
+        <FuelIcon bgColor={bgColor} />
+      )}
     </GaugeFull>
   </Fragment>
 );

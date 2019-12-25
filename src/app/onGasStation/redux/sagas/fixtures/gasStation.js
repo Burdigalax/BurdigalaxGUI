@@ -15,7 +15,7 @@ export default {
   player: {
     money: 500,
     car: {
-      tank: 500,
+      tank: 250,
       type: "fuel",
       fuelValue: 10
     }
@@ -24,6 +24,7 @@ export default {
     {
       id: 1,
       name: "GASOIL",
+      type: "fuel",
       price: 0.89,
       tax: 75,
       color: "#eac718",
@@ -32,11 +33,13 @@ export default {
       iconUrl:
         "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTY2LjEyMSw0Mi42NTFjLTYuMDg1LTkuMTc2LTEyLjk3OS0xOS41NjgtMTUuMjE2LTM3LjIyQzQ4LjY2NiwyMy4wOCw0MS43NzIsMzMuNDc2LDM1LjY4OCw0Mi42NSAgYy01LjU3OSw4LjQxMS0xMC4zOTcsMTUuNjc2LTEwLjM5NywyNi42NTVjMCwxMy45MywxMS40OTEsMjUuMjYzLDI1LjYxNCwyNS4yNjNjMTQuMTIzLDAsMjUuNjEyLTExLjMzMywyNS42MTItMjUuMjYzICBDNzYuNTE4LDU4LjMyNyw3MS43LDUxLjA2Myw2Ni4xMjEsNDIuNjUxeiBNNTMuMTkyLDg3LjI0NGwtMC43NTItMS44NTRjNi43MzctMi43MywxMi4wMjUtOC4xNDgsMTQuNTA5LTE0Ljg2NGwxLjg3NSwwLjY5MyAgQzY2LjE0Nyw3OC40NjMsNjAuNDQ5LDg0LjMwMyw1My4xOTIsODcuMjQ0eiI+PC9wYXRoPjxwYXRoIGQ9Ik04Ny43LDMwLjgwNGMtMy45NDQtNS45NDgtOC4zODItMTIuNjM5LTEwLjE4My0yMy41NDhjLTEuNzk5LDEwLjkwNi02LjIzNiwxNy41OTgtMTAuMTgxLDIzLjU0NiAgYy0xLjE1NiwxLjc0My0yLjI0NywzLjM5OS0zLjIyNSw1LjA4YzEuMjI5LDEuOTY3LDIuNDY4LDMuODQzLDMuNjc2LDUuNjY0YzUuMTczLDcuOCw5LjY5OSwxNC42NTQsMTAuNTY3LDI0LjM2NCAgYzkuMTMxLTAuNDM1LDE2LjQyOS03Ljg3NCwxNi40MjktMTYuOTg0Qzk0Ljc4NCw0MS40ODQsOTEuNTAyLDM2LjUzNSw4Ny43LDMwLjgwNHoiPjwvcGF0aD48cGF0aCBkPSJNNS4yMTYsNjMuMjM3YzAsNy45MTcsNi41MzMsMTQuMzU3LDE0LjU2MywxNC4zNTdjMS41NzEsMCwzLjEwOC0wLjI2Nyw0LjU5LTAuNzY1Yy0wLjY5Ny0yLjM5Mi0xLjA3OC00LjkxNC0xLjA3OC03LjUyNCAgYzAtOC4xMTUsMi40NDUtMTQuMjI1LDUuODg3LTIwLjE0MmMtMC4yODEtMC40MjktMC41NjItMC44NTUtMC44NS0xLjI5MWMtMy4yNjYtNC45MjYtNi45MjctMTAuNDQ5LTguNTQ5LTE5LjI3OCAgYy0xLjYyMiw4LjgzMi01LjI4NSwxNC4zNTYtOC41NTIsMTkuMjgzQzguMDAxLDUyLjc0MSw1LjIxNiw1Ni45NDEsNS4yMTYsNjMuMjM3eiI+PC9wYXRoPjwvc3ZnPg==",
       unit: "L",
-      quantity: 50
+      quantity: 50,
+      speed: 1
     },
     {
       id: 2,
       name: "GASOIL+",
+      type: "fuel",
       price: 1.103,
       tax: 75,
       color: "#ffa603",
@@ -45,11 +48,13 @@ export default {
       iconUrl:
         "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTY2LjEyMSw0Mi42NTFjLTYuMDg1LTkuMTc2LTEyLjk3OS0xOS41NjgtMTUuMjE2LTM3LjIyQzQ4LjY2NiwyMy4wOCw0MS43NzIsMzMuNDc2LDM1LjY4OCw0Mi42NSAgYy01LjU3OSw4LjQxMS0xMC4zOTcsMTUuNjc2LTEwLjM5NywyNi42NTVjMCwxMy45MywxMS40OTEsMjUuMjYzLDI1LjYxNCwyNS4yNjNjMTQuMTIzLDAsMjUuNjEyLTExLjMzMywyNS42MTItMjUuMjYzICBDNzYuNTE4LDU4LjMyNyw3MS43LDUxLjA2Myw2Ni4xMjEsNDIuNjUxeiBNNTMuMTkyLDg3LjI0NGwtMC43NTItMS44NTRjNi43MzctMi43MywxMi4wMjUtOC4xNDgsMTQuNTA5LTE0Ljg2NGwxLjg3NSwwLjY5MyAgQzY2LjE0Nyw3OC40NjMsNjAuNDQ5LDg0LjMwMyw1My4xOTIsODcuMjQ0eiI+PC9wYXRoPjxwYXRoIGQ9Ik04Ny43LDMwLjgwNGMtMy45NDQtNS45NDgtOC4zODItMTIuNjM5LTEwLjE4My0yMy41NDhjLTEuNzk5LDEwLjkwNi02LjIzNiwxNy41OTgtMTAuMTgxLDIzLjU0NiAgYy0xLjE1NiwxLjc0My0yLjI0NywzLjM5OS0zLjIyNSw1LjA4YzEuMjI5LDEuOTY3LDIuNDY4LDMuODQzLDMuNjc2LDUuNjY0YzUuMTczLDcuOCw5LjY5OSwxNC42NTQsMTAuNTY3LDI0LjM2NCAgYzkuMTMxLTAuNDM1LDE2LjQyOS03Ljg3NCwxNi40MjktMTYuOTg0Qzk0Ljc4NCw0MS40ODQsOTEuNTAyLDM2LjUzNSw4Ny43LDMwLjgwNHoiPjwvcGF0aD48cGF0aCBkPSJNNS4yMTYsNjMuMjM3YzAsNy45MTcsNi41MzMsMTQuMzU3LDE0LjU2MywxNC4zNTdjMS41NzEsMCwzLjEwOC0wLjI2Nyw0LjU5LTAuNzY1Yy0wLjY5Ny0yLjM5Mi0xLjA3OC00LjkxNC0xLjA3OC03LjUyNCAgYzAtOC4xMTUsMi40NDUtMTQuMjI1LDUuODg3LTIwLjE0MmMtMC4yODEtMC40MjktMC41NjItMC44NTUtMC44NS0xLjI5MWMtMy4yNjYtNC45MjYtNi45MjctMTAuNDQ5LTguNTQ5LTE5LjI3OCAgYy0xLjYyMiw4LjgzMi01LjI4NSwxNC4zNTYtOC41NTIsMTkuMjgzQzguMDAxLDUyLjc0MSw1LjIxNiw1Ni45NDEsNS4yMTYsNjMuMjM3eiI+PC9wYXRoPjwvc3ZnPg==",
       unit: "L",
-      quantity: 500
+      quantity: 500,
+      speed: 2
     },
     {
       id: 3,
       name: "ESSENCE",
+      type: "fuel",
       price: 0.895,
       tax: 70,
       color: "#000000",
@@ -63,6 +68,7 @@ export default {
     {
       id: 4,
       name: "ESSENCE+",
+      type: "fuel",
       price: 1.182,
       tax: 75,
       color: "#4a0b4a",
@@ -76,6 +82,7 @@ export default {
     {
       id: 5,
       name: "ELECTRIQUE",
+      type: "electric",
       price: 0.25,
       tax: 0,
       color: "#449cf7",
@@ -89,6 +96,7 @@ export default {
     {
       id: 6,
       name: "BIO",
+      type: "fuel",
       price: 0.389,
       tax: 0,
       color: "#4fcc30",

@@ -24,7 +24,7 @@ const PaymentComponent = ({
   countBuy = 0,
   name = "",
   hasNoEnoughMoney = false,
-  typeBuy = "carburant"
+  unit = "L"
 }) => (
   <Fragment>
     <Resume>
@@ -36,7 +36,9 @@ const PaymentComponent = ({
       </Money>
       <SubLine>
         <span>{name}</span>
-        <span>{countBuy} L</span>
+        <span>
+          {countBuy} {unit}
+        </span>
       </SubLine>
       <Separtor color={"#000"} />
       {hasTaxEnabled && (
@@ -82,7 +84,8 @@ const mapStateToProps = state => {
     tax,
     countBuy,
     hasNoEnoughMoney,
-    name: currentGasSelected && currentGasSelected.name
+    name: currentGasSelected && currentGasSelected.name,
+    unit: currentGasSelected && currentGasSelected.unit
   };
 };
 

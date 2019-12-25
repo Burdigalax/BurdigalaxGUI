@@ -18,7 +18,6 @@ const Demo = () => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       />
-
       <h1>Burdigalax</h1>
       <div>
         <h2>
@@ -53,12 +52,11 @@ const Demo = () => {
           </div>
         </div>
       )}
-
       <BurdiButton
         label={hasShopOpen ? "Hide GasStation" : "Show GasStation"}
         onClick={toggleGasStation}
       />
-
+      /!\ WORK IN PROGRESS ! /!\
       {hasGasStationOpen && <GasStation />}
     </div>
   );

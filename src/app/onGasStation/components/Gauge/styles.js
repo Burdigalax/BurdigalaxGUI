@@ -8,7 +8,7 @@ x <= 50%
 export const GaugeEmpty = styled.div`
   overflow: hidden;
   transition: height 0.25s ease;
-  height: ${({ value }) => 131 - (value * 121) / 100}px;
+  height: ${({ value, maxValue }) => 131 - (value * 121) / maxValue}px;
 `;
 
 export const GaugeFull = styled.div`

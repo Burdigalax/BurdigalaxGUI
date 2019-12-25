@@ -10,12 +10,14 @@ import selectSceneState from "../redux/reducers/sceneState/selectors/select-scen
 import getCurrentGasSelected from "../redux/reducers/sceneState/getters/get-current-gas-selected";
 import selectFuelValueFromCar from "../redux/reducers/entities/player/selectors/select-fuel-value-from-car";
 import getHasBuyDisabled from "../redux/reducers/sceneState/getters/get-has-buy-disabled";
+import selectTankFromCar from "../redux/reducers/entities/player/selectors/select-tank-from-car";
 
 const mapStateToProps = state => {
   const gases = selectGases(state);
   const sceneState = selectSceneState(state);
   const gasSelected = getCurrentGasSelected(state);
   const initFuelValue = selectFuelValueFromCar(state);
+  const tankCapacity = selectTankFromCar(state);
 
   const hasBuyDisabled = getHasBuyDisabled(state);
 
@@ -26,7 +28,10 @@ const mapStateToProps = state => {
     isOnBuy: sceneState.isOnBuy,
     hasBuyDisabled,
     colorSelected: gasSelected ? gasSelected.fuelColor : "#777777",
-    hasGasSelected: !!gasSelected
+    hasGasSelected: !!gasSelected,
+    unit: gasSelected && gasSelected.unit,
+    type: gasSelected && gasSelected.type,
+    tankCapacity
   };
 };
 

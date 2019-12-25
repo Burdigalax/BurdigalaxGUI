@@ -10,6 +10,7 @@ const getConfig = env => ({
   entry: {
     vendors: ["babel-polyfill", "react-hot-loader/patch"],
     onShop: "./src/onShop.js",
+    gasStation: "./src/onGasStation.js",
     index: "./src/index.js"
   },
   output: {

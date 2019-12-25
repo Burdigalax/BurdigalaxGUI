@@ -36,17 +36,13 @@ export const getPayment = (countBuy, gasSelected) => {
 function buy(countBuy, gasSelected) {
   return eventChannel(emitter => {
     const interval = setInterval(() => {
-      countBuy += 1;
+      countBuy += gasSelected.speed || 1;
       const payment = getPayment(countBuy, gasSelected);
 
-      if (countBuy < 100) {
-        emitter({
-          countBuy,
-          ...payment
-        });
-      } else {
-        emitter(END);
-      }
+      emitter({
+        countBuy,
+        ...payment
+      });
     }, 100);
     return () => {
       clearInterval(interval);
@@ -77,6 +73,7 @@ function* onBuy() {
       const newHasMaximumQuantityReached = yield select(state =>
         getHasMaximumQuantityReachedByCountBuy(state, newShoppingCart.countBuy)
       );
+
       if (
         getHasBuyDisabledWithParams(
           newHasNoEnoughMoney,
