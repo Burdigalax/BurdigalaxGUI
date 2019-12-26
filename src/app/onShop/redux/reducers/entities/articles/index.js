@@ -35,8 +35,8 @@ export default (state = INITIAL_STATE, action) => {
       };
     case UPDATE_ARTICLES_SUCCESS:
       const articlesUpdated = action.articles;
-      const articlesUpdatedByids = { byId: getArticlesById(articlesUpdated) };
-      return mergeDeepWith((a, b) => b || a, state, articlesUpdatedByids);
+      const articlesUpdatedByIds = { byId: getArticlesById(articlesUpdated) };
+      return mergeDeepWith((a, b) => b || a, state, articlesUpdatedByIds);
     default:
       return state;
   }

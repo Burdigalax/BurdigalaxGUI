@@ -28,7 +28,8 @@ export const Money = styled.span`
   flex-direction: row;
   justify-content: space-between;
   font-weight: 500;
-  color: ${({ hasNoEnoughMoney }) => (hasNoEnoughMoney ? "red" : "#528c3f")};
+  color: ${({ hasNoEnoughMoney, redColor, greenColor }) =>
+    hasNoEnoughMoney ? redColor : greenColor};
   margin-bottom: 15px;
 `;
 

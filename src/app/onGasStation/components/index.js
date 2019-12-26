@@ -11,6 +11,8 @@ import getCurrentGasSelected from "../redux/reducers/sceneState/getters/get-curr
 import selectFuelValueFromCar from "../redux/reducers/entities/player/selectors/select-fuel-value-from-car";
 import getHasBuyDisabled from "../redux/reducers/sceneState/getters/get-has-buy-disabled";
 import selectTankFromCar from "../redux/reducers/entities/player/selectors/select-tank-from-car";
+import selectWordingFromConfig from "../../redux/reducers/config/selectors/select-wording-from-config";
+import { JS_FUNCTIONS } from "../events";
 
 const mapStateToProps = state => {
   const gases = selectGases(state);
@@ -18,6 +20,14 @@ const mapStateToProps = state => {
   const gasSelected = getCurrentGasSelected(state);
   const initFuelValue = selectFuelValueFromCar(state);
   const tankCapacity = selectTankFromCar(state);
+  const {
+    selectGas,
+    informations,
+    informationsList,
+    add,
+    plug,
+    unplug
+  } = selectWordingFromConfig(state);
 
   const hasBuyDisabled = getHasBuyDisabled(state);
 
@@ -31,7 +41,15 @@ const mapStateToProps = state => {
     hasGasSelected: !!gasSelected,
     unit: gasSelected && gasSelected.unit,
     type: gasSelected && gasSelected.type,
-    tankCapacity
+    tankCapacity,
+    wording: {
+      selectGas,
+      informations,
+      informationsList,
+      plug,
+      unplug,
+      add
+    }
   };
 };
 
@@ -48,13 +66,10 @@ export default compose(
       const { initModule } = this.props;
 
       initModule();
-      /*window[JS_FUNCTIONS.prefix] = {
-            ...window[JS_FUNCTIONS.prefix],
-            [JS_FUNCTIONS.setConfig]: initShop,
-            [JS_FUNCTIONS.reset]: resetRequest,
-            [JS_FUNCTIONS.updatePlayer]: updatePlayerSuccess,
-            [JS_FUNCTIONS.updateArticles]: updateArticlesSuccess
-        };*/
+      window[JS_FUNCTIONS.prefix] = {
+        ...window[JS_FUNCTIONS.prefix],
+        [JS_FUNCTIONS.setConfig]: initModule
+      };
     }
   })
 )(GasStation);

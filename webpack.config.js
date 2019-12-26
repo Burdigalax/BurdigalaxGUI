@@ -10,7 +10,7 @@ const getConfig = env => ({
   entry: {
     vendors: ["babel-polyfill", "react-hot-loader/patch"],
     onShop: "./src/onShop.js",
-    gasStation: "./src/onGasStation.js",
+    gasStation: "./src/gasStation.js",
     index: "./src/index.js"
   },
   output: {
@@ -53,6 +53,11 @@ const getConfig = env => ({
       filename: "onShop.html",
       template: "src/onShop.html",
       chunks: ["onShop", "vendors", "commons"]
+    }),
+    new HtmlWebpackPlugin({
+      filename: "gasStation.html",
+      template: "src/gasStation.html",
+      chunks: ["gasStation", "vendors", "commons"]
     })
   ],
   optimization: {

@@ -5,43 +5,50 @@ import {
   put,
   select,
   take,
-  takeEvery
+  takeEvery,
+  takeLatest
 } from "redux-saga/effects";
 
 import selectCountBuy from "../reducers/sceneState/selectors/select-count-buy";
 import { getHasNoEnoughMoneyByRemainingMoney } from "../reducers/entities/player/getters/get-has-no-enough-money";
-import { ON_BUY, STOP_BUY } from "../actions/gases";
+import { ON_BUY, STOP_BUY, stopBuy } from "../actions/gases";
 import { updateShoppingCart } from "../actions/shopping-cart";
 import getCurrentGasSelected from "../reducers/sceneState/getters/get-current-gas-selected";
 import { formatNumber } from "../helpers";
-import getRemainingMoneyFromPlayer from "../reducers/entities/player/getters/get-remaining-money-from-player";
 import { getGasIsInStockByQuantityBuy } from "../reducers/entities/gases/getters/get-gas-is-in-stock";
 import { getHasMaximumQuantityReachedByCountBuy } from "../reducers/sceneState/getters/get-has-maximum-quantity-reached";
 import getHasBuyDisabled, {
   getHasBuyDisabledWithParams
 } from "../reducers/sceneState/getters/get-has-buy-disabled";
+import { LUA_FUNCTIONS } from "../../events";
+import selectShoppingCart from "../reducers/sceneState/selectors/select-shopping-cart";
+import selectMoneyFromPlayer from "../reducers/entities/player/selectors/select-money-from-player";
 
-export const getPayment = (countBuy, gasSelected) => {
+export const getPayment = (countBuy, gasSelected, initialMoney) => {
   const total = formatNumber(countBuy * gasSelected.price);
   const tax = formatNumber((total * gasSelected.tax) / 100);
   const totalTTC = formatNumber(total + tax);
+  const remainingMoney = formatNumber(initialMoney - totalTTC);
 
   return {
     total,
     tax,
-    totalTTC
+    totalTTC,
+    remainingMoney
   };
 };
 
-function buy(countBuy, gasSelected) {
+function buy(countBuy, gasSelected, initialMoney) {
   return eventChannel(emitter => {
     const interval = setInterval(() => {
       countBuy += gasSelected.speed || 1;
-      const payment = getPayment(countBuy, gasSelected);
+      const payment = getPayment(countBuy, gasSelected, initialMoney);
 
       emitter({
         countBuy,
-        ...payment
+        ...payment,
+        gasId: gasSelected.id,
+        gasName: gasSelected.name
       });
     }, 100);
     return () => {
@@ -57,15 +64,17 @@ function* onBuy() {
 
   const countBuy = yield select(selectCountBuy);
   const currentGasSelected = yield select(getCurrentGasSelected);
-  const remainingMoney = yield select(getRemainingMoneyFromPlayer);
+  const initialMoney = yield select(selectMoneyFromPlayer);
 
-  chan = yield call(buy, countBuy, currentGasSelected);
+  chan = yield call(buy, countBuy, currentGasSelected, initialMoney);
   try {
     while (true) {
       let newShoppingCart = yield take(chan);
-      const newRemainingMoney = remainingMoney - newShoppingCart.totalTTC;
       const newHasNoEnoughMoney = yield select(state =>
-        getHasNoEnoughMoneyByRemainingMoney(state, newRemainingMoney)
+        getHasNoEnoughMoneyByRemainingMoney(
+          state,
+          newShoppingCart.remainingMoney
+        )
       );
       const newGasIsInStock = yield select(state =>
         getGasIsInStockByQuantityBuy(state, newShoppingCart.countBuy)
@@ -82,6 +91,7 @@ function* onBuy() {
         )
       ) {
         chan.close();
+        yield put(stopBuy());
       }
       yield put(updateShoppingCart(newShoppingCart));
     }
@@ -99,9 +109,12 @@ function* stopBuySaga() {
   if (chan) {
     chan.close();
   }
+
+  const shoppingCart = yield select(selectShoppingCart);
+  LUA_FUNCTIONS.onPayment(shoppingCart);
 }
 
 export default function* root() {
   yield takeEvery(ON_BUY, onBuy);
-  yield takeEvery(STOP_BUY, stopBuySaga);
+  yield takeLatest(STOP_BUY, stopBuySaga);
 }

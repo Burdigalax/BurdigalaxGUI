@@ -7,6 +7,9 @@ import GasComponent from "./component";
 import selectGasSelectedId from "../../redux/reducers/sceneState/selectors/select-gas-selected-id";
 import selectGasById from "../../redux/reducers/entities/gases/selectors/select-gas-by-id";
 import getGasIsInStockById from "../../redux/reducers/entities/gases/getters/get-gas-is-in-stock-by-id";
+import selectStyleFromConfig from "../../../redux/reducers/config/selectors/select-style-from-config";
+import selectConfig from "../../../redux/reducers/config/selectors/select-config";
+import selectIconsFromConfig from "../../../redux/reducers/config/selectors/select-icons-from-config";
 
 const mapStateToProps = (state, ownProps) => {
   const {
@@ -23,20 +26,24 @@ const mapStateToProps = (state, ownProps) => {
 
   const selectedGasId = selectGasSelectedId(state);
   const isInStock = getGasIsInStockById(state, ownProps.id);
+  const style = selectStyleFromConfig(state);
+  const { noFuel: noFuelIconUrl } = selectIconsFromConfig(state);
+  const { hasTaxEnabled } = selectConfig(state);
 
   return {
     bgColorSelected,
     color,
     name,
-    iconUrl: isInStock
-      ? iconUrl
-      : "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+NDM8L3RpdGxlPjxnIGRhdGEtbmFtZT0iR3JvdXAiPjxwYXRoIGRhdGEtbmFtZT0iQ29tcG91bmQgUGF0aCIgZD0iTTc0LjMsMjUuN2EzNC40LDM0LjQsMCwxLDAsMCw0OC42aDBBMzQuNCwzNC40LDAsMCwwLDc0LjMsMjUuN1pNMjkuOSwyOS45YTI4LjQsMjguNCwwLDAsMSwzNy45LTJMMjcuOSw2Ny44QTI4LjQsMjguNCwwLDAsMSwyOS45LDI5LjlaTTcwLjEsNzAuMWEyOC40LDI4LjQsMCwwLDEtMzcuOSwyTDcyLjEsMzIuMkEyOC40LDI4LjQsMCwwLDEsNzAuMSw3MC4xWiI+PC9wYXRoPjwvZz48L3N2Zz4=",
+    iconUrl: isInStock ? iconUrl : noFuelIconUrl,
     price,
     tax,
     isInStock,
     isSelected: selectedGasId === id,
     unit,
-    priceTTC
+    priceTTC,
+    redColor: style.redColor,
+    greenColor: style.greenColor,
+    hasTaxEnabled
   };
 };
 
@@ -47,7 +54,9 @@ const mapDispatchToProps = {
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   withHandlers({
-    onClick: ({ setGasSelectedId, isInStock, id }) => () =>
-      isInStock && setGasSelectedId(id)
+    onClick: ({ setGasSelectedId, isInStock, id, isSelected }) => () => {
+      if (isSelected) return setGasSelectedId();
+      if (isInStock) return setGasSelectedId(id);
+    }
   })
 )(GasComponent);

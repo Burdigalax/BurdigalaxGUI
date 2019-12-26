@@ -1,3 +1,4 @@
 import { pathOr } from "ramda";
 
-export default pathOr({}, ["config", "style"]);
+const emptyObject = {};
+export default pathOr(emptyObject, ["config", "style"]);

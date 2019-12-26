@@ -17,7 +17,8 @@ const store = createStore(
   devReducer,
   composeEnhancers(applyMiddleware(sagaMiddleware))
 );
-// sagaMiddleware.run(devToolSaga);
+
+//sagaMiddleware.run();
 
 const DevToolProvider = ({}) => (
   <Provider store={store}>

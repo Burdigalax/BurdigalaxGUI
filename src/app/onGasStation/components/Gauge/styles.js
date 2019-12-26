@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-/*
-128 => 0%
-x <= 50%
- */
-
-export const GaugeEmpty = styled.div`
+export const GaugeEmpty = styled.div.attrs(({ value, maxValue }) => ({
+  style: {
+    height: `${131 - (value * 121) / maxValue}px`
+  }
+}))`
   overflow: hidden;
   transition: height 0.25s ease;
-  height: ${({ value, maxValue }) => 131 - (value * 121) / maxValue}px;
 `;
 
 export const GaugeFull = styled.div`

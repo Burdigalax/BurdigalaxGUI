@@ -96,7 +96,6 @@ function* checkUpdateShoppingCart({ articles: updatedArticles }) {
       updatedArticles
     );
 
-    console.log("updatedArticle", updatedArticle);
     if (!updatedArticle) return shoppingCartArticle;
 
     const article = articles[shoppingCartArticle.id];

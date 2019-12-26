@@ -23,10 +23,10 @@ const StyledInputBase = withStyles({
   }
 })(InputBase);
 
-const renderOptions = quantitiesAvailables =>
+const renderOptions = (quantitiesAvailables, id) =>
   map(
     val => (
-      <MenuItem key={`quantity-${val}`} value={val}>
+      <MenuItem key={`quantity-${val}-${id}`} value={val}>
         {val}
       </MenuItem>
     ),
@@ -50,7 +50,8 @@ export default ({
   onChange,
   wording,
   greenColor = green,
-  redColor = red
+  redColor = red,
+  id
 }) => {
   return (
     <tr>
@@ -78,7 +79,7 @@ export default ({
           <Icon url={emptyBoxUrl} size={25} color={redColor} />
         ) : (
           <Select value={count} onChange={onChange} input={<StyledInputBase />}>
-            {renderOptions(quantitiesAvailables)}
+            {renderOptions(quantitiesAvailables, id)}
           </Select>
         )}
       </QuantityCol>

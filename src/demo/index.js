@@ -4,6 +4,7 @@ import OnShop from "../app/onShop";
 import GasStation from "../app/onGasStation";
 import DevToolShop from "./DevTools/onShop";
 import BurdiButton from "../app/common/components/BurdiButton";
+import DevToolGasStation from "./DevTools/gasStation";
 
 const Demo = () => {
   const [hasShopOpen, setShop] = useState(false);
@@ -57,7 +58,12 @@ const Demo = () => {
         onClick={toggleGasStation}
       />
       /!\ WORK IN PROGRESS ! /!\
-      {hasGasStationOpen && <GasStation />}
+      {hasGasStationOpen && (
+        <div>
+          <DevToolGasStation />
+          <GasStation />
+        </div>
+      )}
     </div>
   );
 };

@@ -11,7 +11,10 @@ export default (state = INITIAL_STATE, action) => {
       return map(
         gas => ({
           ...gas,
-          priceTTC: formatNumber(gas.price + (gas.price * gas.tax) / 100, 2)
+          tax: gas.tax || 0,
+          priceTTC: gas.tax
+            ? formatNumber(gas.price + (gas.price * gas.tax) / 100, 2)
+            : gas.price
         }),
         action.gases
       );

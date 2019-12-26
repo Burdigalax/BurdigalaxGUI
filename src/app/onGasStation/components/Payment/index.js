@@ -7,6 +7,9 @@ import selectShoppingCart from "../../redux/reducers/sceneState/selectors/select
 import getHasNoEnoughMoney from "../../redux/reducers/entities/player/getters/get-has-no-enough-money";
 import getRemainingMoney from "../../redux/reducers/entities/player/getters/get-remaining-money-from-player";
 import getCurrentGasSelected from "../../redux/reducers/sceneState/getters/get-current-gas-selected";
+import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
+import selectConfig from "../../../redux/reducers/config/selectors/select-config";
+import selectStyleFromConfig from "../../../redux/reducers/config/selectors/select-style-from-config";
 
 const PaymentComponent = ({
   hasTaxEnabled = true,
@@ -15,7 +18,8 @@ const PaymentComponent = ({
     moneySymbol: "$",
     taxName: "Taxe",
     totalAll: "Total",
-    total: "Total"
+    total: "Total",
+    moneyAvailable: "Argent disponible"
   },
   total = 0,
   tax = 0,
@@ -24,12 +28,18 @@ const PaymentComponent = ({
   countBuy = 0,
   name = "",
   hasNoEnoughMoney = false,
-  unit = "L"
+  unit = "L",
+  redColor,
+  greenColor
 }) => (
   <Fragment>
     <Resume>
-      <Money hasNoEnoughMoney={hasNoEnoughMoney}>
-        <span>Argent disponible</span>
+      <Money
+        hasNoEnoughMoney={hasNoEnoughMoney}
+        redColor={redColor}
+        greenColor={greenColor}
+      >
+        <span>{wording.moneyAvailable}</span>
         <span>
           {remainingMoney} {wording.moneySymbol}
         </span>
@@ -76,16 +86,23 @@ const mapStateToProps = state => {
   const hasNoEnoughMoney = getHasNoEnoughMoney(state);
   const remainingMoney = getRemainingMoney(state);
   const currentGasSelected = getCurrentGasSelected(state);
+  const wording = selectWordingFromConfig(state);
+  const { redColor, greenColor } = selectStyleFromConfig(state);
+  const { hasTaxEnabled } = selectConfig(state);
 
   return {
     remainingMoney: numberWithSpace(remainingMoney),
+    wording,
     total,
     totalTTC,
     tax,
     countBuy,
     hasNoEnoughMoney,
     name: currentGasSelected && currentGasSelected.name,
-    unit: currentGasSelected && currentGasSelected.unit
+    unit: currentGasSelected && currentGasSelected.unit,
+    hasTaxEnabled,
+    redColor,
+    greenColor
   };
 };
 

@@ -8,10 +8,10 @@ const DevToolComponent = ({}) => {
     <Wrapper>
       <strong>Readme:</strong> Check github project :{" "}
       <a
-        href="https://github.com/Burdigalax/BurdigalaxGUI/src/app/onShop"
+        href="https://github.com/Burdigalax/BurdigalaxGUI/src/app/gasStation"
         target="_blank"
       >
-        https://github.com/Burdigalax/BurdigalaxGUI/src/app/onShop
+        https://github.com/Burdigalax/BurdigalaxGUI/src/app/gasStation
       </a>
       <br />
       <LiveDemo />

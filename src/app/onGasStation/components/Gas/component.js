@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import { Gas, GasTitle, Tax, Total, TotalTTC } from "./styles";
 import Icon from "../../../common/components/Icon";
@@ -14,7 +14,10 @@ const GasComponent = ({
   onClick,
   isInStock,
   isSelected,
-  unit
+  unit,
+  redColor,
+  greenColor,
+  hasTaxEnabled
 }) => (
   <Gas
     bgColorSelected={bgColorSelected}
@@ -26,10 +29,16 @@ const GasComponent = ({
     <GasTitle isInStock={isInStock} color={color}>
       {name}
     </GasTitle>
-    <Total>
-      {price} $/{unit}
-    </Total>
-    <Tax value={tax}>+{tax}%</Tax>
+    {hasTaxEnabled && (
+      <Fragment>
+        <Total>
+          {price} $/{unit}
+        </Total>
+        <Tax value={tax} redColor={redColor} greenColor={greenColor}>
+          +{tax}%
+        </Tax>
+      </Fragment>
+    )}
     <TotalTTC>
       {priceTTC} $/{unit}
     </TotalTTC>

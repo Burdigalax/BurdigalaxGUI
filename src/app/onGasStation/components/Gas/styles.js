@@ -22,7 +22,8 @@ export const Tax = styled.span`
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  color: ${({ value }) => (value > 0 ? "#e05d5d" : "green")};
+  color: ${({ value, redColor, greenColor }) =>
+    value > 0 ? redColor : greenColor};
 `;
 
 export const Gas = styled.div`

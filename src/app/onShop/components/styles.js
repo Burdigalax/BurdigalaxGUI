@@ -20,6 +20,19 @@ export const Interface = styled.div`
   max-height: 1500px;
   margin: auto;
   font-family: Montserrat, sans-serif;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
 `;
 
 export const Row = styled.div`
