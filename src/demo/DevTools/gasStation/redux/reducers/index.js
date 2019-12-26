@@ -1,7 +1,7 @@
 import { mergeDeepRight } from "ramda";
 
 import fixtures from "./fixtures";
-import defaultFixtures from "../../../../../app/onGasStation/redux/sagas/fixtures/gasStation";
+import defaultFixtures from "../../../../../app/gasStation/redux/sagas/fixtures/gasStation";
 
 const INITIAL_STATE = {
   defaultCode: {

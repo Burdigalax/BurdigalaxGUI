@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import OnGasStation from "./app/onGasStation";
+import gasStation from "./app/gasStation";
 import "./Montserrat.css";
 
-var mountNode = document.getElementById("onGasStation");
+var mountNode = document.getElementById("BURDGIALAX_GasStation");
 
-ReactDOM.render(<OnGasStation />, mountNode);
+ReactDOM.render(<gasStation />, mountNode);

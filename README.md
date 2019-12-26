@@ -55,7 +55,7 @@ yarn build
 
 Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/onShop/README.md
 
-## onGasStation
+## gasStation
 
 Readme : // WORK IN PROGRESS. :construction:
 

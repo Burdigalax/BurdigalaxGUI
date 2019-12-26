@@ -17,10 +17,10 @@ const store = createStore(
 );
 sagaMiddleware.run(gasStationSaga);
 
-const OnGasStation = () => (
+const GasStationContainer = () => (
   <Provider store={store}>
     <GasStation />
   </Provider>
 );
 
-export default OnGasStation;
+export default GasStationContainer;

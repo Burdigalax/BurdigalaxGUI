@@ -3,7 +3,7 @@ import AceEditor from "react-ace";
 import Button from "@material-ui/core/Button";
 
 import BurdiButton from "../../../../../../app/common/components/BurdiButton";
-import { JS_FUNCTIONS } from "../../../../../../app/onGasStation/events";
+import { JS_FUNCTIONS } from "../../../../../../app/gasStation/events";
 import { BTN_COLOR } from "../../../../../../app/common/components/BurdiButton/constants";
 
 const callEvent = code => {

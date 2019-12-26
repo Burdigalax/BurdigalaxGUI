@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import OnShop from "../app/onShop";
-import GasStation from "../app/onGasStation";
+import GasStation from "../app/gasStation";
 import DevToolShop from "./DevTools/onShop";
 import BurdiButton from "../app/common/components/BurdiButton";
 import DevToolGasStation from "./DevTools/gasStation";
