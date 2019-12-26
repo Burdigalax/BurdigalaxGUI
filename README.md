@@ -1,4 +1,4 @@
-# Burdigalax-project v3.1.0
+# Burdigalax-project v4.0.0
 
 Burdigalax project. 
 
@@ -34,6 +34,8 @@ module.exports = {
 yarn build
 ```
 
+## Installation on you server
+
 - Copy generate files on folder `dist/` to your server to `{serverPackageName}/client/gui/`  
 /!\ List of generated files to copy _(Exemple with onShop)_ : 
     - onShop.html
@@ -50,6 +52,7 @@ yarn build
     "client/gui/commons.burdigalax.js",
   ]
 ```
+The commons and vendors files are the same and mandatory for all BurdigalaxRP modules.
 
 ## onShop 
 
@@ -57,7 +60,7 @@ Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/onShop/
 
 ## gasStation
 
-Readme : // WORK IN PROGRESS. :construction:
+Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/gasStation/README.md
 
 ### Contact
 > Discord: RomBurdi#9770

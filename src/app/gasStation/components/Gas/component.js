@@ -5,6 +5,8 @@ import Icon from "../../../common/components/Icon";
 
 const GasComponent = ({
   bgColorSelected,
+  bgColor,
+  priceColor,
   color,
   name,
   iconUrl,
@@ -21,9 +23,11 @@ const GasComponent = ({
 }) => (
   <Gas
     bgColorSelected={bgColorSelected}
+    bgColor={bgColor}
     onClick={onClick}
     isSelected={isSelected}
     isInStock={isInStock}
+    color={priceColor}
   >
     <Icon color={color} url={iconUrl} size={40} />
     <GasTitle isInStock={isInStock} color={color}>

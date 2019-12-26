@@ -26,7 +26,7 @@ const mapStateToProps = (state, ownProps) => {
 
   const selectedGasId = selectGasSelectedId(state);
   const isInStock = getGasIsInStockById(state, ownProps.id);
-  const style = selectStyleFromConfig(state);
+  const { redColor, greenColor, selectGas } = selectStyleFromConfig(state);
   const { noFuel: noFuelIconUrl } = selectIconsFromConfig(state);
   const { hasTaxEnabled } = selectConfig(state);
 
@@ -41,8 +41,10 @@ const mapStateToProps = (state, ownProps) => {
     isSelected: selectedGasId === id,
     unit,
     priceTTC,
-    redColor: style.redColor,
-    greenColor: style.greenColor,
+    redColor: redColor,
+    greenColor: greenColor,
+    bgColor: selectGas.backgroundColor,
+    priceColor: selectGas.color,
     hasTaxEnabled
   };
 };

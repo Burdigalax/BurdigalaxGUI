@@ -1,3 +1,4 @@
 import { pathOr } from "ramda";
 
-export default pathOr({}, ["sceneState", "shoppingCart"]);
+const emptyObject = {};
+export default pathOr(emptyObject, ["sceneState", "shoppingCart"]);

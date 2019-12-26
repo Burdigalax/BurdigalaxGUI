@@ -6,9 +6,8 @@ import { setPlayer } from "../actions/player";
 import selectPlayer from "../reducers/entities/selectors/select-player";
 import getRemainingMoney from "../reducers/entities/player/getters/get-remaining-money-from-player";
 import selectCountBuy from "../reducers/sceneState/selectors/select-count-buy";
-import { resetShoppingCart } from "../actions/shopping-cart";
 
-function* updatePlayer() {
+function* changeGasSelected() {
   const player = yield select(selectPlayer);
   const remainingMoney = yield select(getRemainingMoney);
   const countBuy = yield select(selectCountBuy);
@@ -24,10 +23,8 @@ function* updatePlayer() {
       }
     })
   );
-
-  yield put(resetShoppingCart());
 }
 
 export default function* root() {
-  yield takeEvery(SET_GAS_SELECTED_ID, updatePlayer);
+  yield takeEvery(SET_GAS_SELECTED_ID, changeGasSelected);
 }

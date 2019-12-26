@@ -13,6 +13,13 @@ import getHasBuyDisabled from "../redux/reducers/sceneState/getters/get-has-buy-
 import selectTankFromCar from "../redux/reducers/entities/player/selectors/select-tank-from-car";
 import selectWordingFromConfig from "../../redux/reducers/config/selectors/select-wording-from-config";
 import { JS_FUNCTIONS } from "../events";
+import selectError from "../redux/reducers/sceneState/selectors/select-error";
+import selectStyleFromConfig from "../../redux/reducers/config/selectors/select-style-from-config";
+import { setPaymentError as setPaymentErrorAction } from "../redux/actions/payment";
+import { updatePlayer as updatePlayerAction } from "../redux/actions/player";
+import { updateStation as updateStationAction } from "../redux/actions/station";
+import { updateGases as updateGasesAction } from "../redux/actions/gases";
+import selectStation from "../redux/reducers/entities/selectors/select-station";
 
 const mapStateToProps = state => {
   const gases = selectGases(state);
@@ -20,6 +27,9 @@ const mapStateToProps = state => {
   const gasSelected = getCurrentGasSelected(state);
   const initFuelValue = selectFuelValueFromCar(state);
   const tankCapacity = selectTankFromCar(state);
+  const error = selectError(state);
+  const { redColor, body, header } = selectStyleFromConfig(state);
+  const { isOpen: isStationOpen } = selectStation(state);
   const {
     selectGas,
     informations,
@@ -41,7 +51,14 @@ const mapStateToProps = state => {
     hasGasSelected: !!gasSelected,
     unit: gasSelected && gasSelected.unit,
     type: gasSelected && gasSelected.type,
+    errorTitle: error.title,
+    errorMessage: error.message,
     tankCapacity,
+    redColor: redColor,
+    bgColor: body.backgroundColor,
+    color: body.color,
+    backgroundHeaderColor: header.backgroundColor,
+    isStationOpen,
     wording: {
       selectGas,
       informations,
@@ -56,19 +73,33 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
   initModule: initModuleAction,
   onBuy,
-  stopBuy
+  stopBuy,
+  setPaymentError: setPaymentErrorAction,
+  updatePlayer: updatePlayerAction,
+  updateStation: updateStationAction,
+  updateGases: updateGasesAction
 };
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   lifecycle({
     componentDidMount() {
-      const { initModule } = this.props;
+      const {
+        initModule,
+        setPaymentError,
+        updatePlayer,
+        updateGases,
+        updateStation
+      } = this.props;
 
       initModule();
       window[JS_FUNCTIONS.prefix] = {
         ...window[JS_FUNCTIONS.prefix],
-        [JS_FUNCTIONS.setConfig]: initModule
+        [JS_FUNCTIONS.setConfig]: initModule,
+        [JS_FUNCTIONS.setPaymentError]: setPaymentError,
+        [JS_FUNCTIONS.updatePlayer]: updatePlayer,
+        [JS_FUNCTIONS.updateStation]: updateStation,
+        [JS_FUNCTIONS.updateGases]: updateGases
       };
     }
   })

@@ -28,15 +28,15 @@ export const Tax = styled.span`
 
 export const Gas = styled.div`
   display: flex;
+  color: ${({ color }) => color};
   flex-direction: column;
   cursor: ${({ isInStock }) => (isInStock ? "pointer" : "no-drop")};
-  background-color: #f7f7f7;
   flex: 1;
   align-items: center;
   opacity: ${({ isInStock }) => (!isInStock ? 0.4 : 1)};
   padding: 10px 0;
-  background-color: ${({ bgColorSelected, isSelected }) =>
-    isSelected ? bgColorSelected : ""};
+  background-color: ${({ bgColorSelected, bgColor, isSelected }) =>
+    isSelected ? bgColorSelected : bgColor};
   :hover {
     background-color: ${({ bgColorSelected, isInStock }) =>
       isInStock && bgColorSelected};

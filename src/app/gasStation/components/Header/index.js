@@ -4,7 +4,7 @@ import { compose } from "recompose";
 
 import HeaderComponent from "../../../common/components/Header";
 import selectStyleFromConfig from "../../../redux/reducers/config/selectors/select-style-from-config";
-import selectStation from "../../redux/reducers/entities/station/selectors/select-station";
+import selectStation from "../../redux/reducers/entities/selectors/select-station";
 import { LUA_FUNCTIONS } from "../../events";
 
 const mapStateToProps = state => {

@@ -27,6 +27,14 @@ export const SelectGas = styled.div`
   flex: 1;
   flex-direction: row;
   justify-content: space-around;
+  > div:first-child {
+    border-radius: ${({ hasBorderRadius }) =>
+      hasBorderRadius ? "13px 0 0" : "none"};
+  }
+  > div:last-child {
+    border-radius: ${({ hasBorderRadius }) =>
+      hasBorderRadius ? "0 13px 0 0" : "none"};
+  }
 `;
 
 export const Total = styled.span`
@@ -41,8 +49,8 @@ export const Action = styled.div`
   align-items: center;
   justify-content: center;
   padding: 15px 30px;
-  background-color: #ececdd;
-  color: #808080;
+  background-color: ${({ bgColor }) => bgColor};
+  color: ${({ color }) => color};
   border-radius: 0 0 15px 15px;
 `;
 
@@ -117,4 +125,22 @@ export const BuyButton = styled(BurdiButton)`
   > div > img {
     height: 60px;
   }
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 0.4;
+  align-items: center;
+  justify-items: center;
+`;
+
+export const Error = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-items: center;
+  color: ${({ redColor }) => redColor};
 `;

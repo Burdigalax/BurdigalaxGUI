@@ -1,5 +1,9 @@
 
-# Burdigalax RP - Shop Exemple 
+# Burdigalax RP - Shop 
+
+### Integration - Exemple for Onset : 
+
+https://github.com/Burdigalax/BurdigalaxRP-Onset
 
 **Warning :** This repo is exemple of usage IHM. This code missing server implementation with database.
 
@@ -9,7 +13,7 @@
 
 ### Live Demo
 
-Full readme and live demo of exemple usage shop module on : http://rom444.free.fr/onShop/ 
+Full readme and live demo of exemple usage shop module on : http://rom444.free.fr/BurdigalaxRP/ 
 
 ### API
 
@@ -339,21 +343,19 @@ The configuration you send will be merged with the default configuration :
 #### setPaymentError
 
 ```js
-BURDIGALAX_onShop.setPaymentError(title, message, iconUrl);
+BURDIGALAX_onShop.setPaymentError({title, message, iconUrl});
 // exemple
-BURDIGALAX_onShop.setPaymentError('Erreur', "Vous n'avez pas assez d'argent", "//Optional use for override config.");
+BURDIGALAX_onShop.setPaymentError({title:"Erreur", message:"Vous n'avez pas assez d'argent", iconUrl: "//Optional use for override config.");
 ```
 
 :information_source: If the error is triggered due to data desync between the interface and the server. Use the functions: `BURDIGALAX_onShop.updatePlayer()` or/and `BURDIGALAX_onShop.updateArticles()` to resynchronize the GUI. : 
 
-#### paymentSuccess
-
-:warning: **RECOMMENDATION** : Combine this function with the functions `BURDIGALAX_onShop.updatePlayer()` and `BURDIGALAX_onShop.updateArticles()` for update data after success payment.
+#### setPaymentSuccess
 
 ```js 
-BURDIGALAX_onShop.setPaymentSuccess(title, message, iconUrl);
+BURDIGALAX_onShop.setPaymentSuccess({title, message, iconUrl});
 // exemple
-BURDIGALAX_onShop.setPaymentSuccess('Félicitation', "Paiement validé", "//Optional use for override config.");
+BURDIGALAX_onShop.setPaymentSuccess({title:'Félicitation', message:"Paiement validé", iconUrl: "//Optional use for override config.");
 ```
 
 **Update 3.1.0** : After payment success, close button is displayed rather than the back button.
@@ -369,6 +371,8 @@ BURDIGALAX_onShop.reset();
 
 #### updatePlayer
 
+:information_source: It's not necessary to send all DATA for update. You can send only the field to update.
+
 ```js 
 BURDIGALAX_onShop.updatePlayer({
     "money": {
@@ -381,6 +385,7 @@ BURDIGALAX_onShop.updatePlayer({
 #### updateArticles 
 
 :warning: `id` of the article is mandatory for its update.
+:information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
 ```js 
 BURDIGALAX_onShop.updateArticles(
