@@ -66,6 +66,7 @@ Send config for show IHM :
 - For `iconUrl` use the DataURI format to limit the import of files on your `package.json` server.
 - Types of gas availables : `['fuel', 'electric']` default is `fuel`;
 - Types of car : // identical to gas. default  is `fuel`;
+- Field `speed` of gas is quantity added every 100ms. 
 
 The configuration you send will be merged with the default configuration :
 - Default config :
@@ -284,7 +285,10 @@ BURDIGALAX_gasStation.updateGases(
 ```js
 BURDIGALAX_gasStation.updateStation(
     {
-        "isOpen": false,
+       "name": "7 GAS",
+       "isOpen": false,
+       "closeTitle": "La station est fermée !",
+       "closeMessage": "En panne - En attente d'un réparateur. \n Merci de votre compréhension"
     },
 );
 ```

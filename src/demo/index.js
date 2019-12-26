@@ -8,7 +8,7 @@ import DevToolGasStation from "./DevTools/gasStation";
 
 const Demo = () => {
   const [hasShopOpen, setShop] = useState(false);
-  const [hasGasStationOpen, setGasStation] = useState(true);
+  const [hasGasStationOpen, setGasStation] = useState(false);
 
   const toggleGasStation = () => setGasStation(!hasGasStationOpen);
   const toggleShop = () => setShop(!hasShopOpen);
@@ -57,9 +57,9 @@ const Demo = () => {
         label={hasShopOpen ? "Hide GasStation" : "Show GasStation"}
         onClick={toggleGasStation}
       />
-      /!\ WORK IN PROGRESS ! /!\
       {hasGasStationOpen && (
         <div>
+          <h1>Gas Station :</h1>
           <DevToolGasStation />
           <GasStation />
         </div>

@@ -7,7 +7,10 @@ const INITIAL_STATE = {
   defaultCode: {
     setConfig: mergeDeepRight(defaultFixtures, fixtures),
     updatePlayer: { money: 500, car: { fuelValue: 15 } },
-    updateStation: fixtures.station,
+    updateStation: {
+      ...fixtures.station,
+      isOpen: false
+    },
     updateGases: [{ id: 1, quantity: 100, price: 2, tax: 20 }],
     setPaymentError: {
       title: "Une erreur est survenue",
