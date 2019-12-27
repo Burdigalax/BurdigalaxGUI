@@ -2,16 +2,20 @@ import React, { useState } from "react";
 
 import OnShop from "../app/onShop";
 import GasStation from "../app/gasStation";
+import Inventory from "../app/inventory";
 import DevToolShop from "./DevTools/onShop";
 import BurdiButton from "../app/common/components/BurdiButton";
 import DevToolGasStation from "./DevTools/gasStation";
+import DevToolInventory from "./DevTools/inventory";
 
 const Demo = () => {
   const [hasShopOpen, setShop] = useState(false);
   const [hasGasStationOpen, setGasStation] = useState(false);
+  const [hasInventoryOpen, setInventory] = useState(true);
 
-  const toggleGasStation = () => setGasStation(!hasGasStationOpen);
   const toggleShop = () => setShop(!hasShopOpen);
+  const toggleGasStation = () => setGasStation(!hasGasStationOpen);
+  const toggleInventory = () => setInventory(!hasInventoryOpen);
 
   return (
     <div style={{ margin: "15px" }}>
@@ -54,7 +58,7 @@ const Demo = () => {
         </div>
       )}
       <BurdiButton
-        label={hasShopOpen ? "Hide GasStation" : "Show GasStation"}
+        label={hasGasStationOpen ? "Hide GasStation" : "Show GasStation"}
         onClick={toggleGasStation}
       />
       {hasGasStationOpen && (
@@ -62,6 +66,17 @@ const Demo = () => {
           <h1>Gas Station :</h1>
           <DevToolGasStation />
           <GasStation />
+        </div>
+      )}
+      <BurdiButton
+        label={hasInventoryOpen ? "Hide Inventory" : "Show Inventory"}
+        onClick={toggleInventory}
+      />
+      {hasInventoryOpen && (
+        <div>
+          <h1>Inventory :</h1>
+          <DevToolInventory />
+          <Inventory />
         </div>
       )}
     </div>
