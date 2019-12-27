@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Interface, Row, StyledArticles, Wrapper } from "./styles";
+import { Interface, Row, StyledArticles } from "./styles";
 import Header from "./Header/";
 import Basket from "./Basket";
 

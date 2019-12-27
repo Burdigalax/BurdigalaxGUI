@@ -6,8 +6,8 @@ import { path } from "ramda";
 import ArticlesComponent from "./component";
 import selectArticlesIdsByCategoryFromShop from "../../redux/reducers/entities/shop/selectors/select-articles-Ids-by-category-from-shop";
 import EmptyShop from "./EmptyShop";
-import selectConfig from "../../redux/reducers/config/selectors/select-config";
-import selectWordingFromConfig from "../../redux/reducers/config/selectors/select-wording-from-config";
+import selectConfig from "../../../redux/reducers/config/selectors/select-config";
+import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
 
 const mapStateToProps = state => {
   const articlesIdsByCategory = selectArticlesIdsByCategoryFromShop(state);

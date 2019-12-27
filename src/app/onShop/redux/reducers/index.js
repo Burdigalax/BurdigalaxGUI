@@ -7,7 +7,7 @@ import articles from "./entities/articles";
 import shoppingCart from "./navigation/shopping-cart";
 import articleNavigation from "./navigation/articles";
 import payment from "./navigation/payment";
-import config from "./config";
+import config from "../../../redux/reducers/config";
 
 const entitiesReducer = combineReducers({
   shop,

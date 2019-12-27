@@ -4,10 +4,10 @@ import { compose, branch, renderNothing } from "recompose";
 
 import { LUA_FUNCTIONS } from "../../../events";
 import ResultPayment from "../ResultPayment";
-import selectIconsUrlFromConfig from "../../../redux/reducers/config/selectors/select-icons-from-config";
+import selectIconsUrlFromConfig from "../../../../redux/reducers/config/selectors/select-icons-from-config";
 import selectSuccessFromPayment from "../../../redux/reducers/navigation/payment/selectors/select-success-from-payment";
-import selectStyleFromConfig from "../../../redux/reducers/config/selectors/select-style-from-config";
-import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
+import selectStyleFromConfig from "../../../../redux/reducers/config/selectors/select-style-from-config";
+import selectWordingFromConfig from "../../../../redux/reducers/config/selectors/select-wording-from-config";
 
 const mapStateToProps = state => {
   const {

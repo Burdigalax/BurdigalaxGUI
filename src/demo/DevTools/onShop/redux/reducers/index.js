@@ -1,8 +1,7 @@
-import { SET_CODE } from "../actions";
 import { mergeDeepRight } from "ramda";
 
 import fixtures from "./fixtures";
-import defaultFixtures from "../../../../../app/onShop/redux/reducers/config/fixturesShop";
+import defaultFixtures from "../../../../../app/onShop/redux/sagas/fixtures/shop";
 
 const INITIAL_STATE = {
   module: {
@@ -29,11 +28,6 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case SET_CODE:
-      return {
-        ...state,
-        module: mergeDeepRight(state.module, action.newCode)
-      };
     default:
       return state;
   }

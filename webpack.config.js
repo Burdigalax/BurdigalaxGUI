@@ -10,13 +10,14 @@ const getConfig = env => ({
   entry: {
     vendors: ["babel-polyfill", "react-hot-loader/patch"],
     onShop: "./src/onShop.js",
+    gasStation: "./src/gasStation.js",
     index: "./src/index.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].burdigalax.js",
     publicPath: env.production
-      ? `http://asset/${serverPackageName}/client/gui/onShop/`
+      ? `http://asset/${serverPackageName}/client/gui/`
       : undefined
   },
   module: {
@@ -52,6 +53,11 @@ const getConfig = env => ({
       filename: "onShop.html",
       template: "src/onShop.html",
       chunks: ["onShop", "vendors", "commons"]
+    }),
+    new HtmlWebpackPlugin({
+      filename: "gasStation.html",
+      template: "src/gasStation.html",
+      chunks: ["gasStation", "vendors", "commons"]
     })
   ],
   optimization: {
