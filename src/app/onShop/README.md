@@ -384,7 +384,7 @@ BURDIGALAX_onShop.updatePlayer({
 
 #### updateArticles 
 
-:warning: `id` of the article is mandatory for its update.
+:warning: `id` of the article is mandatory for its update.  
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
 ```js 

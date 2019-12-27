@@ -28,7 +28,12 @@ const mapStateToProps = state => {
   const initFuelValue = selectFuelValueFromCar(state);
   const tankCapacity = selectTankFromCar(state);
   const error = selectError(state);
-  const { redColor, body, header } = selectStyleFromConfig(state);
+  const {
+    redColor,
+    body,
+    header,
+    selectGas: selectGasStyle
+  } = selectStyleFromConfig(state);
   const { isOpen: isStationOpen } = selectStation(state);
   const {
     selectGas,
@@ -58,6 +63,7 @@ const mapStateToProps = state => {
     bgColor: body.backgroundColor,
     color: body.color,
     backgroundHeaderColor: header.backgroundColor,
+    selectGasBackgroundColor: selectGasStyle.backgroundColor,
     isStationOpen,
     wording: {
       selectGas,

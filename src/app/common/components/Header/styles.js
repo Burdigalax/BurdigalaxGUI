@@ -17,10 +17,10 @@ export const Header = styled.div`
 
 export const FirstBloc = styled.div`
   display: flex;
-  flex: 1;
   flex-direction: row;
   flex: 1;
   justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.h4`

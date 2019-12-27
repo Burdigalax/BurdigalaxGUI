@@ -26,7 +26,10 @@ export const SelectGas = styled.div`
   display: flex;
   flex: 1;
   flex-direction: row;
+  background-color: ${({ backgroundColor }) => backgroundColor};
   justify-content: space-around;
+  border-radius: ${({ hasBorderRadius }) =>
+    hasBorderRadius ? "13px 13px 0 0" : "none"};
   > div:first-child {
     border-radius: ${({ hasBorderRadius }) =>
       hasBorderRadius ? "13px 0 0" : "none"};
@@ -139,7 +142,7 @@ export const Error = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 15px;
+  margin-top: 15px;
   align-items: center;
   justify-items: center;
   color: ${({ redColor }) => redColor};

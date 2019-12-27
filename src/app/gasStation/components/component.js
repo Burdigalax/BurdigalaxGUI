@@ -49,12 +49,16 @@ const GasStation = ({
   redColor,
   backgroundHeaderColor,
   bgColor,
+  selectGasBackgroundColor,
   color
 }) => {
   return (
     <Interface>
       <Header hasCloseButton />
-      <SelectGas hasBorderRadius={!backgroundHeaderColor}>
+      <SelectGas
+        hasBorderRadius={!backgroundHeaderColor}
+        backgroundColor={selectGasBackgroundColor}
+      >
         {gasesIds.map(id => (
           <GasContainer id={id} key={`Gas-${id}`} />
         ))}
@@ -81,12 +85,6 @@ const GasStation = ({
                 {unit}
               </FuelLevel>
               <Column>
-                {(errorTitle || errorMessage) && (
-                  <Error redColor={redColor}>
-                    <strong>{errorTitle}</strong>
-                    <span>{errorMessage}</span>
-                  </Error>
-                )}
                 {!hasGasSelected ? (
                   <Informations>
                     <InfoTitle>{informations}</InfoTitle>
@@ -130,6 +128,12 @@ const GasStation = ({
                       />
                     )}
                   </Buy>
+                )}
+                {(errorTitle || errorMessage) && (
+                  <Error redColor={redColor}>
+                    <strong>{errorTitle}</strong>
+                    <span>{errorMessage}</span>
+                  </Error>
                 )}
               </Column>
             </Line>
