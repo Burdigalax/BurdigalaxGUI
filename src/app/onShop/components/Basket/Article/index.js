@@ -1,14 +1,14 @@
-import { compose, mapProps, setDisplayName, withHandlers } from "recompose";
+import { compose, setDisplayName, withHandlers } from "recompose";
 import { connect } from "react-redux";
 import React from "react";
 import pluralize from "pluralize";
 
 import ArticleComponent from "./component";
 import selectArticleById from "../../../redux/reducers/entities/articles/selectors/select-article-by-id";
-import selectIconsUrlFromConfig from "../../../redux/reducers/config/selectors/select-icons-from-config";
+import selectIconsUrlFromConfig from "../../../../redux/reducers/config/selectors/select-icons-from-config";
 import { deleteArticleRequest } from "../../../redux/actions/shopping-cart";
-import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
-import selectStyleFromConfig from "../../../redux/reducers/config/selectors/select-style-from-config";
+import selectWordingFromConfig from "../../../../redux/reducers/config/selectors/select-wording-from-config";
+import selectStyleFromConfig from "../../../../redux/reducers/config/selectors/select-style-from-config";
 
 const mapStateToProps = (state, props) => {
   const { id, quantity } = props;

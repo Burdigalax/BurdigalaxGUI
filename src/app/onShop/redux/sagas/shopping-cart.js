@@ -1,5 +1,5 @@
 import { select, put, takeEvery } from "redux-saga/effects";
-import { filter, values, propEq, map, pipe, sum, isNil, isEmpty } from "ramda";
+import { filter, propEq, map, pipe, sum, isNil, isEmpty } from "ramda";
 
 import {
   ADD_ARTICLE_REQUEST,
@@ -96,7 +96,6 @@ function* checkUpdateShoppingCart({ articles: updatedArticles }) {
       updatedArticles
     );
 
-    console.log("updatedArticle", updatedArticle);
     if (!updatedArticle) return shoppingCartArticle;
 
     const article = articles[shoppingCartArticle.id];

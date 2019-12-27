@@ -49,7 +49,6 @@ const BurdiButton = props => {
     iconLeftUrl,
     iconLeftSize,
     disabled,
-    onClick,
     variant = BTN_VARIANT.primary,
     className,
     isFullWidth = false,
@@ -62,12 +61,12 @@ const BurdiButton = props => {
       isFullWidth={isFullWidth}
       className={className}
       disabled={disabled}
-      onClick={onClick}
       color={color}
       hoverColor={hoverColor}
       variant={variant}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      {...props}
     >
       {(iconLeft || iconLeftUrl) &&
         renderIcon(iconLeft, iconLeftUrl, iconLeftSize, props)}

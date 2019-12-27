@@ -24,7 +24,9 @@ export const JS_FUNCTIONS = {
 
 const callEvent = (name, value) => {
   console.log("callEvent :", name, value);
-  ue.game.callevent(name, JSON.stringify(value));
+  try {
+    ue.game.callevent(name, JSON.stringify(value));
+  } catch (e) {}
 };
 
 export const LUA_FUNCTIONS = {

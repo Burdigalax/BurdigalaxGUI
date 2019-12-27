@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 
 import OnShop from "../app/onShop";
+import GasStation from "../app/gasStation";
 import DevToolShop from "./DevTools/onShop";
 import BurdiButton from "../app/common/components/BurdiButton";
+import DevToolGasStation from "./DevTools/gasStation";
 
 const Demo = () => {
-  const [hasShopOpen, setShop] = useState(true);
+  const [hasShopOpen, setShop] = useState(false);
+  const [hasGasStationOpen, setGasStation] = useState(false);
+
+  const toggleGasStation = () => setGasStation(!hasGasStationOpen);
   const toggleShop = () => setShop(!hasShopOpen);
 
   return (
@@ -14,7 +19,6 @@ const Demo = () => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       />
-
       <h1>Burdigalax</h1>
       <div>
         <h2>
@@ -47,6 +51,17 @@ const Demo = () => {
           >
             <OnShop />
           </div>
+        </div>
+      )}
+      <BurdiButton
+        label={hasShopOpen ? "Hide GasStation" : "Show GasStation"}
+        onClick={toggleGasStation}
+      />
+      {hasGasStationOpen && (
+        <div>
+          <h1>Gas Station :</h1>
+          <DevToolGasStation />
+          <GasStation />
         </div>
       )}
     </div>

@@ -9,7 +9,6 @@ import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/theme-github";
 
 import devReducer from "./redux/reducers";
-import devToolSaga from "./redux/sagas";
 import DevToolComponent from "./component";
 const sagaMiddleware = createSagaMiddleware();
 
@@ -18,7 +17,7 @@ const store = createStore(
   devReducer,
   composeEnhancers(applyMiddleware(sagaMiddleware))
 );
-sagaMiddleware.run(devToolSaga);
+// sagaMiddleware.run(devToolSaga);
 
 const DevToolProvider = ({}) => (
   <Provider store={store}>

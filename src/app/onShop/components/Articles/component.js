@@ -14,10 +14,10 @@ import {
 import ArticleContainer from "./Article";
 import Informations from "./Informations";
 
-const renderArticle = id => <ArticleContainer id={id} key={id} />;
+const renderArticle = id => <ArticleContainer id={id} key={`article-${id}`} />;
 
 const renderCategory = category => (
-  <Fragment>
+  <Fragment key={`category-${category.name}`}>
     {category.name && (
       <CategoryStep key={`cat-${category.name}`}>
         <td>
