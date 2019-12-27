@@ -1,6 +1,12 @@
 
 # Burdigalax RP - GasStation
 
+## Quick installation GUI
+
+DOWNLOAD Burdigalax Packages to install on your ONSET server. 
+
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI.](../../../ONSET_SERVER.zip)
+
 ### Integration - Exemple for Onset : 
 
 https://github.com/Burdigalax/BurdigalaxRP-Onset
@@ -64,7 +70,8 @@ Send config for show IHM :
 
 :information_source: **INFORMATION**:
 - For `iconUrl` use the DataURI format to limit the import of files on your `package.json` server.
-- Types of gas availables : `['fuel', 'electric']` default is `fuel`;
+- Types of gas availables : `['fuel', 'electric', 'hybrid']` default is `fuel`;  
+   `hybrid` is compatible with all gas.
 - Types of car : // identical to gas. default  is `fuel`;
 - Field `speed` of gas is quantity added every 100ms. 
 

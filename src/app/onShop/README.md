@@ -1,6 +1,13 @@
 
 # Burdigalax RP - Shop 
 
+## Quick installation GUI
+
+DOWNLOAD Burdigalax Packages to install on your ONSET server. 
+
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI.](../../../ONSET_SERVER.zip)
+
+
 ### Integration - Exemple for Onset : 
 
 https://github.com/Burdigalax/BurdigalaxRP-Onset

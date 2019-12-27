@@ -1,6 +1,6 @@
 {
   "name": "Burdigalax",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "",
   "main": "index.js",
   "author": "Rom Burdi",
@@ -8,7 +8,8 @@
   "scripts": {
     "build-dev": "webpack -d --mode development --env.dev",
     "build": "webpack -p --mode production --env.production",
-    "start": "webpack-dev-server --hot --mode development --env.dev"
+    "start": "webpack-dev-server --hot --mode development --env.dev",
+    "deploy": "del dist\\* /Q && del ONSET_SERVER\\packages\\burdigalax\\client\\gui\\* /Q && del ONSET_SERVER.zip && Xcopy dist /Exclude:deploy_exclude_files.txt ONSET_SERVER\\packages\\burdigalax\\client\\gui\\ && C:\\7z1900-extra\\7za.exe a ONSET_SERVER.zip ONSET_SERVER\\ -mtc=on"
   },
   "dependencies": {
     "@material-ui/core": "^4.8.0",
