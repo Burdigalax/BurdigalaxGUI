@@ -5,7 +5,7 @@ export default state => {
   const car = selectCarFromPlayer(state);
   const gasSelected = getCurrentGasSelected(state);
   if (!gasSelected) return true;
-  if (!car.type || car.type === "hybride") return true;
+  if (!car.type || car.type === "hybrid") return true;
 
   return gasSelected.type === car.type;
 };
