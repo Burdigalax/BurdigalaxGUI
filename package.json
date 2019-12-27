@@ -6,7 +6,7 @@
   "author": "Rom Burdi",
   "license": "ISC",
   "scripts": {
-    "build-dev": "webpack -d --mode development --env.dev",
+    "build-dev": "del dist\\* /Q && webpack -d --mode development --env.dev",
     "build": "del dist\\* /Q && webpack -p --mode production --env.production",
     "start": "webpack-dev-server --hot --mode development --env.dev",
     "deploy": "del ONSET_SERVER\\packages\\burdigalax\\client\\gui\\* /Q && del *.zip && Xcopy dist /Exclude:deploy_exclude_files.txt ONSET_SERVER\\packages\\burdigalax\\client\\gui\\ && C:\\7z1900-extra\\7za.exe a ONSET_SERVER.4.1.0.zip ONSET_SERVER\\ -mtc=on"
