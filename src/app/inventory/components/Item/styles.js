@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
     isSelected ? "2px solid #06d2f2" : "2px solid #505d67"};
   border-radius: 10px;
   margin: 5px 5px;
+  cursor: pointer;
 `;
 
 const maxHealthBar = 86;
@@ -38,6 +39,8 @@ export const Weight = styled.div`
 
 export const StyledIcon = styled(Icon)`
   align-self: center;
+  height: 42px;
+  width: auto !important;
 `;
 
 export const Header = styled.div`
@@ -49,14 +52,14 @@ export const Header = styled.div`
 `;
 
 export const EquippedTag = styled.div`
-  background-color: #faa82a;
+  background-color: ${({ isEquipped }) => (isEquipped ? "#faa82a" : "#9da6ae")};
   width: 7px;
   height: 7px;
   border: 2px solid #2d3c48;
   border-radius: 20px;
   margin-top: -6px;
   align-self: center;
-  margin-bottom: -4px;
+  margin-bottom: -5px;
 `;
 
 export const Quantity = styled.div`

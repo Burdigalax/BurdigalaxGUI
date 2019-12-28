@@ -88,7 +88,8 @@ export default compose(
     onMouseEnter: ({ setHover, iconLeftUrl = "" }) => () =>
       !isEmpty(iconLeftUrl) && setHover(true),
     onMouseLeave: ({ setHover, iconLeftUrl = "" }) => () =>
-      !isEmpty(iconLeftUrl) && setHover(false)
+      !isEmpty(iconLeftUrl) && setHover(false),
+    onClick: ({ onClick }) => () => onClick()
   }),
   lifecycle({
     componentDidUpdate(prevProps) {

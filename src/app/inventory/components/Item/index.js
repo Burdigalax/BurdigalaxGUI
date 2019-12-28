@@ -1,33 +1,80 @@
 import React from "react";
+import { compose, withHandlers, withState, mapProps } from "recompose";
+import { connect } from "react-redux";
+import { omit } from "ramda";
 
-import {
-  HealthBar,
-  Header,
-  EquippedTag,
-  Wrapper,
-  Quantity,
-  StyledIcon,
-  Weight
-} from "./styles";
-import Icon from "../../../common/components/Icon";
+import Item from "./component";
+import selectSelectedItemId from "../../redux/reducers/sceneState/selectors/select-selected-item-id";
+import { setItemSelectedId } from "../../redux/actions/items";
+import selectItemsById from "../../redux/reducers/entities/items/selectors/select-items-by-id";
+import selectItemFromInventoryById from "../../redux/reducers/entities/inventory/selectors/select-item-from-inventory-by-id";
+import { onUseItem, onEquipItem } from "../../redux/actions/items";
 
-export default ({ iconUrl, isSelected, health, isEquipped, quantity }) => (
-  <Wrapper isSelected={isSelected}>
-    {isEquipped && <EquippedTag />}
-    <Header>
-      <Weight>
-        <Icon
-          color={"#959da3"}
-          size={14}
-          url={
-            "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik04Ny44LDgzLjNMNzIuMywzOC40Yy0wLjMtMC44LTEtMS4zLTEuOS0xLjNoLTcuN2gtNC4zYzIuOS0yLjQsNC44LTYuMiw0LjctMTAuM2MtMC4yLTYuOC01LjctMTIuNC0xMi41LTEyLjcgIGMtNy40LTAuMy0xMy41LDUuNi0xMy41LDEzYzAsNCwxLjgsNy42LDQuNywxMGgtNy41aC00LjZjLTAuOCwwLTEuNiwwLjUtMS45LDEuM0wxMi4yLDgzLjNjLTAuNSwxLjMsMC41LDIuNywxLjksMi43aDcxLjggIEM4Ny4zLDg1LjksODguMyw4NC42LDg3LjgsODMuM3ogTTUwLDIxLjZjMywwLDUuNSwyLjQsNS41LDUuNVM1MywzMi41LDUwLDMyLjVjLTMsMC01LjUtMi40LTUuNS01LjVTNDcsMjEuNiw1MCwyMS42eiI+PC9wYXRoPjwvc3ZnPg=="
-          }
-        />
-        0.5
-      </Weight>
-      <Quantity>{quantity}</Quantity>
-    </Header>
-    <StyledIcon url={iconUrl} size={20} />
-    {health >= 0 && <HealthBar value={health} />}
-  </Wrapper>
-);
+const mapStateToProps = (state, ownProps) => {
+  const selectedItemId = selectSelectedItemId(state);
+  const { id, health, iconUrl, isEquipable, weight } = selectItemsById(
+    state,
+    ownProps.id
+  );
+  const { quantity, isEquipped } = selectItemFromInventoryById(
+    state,
+    ownProps.id
+  );
+  return {
+    id,
+    isSelected: selectedItemId === id,
+    health,
+    isEquipped,
+    quantity,
+    iconUrl,
+    isEquipable,
+    weight
+  };
+};
+
+const mapDispatchToProps = {
+  setItemSelectedId,
+  onUseItem,
+  onEquipItem
+};
+
+const MIDDLE_BUTTON = 1;
+const LEFT_BUTTON = 0;
+export default compose(
+  connect(mapStateToProps, mapDispatchToProps),
+  withState("clickTime", "setClickTime", 0),
+  withHandlers({
+    onMouseDownItem: ({
+      id,
+      isEquipped,
+      isEquipable,
+      clickTime,
+      quantity,
+      setClickTime,
+      onUseItem,
+      onEquipItem
+    }) => event => {
+      event.preventDefault();
+      const now = Date.now();
+
+      if (event.button === LEFT_BUTTON) {
+        if (now - clickTime < 200) {
+          onUseItem(id, quantity);
+        }
+      }
+      if (
+        event.button === MIDDLE_BUTTON &&
+        isEquipable &&
+        now - clickTime > 150
+      )
+        onEquipItem(id, !isEquipped);
+
+      setClickTime(now);
+      return false;
+    },
+    onClickItem: ({ setItemSelectedId, id, isSelected }) => () => {
+      if (!isSelected) setItemSelectedId(id);
+    }
+  }),
+  mapProps(omit(["countClick", "setClick"]))
+)(Item);

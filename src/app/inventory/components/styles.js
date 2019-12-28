@@ -5,6 +5,11 @@ export const Interface = styled.div`
   flex-direction: column;
   max-width: 475px;
   font-family: Montserrat, sans-serif;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 `;
 
 export const ItemsList = styled.div`
@@ -79,4 +84,16 @@ export const NoItemSelected = styled.div`
   font-size: 13px;
   font-weight: 600;
   padding: 10px;
+`;
+
+export const NoItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #949da3;
+  margin: 20px;
+  font-size: 18px;
+  > img {
+    margin: 15px;
+  }
 `;

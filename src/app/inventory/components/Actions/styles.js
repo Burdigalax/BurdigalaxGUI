@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { withStyles, InputBase, Select } from "@material-ui/core";
+import { withStyles, InputBase, Switch, Select } from "@material-ui/core";
 
 import BurdiButton from "../../../common/components/BurdiButton";
 
@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   flex: 1;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const UseButton = styled(BurdiButton)`
@@ -16,11 +17,6 @@ export const UseButton = styled(BurdiButton)`
   padding: 5px 10px;
   font-size: 14px;
   font-weight: 600;
-  border-radius: 5px;
-`;
-
-export const EquippedButton = styled(BurdiButton)`
-  border-width: 2px;
   border-radius: 5px;
 `;
 
@@ -35,14 +31,14 @@ export const StyledInput = styled.input`
   border-radius: 5px;
   padding: 5px;
   text-align: center;
-  width: 30px;
+  width: 50px;
   color: #ffffff;
   background-color: #2d3c48;
   outline: none;
   font-weight: 600;
   font-family: Montserrat;
   font-size: 16px;
-  margin: 10px;
+  margin: 5px;
   ::-webkit-inner-spin-button,
   ::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -53,8 +49,9 @@ export const StyledInput = styled.input`
 export const Bloc = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 10px;
+  margin: 3px;
   align-items: center;
+  height: 44px;
 `;
 
 export const BurdiButtonAction = styled(BurdiButton)`
@@ -68,6 +65,7 @@ export const StyledSelect = withStyles({
     borderRadius: "5px",
     padding: "5px",
     backgroundColor: "#2d3c48",
+    minWidth: "120px",
     fontFamily: "Montserrat",
     maxWidth: "135px",
     fontSize: "13px",
@@ -80,3 +78,30 @@ export const StyledSelect = withStyles({
     color: "#ffffff"
   }
 })(Select);
+
+export const MaxButton = styled(BurdiButton)`
+  font-size: 8px;
+  position: relative;
+  top: 10px;
+  margin-left: -25px;
+  padding: 3px;
+  margin-right: 3px;
+  font-weight: 600;
+`;
+
+export const WrapperSwitch = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const EquippedSwitch = withStyles({
+  root: {
+    "& .Mui-checked": {
+      color: "#faa82a"
+    },
+    "& .MuiSwitch-track": {
+      backgroundColor: "#faa82a !important"
+    }
+  }
+})(Switch);

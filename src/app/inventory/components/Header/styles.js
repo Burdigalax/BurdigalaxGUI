@@ -34,10 +34,14 @@ export const Title = styled.span`
   margin-bottom: 5px;
 `;
 
+export const getColor = (busyStorage, storageSize) =>
+  (busyStorage * 100) / storageSize > 95 ? "#fe6d67" : "#959da3";
+
 export const Storage = styled.div`
   border: 2px solid #3b4e5e;
   background-color: #2d3c48;
-  color: #959da3;
+  color: ${({ busyStorage, storageSize }) =>
+    getColor(busyStorage, storageSize)};
   padding: 3px 10px;
   border-radius: 20px;
   font-size: 13px;
