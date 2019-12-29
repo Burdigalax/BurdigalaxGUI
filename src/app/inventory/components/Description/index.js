@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import Description from "./component";
-import getItemCompletedFromInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-completed-from-inventory-by-id";
+import getItemCompletedFromCurrentInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-completed-from-current-inventory-by-id";
 
 const mapStateToProps = (state, props) => {
   const {
@@ -15,7 +15,7 @@ const mapStateToProps = (state, props) => {
     totalWeight,
     effects,
     isEquipped
-  } = getItemCompletedFromInventoryById(state, props.itemId);
+  } = getItemCompletedFromCurrentInventoryById(state, props.itemId);
   return {
     imageUrl: imageUrl || iconUrl,
     description,

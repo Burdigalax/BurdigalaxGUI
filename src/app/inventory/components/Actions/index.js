@@ -10,7 +10,7 @@ import {
 import { path, omit, pathOr } from "ramda";
 
 import ActionsComponent from "./component";
-import getItemCompletedFromInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-completed-from-inventory-by-id";
+import getItemCompletedFromInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-completed-from-current-inventory-by-id";
 import {
   onEquipItem,
   onUseItem,

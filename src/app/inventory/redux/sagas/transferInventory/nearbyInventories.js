@@ -6,6 +6,7 @@ import { CONTEXT_TYPE, setCurrentInventoryId } from "../../actions/inventory";
 import { setItemSelectedId } from "../../actions/items";
 import { setNearbyInventorySelectedId as setNearbyInventorySelectedAction } from "../../actions/nearbyInventories";
 import selectInventoryById from "../../reducers/entities/inventories/selectors/select-inventory-by-id";
+import { setCategorySelectedId } from "../../actions/categories";
 
 function* setNearbyInventorySelected({ id, originContext }) {
   const context = yield select(selectCurrentContext);
@@ -15,6 +16,7 @@ function* setNearbyInventorySelected({ id, originContext }) {
   ) {
     yield put(setCurrentInventoryId(id));
     yield put(setItemSelectedId(null));
+    yield put(setCategorySelectedId("all"));
     const nearbyInventory = yield select(state =>
       selectInventoryById(state, id)
     );

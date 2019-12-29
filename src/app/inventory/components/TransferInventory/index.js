@@ -1,19 +1,18 @@
 import { branch, compose, lifecycle, renderNothing } from "recompose";
 import { connect } from "react-redux";
-import { isEmpty } from "ramda";
 
 import Inventory from "../Inventory/component";
 import selectSelectedItemId from "../../redux/reducers/sceneState/selectors/select-selected-item-id";
-import getItemsIdsFromInventoryByCategorySelected from "../../redux/reducers/entities/inventories/getters/get-items-ids-from-inventory-by-category-selected";
+import getItemsIdsFromCurrentInventoryByCategorySelected from "../../redux/reducers/entities/inventories/getters/get-items-ids-from-current-inventory-by-category-selected";
 import getSelectedCategory from "../../redux/reducers/sceneState/getters/get-selected-category";
 import { setCurrentContext, CONTEXT_TYPE } from "../../redux/actions/inventory";
-import getHasItemsFromInventory from "../../redux/reducers/entities/inventories/getters/get-has-items-form-inventory";
+import getHasItemsFromCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-has-items-form-current-inventory";
 
 const mapStateToProps = state => {
   const selectedItemId = selectSelectedItemId(state);
-  const itemsIds = getItemsIdsFromInventoryByCategorySelected(state);
+  const itemsIds = getItemsIdsFromCurrentInventoryByCategorySelected(state);
   const { name } = getSelectedCategory(state);
-  const hasItems = getHasItemsFromInventory(state);
+  const hasItems = getHasItemsFromCurrentInventory(state);
   return {
     selectedItemId,
     itemsIds,

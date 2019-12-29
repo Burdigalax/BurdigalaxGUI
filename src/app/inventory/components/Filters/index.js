@@ -5,7 +5,7 @@ import { compose, withHandlers } from "recompose";
 
 import { Wrapper, Filter } from "./styles";
 import Icon from "../../../common/components/Icon";
-import getCategoriesFromInventory from "../../redux/reducers/entities/inventories/getters/get-categories-from-inventory";
+import getCategoriesFromCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-categories-from-current-inventory";
 import selectSelectedCategoryId from "../../redux/reducers/sceneState/selectors/select-selected-category-id";
 import { setCategorySelectedId } from "../../redux/actions/categories";
 
@@ -24,7 +24,7 @@ const FiltersComponent = ({ categories = [], selectedCategoryId, onClick }) => {
 };
 
 const mapStateToProps = state => {
-  const categories = getCategoriesFromInventory(state);
+  const categories = getCategoriesFromCurrentInventory(state);
   const selectedCategoryId = selectSelectedCategoryId(state);
   return {
     categories,

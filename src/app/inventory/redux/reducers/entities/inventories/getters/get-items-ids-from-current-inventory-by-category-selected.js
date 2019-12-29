@@ -1,9 +1,9 @@
-import { filter, propEq, keys, map, prop } from "ramda";
+import { filter, propEq, keys } from "ramda";
 
 import getItemsIdsFromInventory from "./get-items-ids-from-inventory";
 import selectSelectedCategoryId from "../../../sceneState/selectors/select-selected-category-id";
 import getItemsFromCurrentInventory from "./get-items-from-current-inventory";
-import getItemCompletedFromInventory from "./get-items-completed-from-inventory";
+import getItemCompletedFromCurrentInventory from "./get-items-completed-from-current-inventory";
 
 export default state => {
   const itemsInventory = getItemsFromCurrentInventory(state);
@@ -21,7 +21,7 @@ export default state => {
     return keys(itemsEquippedInventory);
   }
 
-  const itemsCompletedInventory = getItemCompletedFromInventory(state);
+  const itemsCompletedInventory = getItemCompletedFromCurrentInventory(state);
   return keys(
     filter(propEq("categoryId", selectedCategoryId), itemsCompletedInventory)
   );

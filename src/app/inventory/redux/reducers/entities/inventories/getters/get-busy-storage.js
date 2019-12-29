@@ -1,9 +1,9 @@
 import { prop, pipe, map, sum, values } from "ramda";
 
-import getItemsCompletedFromInventory from "./get-items-completed-from-inventory";
+import getItemsCompletedFromCurrentInventory from "./get-items-completed-from-current-inventory";
 
 export default state => {
-  const items = getItemsCompletedFromInventory(state);
+  const items = getItemsCompletedFromCurrentInventory(state);
 
   return pipe(values, map(prop("totalWeight")), sum)(items);
 };
