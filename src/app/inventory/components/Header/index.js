@@ -12,7 +12,7 @@ import {
 } from "./styles";
 import { BTN_VARIANT } from "../../../common/components/BurdiButton/constants";
 import Icon from "../../../common/components/Icon";
-import selectInventory from "../../redux/reducers/entities/inventory/selectors/select-inventory";
+import getCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-current-inventory";
 import getBusyStorage from "../../redux/reducers/entities/inventory/getters/get-busy-storage";
 import { LUA_FUNCTIONS } from "../../events";
 
@@ -46,7 +46,7 @@ const HeaderComponent = ({
 );
 
 const mapStateToProps = state => {
-  const { name, description, storageSize } = selectInventory(state);
+  const { name, description, storageSize } = getCurrentInventory(state);
   const busyStorage = getBusyStorage(state);
   return {
     name,

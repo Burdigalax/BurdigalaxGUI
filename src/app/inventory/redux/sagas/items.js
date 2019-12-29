@@ -7,19 +7,19 @@ import {
   ON_TRANSFER_ITEM
 } from "../actions/items";
 import { LUA_FUNCTIONS } from "../../events";
-import selectItemFromInventoryById from "../reducers/entities/inventory/selectors/select-item-from-inventory-by-id";
-import selectIdFromInventory from "../reducers/entities/inventory/selectors/select-id-from-inventory";
-import selectItemFromNearbyInventoriesByIdItemAndIdInventory from "../reducers/entities/nearbyInventories/selectors/select-item-from-nearby-inventories-by-id-item-and-id-inventory";
+import getItemFromCurrentInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-from-current-inventory-by-id";
+import selectCurrentInventoryId from "../reducers/sceneState/selectors/select-current-inventory-id";
+import selectItemFromInventoriesByIdInventoryAndIdItem from "../reducers/entities/inventories/selectors/select-item-from-inventories-by-id-inventory-and-id-item";
 
 function* onEquip({ data: { idInventory, idItem, isEquipped } }) {
-  const currentInventoryId = yield select(selectIdFromInventory);
+  const currentInventoryId = yield select(selectCurrentInventoryId);
   if (currentInventoryId === idInventory) {
     LUA_FUNCTIONS.onEquip({ idInventory, idItem, isEquipped });
   }
 }
 
 function* onUse({ data: { idInventory, idItem, quantity } }) {
-  const currentInventoryId = yield select(selectIdFromInventory);
+  const currentInventoryId = yield select(selectCurrentInventoryId);
 
   if (currentInventoryId === idInventory) {
     LUA_FUNCTIONS.onUse({ idInventory, idItem, newQuantity: quantity - 1 });
@@ -27,10 +27,10 @@ function* onUse({ data: { idInventory, idItem, quantity } }) {
 }
 
 function* onDelete({ data: { idInventory, idItem, quantity } }) {
-  const currentInventoryId = yield select(selectIdFromInventory);
+  const currentInventoryId = yield select(selectCurrentInventoryId);
   if (currentInventoryId === idInventory) {
     const { quantity: nowQuantity } = yield select(state =>
-      selectItemFromInventoryById(state, idItem)
+      getItemFromCurrentInventoryById(state, idItem)
     );
     LUA_FUNCTIONS.onDelete({
       idInventory,
@@ -44,28 +44,18 @@ function* onDelete({ data: { idInventory, idItem, quantity } }) {
 function* onTransfer({
   data: { originInventoryId, destinationInventoryId, idItem, quantity }
 }) {
-  const currentInventoryId = yield select(selectIdFromInventory);
+  const currentInventoryId = yield select(selectCurrentInventoryId);
   if (currentInventoryId === originInventoryId) {
     const { quantity: nowQuantityOrigin } = yield select(state =>
-      selectItemFromInventoryById(state, idItem)
+      getItemFromCurrentInventoryById(state, idItem)
     );
 
-    const itemNearbyInventories = yield select(state =>
-      selectItemFromNearbyInventoriesByIdItemAndIdInventory(
+    const { quantity: nowQuantityDestination = 0 } = yield select(state =>
+      selectItemFromInventoriesByIdInventoryAndIdItem(
         state,
-        idItem,
-        destinationInventoryId
+        destinationInventoryId,
+        idItem
       )
-    );
-
-    console.log("itemNearby", itemNearbyInventories);
-    const { quantity: nowQuantityDestination = 0 } = itemNearbyInventories;
-
-    console.log(
-      "quantity",
-      quantity,
-      nowQuantityDestination,
-      nowQuantityOrigin
     );
 
     LUA_FUNCTIONS.onTransfer({

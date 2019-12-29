@@ -5,11 +5,8 @@ import { JS_FUNCTIONS } from "../../events";
 import Inventory from "./component";
 import selectSelectedItemId from "../../redux/reducers/sceneState/selectors/select-selected-item-id";
 import { initModule } from "../../redux/actions/init";
-import {
-  updateItemsInventoryRequest,
-  setCurrentContext,
-  CONTEXT_TYPE
-} from "../../redux/actions/inventory";
+import { setCurrentContext, CONTEXT_TYPE } from "../../redux/actions/inventory";
+import { updateItemsInventoriesRequest } from "../../redux/actions/inventories";
 import getItemsIdsFromInventoryByCategorySelected from "../../redux/reducers/entities/inventory/getters/get-items-ids-from-inventory-by-category-selected";
 import getSelectedCategory from "../../redux/reducers/sceneState/getters/get-selected-category";
 
@@ -26,7 +23,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = {
   initModule,
-  updateItemsInventoryRequest,
+  updateItemsInventoriesRequest,
   setCurrentContext
 };
 
@@ -36,7 +33,7 @@ export default compose(
     componentDidMount() {
       const {
         initModule,
-        updateItemsInventoryRequest,
+        updateItemsInventoriesRequest,
         updateInventoryRequest,
         updateItem,
         setCurrentContext
@@ -49,7 +46,7 @@ export default compose(
         [JS_FUNCTIONS.setConfig]: initModule,
         [JS_FUNCTIONS.updateInventory]: updateInventoryRequest,
         [JS_FUNCTIONS.updateItems]: updateItem,
-        [JS_FUNCTIONS.updateItemsInventory]: updateItemsInventoryRequest
+        [JS_FUNCTIONS.updateItemsInventories]: updateItemsInventoriesRequest
       };
     }
   })

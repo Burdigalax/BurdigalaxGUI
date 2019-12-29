@@ -7,9 +7,10 @@ import Item from "./component";
 import selectSelectedItemId from "../../redux/reducers/sceneState/selectors/select-selected-item-id";
 import { setItemSelectedId } from "../../redux/actions/items";
 import selectItemsById from "../../redux/reducers/entities/items/selectors/select-items-by-id";
-import selectItemFromInventoryById from "../../redux/reducers/entities/inventory/selectors/select-item-from-inventory-by-id";
+import getItemFromCurrentInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-from-current-inventory-by-id";
 import { onUseItem, onEquipItem } from "../../redux/actions/items";
-import selectIdFromInventory from "../../redux/reducers/entities/inventory/selectors/select-id-from-inventory";
+import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
+
 import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
 import { CONTEXT_TYPE } from "../../redux/actions/inventory";
 
@@ -19,12 +20,12 @@ const mapStateToProps = (state, ownProps) => {
     state,
     ownProps.id
   );
-  const { quantity, isEquipped } = selectItemFromInventoryById(
+  const { quantity, isEquipped } = getItemFromCurrentInventoryById(
     state,
     ownProps.id
   );
 
-  const idInventory = selectIdFromInventory(state);
+  const idInventory = selectCurrentInventoryId(state);
   const context = selectCurrentContext(state);
 
   return {

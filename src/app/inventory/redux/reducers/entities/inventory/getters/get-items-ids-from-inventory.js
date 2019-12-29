@@ -1,8 +1,8 @@
 import { keys } from "ramda";
 
-import selectItemsFromInventory from "../selectors/select-items-from-inventory";
+import getItemsFromCurrentInventory from "../../inventories/getters/get-items-from-current-inventory";
 
 export default state => {
-  const items = selectItemsFromInventory(state);
+  const items = getItemsFromCurrentInventory(state);
   return keys(items);
 };

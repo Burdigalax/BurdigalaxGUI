@@ -4,17 +4,15 @@ import config from "../../../redux/reducers/config";
 import sceneStateReducer from "./sceneState";
 
 import categories from "./entities/categories";
-import inventory from "./entities/inventory";
+import inventories from "./entities/inventories";
 import effects from "./entities/effects";
 import items from "./entities/items";
-import nearbyInventories from "./entities/nearbyInventories";
 
 const entitiesReducer = combineReducers({
   categories,
-  inventory,
+  inventories,
   items,
-  effects,
-  nearbyInventories
+  effects
 });
 
 export default combineReducers({

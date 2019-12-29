@@ -1,12 +1,12 @@
 import { pipe, filter, includes, values, concat } from "ramda";
 
-import selectInventory from "../selectors/select-inventory";
+import getCurrentInventory from "../../inventories/getters/get-current-inventory";
 import selectCategories from "../../categories/selectors/select-categories";
 import selectCurrentContext from "../../../sceneState/selectors/select-current-context";
 import { CONTEXT_TYPE } from "../../../../actions/inventory";
 
 export default state => {
-  const { categoriesIds = [] } = selectInventory(state);
+  const { categoriesIds = [] } = getCurrentInventory(state);
   const categories = selectCategories(state);
   const context = selectCurrentContext(state);
 

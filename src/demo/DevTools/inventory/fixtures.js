@@ -1,49 +1,5 @@
 export default {
-  inventory: {
-    id: 1,
-    storageSize: 180,
-    name: "Sac à dos",
-    description: "Arthur Shelby",
-    selectName: "Arthur Shelby",
-    selectedNearbyInventoryId: 26,
-    categoriesIds: [1, 2, 3, 4, 5],
-    nearbyInventoriesIds: [26, 27, 33],
-    items: [
-      {
-        id: 1,
-        quantity: 50
-      },
-      {
-        id: 2,
-        quantity: 5
-      },
-      {
-        id: 3,
-        quantity: 2
-      },
-      {
-        id: 4,
-        quantity: 10
-      },
-      {
-        id: 5,
-        quantity: 1
-      },
-      {
-        id: 6,
-        quantity: 5
-      },
-      {
-        id: 7,
-        quantity: 100
-      },
-      {
-        id: 8,
-        quantity: 1,
-        isEquipped: true
-      }
-    ]
-  },
+  mainInventoryId: 1,
   items: [
     {
       id: 1,
@@ -244,13 +200,59 @@ export default {
         "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='16' viewBox='0 0 22 16'%3E%3Ctitle%3Eicon-filter-gun%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg fill='none'%3E%3Cpath d='M12.757 6.287c-.179.551-.508 1.187-1.105 1.823l-.726-.292c.672-.716.787-1.38.694-1.916l-.106-.007h-1.724c-.925 0-1.676.526-1.678 1.174.004.924.753 1.672 1.678 1.672h1.724c.926 0 1.676-.749 1.678-1.674-.002-.3-.169-.571-.435-.778z'/%3E%3Cpath d='M18.74 5.851h-.064l-.824-1.491c.679-.134 1.556-.476 2.437-1.302l-.31-.768c-1.441 1.353-2.689.588-3.164.192l-.884-1.602h-13.931999999999999l-1.356-.824h-.527v4.438h4.029c1.957 1.732 1.619 2.523 1.619 2.523h.776v.188c0 1.498 1.214 2.711 2.711 2.711h1.362l1.917.05c1.498 0 2.71 1.214 2.71 2.711v1.419c0 1.695 3.185 1.695 3.185 1.695 1.498 0 3.026-.198 3.026-1.695v-5.535c0-1.497-1.214-2.711-2.711-2.711zm-7.183 2.937h-1.825c-.979 0-1.772-.792-1.776-1.769.002-.687.796-1.243 1.776-1.243h1.825l.112.008c.099.567-.023 1.271-.735 2.028l.769.309c.632-.673.981-1.346 1.17-1.929.281.22.458.506.46.824-.003.979-.796 1.772-1.776 1.772z' fill='%23000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E"
     }
   ],
-  nearbyInventories: [
+  inventories: [
+    {
+      id: 1,
+      storageSize: 180,
+      name: "Sac à dos",
+      description: "Arthur Shelby",
+      selectName: "Arthur Shelby",
+      selectedNearbyInventoryId: 26,
+      nearbyInventoriesIds: [26, 27, 33],
+      categoriesIds: [1, 2, 3, 4, 5],
+      items: [
+        {
+          id: 1,
+          quantity: 50
+        },
+        {
+          id: 2,
+          quantity: 5
+        },
+        {
+          id: 3,
+          quantity: 2
+        },
+        {
+          id: 4,
+          quantity: 10
+        },
+        {
+          id: 5,
+          quantity: 1
+        },
+        {
+          id: 6,
+          quantity: 5
+        },
+        {
+          id: 7,
+          quantity: 100
+        },
+        {
+          id: 8,
+          quantity: 1,
+          isEquipped: true
+        }
+      ]
+    },
     {
       id: 26,
       storageSize: 2000,
       name: "4x4 Sport",
       description: "Rom Burdi",
       selectName: "Voiture Rom Burdi",
+      categoriesIds: [1, 2],
       items: [
         {
           id: 2,

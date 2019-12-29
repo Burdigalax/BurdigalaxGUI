@@ -1,12 +1,11 @@
 import { put, select, takeEvery } from "redux-saga/effects";
-import { find, values, propEq } from "ramda";
 
 import { SET_NEARBY_INVENTORY_SELECTED_ID } from "../../actions/nearbyInventories";
 import selectCurrentContext from "../../reducers/sceneState/selectors/select-current-context";
-import { CONTEXT_TYPE, setInventory } from "../../actions/inventory";
-import selectNearbyInventories from "../../reducers/entities/nearbyInventories/selectors/select-nearby-inventories";
+import { CONTEXT_TYPE, setCurrentInventoryId } from "../../actions/inventory";
 import { setItemSelectedId } from "../../actions/items";
-import selectMainInventoryId from "../../reducers/sceneState/selectors/select-main-inventory-id";
+import { setNearbyInventorySelectedId as setNearbyInventorySelectedAction } from "../../actions/nearbyInventories";
+import selectInventoryById from "../../reducers/entities/inventories/selectors/select-inventory-by-id";
 
 function* setNearbyInventorySelected({ id, originContext }) {
   const context = yield select(selectCurrentContext);
@@ -14,21 +13,20 @@ function* setNearbyInventorySelected({ id, originContext }) {
     context === CONTEXT_TYPE.transferInventory &&
     originContext !== CONTEXT_TYPE.transferInventory
   ) {
-    const nearbyInventories = yield select(selectNearbyInventories);
-    const mainInventoryId = yield select(selectMainInventoryId);
-
-    const transferInventory =
-      find(propEq("id", id), values(nearbyInventories)) || {};
-
-    yield put(
-      setInventory({
-        ...transferInventory,
-        items: values(transferInventory.items),
-        nearbyInventoriesIds: [mainInventoryId],
-        selectedNearbyInventoryId: mainInventoryId
-      })
-    );
+    yield put(setCurrentInventoryId(id));
     yield put(setItemSelectedId(null));
+    const nearbyInventory = yield select(state =>
+      selectInventoryById(state, id)
+    );
+
+    if (nearbyInventory) {
+      yield put(
+        setNearbyInventorySelectedAction(
+          nearbyInventory.selectedNearbyInventoryId,
+          context
+        )
+      );
+    }
   }
 }
 

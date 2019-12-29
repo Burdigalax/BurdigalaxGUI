@@ -2,11 +2,11 @@ import { filter, propEq, keys, map, prop } from "ramda";
 
 import getItemsIdsFromInventory from "./get-items-ids-from-inventory";
 import selectSelectedCategoryId from "../../../sceneState/selectors/select-selected-category-id";
-import selectItemsFromInventory from "../selectors/select-items-from-inventory";
+import getItemsFromCurrentInventory from "../../inventories/getters/get-items-from-current-inventory";
 import getItemCompletedFromInventory from "./get-items-completed-from-inventory";
 
 export default state => {
-  const itemsInventory = selectItemsFromInventory(state);
+  const itemsInventory = getItemsFromCurrentInventory(state);
   const selectedCategoryId = selectSelectedCategoryId(state);
 
   if (selectedCategoryId === "all") {

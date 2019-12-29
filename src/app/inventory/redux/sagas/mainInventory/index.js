@@ -1,18 +1,19 @@
 import { fork, all, takeEvery, put } from "redux-saga/effects";
-import { concat } from "ramda";
+import { find, propEq, path, concat } from "ramda";
 
 import { INIT_MODULE } from "../../actions/init";
-import { setInventory } from "../../actions/inventory";
-import { setItems } from "../../actions/items";
 import { setCategories } from "../../actions/categories";
-import { setNearbyInventories } from "../../actions/nearbyInventories";
-import { setInventories } from "../../actions/inventories";
-import { setEffects } from "../../actions/effects";
-import inventorySaga from "../inventory";
+import inventoriesSaga from "../inventories";
 import nearbyInventoriesSaga from "./nearbyInventories";
 import itemsSaga from "../items";
+import {
+  setCurrentInventoryId,
+  setMainInventoryId
+} from "../../actions/inventory";
+import initSaga from "../init";
+import { setNearbyInventorySelectedId } from "../../actions/nearbyInventories";
 
-function* init({ module }) {
+function* initMainInventory({ module }) {
   //const moduleMerged = mergeDeepRight(fixturesShop, module);
   //yield put(setConfig(module.config));
   const categories = concat(
@@ -28,19 +29,24 @@ function* init({ module }) {
   );
 
   yield put(setCategories(categories));
-  yield put(setEffects(module.effects));
-  yield put(setItems(module.items));
-  yield put(setInventories(module.inventories));
-  yield put(setNearbyInventories(module.nearbyInventories));
 
-  yield put(setInventory(module.inventory));
+  const { mainInventoryId, inventories } = module;
+  yield put(setCurrentInventoryId(mainInventoryId));
+  yield put(setMainInventoryId(mainInventoryId));
+
+  const selectedNearbyInventoryId = path(
+    ["selectedNearbyInventoryId"],
+    find(propEq("id", mainInventoryId), inventories)
+  );
+  yield put(setNearbyInventorySelectedId(selectedNearbyInventoryId));
 }
 
 export default function* root() {
   yield all([
-    fork(inventorySaga),
+    fork(inventoriesSaga),
     fork(nearbyInventoriesSaga),
-    fork(itemsSaga)
+    fork(itemsSaga),
+    fork(initSaga)
   ]);
-  yield takeEvery(INIT_MODULE, init);
+  yield takeEvery(INIT_MODULE, initMainInventory);
 }

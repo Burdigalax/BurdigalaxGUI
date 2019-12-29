@@ -53,7 +53,7 @@ const LiveDemoContainer = compose(
     componentDidMount() {
       window.addEventListener(onEquip, ({ detail = {} }) => {
         const { idInventory, idItem, isEquipped } = detail;
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventories](
           idInventory,
           [
             {
@@ -66,7 +66,7 @@ const LiveDemoContainer = compose(
 
       window.addEventListener(onUse, ({ detail = {} }) => {
         const { idInventory, idItem, newQuantity } = detail;
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventories](
           idInventory,
           [
             {
@@ -79,7 +79,7 @@ const LiveDemoContainer = compose(
 
       window.addEventListener(onDelete, ({ detail = {} }) => {
         const { idInventory, idItem, newQuantity } = detail;
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventories](
           idInventory,
           [
             {
@@ -98,7 +98,7 @@ const LiveDemoContainer = compose(
           newQuantityOrigin,
           newQuantityDestination
         } = detail;
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventories](
           originInventoryId,
           [
             {
@@ -108,7 +108,7 @@ const LiveDemoContainer = compose(
           ]
         );
 
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventories](
           destinationInventoryId,
           [
             {

@@ -3,7 +3,7 @@ export const prefix = "BURDIGALAX_inventory";
 export const setConfig = "setConfig";
 export const updateItems = "updateItems";
 export const updateInventory = "updateInventory";
-export const updateItemsInventory = "updateItemsInventory";
+export const updateItemsInventories = "updateItemsInventories";
 
 export const onClose = "BURDIGALAX_inventory_onClose";
 export const onUse = "BURDIGALAX_inventory_onUse";
@@ -18,7 +18,7 @@ export const JS_FUNCTIONS = {
   setConfig,
   updateItems,
   updateInventory,
-  updateItemsInventory
+  updateItemsInventories
 };
 
 const callEvent = (name, value) => {

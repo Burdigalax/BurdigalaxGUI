@@ -5,13 +5,15 @@ import {
   SET_CURRENT_CONTEXT,
   SET_MAIN_INVENTORY_ID
 } from "../../actions/inventory";
+import { SET_CURRENT_INVENTORY_ID } from "../../actions/inventory";
 
 const INITIAL_STATE = {
   selectedItemId: null,
   selectedNearbyInventoryId: null,
   selectedCategoryId: "all",
   currentContext: null,
-  mainInventoryId: null
+  mainInventoryId: null,
+  currentInventoryId: null
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -41,6 +43,11 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         mainInventoryId: action.id
+      };
+    case SET_CURRENT_INVENTORY_ID:
+      return {
+        ...state,
+        currentInventoryId: action.id
       };
     default:
       return state;
