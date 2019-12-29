@@ -7,7 +7,7 @@ import selectSelectedItemId from "../../redux/reducers/sceneState/selectors/sele
 import { initModule } from "../../redux/actions/init";
 import { setCurrentContext, CONTEXT_TYPE } from "../../redux/actions/inventory";
 import { updateItemsInventoriesRequest } from "../../redux/actions/inventories";
-import getItemsIdsFromInventoryByCategorySelected from "../../redux/reducers/entities/inventory/getters/get-items-ids-from-inventory-by-category-selected";
+import getItemsIdsFromInventoryByCategorySelected from "../../redux/reducers/entities/inventories/getters/get-items-ids-from-inventory-by-category-selected";
 import getSelectedCategory from "../../redux/reducers/sceneState/getters/get-selected-category";
 
 const mapStateToProps = state => {

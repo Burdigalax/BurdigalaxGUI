@@ -13,7 +13,7 @@ import {
 import { BTN_VARIANT } from "../../../common/components/BurdiButton/constants";
 import Icon from "../../../common/components/Icon";
 import getCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-current-inventory";
-import getBusyStorage from "../../redux/reducers/entities/inventory/getters/get-busy-storage";
+import getBusyStorage from "../../redux/reducers/entities/inventories/getters/get-busy-storage";
 import { LUA_FUNCTIONS } from "../../events";
 
 const HeaderComponent = ({

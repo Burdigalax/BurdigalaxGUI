@@ -1,6 +1,6 @@
 import { pipe, filter, includes, values, concat } from "ramda";
 
-import getCurrentInventory from "../../inventories/getters/get-current-inventory";
+import getCurrentInventory from "./get-current-inventory";
 import selectCategories from "../../categories/selectors/select-categories";
 import selectCurrentContext from "../../../sceneState/selectors/select-current-context";
 import { CONTEXT_TYPE } from "../../../../actions/inventory";

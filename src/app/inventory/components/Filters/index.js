@@ -5,7 +5,7 @@ import { compose, withHandlers } from "recompose";
 
 import { Wrapper, Filter } from "./styles";
 import Icon from "../../../common/components/Icon";
-import getCategoriesFromInventory from "../../redux/reducers/entities/inventory/getters/get-categories-from-inventory";
+import getCategoriesFromInventory from "../../redux/reducers/entities/inventories/getters/get-categories-from-inventory";
 import selectSelectedCategoryId from "../../redux/reducers/sceneState/selectors/select-selected-category-id";
 import { setCategorySelectedId } from "../../redux/actions/categories";
 

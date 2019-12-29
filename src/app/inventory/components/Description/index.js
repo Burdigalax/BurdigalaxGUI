@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import Description from "./component";
-import getItemCompletedFromInventoryById from "../../redux/reducers/entities/inventory/getters/get-item-completed-from-inventory-by-id";
+import getItemCompletedFromInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-completed-from-inventory-by-id";
 
 const mapStateToProps = (state, props) => {
   const {

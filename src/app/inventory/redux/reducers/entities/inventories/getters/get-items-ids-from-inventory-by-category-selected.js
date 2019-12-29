@@ -2,7 +2,7 @@ import { filter, propEq, keys, map, prop } from "ramda";
 
 import getItemsIdsFromInventory from "./get-items-ids-from-inventory";
 import selectSelectedCategoryId from "../../../sceneState/selectors/select-selected-category-id";
-import getItemsFromCurrentInventory from "../../inventories/getters/get-items-from-current-inventory";
+import getItemsFromCurrentInventory from "./get-items-from-current-inventory";
 import getItemCompletedFromInventory from "./get-items-completed-from-inventory";
 
 export default state => {

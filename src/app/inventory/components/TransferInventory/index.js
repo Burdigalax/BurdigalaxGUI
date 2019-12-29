@@ -4,10 +4,10 @@ import { isEmpty } from "ramda";
 
 import Inventory from "../Inventory/component";
 import selectSelectedItemId from "../../redux/reducers/sceneState/selectors/select-selected-item-id";
-import getItemsIdsFromInventoryByCategorySelected from "../../redux/reducers/entities/inventory/getters/get-items-ids-from-inventory-by-category-selected";
+import getItemsIdsFromInventoryByCategorySelected from "../../redux/reducers/entities/inventories/getters/get-items-ids-from-inventory-by-category-selected";
 import getSelectedCategory from "../../redux/reducers/sceneState/getters/get-selected-category";
 import { setCurrentContext, CONTEXT_TYPE } from "../../redux/actions/inventory";
-import getHasItemsFromInventory from "../../redux/reducers/entities/inventory/getters/get-has-items-form-inventory";
+import getHasItemsFromInventory from "../../redux/reducers/entities/inventories/getters/get-has-items-form-inventory";
 
 const mapStateToProps = state => {
   const selectedItemId = selectSelectedItemId(state);

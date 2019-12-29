@@ -1,6 +1,6 @@
 import { pathOr, map } from "ramda";
 
-import getItemsFromCurrentInventory from "../../inventories/getters/get-items-from-current-inventory";
+import getItemsFromCurrentInventory from "./get-items-from-current-inventory";
 import selectItemById from "../../items/selectors/select-items-by-id";
 
 export default state => {
