@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Interface = styled.div`
   display: flex;
   flex-direction: column;
+  min-width: 380px;
   max-width: 475px;
   font-family: Montserrat, sans-serif;
   -webkit-user-select: none;
@@ -10,6 +11,7 @@ export const Interface = styled.div`
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+  margin: 10px;
 `;
 
 export const ItemsList = styled.div`

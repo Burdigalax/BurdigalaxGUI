@@ -9,10 +9,13 @@ import { setItemSelectedId } from "../../redux/actions/items";
 import selectItemsById from "../../redux/reducers/entities/items/selectors/select-items-by-id";
 import selectItemFromInventoryById from "../../redux/reducers/entities/inventory/selectors/select-item-from-inventory-by-id";
 import { onUseItem, onEquipItem } from "../../redux/actions/items";
+import selectIdFromInventory from "../../redux/reducers/entities/inventory/selectors/select-id-from-inventory";
+import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
+import { CONTEXT_TYPE } from "../../redux/actions/inventory";
 
 const mapStateToProps = (state, ownProps) => {
   const selectedItemId = selectSelectedItemId(state);
-  const { id, health, iconUrl, isEquipable, weight } = selectItemsById(
+  const { id: idItem, health, iconUrl, isEquipable, weight } = selectItemsById(
     state,
     ownProps.id
   );
@@ -20,9 +23,15 @@ const mapStateToProps = (state, ownProps) => {
     state,
     ownProps.id
   );
+
+  const idInventory = selectIdFromInventory(state);
+  const context = selectCurrentContext(state);
+
   return {
-    id,
-    isSelected: selectedItemId === id,
+    idInventory,
+    context,
+    idItem,
+    isSelected: selectedItemId === idItem,
     health,
     isEquipped,
     quantity,
@@ -45,13 +54,15 @@ export default compose(
   withState("clickTime", "setClickTime", 0),
   withHandlers({
     onMouseDownItem: ({
-      id,
+      idItem,
+      idInventory,
       isEquipped,
       isEquipable,
       clickTime,
       quantity,
       setClickTime,
       onUseItem,
+      context,
       onEquipItem
     }) => event => {
       event.preventDefault();
@@ -59,22 +70,23 @@ export default compose(
 
       if (event.button === LEFT_BUTTON) {
         if (now - clickTime < 200) {
-          onUseItem(id, quantity);
+          onUseItem({ idInventory, idItem, quantity });
         }
       }
       if (
         event.button === MIDDLE_BUTTON &&
         isEquipable &&
-        now - clickTime > 150
+        now - clickTime > 150 &&
+        context === CONTEXT_TYPE.mainInventory
       )
-        onEquipItem(id, !isEquipped);
+        onEquipItem({ idInventory, idItem, isEquipped: !isEquipped });
 
       setClickTime(now);
       return false;
     },
-    onClickItem: ({ setItemSelectedId, id, isSelected }) => () => {
-      if (!isSelected) setItemSelectedId(id);
+    onClickItem: ({ setItemSelectedId, idItem, isSelected }) => () => {
+      if (!isSelected) setItemSelectedId(idItem);
     }
   }),
-  mapProps(omit(["countClick", "setClick"]))
+  mapProps(omit(["countClick", "setClick", "context"]))
 )(Item);

@@ -5,7 +5,8 @@ import {
   JS_FUNCTIONS,
   onEquip,
   onUse,
-  onDelete
+  onDelete,
+  onTransfer
 } from "../../../app/inventory/events";
 import Exemple from "../commons/exemple/";
 import { Button, Wrapper } from "./styles";
@@ -51,33 +52,71 @@ const LiveDemoContainer = compose(
   lifecycle({
     componentDidMount() {
       window.addEventListener(onEquip, ({ detail = {} }) => {
-        const { id, isEquipped } = detail;
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory]([
-          {
-            id,
-            isEquipped
-          }
-        ]);
+        const { idInventory, idItem, isEquipped } = detail;
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+          idInventory,
+          [
+            {
+              id: idItem,
+              isEquipped
+            }
+          ]
+        );
       });
 
       window.addEventListener(onUse, ({ detail = {} }) => {
-        const { id, newQuantity } = detail;
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory]([
-          {
-            id,
-            quantity: newQuantity
-          }
-        ]);
+        const { idInventory, idItem, newQuantity } = detail;
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+          idInventory,
+          [
+            {
+              id: idItem,
+              quantity: newQuantity
+            }
+          ]
+        );
       });
 
       window.addEventListener(onDelete, ({ detail = {} }) => {
-        const { id, newQuantity } = detail;
-        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory]([
-          {
-            id,
-            quantity: newQuantity
-          }
-        ]);
+        const { idInventory, idItem, newQuantity } = detail;
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+          idInventory,
+          [
+            {
+              id: idItem,
+              quantity: newQuantity
+            }
+          ]
+        );
+      });
+
+      window.addEventListener(onTransfer, ({ detail = {} }) => {
+        const {
+          originInventoryId,
+          destinationInventoryId,
+          idItem,
+          newQuantityOrigin,
+          newQuantityDestination
+        } = detail;
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+          originInventoryId,
+          [
+            {
+              id: idItem,
+              quantity: newQuantityOrigin
+            }
+          ]
+        );
+
+        window[JS_FUNCTIONS.prefix][JS_FUNCTIONS.updateItemsInventory](
+          destinationInventoryId,
+          [
+            {
+              id: idItem,
+              quantity: newQuantityDestination
+            }
+          ]
+        );
       });
     }
   })

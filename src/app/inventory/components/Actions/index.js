@@ -8,15 +8,19 @@ import getItemCompletedFromInventoryById from "../../redux/reducers/entities/inv
 import {
   onEquipItem,
   onUseItem,
-  onDeleteItem
+  onDeleteItem,
+  onTransferItem
 } from "../../redux/actions/items";
 import getFormatedNearbyInventoriesFromInventory from "../../redux/reducers/entities/inventory/getters/get-formated-nearby-inventories-from-inventory";
 import selectSelectedNearbyInventoryId from "../../redux/reducers/sceneState/selectors/select-selected-nearby-inventory-id";
 import { setNearbyInventorySelectedId } from "../../redux/actions/nearbyInventories";
+import selectIdFromInventory from "../../redux/reducers/entities/inventory/selectors/select-id-from-inventory";
+import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
+import { CONTEXT_TYPE } from "../../redux/actions/inventory";
 
 const mapStateToProps = (state, props) => {
   const {
-    id,
+    id: idItem,
     quantity,
     isEquipable,
     isEquipped
@@ -25,13 +29,20 @@ const mapStateToProps = (state, props) => {
   const nearbyInventories = getFormatedNearbyInventoriesFromInventory(state);
   const selectedNearbyInventoryId =
     selectSelectedNearbyInventoryId(state) || "none";
+
+  const idInventory = selectIdFromInventory(state);
+  const context = selectCurrentContext(state);
+
   return {
-    id,
+    idItem,
+    idInventory,
     maxQuantity: quantity,
-    isEquipable,
+    isEquipable:
+      context === CONTEXT_TYPE.transferInventory ? false : isEquipable,
     isEquipped,
     nearbyInventories,
-    selectedNearbyInventoryId
+    selectedNearbyInventoryId,
+    isDisabledSelect: context === CONTEXT_TYPE.transferInventory
   };
 };
 
@@ -39,16 +50,18 @@ const mapDispatchToProps = {
   onUseItem,
   onEquipItem,
   setNearbyInventorySelectedId,
-  onDeleteItem
+  onDeleteItem,
+  onTransferItem
 };
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   withState("quantity", "setQuantity", 1),
   withHandlers({
-    onEquip: ({ isEquipped, id, onEquipItem }) => () =>
-      onEquipItem(id, !isEquipped),
-    onUse: ({ onUseItem, id, maxQuantity }) => () => onUseItem(id, maxQuantity),
+    onEquip: ({ isEquipped, idInventory, idItem, onEquipItem }) => () =>
+      onEquipItem({ idInventory, idItem, isEquipped: !isEquipped }),
+    onUse: ({ onUseItem, idItem, maxQuantity, idInventory }) => () =>
+      onUseItem({ idInventory, idItem, quantity: maxQuantity }),
     onChangeQuantity: ({ setQuantity }) => event =>
       setQuantity(pathOr(1, ["target", "value"], event)),
     onBlurQuantity: ({ maxQuantity, quantity, setQuantity }) => event => {
@@ -59,18 +72,30 @@ export default compose(
     },
     onSetMaxQuantity: ({ maxQuantity, setQuantity }) => () =>
       setQuantity(maxQuantity),
-    onDelete: ({ id, quantity, onDeleteItem }) => () =>
-      onDeleteItem(id, quantity),
-    onTransfer: ({}) => () => console.log("onTransfer"),
+    onDelete: ({ idItem, idInventory, quantity, onDeleteItem }) => () =>
+      onDeleteItem({ idItem, idInventory, quantity }),
+    onTransfer: ({
+      idInventory,
+      selectedNearbyInventoryId,
+      idItem,
+      quantity,
+      onTransferItem
+    }) => () =>
+      onTransferItem({
+        originInventoryId: idInventory,
+        destinationInventoryId: selectedNearbyInventoryId,
+        idItem,
+        quantity
+      }),
     onChangeNearbyInventory: ({ setNearbyInventorySelectedId }) => event => {
       setNearbyInventorySelectedId(path(["target", "value"], event));
     }
   }),
   lifecycle({
     componentDidUpdate(prevProps) {
-      const { id, maxQuantity, setQuantity } = this.props;
+      const { idItem, maxQuantity, setQuantity } = this.props;
 
-      if (id !== prevProps.id) return setQuantity(1);
+      if (idItem !== prevProps.idItem) return setQuantity(1);
 
       if (
         maxQuantity !== prevProps.maxQuantity &&

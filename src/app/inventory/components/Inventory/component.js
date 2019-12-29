@@ -9,12 +9,12 @@ import {
   ItemsList,
   NoItems
 } from "./styles";
-import Header from "./Header";
-import ItemContainer from "./Item";
-import Filters from "./Filters";
-import Actions from "./Actions";
-import Description from "./Description";
-import Icon from "../../common/components/Icon";
+import Header from "../Header";
+import ItemContainer from "../Item";
+import Filters from "../Filters";
+import Actions from "../Actions";
+import Description from "../Description";
+import Icon from "../../../common/components/Icon";
 
 const renderItem = id => <ItemContainer key={`item-${id}`} id={id} />;
 

@@ -1,12 +1,13 @@
 export default {
   inventory: {
+    id: 1,
     storageSize: 180,
     name: "Sac à dos",
     description: "Arthur Shelby",
     selectName: "Arthur Shelby",
     selectedNearbyInventoryId: 26,
     categoriesIds: [1, 2, 3, 4, 5],
-    nearbyInventoriesIds: [26, 33],
+    nearbyInventoriesIds: [26, 27, 33],
     items: [
       {
         id: 1,
@@ -254,6 +255,19 @@ export default {
         {
           id: 2,
           quantity: 10
+        }
+      ]
+    },
+    {
+      id: 27,
+      storageSize: 5000,
+      name: "Camion DIR",
+      description: "Direction interdépartementale des routes",
+      selectName: "Camion DIR",
+      items: [
+        {
+          id: 5,
+          quantity: 20
         }
       ]
     },

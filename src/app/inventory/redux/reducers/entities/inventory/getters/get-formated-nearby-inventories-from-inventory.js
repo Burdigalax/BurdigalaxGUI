@@ -8,10 +8,10 @@ export default state => {
   );
 
   return map(inventory => {
-    const { id, shortName, name } = inventory;
+    const { id, selectName, name } = inventory;
     return {
       id,
-      name: shortName || name
+      name: selectName || name
     };
   }, nearbyInventoriesFromInventory);
 };

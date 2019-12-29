@@ -38,11 +38,10 @@ const callEvent = (name, value) => {
 
 export const LUA_FUNCTIONS = {
   onClose: () => callEvent(onClose),
-  onEquip: ({ id, isEquipped }) => callEvent(onEquip, { id, isEquipped }),
-  onUse: ({ id, newQuantity }) => callEvent(onUse, { id, newQuantity }),
-  onDelete: ({ id, quantity, newQuantity }) =>
-    callEvent(onDelete, { id, quantity, newQuantity }),
-  onTransfer: () => callEvent(onTransfer),
+  onEquip: data => callEvent(onEquip, data),
+  onUse: data => callEvent(onUse, data),
+  onDelete: data => callEvent(onDelete, data),
+  onTransfer: data => callEvent(onTransfer, data),
   onChangeNearbyInventorySelected: ({ id }) =>
     callEvent(onChangeNearbyInventorySelected, { id })
 };

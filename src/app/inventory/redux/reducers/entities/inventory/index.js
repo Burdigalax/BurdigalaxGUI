@@ -1,22 +1,9 @@
-import {
-  pathOr,
-  find,
-  pipe,
-  concat,
-  propEq,
-  mergeDeepRight,
-  dropRepeatsWith,
-  mergeAll,
-  map,
-  mergeDeepWith,
-  reject,
-  isNil
-} from "ramda";
+import { pathOr, pipe, mergeDeepRight, mergeAll, map, reject } from "ramda";
 
 import {
   SET_INVENTORY,
   UPDATE_INVENTORY,
-  UPDATE_ITEMS_INVENTORY
+  UPDATE_ITEMS_INVENTORY_SUCCESS
 } from "../../../actions/inventory";
 
 const INITIAL_STATE = {};
@@ -56,7 +43,7 @@ export default (state = INITIAL_STATE, action) => {
         }
       };
       return excludeItemsQuantityZero(mergeDeepRight(state, newInventory));
-    case UPDATE_ITEMS_INVENTORY:
+    case UPDATE_ITEMS_INVENTORY_SUCCESS:
       const itemsUpdatedByIds = { byId: getItemsById(action.items) };
       const existingItems = pathOr([], ["items"], state);
       const newItems = mergeDeepRight(existingItems, itemsUpdatedByIds);

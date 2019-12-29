@@ -1,11 +1,17 @@
 import { SET_ITEM_SELECTED_ID } from "../../actions/items";
 import { SET_NEARBY_INVENTORY_SELECTED_ID } from "../../actions/nearbyInventories";
 import { SET_CATEGORY_SELECTED_ID } from "../../actions/categories";
+import {
+  SET_CURRENT_CONTEXT,
+  SET_MAIN_INVENTORY_ID
+} from "../../actions/inventory";
 
 const INITIAL_STATE = {
   selectedItemId: null,
   selectedNearbyInventoryId: null,
-  selectedCategoryId: "all"
+  selectedCategoryId: "all",
+  currentContext: null,
+  mainInventoryId: null
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -23,7 +29,18 @@ export default (state = INITIAL_STATE, action) => {
     case SET_CATEGORY_SELECTED_ID:
       return {
         ...state,
-        selectedCategoryId: action.id
+        selectedCategoryId: action.id,
+        selectedItemId: null
+      };
+    case SET_CURRENT_CONTEXT:
+      return {
+        ...state,
+        currentContext: action.context
+      };
+    case SET_MAIN_INVENTORY_ID:
+      return {
+        ...state,
+        mainInventoryId: action.id
       };
     default:
       return state;
