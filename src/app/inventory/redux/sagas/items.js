@@ -46,6 +46,8 @@ function* onTransfer({
 }) {
   const currentInventoryId = yield select(selectCurrentInventoryId);
   if (currentInventoryId === originInventoryId) {
+    console.log("ON TRANSFER", originInventoryId);
+
     const { quantity: nowQuantityOrigin } = yield select(state =>
       getItemFromCurrentInventoryById(state, idItem)
     );
@@ -58,13 +60,15 @@ function* onTransfer({
       )
     );
 
+    const quantityToTransfer = quantity || nowQuantityOrigin;
+
     LUA_FUNCTIONS.onTransfer({
       originInventoryId,
       destinationInventoryId,
       idItem,
-      quantity,
-      newQuantityOrigin: nowQuantityOrigin - quantity,
-      newQuantityDestination: nowQuantityDestination + quantity
+      quantity: quantityToTransfer,
+      newQuantityOrigin: nowQuantityOrigin - quantityToTransfer,
+      newQuantityDestination: nowQuantityDestination + quantityToTransfer
     });
   }
 }

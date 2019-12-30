@@ -6,18 +6,25 @@ import selectSelectedItemId from "../../redux/reducers/sceneState/selectors/sele
 import getItemsIdsFromCurrentInventoryByCategorySelected from "../../redux/reducers/entities/inventories/getters/get-items-ids-from-current-inventory-by-category-selected";
 import getSelectedCategory from "../../redux/reducers/sceneState/getters/get-selected-category";
 import { setCurrentContext, CONTEXT_TYPE } from "../../redux/actions/inventory";
-import getHasItemsFromCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-has-items-form-current-inventory";
+import getHasReadAccessFromCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-has-read-access-from-current-inventory";
+import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
+import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
 
 const mapStateToProps = state => {
   const selectedItemId = selectSelectedItemId(state);
   const itemsIds = getItemsIdsFromCurrentInventoryByCategorySelected(state);
   const { name } = getSelectedCategory(state);
-  const hasItems = getHasItemsFromCurrentInventory(state);
+  const hasReadAccess = getHasReadAccessFromCurrentInventory(state);
+  const context = selectCurrentContext(state);
+  const idInventory = selectCurrentInventoryId(state);
+
   return {
+    idInventory,
+    context,
     selectedItemId,
     itemsIds,
     categoryName: name,
-    hasItems
+    hasReadAccess
   };
 };
 
@@ -32,5 +39,5 @@ export default compose(
       setCurrentContext(CONTEXT_TYPE.transferInventory);
     }
   }),
-  branch(({ hasItems }) => !hasItems, renderNothing)
+  branch(({ hasReadAccess }) => !hasReadAccess, renderNothing)
 )(Inventory);

@@ -11,6 +11,7 @@ import transferInventorySaga from "./redux/sagas/transferInventory/";
 
 import TransferInventory from "./components/TransferInventory";
 import { Wrapper } from "./styles";
+import DraggableContainer from "./components/Draggable";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -41,8 +42,10 @@ const TransferInventoryContainer = () => (
 );
 
 export default () => (
-  <Wrapper>
-    <InventoryContainer />
-    <TransferInventoryContainer />
-  </Wrapper>
+  <DraggableContainer>
+    <Wrapper onContextMenu={e => e.preventDefault()}>
+      <InventoryContainer />
+      <TransferInventoryContainer />
+    </Wrapper>
+  </DraggableContainer>
 );

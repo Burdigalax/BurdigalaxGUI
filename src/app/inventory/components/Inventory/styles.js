@@ -12,6 +12,13 @@ export const Interface = styled.div`
   -o-user-select: none;
   user-select: none;
   margin: 10px;
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
 `;
 
 export const ItemsList = styled.div`

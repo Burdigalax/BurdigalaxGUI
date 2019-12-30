@@ -12,6 +12,8 @@ export const Wrapper = styled.div`
   border-radius: 10px;
   margin: 5px 5px;
   cursor: pointer;
+  position: ${({ isOnDrag }) => (isOnDrag ? "absolute" : "static")};
+  z-index: ${({ isOnDrag }) => (isOnDrag ? 999 : "")};
 `;
 
 const maxHealthBar = 86;

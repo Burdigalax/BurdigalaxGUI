@@ -10,6 +10,8 @@ import selectItemsById from "../../redux/reducers/entities/items/selectors/selec
 import getItemFromCurrentInventoryById from "../../redux/reducers/entities/inventories/getters/get-item-from-current-inventory-by-id";
 import { onUseItem, onEquipItem } from "../../redux/actions/items";
 import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
+import { onTransferItem } from "../../redux/actions/items";
+import selectSelectedNearbyInventoryId from "../../redux/reducers/sceneState/selectors/select-selected-nearby-inventory-id";
 
 import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
 import { CONTEXT_TYPE } from "../../redux/actions/inventory";
@@ -26,10 +28,12 @@ const mapStateToProps = (state, ownProps) => {
   );
 
   const idInventory = selectCurrentInventoryId(state);
+  const selectedNearbyInventoryId = selectSelectedNearbyInventoryId(state);
   const context = selectCurrentContext(state);
 
   return {
     idInventory,
+    selectedNearbyInventoryId,
     context,
     idItem,
     isSelected: selectedItemId === idItem,
@@ -45,7 +49,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = {
   setItemSelectedId,
   onUseItem,
-  onEquipItem
+  onEquipItem,
+  onTransferItem
 };
 
 const MIDDLE_BUTTON = 1;
@@ -53,6 +58,7 @@ const LEFT_BUTTON = 0;
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   withState("clickTime", "setClickTime", 0),
+  withState("isOnDrag", "setIsOnDrag", false),
   withHandlers({
     onMouseDownItem: ({
       idItem,
@@ -74,6 +80,7 @@ export default compose(
           onUseItem({ idInventory, idItem, quantity });
         }
       }
+
       if (
         event.button === MIDDLE_BUTTON &&
         isEquipable &&
@@ -89,5 +96,15 @@ export default compose(
       if (!isSelected) setItemSelectedId(idItem);
     }
   }),
-  mapProps(omit(["countClick", "setClick", "context"]))
+  mapProps(
+    omit([
+      "context",
+      "countClick",
+      "setClick",
+      "selectedNearbyInventoryId",
+      "onTransferItem",
+      "onEquipItem",
+      "onUseItem"
+    ])
+  )
 )(Item);

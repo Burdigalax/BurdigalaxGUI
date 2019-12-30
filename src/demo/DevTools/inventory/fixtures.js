@@ -253,6 +253,7 @@ export default {
       description: "Rom Burdi",
       selectName: "Voiture Rom Burdi",
       categoriesIds: [1, 2],
+      hasReadAccess: true,
       items: [
         {
           id: 2,
@@ -266,6 +267,7 @@ export default {
       name: "Camion DIR",
       description: "Direction interdépartementale des routes",
       selectName: "Camion DIR",
+      hasReadAccess: true,
       items: [
         {
           id: 5,
@@ -277,6 +279,7 @@ export default {
       id: 33,
       storageSize: 2000,
       name: "Sac à dos",
+      hasReadAccess: false,
       description: "Nabilus Laruche",
       selectName: "Nabilus Laruche",
       items: []

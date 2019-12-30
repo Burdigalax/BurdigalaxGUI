@@ -9,12 +9,16 @@ import { setCurrentContext, CONTEXT_TYPE } from "../../redux/actions/inventory";
 import { updateItemsInventoriesRequest } from "../../redux/actions/inventories";
 import getItemsIdsFromCurrentInventoryByCategorySelected from "../../redux/reducers/entities/inventories/getters/get-items-ids-from-current-inventory-by-category-selected";
 import getSelectedCategory from "../../redux/reducers/sceneState/getters/get-selected-category";
+import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
+import { onTransferItem } from "../../redux/actions/items";
 
 const mapStateToProps = state => {
   const selectedItemId = selectSelectedItemId(state);
   const itemsIds = getItemsIdsFromCurrentInventoryByCategorySelected(state);
   const { name } = getSelectedCategory(state);
+  const idInventory = selectCurrentInventoryId(state);
   return {
+    idInventory,
     selectedItemId,
     itemsIds,
     categoryName: name
@@ -24,7 +28,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
   initModule,
   updateItemsInventoriesRequest,
-  setCurrentContext
+  setCurrentContext,
+  onTransferItem
 };
 
 export default compose(
@@ -36,7 +41,8 @@ export default compose(
         updateItemsInventoriesRequest,
         updateInventoryRequest,
         updateItem,
-        setCurrentContext
+        setCurrentContext,
+        onTransferItem
       } = this.props;
 
       setCurrentContext(CONTEXT_TYPE.mainInventory);
@@ -46,7 +52,8 @@ export default compose(
         [JS_FUNCTIONS.setConfig]: initModule,
         [JS_FUNCTIONS.updateInventory]: updateInventoryRequest,
         [JS_FUNCTIONS.updateItems]: updateItem,
-        [JS_FUNCTIONS.updateItemsInventories]: updateItemsInventoriesRequest
+        [JS_FUNCTIONS.updateItemsInventories]: updateItemsInventoriesRequest,
+        [JS_FUNCTIONS.transferItem]: onTransferItem
       };
     }
   })
