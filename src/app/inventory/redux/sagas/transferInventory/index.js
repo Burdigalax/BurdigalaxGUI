@@ -3,7 +3,7 @@ import { fork, all, takeEvery, put } from "redux-saga/effects";
 import { INIT_MODULE } from "../../actions/init";
 import { setCategories } from "../../actions/categories";
 import inventoriesSaga from "../inventories";
-import nearbyInventoriesSaga from "./nearbyInventories";
+import nearbyInventoriesSaga from "../nearbyInventories";
 import { setMainInventoryId } from "../../actions/inventory";
 import itemsSaga from "../items";
 import initSaga from "../init";

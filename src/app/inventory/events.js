@@ -44,6 +44,6 @@ export const LUA_FUNCTIONS = {
   onUse: data => callEvent(onUse, data),
   onDelete: data => callEvent(onDelete, data),
   onTransfer: data => callEvent(onTransfer, data),
-  onChangeNearbyInventorySelected: ({ id }) =>
-    callEvent(onChangeNearbyInventorySelected, { id })
+  onChangeNearbyInventorySelected: data =>
+    callEvent(onChangeNearbyInventorySelected, data)
 };

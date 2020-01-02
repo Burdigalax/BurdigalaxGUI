@@ -19,7 +19,7 @@ https://github.com/Burdigalax/BurdigalaxRP-Onset
 
 ### Live Demo
 
-Full readme and live demo of exemple usage shop module on : http://rom444.free.fr/BurdigalaxRP/ 
+Full readme and live demo of exemple usage gas station module on : http://rom444.free.fr/BurdigalaxRP/ 
 
 ### API
 

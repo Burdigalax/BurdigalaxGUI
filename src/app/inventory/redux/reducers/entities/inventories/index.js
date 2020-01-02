@@ -38,21 +38,24 @@ const getItemsById = (items = []) =>
   )(items);
 
 const overrideNearbyInventoryData = (inventory, mainInventoryId) => {
+  if (!mainInventoryId) return null;
+
   const nearbyInventoriesIds = pathOr([], ["nearbyInventoriesIds"], inventory);
-  if (!mainInventoryId || inventory.id === mainInventoryId)
+  if (inventory.id === mainInventoryId) {
     return {
       nearbyInventoriesIds: reject(
-        id => id === inventory.id,
+        id => id === mainInventoryId,
         nearbyInventoriesIds
       )
     };
+  }
 
   return {
     selectedNearbyInventoryId:
       inventory.selectedNearbyInventoryId || mainInventoryId,
-    nearbyInventoriesIds: reject(
-      id => id === inventory.id,
-      append(mainInventoryId, nearbyInventoriesIds)
+    nearbyInventoriesIds: append(
+      mainInventoryId,
+      reject(id => id === inventory.id, nearbyInventoriesIds)
     )
   };
 };

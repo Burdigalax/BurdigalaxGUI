@@ -4,7 +4,7 @@ import { find, propEq, path, concat } from "ramda";
 import { INIT_MODULE } from "../../actions/init";
 import { setCategories } from "../../actions/categories";
 import inventoriesSaga from "../inventories";
-import nearbyInventoriesSaga from "./nearbyInventories";
+import nearbyInventoriesSaga from "../nearbyInventories";
 import itemsSaga from "../items";
 import {
   setCurrentInventoryId,
@@ -38,7 +38,9 @@ function* initMainInventory({ module }) {
     ["selectedNearbyInventoryId"],
     find(propEq("id", mainInventoryId), inventories)
   );
-  yield put(setNearbyInventorySelectedId(selectedNearbyInventoryId));
+  yield put(
+    setNearbyInventorySelectedId(mainInventoryId, selectedNearbyInventoryId)
+  );
 }
 
 export default function* root() {

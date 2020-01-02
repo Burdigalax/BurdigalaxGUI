@@ -26,7 +26,7 @@ export default (state = INITIAL_STATE, action) => {
     case SET_NEARBY_INVENTORY_SELECTED_ID:
       return {
         ...state,
-        selectedNearbyInventoryId: action.id
+        selectedNearbyInventoryId: action.destinationInventoryId
       };
     case SET_CATEGORY_SELECTED_ID:
       return {

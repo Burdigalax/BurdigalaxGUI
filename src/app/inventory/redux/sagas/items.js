@@ -46,10 +46,12 @@ function* onTransfer({
 }) {
   const currentInventoryId = yield select(selectCurrentInventoryId);
   if (currentInventoryId === originInventoryId) {
-    console.log("ON TRANSFER", originInventoryId);
-
     const { quantity: nowQuantityOrigin } = yield select(state =>
-      getItemFromCurrentInventoryById(state, idItem)
+      selectItemFromInventoriesByIdInventoryAndIdItem(
+        state,
+        originInventoryId,
+        idItem
+      )
     );
 
     const { quantity: nowQuantityDestination = 0 } = yield select(state =>

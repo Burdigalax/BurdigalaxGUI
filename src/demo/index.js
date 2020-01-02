@@ -18,7 +18,7 @@ const Demo = () => {
   const toggleInventory = () => setInventory(!hasInventoryOpen);
 
   return (
-    <div style={{ margin: "15px" }}>
+    <div style={{ margin: "15px", minHeight: "1400px" }}>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"

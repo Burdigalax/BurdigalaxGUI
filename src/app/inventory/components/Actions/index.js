@@ -98,9 +98,12 @@ export default compose(
       }),
     onChangeNearbyInventory: ({
       setNearbyInventorySelectedId,
-      context
+      idInventory
     }) => event => {
-      setNearbyInventorySelectedId(path(["target", "value"], event), context);
+      setNearbyInventorySelectedId(
+        idInventory,
+        path(["target", "value"], event)
+      );
     }
   }),
   lifecycle({
