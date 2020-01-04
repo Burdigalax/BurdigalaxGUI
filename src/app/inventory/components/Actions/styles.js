@@ -24,7 +24,8 @@ export const UseButton = styled(BurdiButton)`
 
 export const StyledInputBase = withStyles({
   root: {
-    color: "#A6A6A6"
+    color: "#A6A6A6",
+    fontFamily: "Montserrat, sans-serif"
   }
 })(InputBase);
 

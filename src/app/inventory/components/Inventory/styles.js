@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const Interface = styled.div`
   display: flex;
-  opacity: 0.9;
-  flex-direction: column;
+  width: 430px;
   min-width: 380px;
   max-width: 475px;
+  opacity: 0.9;
+  flex-direction: column;
   font-family: Montserrat, sans-serif;
   -webkit-user-select: none;
   -khtml-user-select: none;

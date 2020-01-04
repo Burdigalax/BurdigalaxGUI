@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   border: ${({ isSelected }) =>
     isSelected ? "2px solid #06d2f2" : "2px solid #505d67"};
   border-radius: 10px;
-  margin: 5px 5px;
+  margin: 5px 10px;
   cursor: pointer;
   position: ${({ isOnDrag }) => (isOnDrag ? "absolute" : "static")};
   z-index: ${({ isOnDrag }) => (isOnDrag ? 999 : "")};
