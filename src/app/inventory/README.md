@@ -16,7 +16,7 @@ https://github.com/Burdigalax/BurdigalaxRP-Onset
 
 ### Presentation
 
-[![Vidéo de présentation](https://img.youtube.com/vi/Rdj-Fb5cTSQ/0.jpg)](https://www.youtube.com/watch?v=Rdj-Fb5cTSQ)
+[![Vidéo de présentation](https://img.youtube.com/vi/BiZdyClU7Cs/0.jpg)](https://www.youtube.com/watch?v=BiZdyClU7Cs)
 
 ### Live Demo
 

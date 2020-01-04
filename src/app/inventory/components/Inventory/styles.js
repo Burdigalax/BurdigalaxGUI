@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Interface = styled.div`
   display: flex;
-  width: 430px;
+  width: 459px;
   min-width: 380px;
   max-width: 475px;
-  opacity: 0.9;
   flex-direction: column;
   font-family: Montserrat, sans-serif;
   -webkit-user-select: none;
@@ -29,6 +28,7 @@ export const ItemsList = styled.div`
   flex-flow: wrap;
   overflow: overlay;
   max-height: 295px;
+  padding-top: 5px;
   ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -74,7 +74,7 @@ export const CategoryName = styled.div`
 `;
 
 export const Body = styled.div`
-  background-color: #2d3c48;
+  background-color: #2d3c48c2;
   padding: 10px;
 `;
 

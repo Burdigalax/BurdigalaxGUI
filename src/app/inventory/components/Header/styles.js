@@ -4,7 +4,7 @@ import BurdiButton from "../../../common/components/BurdiButton";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #3b4e5e;
+  background-color: #2d3c48c2;
   color: white;
   border-radius: 13px 13px 0 0;
   align-items: center;

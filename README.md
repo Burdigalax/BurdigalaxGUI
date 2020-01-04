@@ -70,5 +70,9 @@ Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/onShop/
 
 Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/gasStation/README.md
 
+## inventory
+
+Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/inventory/README.md
+
 ### Contact
 > Discord: RomBurdi#9770

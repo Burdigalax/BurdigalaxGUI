@@ -33,11 +33,7 @@ const excludeZeroQuantity = inventories => {
 const getItemsById = (items = []) =>
   pipe(
     map(item => ({
-      [`${item.id}`]: {
-        ...item,
-        isUsable: item.isUsable !== false,
-        isDeletable: item.isDeletable !== false
-      }
+      [`${item.id}`]: item
     })),
     mergeAll
   )(items);

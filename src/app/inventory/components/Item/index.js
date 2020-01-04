@@ -18,11 +18,15 @@ import { CONTEXT_TYPE } from "../../redux/actions/inventory";
 
 const mapStateToProps = (state, ownProps) => {
   const selectedItemId = selectSelectedItemId(state);
-  const { id: idItem, health, iconUrl, isEquipable, weight } = selectItemsById(
-    state,
-    ownProps.id
-  );
-  const { quantity, isEquipped, isUsable } = getItemFromCurrentInventoryById(
+  const {
+    id: idItem,
+    health,
+    iconUrl,
+    isEquipable,
+    isUsable,
+    weight
+  } = selectItemsById(state, ownProps.id);
+  const { quantity, isEquipped } = getItemFromCurrentInventoryById(
     state,
     ownProps.id
   );

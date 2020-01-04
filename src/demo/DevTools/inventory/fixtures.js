@@ -86,6 +86,7 @@ export const setConfig = {
       categoryId: 4,
       description: "",
       isDeletable: false,
+      isEquipable: true,
       iconUrl:
         "data:image/svg+xml,%0A%3Csvg width='20' height='24' viewBox='0 0 20 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Eico-fuel@1x%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg fill='none'%3E%3Cpath d='M17.6 8.989c.001-.303-.171-.581-.442-.716l-2.315-1.158.715-1.431.885.442.884-1.768-1.769-.886-1.6 3.2-2.758-1.378v-2.094c0-.882-.718-1.6-1.6-1.6h-6.4c-.882 0-1.6.718-1.6 1.6v17.6c0 .882.718 1.6 1.6 1.6h12.8c.882 0 1.6-.718 1.6-1.6v-11.811zm1.6 0v11.811c0 1.765-1.435 3.2-3.2 3.2h-12.8c-1.765 0-3.2-1.435-3.2-3.2v-17.6c0-1.765 1.435-3.2 3.2-3.2h6.4c1.765 0 3.2 1.435 3.2 3.2v1.106l.442.221.884-1.768c.191-.383.52-.668.926-.803.402-.135.842-.104 1.222.086l1.769.885c.382.192.667.52.802.925.135.406.104.84-.087 1.222l-.884 1.769c.815.404 1.33 1.237 1.326 2.147zm-16-4.189h6.4v-1.6h-6.4v1.6z' fill='%235C5C5C'/%3E%3Cpath fill='%23C6C6C6' d='M14.966 10.166l-4.234 4.234 4.234 4.234-1.131 1.131-4.234-4.234-4.234 4.234-1.131-1.131 4.234-4.234-4.234-4.234 1.131-1.131 4.234 4.234 4.234-4.234z'/%3E%3C/g%3E%3C/svg%3E",
       health: 65,
@@ -260,6 +261,7 @@ export const setConfig = {
       description: "Rom Burdi",
       selectName: "Voiture Rom Burdi",
       categoriesIds: [1, 2],
+      nearbyInventoriesIds: [27],
       hasReadAccess: true,
       items: [
         {
@@ -274,6 +276,7 @@ export const setConfig = {
       name: "Camion DIR",
       description: "Direction interdépartementale des routes",
       selectName: "Camion DIR",
+      nearbyInventoriesIds: [26],
       hasReadAccess: true,
       items: [
         {

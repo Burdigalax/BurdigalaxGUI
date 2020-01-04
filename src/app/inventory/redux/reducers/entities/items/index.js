@@ -8,7 +8,11 @@ const getItemsById = items =>
   mergeAll(
     map(
       item => ({
-        [`${item.id}`]: item
+        [`${item.id}`]: {
+          ...item,
+          isUsable: item.isUsable !== false,
+          isDeletable: item.isDeletable !== false
+        }
       }),
       items
     )
