@@ -22,7 +22,7 @@ const mapStateToProps = (state, ownProps) => {
     state,
     ownProps.id
   );
-  const { quantity, isEquipped } = getItemFromCurrentInventoryById(
+  const { quantity, isEquipped, isUsable } = getItemFromCurrentInventoryById(
     state,
     ownProps.id
   );
@@ -42,7 +42,8 @@ const mapStateToProps = (state, ownProps) => {
     quantity,
     iconUrl,
     isEquipable,
-    weight
+    weight,
+    isUsable
   };
 };
 
@@ -70,12 +71,13 @@ export default compose(
       setClickTime,
       onUseItem,
       context,
-      onEquipItem
+      onEquipItem,
+      isUsable
     }) => event => {
       event.preventDefault();
       const now = Date.now();
 
-      if (event.button === LEFT_BUTTON) {
+      if (event.button === LEFT_BUTTON && isUsable) {
         if (now - clickTime < 200) {
           onUseItem({ idInventory, idItem, quantity });
         }

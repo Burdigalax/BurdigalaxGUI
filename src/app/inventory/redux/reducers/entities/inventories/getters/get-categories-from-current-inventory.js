@@ -11,7 +11,7 @@ export default state => {
   const context = selectCurrentContext(state);
 
   const mandatoryCategoriesIds =
-    context === CONTEXT_TYPE.mainInventory ? ["all", "equipped"] : ["all"];
+    context === CONTEXT_TYPE.mainInventory ? ["all", "equipable"] : ["all"];
 
   const categoriesMandatory = pipe(
     values,

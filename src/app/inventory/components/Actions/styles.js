@@ -18,6 +18,8 @@ export const UseButton = styled(BurdiButton)`
   font-size: 14px;
   font-weight: 600;
   border-radius: 5px;
+  text-transform: uppercase;
+}
 `;
 
 export const StyledInputBase = withStyles({

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Interface = styled.div`
   display: flex;
+  opacity: 0.9;
   flex-direction: column;
   min-width: 380px;
   max-width: 475px;

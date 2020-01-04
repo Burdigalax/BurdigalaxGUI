@@ -10,12 +10,15 @@ import {
 } from "../../../app/inventory/events";
 import Exemple from "../commons/exemple/";
 import { Button, Wrapper } from "./styles";
-import fixtures from "./fixtures";
+import { setConfig, updateInventories } from "./fixtures";
 
-const LiveDemo = ({ defaultCodeConfig }) => {
+const LiveDemo = ({ defaultCodeConfig, defaultCodeUpdateInventories }) => {
   const [hasSetConfigOpen, setSetConfigOpen] = useState(false);
+  const [hasUpdateInventoryOpen, setUpdateInventoryOpen] = useState(false);
 
   const toggleSetConfig = () => setSetConfigOpen(!hasSetConfigOpen);
+  const toggleUpdateInventory = () =>
+    setUpdateInventoryOpen(!hasUpdateInventoryOpen);
 
   return (
     <Wrapper>
@@ -38,6 +41,17 @@ const LiveDemo = ({ defaultCodeConfig }) => {
           />
         )}
         <br />
+        <Button onClick={toggleUpdateInventory}>
+          {JS_FUNCTIONS.updateInventories}
+        </Button>
+        {hasUpdateInventoryOpen && (
+          <Exemple
+            defaultCode={defaultCodeUpdateInventories}
+            prefix={JS_FUNCTIONS.prefix}
+            functionName={JS_FUNCTIONS.updateInventories}
+          />
+        )}
+        <br />
       </div>
     </Wrapper>
   );
@@ -47,7 +61,8 @@ const parseDefaultCode = code => JSON.stringify(code, null, 3);
 
 const LiveDemoContainer = compose(
   withProps({
-    defaultCodeConfig: parseDefaultCode(fixtures)
+    defaultCodeConfig: parseDefaultCode(setConfig),
+    defaultCodeUpdateInventories: parseDefaultCode(updateInventories)
   }),
   lifecycle({
     componentDidMount() {

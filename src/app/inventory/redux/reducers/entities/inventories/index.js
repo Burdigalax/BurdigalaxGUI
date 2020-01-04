@@ -12,6 +12,7 @@ import {
   SET_INVENTORIES,
   UPDATE_ITEMS_INVENTORIES_SUCCESS
 } from "../../../actions/inventories";
+import { UPDATE_INVENTORIES_SUCCESS } from "../../../actions/inventories";
 
 const INITIAL_STATE = {
   byId: {}
@@ -32,7 +33,11 @@ const excludeZeroQuantity = inventories => {
 const getItemsById = (items = []) =>
   pipe(
     map(item => ({
-      [`${item.id}`]: item
+      [`${item.id}`]: {
+        ...item,
+        isUsable: item.isUsable !== false,
+        isDeletable: item.isDeletable !== false
+      }
     })),
     mergeAll
   )(items);
@@ -42,6 +47,8 @@ const overrideNearbyInventoryData = (inventory, mainInventoryId) => {
 
   const nearbyInventoriesIds = pathOr([], ["nearbyInventoriesIds"], inventory);
   if (inventory.id === mainInventoryId) {
+    if (!inventory.nearbyInventoriesIds) return null;
+
     return {
       nearbyInventoriesIds: reject(
         id => id === mainInventoryId,
@@ -82,15 +89,24 @@ export default (state = INITIAL_STATE, action) => {
           getById(action.inventories, action.mainInventoryId)
         )
       };
+    case UPDATE_INVENTORIES_SUCCESS:
+      return {
+        byId: excludeZeroQuantity(
+          mergeDeepRight(
+            state.byId,
+            getById(action.inventories, action.mainInventoryId)
+          )
+        )
+      };
     case UPDATE_ITEMS_INVENTORIES_SUCCESS:
-      const newInventory = getById([
+      const newInventory2 = getById([
         {
           id: action.idInventory,
           items: action.items
         }
       ]);
       return {
-        byId: excludeZeroQuantity(mergeDeepRight(state.byId, newInventory))
+        byId: excludeZeroQuantity(mergeDeepRight(state.byId, newInventory2))
       };
     default:
       return state;

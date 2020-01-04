@@ -26,7 +26,8 @@ export default ({
   quantity = 1,
   totalWeight,
   effects = [],
-  isEquipped
+  isEquipped,
+  wording
 }) => (
   <Wrapper>
     <WrapperIcon>
@@ -36,7 +37,9 @@ export default ({
       <Header>
         <Title>{name}</Title>
         <Informations>
-          {isEquipped && <Information color={"#faa829"}>Equipé</Information>}
+          {isEquipped && (
+            <Information color={"#faa829"}>{wording.equipped}</Information>
+          )}
           <Information>
             <Icon
               color={"#959da3"}
@@ -49,7 +52,7 @@ export default ({
           </Information>
           <Information> x{quantity} </Information>
           <Information>
-            Total
+            {wording.total}
             <Icon
               color={"#959da3"}
               size={15}

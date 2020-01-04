@@ -2,15 +2,15 @@ export const prefix = "BURDIGALAX_inventory";
 
 export const setConfig = "setConfig";
 export const updateItems = "updateItems";
-export const updateInventory = "updateInventory";
+export const updateInventories = "updateInventories";
 export const updateItemsInventories = "updateItemsInventories";
 export const transferItem = "transferItem";
 
 export const onClose = "BURDIGALAX_inventory_onClose";
 export const onUse = "BURDIGALAX_inventory_onUse";
-export const onEquip = "BURDGIALAX_inventory_onEquip";
+export const onEquip = "BURDIGALAX_inventory_onEquip";
 export const onDelete = "BURDIGALAX_inventory_onDelete";
-export const onTransfer = "BURDGIGALAX_inventory_onTransfer";
+export const onTransfer = "BURDIGALAX_inventory_onTransfer";
 export const onChangeNearbyInventorySelected =
   "BURDIGALAX_inventory_onChangeNearbyInventorySelected";
 
@@ -18,7 +18,7 @@ export const JS_FUNCTIONS = {
   prefix,
   setConfig,
   updateItems,
-  updateInventory,
+  updateInventories,
   updateItemsInventories,
   transferItem
 };
@@ -39,7 +39,7 @@ const callEvent = (name, value) => {
 };
 
 export const LUA_FUNCTIONS = {
-  onClose: () => callEvent(onClose),
+  onClose: context => callEvent(onClose, context),
   onEquip: data => callEvent(onEquip, data),
   onUse: data => callEvent(onUse, data),
   onDelete: data => callEvent(onDelete, data),

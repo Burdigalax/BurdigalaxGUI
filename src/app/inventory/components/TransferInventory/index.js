@@ -9,6 +9,7 @@ import { setCurrentContext, CONTEXT_TYPE } from "../../redux/actions/inventory";
 import getHasReadAccessFromCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-has-read-access-from-current-inventory";
 import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
 import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
+import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
 
 const mapStateToProps = state => {
   const selectedItemId = selectSelectedItemId(state);
@@ -17,6 +18,7 @@ const mapStateToProps = state => {
   const hasReadAccess = getHasReadAccessFromCurrentInventory(state);
   const context = selectCurrentContext(state);
   const idInventory = selectCurrentInventoryId(state);
+  const wording = selectWordingFromConfig(state);
 
   return {
     idInventory,
@@ -24,7 +26,8 @@ const mapStateToProps = state => {
     selectedItemId,
     itemsIds,
     categoryName: name,
-    hasReadAccess
+    hasReadAccess,
+    wording
   };
 };
 

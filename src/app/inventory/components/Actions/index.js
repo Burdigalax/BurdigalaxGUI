@@ -23,13 +23,16 @@ import { setNearbyInventorySelectedId } from "../../redux/actions/nearbyInventor
 import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
 import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
 import { CONTEXT_TYPE } from "../../redux/actions/inventory";
+import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
 
 const mapStateToProps = (state, props) => {
   const {
     id: idItem,
     quantity,
     isEquipable,
-    isEquipped
+    isEquipped,
+    isDeletable,
+    isUsable
   } = getItemCompletedFromInventoryById(state, props.itemId);
 
   const nearbyInventories = getNearbyInventoriesFromattedFromCurrentInventory(
@@ -40,6 +43,7 @@ const mapStateToProps = (state, props) => {
 
   const idInventory = selectCurrentInventoryId(state);
   const context = selectCurrentContext(state);
+  const wording = selectWordingFromConfig(state);
 
   return {
     idItem,
@@ -49,9 +53,12 @@ const mapStateToProps = (state, props) => {
     isEquipable:
       context === CONTEXT_TYPE.transferInventory ? false : isEquipable,
     isEquipped,
+    isUsable,
     nearbyInventories,
     selectedNearbyInventoryId,
-    isDisabledTransfer: selectedNearbyInventoryId === "none"
+    isDisabledTransfer: selectedNearbyInventoryId === "none",
+    isDeletable,
+    wording
   };
 };
 

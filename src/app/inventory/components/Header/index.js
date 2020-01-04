@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { compose, withHandlers } from "recompose";
+import { compose, withHandlers, mapProps } from "recompose";
+import { omit } from "ramda";
 
 import {
   Description,
@@ -15,6 +16,7 @@ import Icon from "../../../common/components/Icon";
 import getCurrentInventory from "../../redux/reducers/entities/inventories/getters/get-current-inventory";
 import getBusyStorage from "../../redux/reducers/entities/inventories/getters/get-busy-storage";
 import { LUA_FUNCTIONS } from "../../events";
+import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
 
 const HeaderComponent = ({
   name,
@@ -48,7 +50,9 @@ const HeaderComponent = ({
 const mapStateToProps = state => {
   const { name, description, storageSize } = getCurrentInventory(state);
   const busyStorage = getBusyStorage(state);
+  const context = selectCurrentContext(state);
   return {
+    context,
     name,
     description,
     storageSize,
@@ -59,6 +63,7 @@ const mapStateToProps = state => {
 export default compose(
   connect(mapStateToProps),
   withHandlers({
-    onClose: () => () => LUA_FUNCTIONS.onClose()
-  })
+    onClose: ({ context }) => () => LUA_FUNCTIONS.onClose(context)
+  }),
+  mapProps(omit(["context"]))
 )(HeaderComponent);
