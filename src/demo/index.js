@@ -2,24 +2,28 @@ import React, { useState } from "react";
 
 import OnShop from "../app/onShop";
 import GasStation from "../app/gasStation";
+import Inventory from "../app/inventory";
 import DevToolShop from "./DevTools/onShop";
 import BurdiButton from "../app/common/components/BurdiButton";
 import DevToolGasStation from "./DevTools/gasStation";
+import DevToolInventory from "./DevTools/inventory";
 
 const Demo = () => {
   const [hasShopOpen, setShop] = useState(false);
   const [hasGasStationOpen, setGasStation] = useState(false);
+  const [hasInventoryOpen, setInventory] = useState(false);
 
-  const toggleGasStation = () => setGasStation(!hasGasStationOpen);
   const toggleShop = () => setShop(!hasShopOpen);
+  const toggleGasStation = () => setGasStation(!hasGasStationOpen);
+  const toggleInventory = () => setInventory(!hasInventoryOpen);
 
   return (
-    <div style={{ margin: "15px" }}>
+    <div style={{ margin: "15px", minHeight: "1400px" }}>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       />
-      <h1>Burdigalax v4.2.0</h1>
+      <h1>Burdigalax v4.3.0</h1>
       <div>
         <h2>
           Contact: <br />
@@ -54,7 +58,7 @@ const Demo = () => {
         </div>
       )}
       <BurdiButton
-        label={hasShopOpen ? "Hide GasStation" : "Show GasStation"}
+        label={hasGasStationOpen ? "Hide GasStation" : "Show GasStation"}
         onClick={toggleGasStation}
       />
       {hasGasStationOpen && (
@@ -62,6 +66,19 @@ const Demo = () => {
           <h1>Gas Station :</h1>
           <DevToolGasStation />
           <GasStation />
+        </div>
+      )}
+      <BurdiButton
+        label={hasInventoryOpen ? "Hide Inventory" : "Show Inventory"}
+        onClick={toggleInventory}
+      />
+      {hasInventoryOpen && (
+        <div>
+          <h1>Inventory :</h1>
+          <DevToolInventory />
+          <div style={{ backgroundColor: "#ababab" }}>
+            <Inventory />
+          </div>
         </div>
       )}
     </div>

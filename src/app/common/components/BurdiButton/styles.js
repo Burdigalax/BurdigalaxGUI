@@ -85,6 +85,7 @@ export const StyledButton = styled.button`
   background-color: ${props => getBgColor(props)};
   border: ${props => getBorder(props)};
   cursor: pointer;
+  font-family: Montserrat, sans-serif;
   border-radius: 7px;
   font-size: 16px;
   align-items: center;
@@ -107,5 +108,6 @@ export const StyledButton = styled.button`
 `;
 
 export const IconWrapper = styled.div`
-  margin-right: 5px;
+  margin-right: ${({ hasMarginRight }) => (hasMarginRight ? "5px" : "")};
+  display: flex;
 `;

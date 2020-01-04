@@ -5,7 +5,7 @@
 
 DOWNLOAD Burdigalax Packages to install on your ONSET server. 
 
-[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.2.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.1.0.zip)
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.3.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.3.0.zip)
 
 ### Integration - Exemple for Onset : 
 
@@ -19,7 +19,7 @@ https://github.com/Burdigalax/BurdigalaxRP-Onset
 
 ### Live Demo
 
-Full readme and live demo of exemple usage shop module on : http://rom444.free.fr/BurdigalaxRP/ 
+Full readme and live demo of exemple usage gas station module on : http://rom444.free.fr/BurdigalaxRP/ 
 
 ### API
 

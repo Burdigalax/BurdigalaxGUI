@@ -1,0 +1,82 @@
+import styled from "styled-components";
+import Icon from "../../../common/components/Icon";
+
+export const Wrapper = styled.div`
+  display: flex;
+  width: 75px;
+  opacity: 1;
+  z-index: 999;
+  height: 75px;
+  background: linear-gradient(45deg, #2e3d49, #3e4c57);
+  flex-direction: column;
+  border: ${({ isSelected }) =>
+    isSelected ? "2px solid #06d2f2" : "2px solid #505d67"};
+  border-radius: 10px;
+  margin: 5px 4px;
+  cursor: pointer;
+  position: ${({ isOnDrag }) => (isOnDrag ? "absolute" : "static")};
+  z-index: ${({ isOnDrag }) => (isOnDrag ? 999 : "")};
+`;
+
+const maxHealthBar = 86;
+const getHealthColor = value => {
+  if (value > 60) return "#6aea4d";
+  if (value < 30) return "#fe6d67";
+  return "#ffd948";
+};
+export const HealthBar = styled.div`
+  background-color: ${({ value }) => getHealthColor(value)};
+  height: 2px;
+  margin: 10px 7px 2px;
+  width: ${({ value }) => (value * maxHealthBar) / 100}%;
+`;
+
+export const Weight = styled.div`
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  color: #959da3;
+  font-weight: 700;
+  margin: 2px;
+  align-items: center;
+`;
+
+export const StyledIcon = styled(Icon)`
+  align-self: center;
+  height: 42px;
+  width: auto !important;
+`;
+
+export const Header = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 19px;
+`;
+
+export const EquippedTag = styled.div`
+  background-color: ${({ isEquipped }) => (isEquipped ? "#faa82a" : "#9da6ae")};
+  width: 7px;
+  height: 7px;
+  border: 2px solid #2d3c48;
+  border-radius: 20px;
+  margin-top: -6px;
+  align-self: center;
+  margin-bottom: -5px;
+`;
+
+export const Quantity = styled.div`
+  border-radius: 20px;
+  background-color: #515e68;
+  color: white;
+  border: 2px solid #2d3c48;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+  top: -9px;
+  left: 10px;
+  padding: 2px;
+  min-width: 20px;
+  text-align: center;
+`;
