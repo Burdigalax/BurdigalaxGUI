@@ -37,7 +37,8 @@ const LiveDemo = ({ defaultCodeConfig, defaultCodeUpdateInventories }) => {
       >
         https://github.com/Burdigalax/BurdigalaxGUI/src/app/inventory
       </a>
-      <br />
+      <br /> <br />
+      <em>Design proposed by Shelby - Discord #4145</em>
       <div>
         <h3>Live demo</h3>
         <Button onClick={toggleSetConfig}>{JS_FUNCTIONS.setConfig}</Button>

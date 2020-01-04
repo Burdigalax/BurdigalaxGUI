@@ -406,4 +406,5 @@ BURDIGALAX_onShop.updateArticles(
 ```
 
 ### Contact
-> Discord: RomBurdi#9770
+> Discord: RomBurdi#9770  _(Developer)_  
+> Discord : Shelby#4145 _(Designer)_

@@ -47,7 +47,7 @@ const LiveDemo = ({
             defaultCode={JSON.stringify(fixtures2, null, 3)}
             functionName={JS_FUNCTIONS.setConfig}
             prefix={JS_FUNCTIONS.prefix}
-            nameExemple={"Exemple 2"}
+            nameExemple={"Exemple 2 - Proposed by Shelby"}
           />
         </Fragment>
       )}
