@@ -22,6 +22,14 @@ const LiveDemo = ({ defaultCodeConfig, defaultCodeUpdateInventories }) => {
 
   return (
     <Wrapper>
+      <p>
+        <a
+          href={"https://www.youtube.com/watch?v=BiZdyClU7Cs"}
+          target={"_blank"}
+        >
+          Youtube presentation
+        </a>
+      </p>
       <strong>Readme:</strong> Check github project :{" "}
       <a
         href="https://github.com/Burdigalax/BurdigalaxGUI/src/app/inventory"

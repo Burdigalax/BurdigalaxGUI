@@ -76,7 +76,9 @@ const Demo = () => {
         <div>
           <h1>Inventory :</h1>
           <DevToolInventory />
-          <Inventory />
+          <div style={{ backgroundColor: "#ababab" }}>
+            <Inventory />
+          </div>
         </div>
       )}
     </div>
