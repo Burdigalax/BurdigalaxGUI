@@ -1996,7 +1996,7 @@
       }
       function f() {
         var e = g([
-          "\n  display: flex;\n  flex-direction: column;\n  flex: 1;\n  height: 100%;\n  border-top: none;\n  width: 100%;\n  > tbody {\n    border-bottom-right-radius: 10px;\n    max-height: 500px;\n    overflow: overlay;\n    display: block;\n    & tr {\n      flex-direction: row;\n      display: flex;\n      align-items: center;\n      margin: 8px 0;\n    }\n    & td {\n      text-align: center;\n      width: 100%;\n      font-size: 14px;\n    }\n  }\n  > thead > tr {\n    display: flex;\n    flex: 1;\n  }\n  > thead th {\n    text-transform: uppercase;\n    font-size: 10px;\n    color: ",
+          "\n  display: flex;\n  flex-direction: column;\n  flex: 1;\n  height: 100%;\n  border-top: none;\n  width: 100%;\n  > tbody {\n    border-bottom-right-radius: 10px;\n    max-height: 500px;\n    overflow: overlay;\n    display: block;\n    & tr {\n      flex-direction: row;\n      display: flex;\n      align-items: center;\n      margin: 8px 0;\n    }\n    & td {\n      text-align: center;\n      width: 100%;\n      font-size: 14px;\n    }\n    ::-webkit-scrollbar {\n      width: 4px;\n      height: 4px;\n    }\n    ::-webkit-scrollbar-button {\n      width: 0px;\n      height: 0px;\n    }\n    ::-webkit-scrollbar-thumb {\n      background: #eaeaea;\n      border: 0px none #ffffff;\n      border-radius: 50px;\n    }\n    ::-webkit-scrollbar-thumb:hover {\n      background: #a7a7a7;\n    }\n    ::-webkit-scrollbar-thumb:active {\n      background: #a7a7a7;\n    }\n    ::-webkit-scrollbar-track {\n      background: transparent;\n      border: 0px none #6b6b6b;\n      border-radius: 50px;\n    }\n    ::-webkit-scrollbar-track:hover {\n      background: transparent;\n    }\n    ::-webkit-scrollbar-track:active {\n      background: transparent;\n    }\n    ::-webkit-scrollbar-corner {\n      background: transparent;\n    }\n  }\n  > thead > tr {\n    display: flex;\n    flex: 1;\n  }\n  > thead th {\n    text-transform: uppercase;\n    font-size: 10px;\n    color: ",
           ";\n    border-top: none;\n    text-align: center;\n    padding: 10px 5px;\n    width: auto !important;\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: center;\n    &:last-child {\n      border-right: none;\n    }\n    &:first-child {\n      border-left: none;\n    }\n  }\n"
         ]);
         return (
@@ -13536,7 +13536,7 @@
               href:
                 "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
             }),
-            n.a.createElement("h1", null, "Burdigalax"),
+            n.a.createElement("h1", null, "Burdigalax v4.2.0"),
             n.a.createElement(
               "div",
               null,

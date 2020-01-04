@@ -11,7 +11,7 @@ import DevToolInventory from "./DevTools/inventory";
 const Demo = () => {
   const [hasShopOpen, setShop] = useState(false);
   const [hasGasStationOpen, setGasStation] = useState(false);
-  const [hasInventoryOpen, setInventory] = useState(true);
+  const [hasInventoryOpen, setInventory] = useState(false);
 
   const toggleShop = () => setShop(!hasShopOpen);
   const toggleGasStation = () => setGasStation(!hasGasStationOpen);

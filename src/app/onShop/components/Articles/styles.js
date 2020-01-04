@@ -30,6 +30,39 @@ export const Table = styled.table`
       width: 100%;
       font-size: 14px;
     }
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    ::-webkit-scrollbar-button {
+      width: 0px;
+      height: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #eaeaea;
+      border: 0px none #ffffff;
+      border-radius: 50px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a7a7a7;
+    }
+    ::-webkit-scrollbar-thumb:active {
+      background: #a7a7a7;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+      border: 0px none #6b6b6b;
+      border-radius: 50px;
+    }
+    ::-webkit-scrollbar-track:hover {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-track:active {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-corner {
+      background: transparent;
+    }
   }
   > thead > tr {
     display: flex;
