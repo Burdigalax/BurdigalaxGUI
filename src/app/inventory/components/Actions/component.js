@@ -95,16 +95,18 @@ export default ({
             {wording.noNearbyInventories}
           </NoNearbyInventories>
         )}
-        <BurdiButtonAction
-          iconLeftUrl={
-            "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTgyLDk2LjZIMThWODIuM2g2NFY5Ni42eiBNNDIuOSwzMC43bDAsMzAuNWwwLDYuNmwxNC4zLDBsMC02LjZsMC0zMC40bDMuNSwzLjVsOS4xLDkuMWwxMC4xLTEwLjFsLTkuMS05LjFMNjAuMSwxMy41bDAsMCAgTDUyLjYsNkw1MCwzLjRsMCwwbDAsMGwtOS4xLDkuMUwyMC4xLDMzLjNsMTAuMSwxMC4xTDQyLjksMzAuN3oiPjwvcGF0aD48L3N2Zz4="
-          }
-          color={"#ffd948"}
-          iconLeftSize={25}
-          disabled={isDisabledTransfer}
-          variant={BTN_VARIANT.none}
-          onClick={onTransfer}
-        />
+        {nearbyInventories.length > 0 && (
+          <BurdiButtonAction
+            iconLeftUrl={
+              "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTgyLDk2LjZIMThWODIuM2g2NFY5Ni42eiBNNDIuOSwzMC43bDAsMzAuNWwwLDYuNmwxNC4zLDBsMC02LjZsMC0zMC40bDMuNSwzLjVsOS4xLDkuMWwxMC4xLTEwLjFsLTkuMS05LjFMNjAuMSwxMy41bDAsMCAgTDUyLjYsNkw1MCwzLjRsMCwwbDAsMGwtOS4xLDkuMUwyMC4xLDMzLjNsMTAuMSwxMC4xTDQyLjksMzAuN3oiPjwvcGF0aD48L3N2Zz4="
+            }
+            color={"#ffd948"}
+            iconLeftSize={25}
+            disabled={isDisabledTransfer}
+            variant={BTN_VARIANT.none}
+            onClick={onTransfer}
+          />
+        )}
         {isDeletable && (
           <BurdiButtonAction
             color={"#f16666"}
