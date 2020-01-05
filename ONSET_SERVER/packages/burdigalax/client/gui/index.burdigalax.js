@@ -80,7 +80,7 @@
   (l.push = t), (l = l.slice());
   for (var d = 0; d < l.length; d++) t(l[d]);
   var s = c;
-  n.push([791, 0, 1]), r();
+  n.push([793, 0, 1]), r();
 })([
   ,
   ,
@@ -2249,6 +2249,246 @@
   function(e, t, r) {
     "use strict";
     (function(e) {
+      r.d(t, "j", function() {
+        return j;
+      }),
+        r.d(t, "i", function() {
+          return m;
+        }),
+        r.d(t, "g", function() {
+          return x;
+        }),
+        r.d(t, "f", function() {
+          return M;
+        }),
+        r.d(t, "a", function() {
+          return S;
+        }),
+        r.d(t, "b", function() {
+          return h;
+        }),
+        r.d(t, "h", function() {
+          return C;
+        }),
+        r.d(t, "d", function() {
+          return G;
+        }),
+        r.d(t, "k", function() {
+          return H;
+        }),
+        r.d(t, "c", function() {
+          return w;
+        }),
+        r.d(t, "e", function() {
+          return T;
+        });
+      var a,
+        o = r(2),
+        n = r(24),
+        i = r(404),
+        l = r(403),
+        c = r(535),
+        d = r(25);
+      function s() {
+        var e = E(["\n  color: #9da6a1;\n  font-size: 12px;\n"]);
+        return (
+          (s = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function u() {
+        var e = E([
+          "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n"
+        ]);
+        return (
+          (u = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function f() {
+        var e = E([
+          "\n  font-size: 8px;\n  position: relative;\n  top: 10px;\n  margin-left: -25px;\n  padding: 3px;\n  margin-right: 3px;\n  font-weight: 600;\n"
+        ]);
+        return (
+          (f = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function p() {
+        var e = E(["\n  margin: 0;\n"]);
+        return (
+          (p = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function g() {
+        var e = E([
+          "\n  display: flex;\n  flex-direction: row;\n  margin: 3px;\n  align-items: center;\n  height: 44px;\n"
+        ]);
+        return (
+          (g = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function b() {
+        var e = E([
+          "\n  border: 2px solid #57636d;\n  border-radius: 5px;\n  padding: 5px;\n  text-align: center;\n  width: 50px;\n  color: #ffffff;\n  background-color: #2d3c48;\n  outline: none;\n  font-weight: 600;\n  font-family: Montserrat;\n  font-size: 16px;\n  margin: 5px;\n  ::-webkit-inner-spin-button,\n  ::-webkit-outer-spin-button {\n    -webkit-appearance: none;\n    margin: 0;\n  }\n"
+        ]);
+        return (
+          (b = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function v() {
+        var e = E([
+          "\n  border-width: 2px;\n  padding: 5px 10px;\n  font-size: 14px;\n  font-weight: 600;\n  border-radius: 5px;\n  text-transform: uppercase;\n}\n"
+        ]);
+        return (
+          (v = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function y() {
+        var e = E([
+          "\n  display: flex;\n  flex-direction: row;\n  flex: 1;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n"
+        ]);
+        return (
+          (y = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function E(e, t) {
+        return (
+          t || (t = e.slice(0)),
+          Object.freeze(
+            Object.defineProperties(e, { raw: { value: Object.freeze(t) } })
+          )
+        );
+      }
+      (a =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && a(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var L,
+        O,
+        j = o.a.div(y()),
+        m = Object(o.a)(d.a)(v()),
+        x = Object(n.a)({
+          root: { color: "#A6A6A6", fontFamily: "Montserrat, sans-serif" }
+        })(i.a),
+        M = o.a.input(b()),
+        S = o.a.div(g()),
+        h = Object(o.a)(d.a)(p()),
+        C = Object(n.a)({
+          root: {
+            color: "#ffffff",
+            border: "2px solid #57636d",
+            borderRadius: "5px",
+            padding: "5px",
+            backgroundColor: "#2d3c48",
+            minWidth: "120px",
+            fontFamily: "Montserrat",
+            maxWidth: "135px",
+            fontSize: "13px",
+            "&:focus": { backgroundColor: "#2d3c48", borderRadius: "5px" }
+          },
+          icon: { color: "#ffffff" }
+        })(l.a),
+        G = Object(o.a)(d.a)(f()),
+        H = o.a.div(u()),
+        w = Object(n.a)({
+          root: {
+            "& .Mui-checked": { color: "#faa82a" },
+            "& .MuiSwitch-track": { backgroundColor: "#faa82a !important" }
+          }
+        })(c.a),
+        T = o.a.span(s());
+      (L =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.default
+          : void 0) &&
+        (L.register(
+          j,
+          "Wrapper",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          m,
+          "UseButton",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          x,
+          "StyledInputBase",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          M,
+          "StyledInput",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          S,
+          "Bloc",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          h,
+          "BurdiButtonAction",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          C,
+          "StyledSelect",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          G,
+          "MaxButton",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          H,
+          "WrapperSwitch",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          w,
+          "EquippedSwitch",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        ),
+        L.register(
+          T,
+          "NoNearbyInventories",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
+        )),
+        (O =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && O(e);
+    }.call(this, r(1)(e)));
+  },
+  function(e, t, r) {
+    "use strict";
+    (function(e) {
       r.d(t, "b", function() {
         return O;
       }),
@@ -2277,7 +2517,7 @@
       var a,
         o = r(2),
         n = r(24),
-        i = r(445),
+        i = r(447),
         l = r(13),
         c = r(25),
         d = r(12);
@@ -2422,228 +2662,6 @@
           C,
           "StyledIcon",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
-        )),
-        (L =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && L(e);
-    }.call(this, r(1)(e)));
-  },
-  function(e, t, r) {
-    "use strict";
-    (function(e) {
-      r.d(t, "i", function() {
-        return O;
-      }),
-        r.d(t, "h", function() {
-          return j;
-        }),
-        r.d(t, "f", function() {
-          return m;
-        }),
-        r.d(t, "e", function() {
-          return x;
-        }),
-        r.d(t, "a", function() {
-          return M;
-        }),
-        r.d(t, "b", function() {
-          return S;
-        }),
-        r.d(t, "g", function() {
-          return h;
-        }),
-        r.d(t, "d", function() {
-          return C;
-        }),
-        r.d(t, "j", function() {
-          return G;
-        }),
-        r.d(t, "c", function() {
-          return H;
-        });
-      var a,
-        o = r(2),
-        n = r(24),
-        i = r(403),
-        l = r(402),
-        c = r(533),
-        d = r(25);
-      function s() {
-        var e = y([
-          "\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n"
-        ]);
-        return (
-          (s = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function u() {
-        var e = y([
-          "\n  font-size: 8px;\n  position: relative;\n  top: 10px;\n  margin-left: -25px;\n  padding: 3px;\n  margin-right: 3px;\n  font-weight: 600;\n"
-        ]);
-        return (
-          (u = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function f() {
-        var e = y(["\n  margin: 0;\n"]);
-        return (
-          (f = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function p() {
-        var e = y([
-          "\n  display: flex;\n  flex-direction: row;\n  margin: 3px;\n  align-items: center;\n  height: 44px;\n"
-        ]);
-        return (
-          (p = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function g() {
-        var e = y([
-          "\n  border: 2px solid #57636d;\n  border-radius: 5px;\n  padding: 5px;\n  text-align: center;\n  width: 50px;\n  color: #ffffff;\n  background-color: #2d3c48;\n  outline: none;\n  font-weight: 600;\n  font-family: Montserrat;\n  font-size: 16px;\n  margin: 5px;\n  ::-webkit-inner-spin-button,\n  ::-webkit-outer-spin-button {\n    -webkit-appearance: none;\n    margin: 0;\n  }\n"
-        ]);
-        return (
-          (g = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function b() {
-        var e = y([
-          "\n  border-width: 2px;\n  padding: 5px 10px;\n  font-size: 14px;\n  font-weight: 600;\n  border-radius: 5px;\n  text-transform: uppercase;\n}\n"
-        ]);
-        return (
-          (b = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function v() {
-        var e = y([
-          "\n  display: flex;\n  flex-direction: row;\n  flex: 1;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n"
-        ]);
-        return (
-          (v = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function y(e, t) {
-        return (
-          t || (t = e.slice(0)),
-          Object.freeze(
-            Object.defineProperties(e, { raw: { value: Object.freeze(t) } })
-          )
-        );
-      }
-      (a =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && a(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var E,
-        L,
-        O = o.a.div(v()),
-        j = Object(o.a)(d.a)(b()),
-        m = Object(n.a)({
-          root: { color: "#A6A6A6", fontFamily: "Montserrat, sans-serif" }
-        })(i.a),
-        x = o.a.input(g()),
-        M = o.a.div(p()),
-        S = Object(o.a)(d.a)(f()),
-        h = Object(n.a)({
-          root: {
-            color: "#ffffff",
-            border: "2px solid #57636d",
-            borderRadius: "5px",
-            padding: "5px",
-            backgroundColor: "#2d3c48",
-            minWidth: "120px",
-            fontFamily: "Montserrat",
-            maxWidth: "135px",
-            fontSize: "13px",
-            "&:focus": { backgroundColor: "#2d3c48", borderRadius: "5px" }
-          },
-          icon: { color: "#ffffff" }
-        })(l.a),
-        C = Object(o.a)(d.a)(u()),
-        G = o.a.div(s()),
-        H = Object(n.a)({
-          root: {
-            "& .Mui-checked": { color: "#faa82a" },
-            "& .MuiSwitch-track": { backgroundColor: "#faa82a !important" }
-          }
-        })(c.a);
-      (E =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.default
-          : void 0) &&
-        (E.register(
-          O,
-          "Wrapper",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          j,
-          "UseButton",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          m,
-          "StyledInputBase",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          x,
-          "StyledInput",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          M,
-          "Bloc",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          S,
-          "BurdiButtonAction",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          h,
-          "StyledSelect",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          C,
-          "MaxButton",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          G,
-          "WrapperSwitch",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
-        ),
-        E.register(
-          H,
-          "EquippedSwitch",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
         )),
         (L =
           "undefined" != typeof reactHotLoaderGlobal
@@ -4773,7 +4791,8 @@
         n = r(12);
       function i() {
         var e = p([
-          "\n  border-radius: 20px;\n  background-color: #515e68;\n  color: white;\n  border: 2px solid #2d3c48;\n  font-size: 13px;\n  font-weight: 500;\n  position: relative;\n  top: -9px;\n  left: 10px;\n  padding: 2px;\n  min-width: 20px;\n  text-align: center;\n"
+          "\n  border-radius: 20px;\n  background-color: #515e68;\n  color: white;\n  border: 2px solid #2d3c48;\n  font-size: ",
+          "px;\n  font-weight: 500;\n  position: relative;\n  top: -9px;\n  left: 10px;\n  padding: 2px 4px;\n  min-width: 20px;\n  text-align: center;\n"
         ]);
         return (
           (i = function() {
@@ -4818,7 +4837,7 @@
       }
       function s() {
         var e = p([
-          "\n  display: flex;\n  flex-direction: row;\n  font-size: 10px;\n  color: #959da3;\n  font-weight: 700;\n  margin: 2px;\n  align-items: center;\n"
+          "\n  display: flex;\n  flex-direction: row;\n  font-size: 10px;\n  color: #959da3;\n  font-weight: 700;\n  margin: 2px;\n  align-items: center;\n  img {\n    margin-right: 2px;\n  }\n"
         ]);
         return (
           (s = function() {
@@ -4890,7 +4909,10 @@
         m = o.a.div(l(), function(e) {
           return e.isEquipped ? "#faa82a" : "#9da6ae";
         }),
-        x = o.a.div(i());
+        x = o.a.div(i(), function(e) {
+          var t = e.value;
+          return t < 1e5 ? 12 : t < 1e7 ? 9 : 7;
+        });
       (g =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
@@ -4952,9 +4974,9 @@
       var a,
         o = r(0),
         n = r.n(o),
-        i = r(387),
+        i = r(388),
         l = r.n(i),
-        c = r(401),
+        c = r(402),
         d = r(25),
         s = r(7);
       function u(e, t) {
@@ -5226,7 +5248,8 @@
               selectItem: "Sélectionner un item",
               equipped: "Equipé",
               max: "MAX",
-              noneInventory: "Aucun inventaire"
+              noneInventory: "Aucun inventaire",
+              noNearbyInventories: "Personne à proximité"
             }
           }
         };
@@ -5391,7 +5414,7 @@
       r(0);
       var a,
         o = r(2),
-        n = r(272);
+        n = r(273);
       function i() {
         var e = f([
           "\n  flex: 0.8;\n  border-radius: ",
@@ -8149,11 +8172,11 @@
         n = r.n(o),
         i = r(125),
         l = r(91),
-        c = r(334),
-        d = r(336),
-        s = r(338),
-        u = r(341),
-        f = r(346),
+        c = r(335),
+        d = r(337),
+        s = r(339),
+        u = r(342),
+        f = r(347),
         p = r(12);
       function g() {
         return (g =
@@ -8361,9 +8384,14 @@
         reactHotLoaderGlobal.default.signature;
       var d,
         s,
-        u = function(e, t) {
+        u = function(e) {
+          return parseFloat(e.toFixed(2));
+        },
+        f = function(e, t) {
           var r = Object(n.a)(e, t),
-            a = Object(i.a)(e, t);
+            a = Object(i.a)(e, t),
+            d = Object(o.a)(0, ["quantity"], r),
+            s = Object(o.a)(0, ["weight"], a);
           return (function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {};
@@ -8385,21 +8413,23 @@
                   });
             }
             return e;
-          })({}, a, {}, r, {
-            totalWeight:
-              Object(o.a)(0, ["quantity"], r) * Object(o.a)(0, ["weight"], a)
-          });
+          })({}, a, {}, r, { totalWeight: u(d * s) });
         };
-      (t.a = u),
+      (t.a = f),
         (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          d.register(
+          (d.register(
             u,
-            "default",
+            "formatNumber",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-item-completed-from-current-inventory-by-id.js"
           ),
+          d.register(
+            f,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-item-completed-from-current-inventory-by-id.js"
+          )),
         (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
@@ -8413,7 +8443,7 @@
         o = r(77),
         n = r(73),
         i = r(83),
-        l = r(351),
+        l = r(352),
         c = r(116),
         d = r(112);
       (a =
@@ -8456,7 +8486,7 @@
     (function(e) {
       var a,
         o = r(116),
-        n = r(352);
+        n = r(353);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -10041,11 +10071,11 @@
       var a,
         o = r(23),
         n = r(95),
-        i = r(353),
-        l = r(354),
-        c = r(355),
-        d = r(356),
-        s = r(357);
+        i = r(354),
+        l = r(355),
+        c = r(356),
+        d = r(357),
+        s = r(358);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -10133,7 +10163,7 @@
         return c;
       });
       var a,
-        o = r(401),
+        o = r(402),
         n = r(24);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -10183,7 +10213,7 @@
         return c;
       });
       var a,
-        o = r(401),
+        o = r(402),
         n = r(24);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -10224,14 +10254,15 @@
   ,
   ,
   ,
+  ,
   function(e, t, r) {
     "use strict";
     (function(e) {
       var a,
         o = r(0),
         n = r.n(o),
-        i = r(257);
-      r(433);
+        i = r(258);
+      r(434);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -10270,9 +10301,9 @@
         c = r(75),
         d = r(0),
         s = r.n(d),
-        u = r(258),
-        f = r(266),
-        p = r(271),
+        u = r(259),
+        f = r(267),
+        p = r(272),
         g = r(155),
         b = r(16),
         v = r(19),
@@ -10436,13 +10467,13 @@
     (function(e) {
       var a,
         o = r(23),
-        n = r(259),
-        i = r(260),
-        l = r(261),
-        c = r(262),
-        d = r(263),
-        s = r(264),
-        u = r(265),
+        n = r(260),
+        i = r(261),
+        l = r(262),
+        c = r(263),
+        d = r(264),
+        s = r(265),
+        u = r(266),
         f = r(95);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -10494,7 +10525,7 @@
         n = r(78),
         i = r(35),
         l = r(14),
-        c = r(532),
+        c = r(534),
         d = r(77),
         s = r(73),
         u = r(126),
@@ -10883,13 +10914,13 @@
     "use strict";
     (function(e) {
       var a,
-        o = r(534),
+        o = r(536),
         n = r(73),
-        i = r(399),
-        l = r(398),
+        i = r(400),
+        l = r(399),
         c = r(77),
-        d = r(528),
-        s = r(529),
+        d = r(530),
+        s = r(531),
         u = r(45),
         f = r(63),
         p = r(43);
@@ -11182,10 +11213,10 @@
       });
       var a,
         o = r(3),
-        n = r(267),
+        n = r(268),
         i = r(155),
-        l = r(269),
-        c = r(270);
+        l = r(270),
+        c = r(271);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -11236,7 +11267,7 @@
     (function(e) {
       var a,
         o = r(3),
-        n = r(530),
+        n = r(532),
         i = r(127),
         l = r(35),
         c = r(77),
@@ -11248,7 +11279,7 @@
         g = r(86),
         b = r(153),
         v = r(154),
-        y = r(268),
+        y = r(269),
         E = r(43),
         L = r(60);
       (a =
@@ -11699,8 +11730,8 @@
         o = r(0),
         n = r.n(o),
         i = r(99),
-        l = r(287),
-        c = r(289);
+        l = r(288),
+        c = r(290);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -11749,9 +11780,9 @@
         o = r(8),
         n = r(4),
         i = r(14),
-        l = r(273),
-        c = r(284),
-        d = r(285),
+        l = r(274),
+        c = r(285),
+        d = r(286),
         s = r(30),
         u = r(17);
       (a =
@@ -11816,8 +11847,8 @@
         o = r(0),
         n = r.n(o),
         i = r(66),
-        l = r(274),
-        c = r(278);
+        l = r(275),
+        c = r(279);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -11918,12 +11949,12 @@
       var a,
         o = r(4),
         n = r(8),
-        i = r(535),
+        i = r(537),
         l = r(77),
         c = r(14),
-        d = r(392),
-        s = r(275),
-        u = r(277),
+        d = r(393),
+        s = r(276),
+        u = r(278),
         f = r(70),
         p = r(45),
         g = r(152),
@@ -12119,10 +12150,10 @@
         o = r(0),
         n = r.n(o),
         i = r(35),
-        l = r(402),
+        l = r(403),
         c = r(24),
-        d = r(403),
-        s = r(49),
+        d = r(404),
+        s = r(50),
         u = r(7),
         f = r(13),
         p = r(12);
@@ -12291,8 +12322,8 @@
       r(0);
       var a,
         o = r(8),
-        n = r(279),
-        i = r(283),
+        n = r(280),
+        i = r(284),
         l = r(70),
         c = r(17),
         d = r(16);
@@ -12395,7 +12426,7 @@
         n = r(127),
         i = r(0),
         l = r.n(i),
-        c = r(280);
+        c = r(281);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -12491,8 +12522,8 @@
       var a,
         o = r(8),
         n = r(4),
-        i = r(281),
-        l = r(282),
+        i = r(282),
+        l = r(283),
         c = r(16);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -12703,7 +12734,7 @@
         o = r(0),
         n = r.n(o),
         i = r(8),
-        l = r(286),
+        l = r(287),
         c = r(12),
         d = r(40);
       (a =
@@ -12810,7 +12841,7 @@
       var a,
         o = r(8),
         n = r(4),
-        i = r(288),
+        i = r(289),
         l = r(16),
         c = r(143);
       (a =
@@ -12894,10 +12925,10 @@
         o = r(8),
         n = r(4),
         i = r(126),
-        l = r(290),
+        l = r(291),
         c = r(86),
         d = r(16),
-        s = r(307),
+        s = r(308),
         u = r(19),
         f = r(63);
       function p(e, t) {
@@ -13022,12 +13053,12 @@
         o = r(0),
         n = r.n(o),
         i = r(183),
-        l = r(291),
-        c = r(293),
-        d = r(295),
-        s = r(301),
-        u = r(303),
-        f = r(305);
+        l = r(292),
+        c = r(294),
+        d = r(296),
+        s = r(302),
+        u = r(304),
+        f = r(306);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -13106,7 +13137,7 @@
         n = r(8),
         i = (r(0), r(191)),
         l = r.n(i),
-        c = r(292),
+        c = r(293),
         d = r(70),
         s = r(40),
         u = r(45),
@@ -13254,7 +13285,7 @@
       var a,
         o = r(8),
         n = r(4),
-        i = (r(0), r(294)),
+        i = (r(0), r(295)),
         l = r(156),
         c = r(17),
         d = r(16),
@@ -13381,10 +13412,10 @@
         o = r(8),
         n = r(4),
         i = r(126),
-        l = r(296),
-        c = r(299),
+        l = r(297),
+        c = r(300),
         d = r(86),
-        s = r(300),
+        s = r(301),
         u = r(156),
         f = r(30),
         p = r(17),
@@ -13497,7 +13528,7 @@
         n = r.n(o),
         i = r(99),
         l = r(89),
-        c = r(297),
+        c = r(298),
         d = r(13);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -13617,7 +13648,7 @@
       var a,
         o = r(8),
         n = r(4),
-        i = r(298),
+        i = r(299),
         l = r(40),
         c = r(157),
         d = r(158),
@@ -13806,7 +13837,7 @@
         o = r(0),
         n = r.n(o),
         i = r(8),
-        l = r(302),
+        l = r(303),
         c = r(40),
         d = r(12),
         s = r(17),
@@ -13926,7 +13957,7 @@
         i = r(19),
         l = r(159),
         c = r(40),
-        d = r(304),
+        d = r(305),
         s = r(16),
         u = r(17);
       (a =
@@ -14027,7 +14058,7 @@
         i = r(63),
         l = r(159),
         c = r(40),
-        d = r(306),
+        d = r(307),
         s = r(16),
         u = r(17);
       (a =
@@ -14155,13 +14186,13 @@
       var a,
         o = r(0),
         n = r.n(o),
-        i = r(309),
-        l = (r(435), r(8)),
+        i = r(310),
+        l = (r(437), r(8)),
         c = r(75),
         d = r(4),
         s = r(23),
-        u = r(320),
-        f = r(325);
+        u = r(321),
+        f = r(326);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -14228,15 +14259,15 @@
         i = r(160),
         l = r(28),
         c = r(161),
-        d = r(310),
-        s = r(318),
+        d = r(311),
+        s = r(319),
         u = r(54),
         f = r(163),
         p = r(137),
         g = r(166),
         b = r(17),
         v = r(32),
-        y = r(319),
+        y = r(320),
         E = r(16),
         L = r(111),
         O = r(61),
@@ -14415,12 +14446,12 @@
         o = r(0),
         n = r.n(o),
         i = r(38),
-        l = r(311),
-        c = r(312),
-        d = r(315),
-        s = r(316),
+        l = r(312),
+        c = r(313),
+        d = r(316),
+        s = r(317),
         u = r(7),
-        f = r(317);
+        f = r(318);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -14661,10 +14692,10 @@
         o = r(4),
         n = r(8),
         i = r(28),
-        l = r(313),
+        l = r(314),
         c = r(106),
         d = r(107),
-        s = r(314),
+        s = r(315),
         u = r(16),
         f = r(30),
         p = r(40);
@@ -15248,10 +15279,10 @@
       var a,
         o = r(23),
         n = r(95),
-        i = r(321),
-        l = r(322),
-        c = r(323),
-        d = r(324);
+        i = r(322),
+        l = r(323),
+        c = r(324),
+        d = r(325);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -15291,7 +15322,7 @@
         n = r(120),
         i = r(73),
         l = r(78),
-        c = r(444),
+        c = r(446),
         d = r(28),
         s = r(80);
       function u(e, t) {
@@ -15621,12 +15652,12 @@
       });
       var a,
         o = r(3),
-        n = r(326),
+        n = r(327),
         i = r(160),
-        l = r(327),
-        c = r(328),
-        d = r(329),
-        s = r(331);
+        l = r(328),
+        c = r(329),
+        d = r(330),
+        s = r(332);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -16115,7 +16146,7 @@
         n = r(11),
         i = r(28),
         l = r(61),
-        c = r(330),
+        c = r(331),
         d = r(110),
         s = r(53);
       (a =
@@ -16429,13 +16460,13 @@
         u = r.n(s),
         f = r(197),
         p = r(245),
-        g = r(333),
+        g = r(334),
         b = r(222),
-        v = r(358),
-        y = r(359),
-        E = r(360),
+        v = r(359),
+        y = r(360),
+        E = r(361),
         L = r(186),
-        O = r(362);
+        O = r(363);
       function j(e, t) {
         return (
           (function(e) {
@@ -16826,7 +16857,7 @@
         s = r(7),
         u = r(12),
         f = r(71),
-        p = r(335),
+        p = r(336),
         g = r(20),
         b = r(47);
       (a =
@@ -16930,7 +16961,7 @@
         o = r(78),
         n = r(196),
         i = r(35),
-        l = r(531),
+        l = r(533),
         c = r(244),
         d = r(112);
       (a =
@@ -16971,7 +17002,7 @@
         o = r(4),
         n = r(8),
         i = r(126),
-        l = r(337),
+        l = r(338),
         c = r(84),
         d = r(18),
         s = r(114),
@@ -17242,7 +17273,7 @@
                     }),
                     y
                   ),
-                  n.a.createElement(l.d, null, g)
+                  n.a.createElement(l.d, { value: g }, g)
                 ),
                 n.a.createElement(l.e, { url: t, size: 40 }),
                 a >= 0 && n.a.createElement(l.c, { value: a })
@@ -17282,7 +17313,7 @@
         c = r(4),
         d = r(221),
         s = r(12),
-        u = r(339),
+        u = r(340),
         f = r(116),
         p = r(55);
       (a =
@@ -17381,7 +17412,7 @@
         l = r(197),
         c = r(246),
         d = r(71),
-        s = r(340),
+        s = r(341),
         u = r(47),
         f = r(22);
       (a =
@@ -17476,10 +17507,10 @@
         i = r(11),
         l = r(14),
         c = r(126),
-        d = r(342),
+        d = r(343),
         s = r(172),
         u = r(18),
-        f = r(343),
+        f = r(344),
         p = r(171),
         g = r(62),
         b = r(34),
@@ -17653,8 +17684,8 @@
         o = r(0),
         n = r.n(o),
         i = r(7),
-        l = r(50),
-        c = r(49);
+        l = r(49),
+        c = r(50);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -17696,13 +17727,13 @@
             h = void 0 === S || S,
             C = e.wording;
           return n.a.createElement(
-            l.i,
+            l.j,
             null,
             n.a.createElement(
               l.a,
               null,
               M &&
-                n.a.createElement(l.h, {
+                n.a.createElement(l.i, {
                   label: C.use,
                   variant: i.b.secondary,
                   color: "#06d2f2",
@@ -17711,7 +17742,7 @@
                 }),
               t &&
                 n.a.createElement(
-                  l.j,
+                  l.k,
                   null,
                   n.a.createElement(l.c, {
                     size: "small",
@@ -17723,7 +17754,7 @@
             n.a.createElement(
               l.a,
               null,
-              n.a.createElement(l.e, {
+              n.a.createElement(l.f, {
                 type: "number",
                 onChange: r,
                 value: v,
@@ -17737,21 +17768,23 @@
                 label: C.max,
                 onClick: d
               }),
-              n.a.createElement(
-                l.g,
-                {
-                  displayEmpty: !0,
-                  value: p,
-                  onChange: g,
-                  input: n.a.createElement(l.f, null)
-                },
-                n.a.createElement(
-                  c.c,
-                  { key: "nearbyInventory-none", value: "none" },
-                  C.noneInventory
-                ),
-                f.map(u)
-              ),
+              f.length > 0
+                ? n.a.createElement(
+                    l.h,
+                    {
+                      displayEmpty: !0,
+                      value: p,
+                      onChange: g,
+                      input: n.a.createElement(l.g, null)
+                    },
+                    n.a.createElement(
+                      c.c,
+                      { key: "nearbyInventory-none", value: "none" },
+                      C.noneInventory
+                    ),
+                    f.map(u)
+                  )
+                : n.a.createElement(l.e, null, C.noNearbyInventories),
               n.a.createElement(l.b, {
                 iconLeftUrl:
                   "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTgyLDk2LjZIMThWODIuM2g2NFY5Ni42eiBNNDIuOSwzMC43bDAsMzAuNWwwLDYuNmwxNC4zLDBsMC02LjZsMC0zMC40bDMuNSwzLjVsOS4xLDkuMWwxMC4xLTEwLjFsLTkuMS05LjFMNjAuMSwxMy41bDAsMCAgTDUyLjYsNkw1MCwzLjRsMCwwbDAsMGwtOS4xLDkuMUwyMC4xLDMzLjNsMTAuMSwxMC4xTDQyLjksMzAuN3oiPjwvcGF0aD48L3N2Zz4=",
@@ -17800,7 +17833,7 @@
     (function(e) {
       var a,
         o = r(35),
-        n = r(344);
+        n = r(345);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -17842,7 +17875,7 @@
         n = r(196),
         i = r(77),
         l = r(197),
-        c = r(345),
+        c = r(346),
         d = r(71);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -17918,7 +17951,7 @@
       r(0);
       var a,
         o = r(8),
-        n = r(347),
+        n = r(348),
         i = r(172),
         l = r(17);
       (a =
@@ -17976,7 +18009,7 @@
         n = r.n(o),
         i = r(51),
         l = r(12),
-        c = r(348);
+        c = r(349);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -18084,9 +18117,9 @@
         o = r(0),
         n = r.n(o),
         i = r(8),
-        l = r(349),
+        l = r(350),
         c = r(12),
-        d = r(350);
+        d = r(351);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -18508,7 +18541,7 @@
         i = r(78),
         l = r(146),
         c = r(11),
-        d = r(536),
+        d = r(538),
         s = r(58),
         u = r(44);
       function f(e, t) {
@@ -19169,7 +19202,7 @@
         c = r(173),
         d = r(174),
         s = r(22),
-        u = r(361),
+        u = r(362),
         f = r(47),
         p = r(34),
         g = r(17),
@@ -19563,7 +19596,7 @@
         });
       var a,
         o = r(2),
-        n = (r(0), r(401)),
+        n = (r(0), r(402)),
         i = r(24);
       function l() {
         var e = (function(e, t) {
@@ -19647,7 +19680,7 @@
   ,
   function(e, t, r) {
     var a = r(210),
-      o = r(434);
+      o = r(435);
     "string" == typeof (o = o.__esModule ? o.default : o) &&
       (o = [[e.i, o, ""]]);
     var n = { insert: "head", singleton: !1 },
@@ -19664,9 +19697,10 @@
     ]),
       (e.exports = t);
   },
+  ,
   function(e, t, r) {
     var a = r(210),
-      o = r(436);
+      o = r(438);
     "string" == typeof (o = o.__esModule ? o.default : o) &&
       (o = [[e.i, o, ""]]);
     var n = { insert: "head", singleton: !1 },
@@ -20155,13 +20189,13 @@
       var a,
         o = r(0),
         n = r.n(o),
-        i = r(256),
-        l = r(308),
-        c = r(332),
-        d = r(512),
+        i = r(257),
+        l = r(309),
+        c = r(333),
+        d = r(514),
         s = r(25),
-        u = r(519),
-        f = r(525);
+        u = r(521),
+        f = r(527);
       function p(e, t) {
         return (
           (function(e) {
@@ -20232,7 +20266,7 @@
               href:
                 "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
             }),
-            n.a.createElement("h1", null, "Burdigalax v4.4.0"),
+            n.a.createElement("h1", null, "Burdigalax v4.4.1"),
             n.a.createElement(
               "div",
               null,
@@ -20347,8 +20381,8 @@
         l = r.n(i),
         c = r(75),
         d = r(23),
-        s = (r(387), r(501), r(502), r(513)),
-        u = r(514);
+        s = (r(388), r(503), r(504), r(515)),
+        u = r(516);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -20411,7 +20445,7 @@
     (function(e) {
       var a,
         o = r(58),
-        n = r(396),
+        n = r(397),
         i = r(135);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -20471,8 +20505,8 @@
       var a,
         o = r(0),
         n = r.n(o),
-        i = r(515),
-        l = r(516);
+        i = r(517),
+        l = r(518);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -20599,9 +20633,9 @@
         i = r(8),
         l = r(19),
         c = r(226),
-        d = r(517),
+        d = r(519),
         s = r(93),
-        u = r(518);
+        u = r(520);
       function f(e, t) {
         return (
           (function(e) {
@@ -20881,12 +20915,12 @@
     "use strict";
     (function(e) {
       var a,
-        o = r(396),
+        o = r(397),
         n = r(35),
         i = r(120),
         l = r(73),
-        c = r(444),
-        d = r(797),
+        c = r(446),
+        d = r(799),
         s = r(58),
         u = r(215);
       (a =
@@ -21037,8 +21071,8 @@
         l = r.n(i),
         c = r(75),
         d = r(23),
-        s = (r(387), r(501), r(502), r(520)),
-        u = r(521);
+        s = (r(388), r(503), r(504), r(522)),
+        u = r(523);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -21101,7 +21135,7 @@
     (function(e) {
       var a,
         o = r(58),
-        n = r(442),
+        n = r(444),
         i = r(136);
       function l(e, t) {
         var r = Object.keys(e);
@@ -21204,8 +21238,8 @@
       var a,
         o = r(0),
         n = r.n(o),
-        i = r(522),
-        l = r(523);
+        i = r(524),
+        l = r(525);
       (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -21332,7 +21366,7 @@
         i = r(8),
         l = r(32),
         c = r(242),
-        d = r(524),
+        d = r(526),
         s = r(93);
       function u(e, t) {
         return (
@@ -21590,8 +21624,8 @@
         l = r(58),
         c = r(20),
         d = r(93),
-        s = r(400),
-        u = r(443),
+        s = r(401),
+        u = r(445),
         f = r(96);
       function p(e, t) {
         return (
@@ -22098,7 +22132,7 @@
           o = r.n(a),
           n = r(39),
           i = r.n(n),
-          l = r(511);
+          l = r(513);
         (t =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.enterModule

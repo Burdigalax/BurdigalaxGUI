@@ -1,30 +1,30 @@
 !(function(e) {
   function t(t) {
     for (
-      var o, l, c = t[0], i = t[1], s = t[2], u = 0, f = [];
+      var o, l, c = t[0], i = t[1], d = t[2], u = 0, p = [];
       u < c.length;
       u++
     )
       (l = c[u]),
-        Object.prototype.hasOwnProperty.call(n, l) && n[l] && f.push(n[l][0]),
-        (n[l] = 0);
+        Object.prototype.hasOwnProperty.call(a, l) && a[l] && p.push(a[l][0]),
+        (a[l] = 0);
     for (o in i) Object.prototype.hasOwnProperty.call(i, o) && (e[o] = i[o]);
-    for (d && d(t); f.length; ) f.shift()();
-    return a.push.apply(a, s || []), r();
+    for (s && s(t); p.length; ) p.shift()();
+    return n.push.apply(n, d || []), r();
   }
   function r() {
-    for (var e, t = 0; t < a.length; t++) {
-      for (var r = a[t], o = !0, c = 1; c < r.length; c++) {
+    for (var e, t = 0; t < n.length; t++) {
+      for (var r = n[t], o = !0, c = 1; c < r.length; c++) {
         var i = r[c];
-        0 !== n[i] && (o = !1);
+        0 !== a[i] && (o = !1);
       }
-      o && (a.splice(t--, 1), (e = l((l.s = r[0]))));
+      o && (n.splice(t--, 1), (e = l((l.s = r[0]))));
     }
     return e;
   }
   var o = {},
-    n = { 5: 0 },
-    a = [];
+    a = { 5: 0 },
+    n = [];
   function l(t) {
     if (o[t]) return o[t].exports;
     var r = (o[t] = { i: t, l: !1, exports: {} });
@@ -78,9 +78,9 @@
   var c = (window.webpackJsonp = window.webpackJsonp || []),
     i = c.push.bind(c);
   (c.push = t), (c = c.slice());
-  for (var s = 0; s < c.length; s++) t(c[s]);
-  var d = i;
-  a.push([747, 0]), r();
+  for (var d = 0; d < c.length; d++) t(c[d]);
+  var s = i;
+  n.push([749, 0]), r();
 })({
   118: function(e, t, r) {
     "use strict";
@@ -95,15 +95,15 @@
           return E;
         }),
         r.d(t, "a", function() {
-          return m;
+          return v;
         }),
         r.d(t, "b", function() {
-          return v;
+          return O;
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(25);
+        a = r(2),
+        n = r(25);
       function l() {
         var e = u([
           "\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n"
@@ -137,24 +137,24 @@
           e
         );
       }
-      function s() {
+      function d() {
         var e = u([
           "\n  font-size: 12px;\n  color: white;\n  background-color: ",
           ";\n  border-radius: 15px;\n  padding: 3px 10px;\n  display: inline-table;\n"
         ]);
         return (
-          (s = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function s() {
         var e = u([
           "\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  margin-left: 10px;\n  margin-right: 10px;\n  align-items: baseline;\n"
         ]);
         return (
-          (d = function() {
+          (s = function() {
             return e;
           }),
           e
@@ -174,56 +174,56 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
-        g = n.a.div(d()),
-        b = n.a.span(s(), function(e) {
+      var p,
+        f,
+        g = a.a.div(s()),
+        b = a.a.span(d(), function(e) {
           return e.textBasketColor;
         }),
-        E = n.a.span(i()),
-        m = Object(n.a)(a.a)(c()),
-        v = n.a.div(l());
-      (f =
+        E = a.a.span(i()),
+        v = Object(a.a)(n.a)(c()),
+        O = a.a.div(l());
+      (p =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (f.register(
+        (p.register(
           g,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\styles.js"
         ),
-        f.register(
+        p.register(
           b,
           "Tag",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\styles.js"
         ),
-        f.register(
+        p.register(
           E,
           "Title",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\styles.js"
         ),
-        f.register(
-          m,
+        p.register(
+          v,
           "CloseButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\styles.js"
         ),
-        f.register(
-          v,
+        p.register(
+          O,
           "EndSection",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\styles.js"
         )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
   12: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(4),
         c = r(133);
       (o =
@@ -233,30 +233,30 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var i,
-        s,
-        d = function(e) {
+        d,
+        s = function(e) {
           var t = e.size,
             r = void 0 === t ? 20 : t,
             o = e.color,
-            n = e.url,
+            a = e.url,
             l = e.className;
-          return a.a.createElement(c.a, {
+          return n.a.createElement(c.a, {
             className: l,
-            src: n,
+            src: a,
             size: r,
             color: o
           });
         },
         u = Object(l.a)(function(e) {
           return !e.url;
-        }, l.f)(d);
+        }, l.f)(s);
       (t.a = u),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (i.register(
-            d,
+            s,
             "Icon",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Icon\\index.js"
           ),
@@ -265,10 +265,10 @@
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Icon\\index.js"
           )),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && s(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
   13: function(e, t, r) {
@@ -285,10 +285,10 @@
           return i;
         }),
         r.d(t, "f", function() {
-          return s;
+          return d;
         }),
         r.d(t, "e", function() {
-          return d;
+          return s;
         }),
         r.d(t, "b", function() {
           return u;
@@ -299,89 +299,89 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "#28a745",
         c = "#d02e22",
         i = "#000",
-        s = "#ffffff",
-        d = "transparent",
+        d = "#ffffff",
+        s = "transparent",
         u = "#247ad2";
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "green",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           "#28b949",
           "lightGreen",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           "#b0eabf",
           "veryLightGreen",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           "#4B9047",
           "hippieGreen",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           c,
           "red",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           "#ff624a",
           "lightRed",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           i,
           "black",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "white",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
-          d,
+        a.register(
+          s,
           "transparent",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           u,
           "blue",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
-        n.register(
+        a.register(
           "#519be6eb",
           "ligthBlue",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   133: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
-        return s;
+        return d;
       });
       r(0);
       var o,
-        n = r(2),
-        a = r(134);
+        a = r(2),
+        n = r(134);
       function l() {
         var e = (function(e, t) {
           t || (t = e.slice(0));
@@ -404,11 +404,11 @@
         reactHotLoaderGlobal.default.signature;
       var c,
         i,
-        s = n.a.img.attrs(function(e) {
+        d = a.a.img.attrs(function(e) {
           return {
             style: {
               width: e.size ? "".concat(e.size, "px") : "",
-              filter: Object(a.a)(e.color)
+              filter: Object(n.a)(e.color)
             }
           };
         })(l());
@@ -417,7 +417,7 @@
           ? reactHotLoaderGlobal.default
           : void 0) &&
         c.register(
-          s,
+          d,
           "StyledImg",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Icon\\styles.js"
         ),
@@ -644,23 +644,23 @@
                     t,
                     r = this.r / 255,
                     o = this.g / 255,
-                    n = this.b / 255,
-                    a = Math.max(r, o, n),
-                    l = Math.min(r, o, n),
-                    c = (a + l) / 2;
-                  if (a === l) e = t = 0;
+                    a = this.b / 255,
+                    n = Math.max(r, o, a),
+                    l = Math.min(r, o, a),
+                    c = (n + l) / 2;
+                  if (n === l) e = t = 0;
                   else {
-                    var i = a - l;
+                    var i = n - l;
                     switch (
-                      ((t = c > 0.5 ? i / (2 - a - l) : i / (a + l)), a)
+                      ((t = c > 0.5 ? i / (2 - n - l) : i / (n + l)), n)
                     ) {
                       case r:
-                        e = (o - n) / i + (o < n ? 6 : 0);
+                        e = (o - a) / i + (o < a ? 6 : 0);
                         break;
                       case o:
-                        e = (n - r) / i + 2;
+                        e = (a - r) / i + 2;
                         break;
-                      case n:
+                      case a:
                         e = (r - o) / i + 4;
                     }
                     e /= 6;
@@ -737,39 +737,39 @@
               },
               {
                 key: "spsa",
-                value: function(e, t, r, o, n) {
+                value: function(e, t, r, o, a) {
                   for (
-                    var a = null,
+                    var n = null,
                       l = 1 / 0,
                       c = new Array(6),
                       i = new Array(6),
-                      s = new Array(6),
-                      d = 0;
-                    d < n;
-                    d++
+                      d = new Array(6),
+                      s = 0;
+                    s < a;
+                    s++
                   ) {
                     for (
-                      var u = r / Math.pow(d + 1, 0.16666666666666666), f = 0;
-                      f < 6;
-                      f++
+                      var u = r / Math.pow(s + 1, 0.16666666666666666), p = 0;
+                      p < 6;
+                      p++
                     )
-                      (c[f] = Math.random() > 0.5 ? 1 : -1),
-                        (i[f] = o[f] + u * c[f]),
-                        (s[f] = o[f] - u * c[f]);
+                      (c[p] = Math.random() > 0.5 ? 1 : -1),
+                        (i[p] = o[p] + u * c[p]),
+                        (d[p] = o[p] - u * c[p]);
                     for (
-                      var p = this.loss(i) - this.loss(s), g = 0;
+                      var f = this.loss(i) - this.loss(d), g = 0;
                       g < 6;
                       g++
                     ) {
-                      var b = (p / (2 * u)) * c[g],
-                        E = t[g] / Math.pow(e + d + 1, 1);
-                      o[g] = v(o[g] - E * b, g);
+                      var b = (f / (2 * u)) * c[g],
+                        E = t[g] / Math.pow(e + s + 1, 1);
+                      o[g] = O(o[g] - E * b, g);
                     }
-                    var m = this.loss(o);
-                    m < l && ((a = o.slice(0)), (l = m));
+                    var v = this.loss(o);
+                    v < l && ((n = o.slice(0)), (l = v));
                   }
-                  return { values: a, loss: l };
-                  function v(e, t) {
+                  return { values: n, loss: l };
+                  function O(e, t) {
                     var r = 100;
                     return (
                       2 === t ? (r = 7500) : (4 !== t && 5 !== t) || (r = 200),
@@ -905,8 +905,8 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var o,
-        n,
-        a = {
+        a,
+        n = {
           config: {
             hasTaxEnabled: !1,
             enabledStockLimitation: !1,
@@ -984,27 +984,27 @@
           },
           effects: {}
         };
-      (t.a = a),
+      (t.a = n),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           o.register(
-            a,
+            n,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\fixtures\\shop.js"
           ),
-        (n =
+        (a =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && n(e);
+            : void 0) && a(e);
     }.call(this, r(1)(e)));
   },
   138: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "d", function() {
-        return p;
+        return f;
       }),
         r.d(t, "a", function() {
           return g;
@@ -1017,10 +1017,10 @@
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(25);
+        a = r(2),
+        n = r(25);
       function l() {
-        var e = d(["\n  min-height: 30px;\n"]);
+        var e = s(["\n  min-height: 30px;\n"]);
         return (
           (l = function() {
             return e;
@@ -1029,7 +1029,7 @@
         );
       }
       function c() {
-        var e = d([
+        var e = s([
           "\n  margin-top: 0px;\n  margin-bottom: 15px;\n  font-size: 22px;\n  color: ",
           ";\n"
         ]);
@@ -1041,7 +1041,7 @@
         );
       }
       function i() {
-        var e = d([
+        var e = s([
           "\n  margin: 15px 5px;\n  font-size: 15px;\n  text-align: center;\n  color: ",
           ";\n"
         ]);
@@ -1052,18 +1052,18 @@
           e
         );
       }
-      function s() {
-        var e = d([
+      function d() {
+        var e = s([
           "\n  display: flex;\n  flex-direction: column;\n  flex: 1;\n  justify-content: center;\n  align-items: center;\n"
         ]);
         return (
-          (s = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d(e, t) {
+      function s(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -1078,21 +1078,21 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var u,
-        f,
-        p = n.a.div(s()),
-        g = n.a.span(i(), function(e) {
+        p,
+        f = a.a.div(d()),
+        g = a.a.span(i(), function(e) {
           return e.color;
         }),
-        b = n.a.h4(c(), function(e) {
+        b = a.a.h4(c(), function(e) {
           return e.color;
         }),
-        E = Object(n.a)(a.a)(l());
+        E = Object(a.a)(n.a)(l());
       (u =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
         (u.register(
-          p,
+          f,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\ResultPayment\\styles.js"
         ),
@@ -1111,18 +1111,18 @@
           "ResultButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\ResultPayment\\styles.js"
         )),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && f(e);
+            : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
   143: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(88),
         c = r(12),
         i = r(7);
@@ -1132,59 +1132,59 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = function(e) {
           var t = e.name,
             r = e.iconUrl,
             o = void 0 === r ? "" : r,
-            n = e.titleColor,
-            s = e.iconColor,
-            d = e.bgColor,
+            a = e.titleColor,
+            d = e.iconColor,
+            s = e.bgColor,
             u = e.iconSize,
-            f = void 0 === u ? 40 : u,
-            p = e.onClose,
+            p = void 0 === u ? 40 : u,
+            f = e.onClose,
             g = e.hasCloseButton,
             b = void 0 !== g && g,
             E = e.closeButtonColor;
-          return a.a.createElement(
+          return n.a.createElement(
             l.c,
-            { bgColor: d },
-            a.a.createElement(
+            { bgColor: s },
+            n.a.createElement(
               l.b,
               null,
-              a.a.createElement(c.a, { url: o, color: s, size: f }),
-              a.a.createElement(l.d, { color: n }, t)
+              n.a.createElement(c.a, { url: o, color: d, size: p }),
+              n.a.createElement(l.d, { color: a }, t)
             ),
             b &&
-              a.a.createElement(l.a, {
+              n.a.createElement(l.a, {
                 label: "X",
                 variant: i.b.secondary,
                 color: E,
-                onClick: p
+                onClick: f
               })
           );
         },
-        f = u;
-      (t.a = f),
-        (s =
+        p = u;
+      (t.a = p),
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (s.register(
+          (d.register(
             u,
             "HeaderComponent",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Header\\index.js"
           ),
-          s.register(
-            f,
+          d.register(
+            p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Header\\index.js"
           )),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
   151: function(e, t, r) {
@@ -1203,30 +1203,30 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "GET_EFFECTS_SUCCESS",
         c = function(e) {
           return { type: l, effects: e };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "GET_EFFECTS_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\effects.js"
         ),
-        n.register(
+        a.register(
           c,
           "getEffectsSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\effects.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   152: function(e, t, r) {
@@ -1245,38 +1245,38 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "SELECT_ARTICLE",
         c = function(e) {
           return { type: l, id: e };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "SELECT_ARTICLE",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\articles.js"
         ),
-        n.register(
+        a.register(
           c,
           "selectArticle",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\articles.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   153: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(78),
-        a = r(11),
+        a = r(78),
+        n = r(11),
         l = r(120);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -1286,21 +1286,21 @@
         reactHotLoaderGlobal.default.signature;
       var c,
         i,
-        s = function(e, t) {
-          return Object(n.a)(
-            Object(a.a)([], ["navigation", "shoppingCart", "articles"]),
+        d = function(e, t) {
+          return Object(a.a)(
+            Object(n.a)([], ["navigation", "shoppingCart", "articles"]),
             Object(l.a)(function(e) {
               return e.id === t;
             })
           )(e);
         };
-      (t.a = s),
+      (t.a = d),
         (c =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           c.register(
-            s,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\selectors\\select-article-by-id-from-shopping-cart.js"
           ),
@@ -1314,22 +1314,22 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)([], ["navigation", "shoppingCart", "articles"]);
+        c = Object(a.a)([], ["navigation", "shoppingCart", "articles"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\selectors\\select-articles-from-shopping-cart.js"
@@ -1356,38 +1356,38 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "INIT_SHOP",
         c = function(e) {
           return { type: l, module: e };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "INIT_SHOP",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\init.js"
         ),
-        n.register(
+        a.register(
           c,
           "initShop",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\init.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   156: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(78),
-        a = r(35),
+        a = r(78),
+        n = r(35),
         l = r(244),
         c = r(154);
       (o =
@@ -1397,50 +1397,50 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var i,
-        s,
-        d = Object(n.a)(
+        d,
+        s = Object(a.a)(
           c.a,
-          Object(a.a)(function(e) {
+          Object(n.a)(function(e) {
             return e.quantity;
           }),
           l.a
         );
-      (t.a = d),
+      (t.a = s),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           i.register(
-            d,
+            s,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\selectors\\select-quantity-articles-from-shopping-cart.js"
           ),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && s(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
   157: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)(0, ["entities", "player", "freeStorageSpace"]);
+        c = Object(a.a)(0, ["entities", "player", "freeStorageSpace"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\player\\selectors\\select-free-storage-from-player.js"
@@ -1455,22 +1455,22 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)(0, ["navigation", "shoppingCart", "busyStorage"]);
+        c = Object(a.a)(0, ["navigation", "shoppingCart", "busyStorage"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\selectors\\select-busy-storage-from-shopping-cart.js"
@@ -1485,57 +1485,57 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(12),
         c = r(138),
         i = r(13),
-        s = r(7);
+        d = r(7);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var s,
         u,
-        f = function(e) {
+        p = function(e) {
           var t = e.title,
             r = e.message,
             o = e.iconUrl,
-            n = void 0 === o ? "" : o,
-            d = e.color,
-            u = void 0 === d ? i.a : d,
-            f = e.onClick,
-            p = void 0 === f ? Function.prototype : f,
+            a = void 0 === o ? "" : o,
+            s = e.color,
+            u = void 0 === s ? i.a : s,
+            p = e.onClick,
+            f = void 0 === p ? Function.prototype : p,
             g = e.labelButton;
-          return a.a.createElement(
+          return n.a.createElement(
             c.d,
             null,
-            a.a.createElement(c.c, { color: u }, t),
-            a.a.createElement(l.a, { url: n, color: u, size: 45 }),
-            a.a.createElement(c.a, { color: u }, r),
-            a.a.createElement(c.b, {
+            n.a.createElement(c.c, { color: u }, t),
+            n.a.createElement(l.a, { url: a, color: u, size: 45 }),
+            n.a.createElement(c.a, { color: u }, r),
+            n.a.createElement(c.b, {
               label: g,
               color: u,
-              onClick: p,
-              variant: s.b.secondary
+              onClick: f,
+              variant: d.b.secondary
             })
           );
         },
-        p = f;
-      (t.a = p),
-        (d =
+        f = p;
+      (t.a = f),
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (d.register(
-            f,
+          (s.register(
+            p,
             "Result",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\ResultPayment\\index.js"
           ),
-          d.register(
-            p,
+          s.register(
+            f,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\ResultPayment\\index.js"
           )),
@@ -1549,28 +1549,28 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
         c = {},
-        i = Object(n.a)(c, ["config", "style"]);
+        i = Object(a.a)(c, ["config", "style"]);
       (t.a = i),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (a.register(
+          (n.register(
             c,
             "emptyObject",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-style-from-config.js"
           ),
-          a.register(
+          n.register(
             i,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-style-from-config.js"
@@ -1585,28 +1585,28 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
         c = {},
-        i = Object(n.a)(c, ["config", "wording"]);
+        i = Object(a.a)(c, ["config", "wording"]);
       (t.a = i),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (a.register(
+          (n.register(
             c,
             "emptyObject",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-wording-from-config.js"
           ),
-          a.register(
+          n.register(
             i,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-wording-from-config.js"
@@ -1624,19 +1624,19 @@
         return u;
       }),
         r.d(t, "c", function() {
-          return f;
+          return p;
         }),
         r.d(t, "a", function() {
-          return p;
+          return f;
         });
       r(0);
       var o,
-        n = r(2);
+        a = r(2);
       r(13);
-      function a() {
+      function n() {
         var e = i(["\n  display: flex;\n  flex: 1;\n"]);
         return (
-          (a = function() {
+          (n = function() {
             return e;
           }),
           e
@@ -1681,10 +1681,10 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
-        u = n.a.table(c()),
-        f = n.a.div(
+      var d,
+        s,
+        u = a.a.table(c()),
+        p = a.a.div(
           l(),
           function(e) {
             return e.bgColor;
@@ -1696,30 +1696,30 @@
             return e.hasBgHeader ? "0px 0px 10px 0px" : "0px 10px 10px 0";
           }
         ),
-        p = n.a.div(a());
-      (s =
+        f = a.a.div(n());
+      (d =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (s.register(
+        (d.register(
           u,
           "Table",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\styles.js"
         ),
-        s.register(
-          f,
+        d.register(
+          p,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\styles.js"
         ),
-        s.register(
-          p,
+        d.register(
+          f,
           "Body",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\styles.js"
         )),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
   19: function(e, t, r) {
@@ -1730,7 +1730,7 @@
         return c;
       }),
         r.d(t, "b", function() {
-          return s;
+          return d;
         }),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
@@ -1738,8 +1738,8 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "BURDIGALAX_onShop_onClose",
         c = {
           prefix: "BURDIGALAX_onShop",
@@ -1756,7 +1756,7 @@
             ue.game.callevent(e, JSON.stringify(t));
           } catch (e) {}
         },
-        s = {
+        d = {
           onClose: function() {
             return i(l);
           },
@@ -1770,84 +1770,84 @@
             return i("BURDIGALAX_onShop_onCashPayment", e);
           }
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           "BURDIGALAX_onShop",
           "prefix",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "setConfig",
           "setConfig",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "reset",
           "reset",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "updateArticles",
           "updateArticles",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "updatePlayer",
           "updatePlayer",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "setPaymentError",
           "setPaymentError",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "setPaymentSuccess",
           "setPaymentSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           l,
           "onClose",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "BURDIGALAX_onShop_onCardPayment",
           "onCardPayment",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "BURDIGALAX_onShop_onContactLessPayment",
           "onContactLessPayment",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           "BURDIGALAX_onShop_onCashPayment",
           "onCashPayment",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           c,
           "JS_FUNCTIONS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
+        a.register(
           i,
           "callEvent",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "LUA_FUNCTIONS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\events.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   216: function(e, t, r) {
@@ -1857,12 +1857,12 @@
         return u;
       }),
         r.d(t, "a", function() {
-          return f;
+          return p;
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(12);
+        a = r(2),
+        n = r(12);
       function l() {
         var e = i(["\n  margin-right: 5px;\n"]);
         return (
@@ -1898,30 +1898,30 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
-        u = n.a.li(c(), function(e) {
+      var d,
+        s,
+        u = a.a.li(c(), function(e) {
           return e.value > 0 ? e.greenColor : e.redColor;
         }),
-        f = Object(n.a)(a.a)(l());
-      (s =
+        p = Object(a.a)(n.a)(l());
+      (d =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (s.register(
+        (d.register(
           u,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\styles.js"
         ),
-        s.register(
-          f,
+        d.register(
+          p,
           "EffectIcon",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\styles.js"
         )),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
   217: function(e, t, r) {
@@ -1931,12 +1931,12 @@
         return u;
       }),
         r.d(t, "b", function() {
-          return f;
+          return p;
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(25);
+        a = r(2),
+        n = r(25);
       function l() {
         var e = i(["\n  font-size: 13px;\n  font-weight: 600;\n"]);
         return (
@@ -1969,50 +1969,50 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
-        u = Object(n.a)(a.a)(c()),
-        f = n.a.td(l());
-      (s =
+      var d,
+        s,
+        u = Object(a.a)(n.a)(c()),
+        p = a.a.td(l());
+      (d =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (s.register(
+        (d.register(
           u,
           "DeleteButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Article\\styles.js"
         ),
-        s.register(
-          f,
+        d.register(
+          p,
           "TextCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Article\\styles.js"
         )),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
   218: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "b", function() {
-        return d;
+        return s;
       }),
         r.d(t, "a", function() {
           return u;
         });
       r(0);
       var o,
-        n = r(2);
+        a = r(2);
       r(13);
-      function a() {
+      function n() {
         var e = c([
           "\n  font-size: 13px;\n  font-weight: 600;\n  color: ",
           ";\n"
         ]);
         return (
-          (a = function() {
+          (n = function() {
             return e;
           }),
           e
@@ -2044,9 +2044,9 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var i,
-        s,
-        d = n.a.div(l()),
-        u = n.a.div(a(), function(e) {
+        d,
+        s = a.a.div(l()),
+        u = a.a.div(n(), function(e) {
           var t = e.isOverweight,
             r = e.textBasketColor,
             o = e.redColor;
@@ -2057,7 +2057,7 @@
           ? reactHotLoaderGlobal.default
           : void 0) &&
         (i.register(
-          d,
+          s,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\WeightControl\\styles.js"
         ),
@@ -2066,23 +2066,23 @@
           "Text",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\WeightControl\\styles.js"
         )),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && s(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
   25: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(4),
         c = r(127),
         i = r(65),
-        s = r(7),
-        d = r(12);
+        d = r(7),
+        s = r(12);
       function u() {
         return (u =
           Object.assign ||
@@ -2101,72 +2101,72 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
-        g = function(e, t, r, o, n) {
-          var l = n.color,
-            c = void 0 === l ? s.a.business : l,
-            u = n.variant,
-            f = void 0 === u ? s.b.primary : u,
-            p = n.disabled,
-            g = n.hoverColor,
-            b = n.isHover,
+      var p,
+        f,
+        g = function(e, t, r, o, a) {
+          var l = a.color,
+            c = void 0 === l ? d.a.business : l,
+            u = a.variant,
+            p = void 0 === u ? d.b.primary : u,
+            f = a.disabled,
+            g = a.hoverColor,
+            b = a.isHover,
             E = e;
-          return a.a.createElement(
+          return n.a.createElement(
             i.a,
             { hasMarginRight: o },
             t
-              ? a.a.createElement(d.a, {
+              ? n.a.createElement(s.a, {
                   size: r,
                   url: t,
                   color: b
                     ? Object(i.d)({
                         color: c,
                         hoverColor: g,
-                        variant: f,
-                        disabled: p
+                        variant: p,
+                        disabled: f
                       })
-                    : Object(i.c)({ color: c, variant: f })
+                    : Object(i.c)({ color: c, variant: p })
                 })
-              : a.a.createElement(E, { size: r })
+              : n.a.createElement(E, { size: r })
           );
         },
         b = function(e) {
           var t = e.color,
-            r = void 0 === t ? s.a.business : t,
+            r = void 0 === t ? d.a.business : t,
             o = e.hoverColor,
-            n = e.label,
+            a = e.label,
             l = e.iconLeft,
             c = e.iconLeftUrl,
-            d = e.iconLeftSize,
-            f = e.disabled,
-            p = e.variant,
-            b = void 0 === p ? s.b.primary : p,
+            s = e.iconLeftSize,
+            p = e.disabled,
+            f = e.variant,
+            b = void 0 === f ? d.b.primary : f,
             E = e.className,
-            m = e.isFullWidth,
-            v = void 0 !== m && m,
+            v = e.isFullWidth,
+            O = void 0 !== v && v,
             y = e.onMouseEnter,
             h = void 0 === y ? Function.prototype : y,
-            C = e.onMouseLeave,
-            O = void 0 === C ? Function.prototype : C,
-            x = !!n;
-          return a.a.createElement(
+            m = e.onMouseLeave,
+            x = void 0 === m ? Function.prototype : m,
+            L = !!a;
+          return n.a.createElement(
             i.b,
             u(
               {
-                isFullWidth: v,
+                isFullWidth: O,
                 className: E,
-                disabled: f,
+                disabled: p,
                 color: r,
                 hoverColor: o,
                 variant: b,
                 onMouseEnter: h,
-                onMouseLeave: O
+                onMouseLeave: x
               },
               e
             ),
-            (l || c) && g(l, c, d, x, e),
-            n
+            (l || c) && g(l, c, s, L, e),
+            a
           );
         },
         E = Object(l.b)(
@@ -2202,58 +2202,69 @@
           })
         )(b);
       (t.a = E),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (f.register(
+          (p.register(
             g,
             "renderIcon",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\index.js"
           ),
-          f.register(
+          p.register(
             b,
             "BurdiButton",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\index.js"
           ),
-          f.register(
+          p.register(
             E,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\index.js"
           )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
   253: function(e, t, r) {
     var o = r(210),
-      n = r(254);
-    "string" == typeof (n = n.__esModule ? n.default : n) &&
-      (n = [[e.i, n, ""]]);
-    var a = { insert: "head", singleton: !1 },
+      a = r(254);
+    "string" == typeof (a = a.__esModule ? a.default : a) &&
+      (a = [[e.i, a, ""]]);
+    var n = { insert: "head", singleton: !1 },
       l =
-        (o("!!../node_modules/css-loader/dist/cjs.js!./Montserrat.css", n, a),
-        n.locals ? n.locals : {});
+        (o("!!../node_modules/css-loader/dist/cjs.js!./Montserrat.css", a, n),
+        a.locals ? a.locals : {});
     e.exports = l;
   },
   254: function(e, t, r) {
-    (t = r(211)(!1)).push([
+    var o = r(211),
+      a = r(436),
+      n = r(255);
+    t = o(!1);
+    var l = a(n);
+    t.push([
       e.i,
-      "/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZBg_z8fZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZBg_z-PZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZBg_z8_ZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZBg_z8vZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZBg_z_PZw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZYgzz8fZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZYgzz-PZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZYgzz8_ZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZYgzz8vZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZYgzz_PZw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Italic'), local('Montserrat-Italic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3z8fZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3z-PZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3z8_ZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3z8vZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3z_PZw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZFgrz8fZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZFgrz-PZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZFgrz8_ZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZFgrz8vZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZFgrz_PZw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZcgvz8fZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZcgvz-PZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZcgvz8_ZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZcgvz8vZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZcgvz_PZw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZbgjz8fZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZbgjz-PZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZbgjz8_ZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZbgjz8vZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZbgjz_PZw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZSgnz8fZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZSgnz-PZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZSgnz8_ZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZSgnz8vZwnCo.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: italic;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZSgnz_PZw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_aZA3gTD_u50.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_aZA3g3D_u50.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_aZA3gbD_u50.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_aZA3gfD_u50.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 200;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_aZA3gnD_g.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gTD_u50.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3g3D_u50.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gbD_u50.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-display: swap;\r\n  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  font-display: swap;\r\n  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gTD_u50.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gbD_u50.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 500;\r\n  font-display: swap;\r\n  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gTD_u50.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3g3D_u50.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gbD_u50.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 600;\r\n  font-display: swap;\r\n  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gTD_u50.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3g3D_u50.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gbD_u50.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gfD_u50.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 700;\r\n  font-display: swap;\r\n  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gTD_u50.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3g3D_u50.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gbD_u50.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gfD_u50.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 800;\r\n  font-display: swap;\r\n  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gnD_g.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n/* cyrillic-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_epG3gTD_u50.woff2) format('woff2');\r\n  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\r\n}\r\n/* cyrillic */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_epG3g3D_u50.woff2) format('woff2');\r\n  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\r\n}\r\n/* vietnamese */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_epG3gbD_u50.woff2) format('woff2');\r\n  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;\r\n}\r\n/* latin-ext */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_epG3gfD_u50.woff2) format('woff2');\r\n  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;\r\n}\r\n/* latin */\r\n@font-face {\r\n  font-family: 'Montserrat';\r\n  font-style: normal;\r\n  font-weight: 900;\r\n  font-display: swap;\r\n  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_epG3gnD_g.woff2) format('woff2');\r\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n",
+      '@font-face {\r\n  font-family: "Montserrat";\r\n  src: url(' +
+        l +
+        ') format("truetype");\r\n}',
       ""
     ]),
       (e.exports = t);
   },
-  256: function(e, t, r) {
+  255: function(e, t, r) {
+    "use strict";
+    r.r(t), (t.default = r.p + "fonts/Montserrat-Regular.ttf");
+  },
+  257: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
-        l = r(257);
-      r(433);
+        a = r(0),
+        n = r.n(a),
+        l = r(258);
+      r(434);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2262,16 +2273,16 @@
         reactHotLoaderGlobal.default.signature;
       var c,
         i,
-        s = function() {
-          return a.a.createElement(l.a, null);
+        d = function() {
+          return n.a.createElement(l.a, null);
         };
-      (t.a = s),
+      (t.a = d),
         (c =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           c.register(
-            s,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\index.js"
           ),
@@ -2281,25 +2292,25 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  257: function(e, t, r) {
+  258: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(8),
-        a = r(23),
+        a = r(8),
+        n = r(23),
         l = r(14),
         c = r(4),
         i = r(75),
-        s = r(0),
-        d = r.n(s),
-        u = r(258),
-        f = r(266),
-        p = r(271),
+        d = r(0),
+        s = r.n(d),
+        u = r(259),
+        p = r(267),
+        f = r(272),
         g = r(155),
         b = r(16),
         E = r(19),
-        m = r(43),
-        v = r(60),
+        v = r(43),
+        O = r(60),
         y = r(97);
       function h(e, t) {
         var r = Object.keys(e);
@@ -2313,7 +2324,7 @@
         }
         return r;
       }
-      function C(e, t, r) {
+      function m(e, t, r) {
         return (
           t in e
             ? Object.defineProperty(e, t, {
@@ -2332,16 +2343,16 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var O = Object(i.a)(),
-        x = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || c.b,
-        L = Object(a.e)(u.a, x(Object(a.a)(O)));
-      O.run(f.a);
+      var x = Object(i.a)(),
+        L = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || c.b,
+        C = Object(n.e)(u.a, L(Object(n.a)(x)));
+      x.run(p.a);
       var H,
         S,
-        U = {
+        G = {
           initShop: g.b,
-          resetRequest: m.c,
-          updateArticlesSuccess: v.d,
+          resetRequest: v.c,
+          updateArticlesSuccess: O.d,
           updatePlayerSuccess: y.d
         },
         j = function(e) {
@@ -2351,22 +2362,22 @@
             hasBgHeader: Object(l.a)(["header", "backgroundColor"], t)
           };
         },
-        G = Object(c.b)(
-          Object(n.b)(j, U),
+        P = Object(c.b)(
+          Object(a.b)(j, G),
           Object(c.c)({
             componentDidMount: function() {
               var e,
                 t = this.props,
                 r = t.initShop,
                 o = t.resetRequest,
-                n = t.updatePlayerSuccess,
-                a = t.updateArticlesSuccess;
+                a = t.updatePlayerSuccess,
+                n = t.updateArticlesSuccess;
               window[E.a.prefix] = (function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var r = null != arguments[t] ? arguments[t] : {};
                   t % 2
                     ? h(Object(r), !0).forEach(function(t) {
-                        C(e, t, r[t]);
+                        m(e, t, r[t]);
                       })
                     : Object.getOwnPropertyDescriptors
                     ? Object.defineProperties(
@@ -2385,45 +2396,45 @@
               })(
                 {},
                 window[E.a.prefix],
-                (C((e = {}), E.a.setConfig, r),
-                C(e, E.a.reset, o),
-                C(e, E.a.updatePlayer, n),
-                C(e, E.a.updateArticles, a),
+                (m((e = {}), E.a.setConfig, r),
+                m(e, E.a.reset, o),
+                m(e, E.a.updatePlayer, a),
+                m(e, E.a.updateArticles, n),
                 e)
               );
             }
           })
-        )(p.a),
-        w = function() {
-          return d.a.createElement(
-            n.a,
-            { store: L },
-            d.a.createElement(G, null)
+        )(f.a),
+        T = function() {
+          return s.a.createElement(
+            a.a,
+            { store: C },
+            s.a.createElement(P, null)
           );
         },
-        B = w;
+        B = T;
       (t.a = B),
         (H =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (H.register(
-            O,
+            x,
             "sagaMiddleware",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\index.js"
           ),
           H.register(
-            x,
+            L,
             "composeEnhancers",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\index.js"
           ),
           H.register(
-            L,
+            C,
             "store",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\index.js"
           ),
           H.register(
-            U,
+            G,
             "mapDispatchToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\index.js"
           ),
@@ -2433,12 +2444,12 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\index.js"
           ),
           H.register(
-            G,
+            P,
             "ShopContainer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\index.js"
           ),
           H.register(
-            w,
+            T,
             "OnShop",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\index.js"
           ),
@@ -2453,52 +2464,52 @@
             : void 0) && S(e);
     }.call(this, r(1)(e)));
   },
-  258: function(e, t, r) {
+  259: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(23),
-        a = r(259),
-        l = r(260),
-        c = r(261),
-        i = r(262),
-        s = r(263),
+        a = r(23),
+        n = r(260),
+        l = r(261),
+        c = r(262),
+        i = r(263),
         d = r(264),
-        u = r(265),
-        f = r(95);
+        s = r(265),
+        u = r(266),
+        p = r(95);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var p,
+      var f,
         g,
-        b = Object(n.c)({
-          shop: a.a,
+        b = Object(a.c)({
+          shop: n.a,
           articles: i.a,
           player: l.a,
           effects: c.a
         }),
-        E = Object(n.c)({ shoppingCart: s.a, articles: d.a, payment: u.a }),
-        m = Object(n.c)({ entities: b, navigation: E, config: f.a });
-      (t.a = m),
-        (p =
+        E = Object(a.c)({ shoppingCart: d.a, articles: s.a, payment: u.a }),
+        v = Object(a.c)({ entities: b, navigation: E, config: p.a });
+      (t.a = v),
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (p.register(
+          (f.register(
             b,
             "entitiesReducer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\index.js"
           ),
-          p.register(
+          f.register(
             E,
             "navigationReducer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\index.js"
           ),
-          p.register(
-            m,
+          f.register(
+            v,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\index.js"
           )),
@@ -2508,20 +2519,20 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  259: function(e, t, r) {
+  260: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11),
-        a = r(78),
+        a = r(11),
+        n = r(78),
         l = r(35),
         c = r(14),
-        i = r(532),
-        s = r(77),
-        d = r(73),
+        i = r(534),
+        d = r(77),
+        s = r(73),
         u = r(126),
-        f = r(60),
-        p = r(43);
+        p = r(60),
+        f = r(43);
       function g(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -2572,8 +2583,8 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var m,
-        v,
+      var v,
+        O,
         y = {},
         h = function() {
           var e =
@@ -2582,17 +2593,17 @@
                 : y,
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
-            case f.a:
-              var r = Object(n.a)([], ["data", "articles"], t),
-                o = Object(a.a)(
+            case p.a:
+              var r = Object(a.a)([], ["data", "articles"], t),
+                o = Object(n.a)(
                   Object(l.a)(Object(c.a)(["categoryName"])),
                   i.a
                 )(r),
                 g = Object(l.a)(function(e) {
                   return {
                     name: e,
-                    articlesIds: Object(a.a)(
-                      Object(s.a)(Object(d.a)("categoryName", e)),
+                    articlesIds: Object(n.a)(
+                      Object(d.a)(Object(s.a)("categoryName", e)),
                       Object(l.a)(Object(c.a)(["id"]))
                     )(r)
                   };
@@ -2600,39 +2611,39 @@
               return b({}, Object(u.a)(["articles"], t.data), {
                 articlesIdsByCategory: g
               });
-            case p.a:
+            case f.a:
               return y;
             default:
               return e;
           }
         };
       (t.a = h),
-        (m =
+        (v =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (m.register(
+          (v.register(
             y,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\shop\\index.js"
           ),
-          m.register(
+          v.register(
             h,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\shop\\index.js"
           )),
-        (v =
+        (O =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && v(e);
+            : void 0) && O(e);
     }.call(this, r(1)(e)));
   },
-  260: function(e, t, r) {
+  261: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(58),
-        a = r(97);
+        a = r(58),
+        n = r(97);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2642,22 +2653,22 @@
       var l,
         c,
         i = {},
-        s = function() {
+        d = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : i,
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
-            case a.a:
+            case n.a:
               return t.data;
-            case a.b:
-              return Object(n.a)(e, t.player);
+            case n.b:
+              return Object(a.a)(e, t.player);
             default:
               return e;
           }
         };
-      (t.a = s),
+      (t.a = d),
         (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -2668,7 +2679,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\player\\index.js"
           ),
           l.register(
-            s,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\player\\index.js"
           )),
@@ -2678,12 +2689,12 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  261: function(e, t, r) {
+  262: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(151);
-      function a(e, t) {
+        a = r(151);
+      function n(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e);
@@ -2699,12 +2710,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2
-            ? a(Object(r), !0).forEach(function(t) {
+            ? n(Object(r), !0).forEach(function(t) {
                 c(e, t, r[t]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : a(Object(r)).forEach(function(t) {
+            : n(Object(r)).forEach(function(t) {
                 Object.defineProperty(
                   e,
                   t,
@@ -2734,16 +2745,16 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var i,
-        s,
-        d = {},
+        d,
+        s = {},
         u = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : d,
+                : s,
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
-            case n.a:
+            case a.a:
               return { byId: l({}, e.byId, {}, t.effects) };
             default:
               return e;
@@ -2755,7 +2766,7 @@
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (i.register(
-            d,
+            s,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\effects\\index.js"
           ),
@@ -2764,22 +2775,22 @@
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\effects\\index.js"
           )),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && s(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
-  262: function(e, t, r) {
+  263: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(146),
-        a = r(35),
+        a = r(146),
+        n = r(35),
         l = r(11),
         c = r(243),
         i = r(60);
-      function s(e, t) {
+      function d(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e);
@@ -2791,7 +2802,7 @@
         }
         return r;
       }
-      function d(e, t, r) {
+      function s(e, t, r) {
         return (
           t in e
             ? Object.defineProperty(e, t, {
@@ -2811,27 +2822,27 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var u,
-        f,
-        p = {},
+        p,
+        f = {},
         g = function(e) {
-          return Object(n.a)(
-            Object(a.a)(function(e) {
-              return d(
+          return Object(a.a)(
+            Object(n.a)(function(e) {
+              return s(
                 {},
                 "".concat(e.id),
                 (function(e) {
                   for (var t = 1; t < arguments.length; t++) {
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2
-                      ? s(Object(r), !0).forEach(function(t) {
-                          d(e, t, r[t]);
+                      ? d(Object(r), !0).forEach(function(t) {
+                          s(e, t, r[t]);
                         })
                       : Object.getOwnPropertyDescriptors
                       ? Object.defineProperties(
                           e,
                           Object.getOwnPropertyDescriptors(r)
                         )
-                      : s(Object(r)).forEach(function(t) {
+                      : d(Object(r)).forEach(function(t) {
                           Object.defineProperty(
                             e,
                             t,
@@ -2854,7 +2865,7 @@
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : p,
+                : f,
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
             case i.a:
@@ -2862,14 +2873,14 @@
                 o = g(r);
               return { byId: o };
             case i.b:
-              var n = t.articles,
-                a = { byId: g(n) };
+              var a = t.articles,
+                n = { byId: g(a) };
               return Object(c.a)(
                 function(e, t) {
                   return t || e;
                 },
                 e,
-                a
+                n
               );
             default:
               return e;
@@ -2881,7 +2892,7 @@
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (u.register(
-            p,
+            f,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\articles\\index.js"
           ),
@@ -2895,26 +2906,26 @@
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\articles\\index.js"
           )),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && f(e);
+            : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  263: function(e, t, r) {
+  264: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(534),
-        a = r(73),
-        l = r(399),
-        c = r(398),
+        a = r(536),
+        n = r(73),
+        l = r(400),
+        c = r(399),
         i = r(77),
-        s = r(528),
-        d = r(529),
+        d = r(530),
+        s = r(531),
         u = r(45),
-        f = r(63),
-        p = r(43);
+        p = r(63),
+        f = r(43);
       function g(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -2965,13 +2976,13 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var m,
-        v,
+      var v,
+        O,
         y = {},
         h = function(e, t) {
-          return Object(n.a)(Object(a.a)("id", e), t);
+          return Object(a.a)(Object(n.a)("id", e), t);
         },
-        C = function() {
+        m = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -2981,64 +2992,64 @@
             case u.b:
               var r = e.articles || [],
                 o = h(t.newArticle.id, r),
-                n = r[o],
-                a = function(e, t, r) {
+                a = r[o],
+                n = function(e, t, r) {
                   return "id" !== e ? Object(l.a)(t, r) : r;
                 },
-                g = n ? Object(c.a)(a, n, t.newArticle) : t.newArticle,
+                g = a ? Object(c.a)(n, a, t.newArticle) : t.newArticle,
                 E = Object(i.a)(function(e) {
                   return e.id !== t.newArticle.id;
                 }, r),
-                m = Object(s.a)(o, g, E);
-              return b({ articles: m }, t.data);
+                v = Object(d.a)(o, g, E);
+              return b({ articles: v }, t.data);
             case u.d:
-              var v = t.removedArticle,
-                C = h(v.id, e.articles);
-              if (C < 0) return e;
-              var O = Object(d.a)(C, 1, e.articles);
-              return b({}, e, { articles: O }, t.data);
+              var O = t.removedArticle,
+                m = h(O.id, e.articles);
+              if (m < 0) return e;
+              var x = Object(s.a)(m, 1, e.articles);
+              return b({}, e, { articles: x }, t.data);
             case u.e:
-              var x = t.shoppingCart;
-              return b({}, x);
-            case p.b:
-            case f.c:
+              var L = t.shoppingCart;
+              return b({}, L);
+            case f.b:
+            case p.c:
               return y;
             default:
               return e;
           }
         };
-      (t.a = C),
-        (m =
+      (t.a = m),
+        (v =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (m.register(
+          (v.register(
             y,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\index.js"
           ),
-          m.register(
+          v.register(
             h,
             "findIndexByArticleId",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\index.js"
           ),
-          m.register(
-            C,
+          v.register(
+            m,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\index.js"
           )),
-        (v =
+        (O =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && v(e);
+            : void 0) && O(e);
     }.call(this, r(1)(e)));
   },
-  264: function(e, t, r) {
+  265: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(152),
-        a = r(43);
+        a = r(152),
+        n = r(43);
       function l(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -3089,51 +3100,51 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = { selectedArticleId: null },
-        f = function() {
+        p = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : u,
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
-            case n.a:
+            case a.a:
               return c({}, e, { selectedArticleId: t.id });
-            case a.b:
+            case n.b:
               return u;
             default:
               return e;
           }
         };
-      (t.a = f),
-        (s =
+      (t.a = p),
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (s.register(
+          (d.register(
             u,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\articles\\index.js"
           ),
-          s.register(
-            f,
+          d.register(
+            p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\articles\\index.js"
           )),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  265: function(e, t, r) {
+  266: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(63),
-        a = r(43);
+        a = r(63),
+        n = r(43);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -3143,14 +3154,14 @@
       var l,
         c,
         i = { error: null, success: null },
-        s = function() {
+        d = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : i,
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
-            case n.b:
+            case a.b:
               return {
                 success: null,
                 error: {
@@ -3159,7 +3170,7 @@
                   iconUrl: t.iconUrl
                 }
               };
-            case n.c:
+            case a.c:
               return {
                 error: null,
                 success: {
@@ -3168,14 +3179,14 @@
                   iconUrl: t.iconUrl
                 }
               };
-            case a.b:
-            case n.a:
+            case n.b:
+            case a.a:
               return i;
             default:
               return e;
           }
         };
-      (t.a = s),
+      (t.a = d),
         (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -3186,7 +3197,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\payment\\index.js"
           ),
           l.register(
-            s,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\payment\\index.js"
           )),
@@ -3196,28 +3207,28 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  266: function(e, t, r) {
+  267: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
-        return f;
+        return p;
       });
       var o,
-        n = r(3),
-        a = r(267),
+        a = r(3),
+        n = r(268),
         l = r(155),
-        c = r(269),
-        i = r(270);
+        c = r(270),
+        i = r(271);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
-      var s,
-        d,
-        u = regeneratorRuntime.mark(f);
+      var d,
+        s,
+        u = regeneratorRuntime.mark(p);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      function f() {
+      function p() {
         return regeneratorRuntime.wrap(
           function(e) {
             for (;;)
@@ -3225,10 +3236,10 @@
                 case 0:
                   return (
                     (e.next = 2),
-                    Object(n.a)([Object(n.d)(a.a), Object(n.d)(i.a)])
+                    Object(a.a)([Object(a.d)(n.a), Object(a.d)(i.a)])
                   );
                 case 2:
-                  return (e.next = 4), Object(n.h)(l.a, c.a);
+                  return (e.next = 4), Object(a.h)(l.a, c.a);
                 case 4:
                 case "end":
                   return e.stop();
@@ -3238,71 +3249,71 @@
           this
         );
       }
-      (s =
+      (d =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        s.register(
-          f,
+        d.register(
+          p,
           "root",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\index.js"
         ),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  267: function(e, t, r) {
+  268: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(3),
-        a = r(530),
+        a = r(3),
+        n = r(532),
         l = r(127),
         c = r(35),
         i = r(77),
-        s = r(73),
-        d = r(78),
+        d = r(73),
+        s = r(78),
         u = r(244),
-        f = r(45),
-        p = r(70),
+        p = r(45),
+        f = r(70),
         g = r(86),
         b = r(153),
         E = r(154),
-        m = r(268),
-        v = r(43),
+        v = r(269),
+        O = r(43),
         y = r(60);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       var h = regeneratorRuntime.mark(S),
-        C = regeneratorRuntime.mark(U),
-        O = regeneratorRuntime.mark(j),
-        x = regeneratorRuntime.mark(G),
-        L =
+        m = regeneratorRuntime.mark(G),
+        x = regeneratorRuntime.mark(j),
+        L = regeneratorRuntime.mark(P),
+        C =
           ("undefined" != typeof reactHotLoaderGlobal &&
             reactHotLoaderGlobal.default.signature,
           function(e) {
             return parseFloat(e.toFixed(2));
           }),
         H = function(e, t) {
-          var r = L(e.price * t),
-            o = L((e.tax * r) / 100),
-            n = L(r + o),
-            a = L(e.storageCost * t);
+          var r = C(e.price * t),
+            o = C((e.tax * r) / 100),
+            a = C(r + o),
+            n = C(e.storageCost * t);
           return {
             id: e.id,
             quantity: t,
             total: r,
             tax: o,
-            totalTTC: n,
-            busyStorage: a
+            totalTTC: a,
+            busyStorage: n
           };
         };
       function S(e) {
-        var t, r, o, a, l, c, i, s, d, u, b, E, m, v, y, C, O, x, S;
+        var t, r, o, n, l, c, i, d, s, u, b, E, v, O, y, m, x, L, S;
         return regeneratorRuntime.wrap(
           function(h) {
             for (;;)
@@ -3312,31 +3323,31 @@
                     (t = e.id),
                     (r = e.quantity),
                     (h.next = 3),
-                    Object(n.f)(function(e) {
-                      return Object(p.a)(e, t);
+                    Object(a.f)(function(e) {
+                      return Object(f.a)(e, t);
                     })
                   );
                 case 3:
-                  return (o = h.sent), (h.next = 6), Object(n.f)(g.a);
+                  return (o = h.sent), (h.next = 6), Object(a.f)(g.a);
                 case 6:
                   return (
-                    (a = h.sent),
-                    (c = (l = a || {}).total),
+                    (n = h.sent),
+                    (c = (l = n || {}).total),
                     (i = void 0 === c ? 0 : c),
-                    (s = l.tax),
-                    (d = void 0 === s ? 0 : s),
+                    (d = l.tax),
+                    (s = void 0 === d ? 0 : d),
                     (u = l.busyStorage),
                     (b = void 0 === u ? 0 : u),
                     (E = l.totalTTC),
-                    (m = void 0 === E ? 0 : E),
-                    (v = H(o, r)),
-                    (y = L(i + v.total)),
-                    (C = L(d + v.tax)),
-                    (O = L(b + v.busyStorage)),
-                    (x = L(m + v.totalTTC)),
-                    (S = { total: y, tax: C, totalTTC: x, busyStorage: O }),
+                    (v = void 0 === E ? 0 : E),
+                    (O = H(o, r)),
+                    (y = C(i + O.total)),
+                    (m = C(s + O.tax)),
+                    (x = C(b + O.busyStorage)),
+                    (L = C(v + O.totalTTC)),
+                    (S = { total: y, tax: m, totalTTC: L, busyStorage: x }),
                     (h.next = 16),
-                    Object(n.e)(Object(f.g)(v, S))
+                    Object(a.e)(Object(p.g)(O, S))
                   );
                 case 16:
                 case "end":
@@ -3347,48 +3358,48 @@
           this
         );
       }
-      function U(e) {
-        var t, r, o, a, l, c, i, s, d, u, p, E;
+      function G(e) {
+        var t, r, o, n, l, c, i, d, s, u, f, E;
         return regeneratorRuntime.wrap(
-          function(m) {
+          function(v) {
             for (;;)
-              switch ((m.prev = m.next)) {
+              switch ((v.prev = v.next)) {
                 case 0:
                   return (
                     (t = e.id),
-                    (m.next = 3),
-                    Object(n.f)(function(e) {
+                    (v.next = 3),
+                    Object(a.f)(function(e) {
                       return Object(b.a)(e, t);
                     })
                   );
                 case 3:
-                  return (r = m.sent), (m.next = 6), Object(n.f)(g.a);
+                  return (r = v.sent), (v.next = 6), Object(a.f)(g.a);
                 case 6:
                   return (
-                    (o = m.sent),
-                    (a = o.busyStorage),
-                    (l = void 0 === a ? 0 : a),
+                    (o = v.sent),
+                    (n = o.busyStorage),
+                    (l = void 0 === n ? 0 : n),
                     (c = o.total),
                     (i = void 0 === c ? 0 : c),
-                    (s = o.tax),
-                    (d = void 0 === s ? 0 : s),
+                    (d = o.tax),
+                    (s = void 0 === d ? 0 : d),
                     (u = o.totalTTC),
-                    (p = void 0 === u ? 0 : u),
+                    (f = void 0 === u ? 0 : u),
                     (E = {
-                      total: L(i - r.total),
-                      tax: L(d - r.tax),
-                      totalTTC: L(p - r.totalTTC),
-                      busyStorage: L(l - r.busyStorage)
+                      total: C(i - r.total),
+                      tax: C(s - r.tax),
+                      totalTTC: C(f - r.totalTTC),
+                      busyStorage: C(l - r.busyStorage)
                     }),
-                    (m.next = 18),
-                    Object(n.e)(Object(f.i)(r, E))
+                    (v.next = 18),
+                    Object(a.e)(Object(p.i)(r, E))
                   );
                 case 18:
                 case "end":
-                  return m.stop();
+                  return v.stop();
               }
           },
-          C,
+          m,
           this
         );
       }
@@ -3399,91 +3410,91 @@
             for (;;)
               switch ((t.prev = t.next)) {
                 case 0:
-                  return (t.next = 2), Object(n.f)(E.a);
+                  return (t.next = 2), Object(a.f)(E.a);
                 case 2:
                   return (
-                    (e = t.sent), (t.next = 5), Object(n.e)(Object(f.j)(e))
+                    (e = t.sent), (t.next = 5), Object(a.e)(Object(p.j)(e))
                   );
                 case 5:
-                  return (t.next = 7), Object(n.e)(Object(v.d)());
+                  return (t.next = 7), Object(a.e)(Object(O.d)());
                 case 7:
                 case "end":
                   return t.stop();
-              }
-          },
-          O,
-          this
-        );
-      }
-      function G(e) {
-        var t, r, o, p, b, E;
-        return regeneratorRuntime.wrap(
-          function(v) {
-            for (;;)
-              switch ((v.prev = v.next)) {
-                case 0:
-                  return (t = e.articles), (v.next = 3), Object(n.f)(g.a);
-                case 3:
-                  if (
-                    ((r = v.sent),
-                    !Object(a.a)(r.articles) && !Object(l.a)(r.articles))
-                  ) {
-                    v.next = 6;
-                    break;
-                  }
-                  return v.abrupt("return");
-                case 6:
-                  return (v.next = 8), Object(n.f)(m.a);
-                case 8:
-                  return (
-                    (o = v.sent),
-                    (p = Object(c.a)(function(e) {
-                      if (!Object(i.a)(Object(s.a)("id", e.id), t)) return e;
-                      var r = o[e.id],
-                        n = e.quantity < r.quantity ? e.quantity : r.quantity;
-                      return H(r, n);
-                    }, r.articles)),
-                    (E = {
-                      total: (b = function(e) {
-                        return Object(d.a)(
-                          Object(c.a)(function(t) {
-                            return t[e];
-                          }),
-                          u.a
-                        )(p);
-                      })("total"),
-                      tax: b("tax"),
-                      totalTTC: b("totalTTC"),
-                      busyStorage: b("busyStorage"),
-                      articles: p
-                    }),
-                    (v.next = 14),
-                    Object(n.e)(Object(f.k)(E))
-                  );
-                case 14:
-                case "end":
-                  return v.stop();
               }
           },
           x,
           this
         );
       }
-      var w,
+      function P(e) {
+        var t, r, o, f, b, E;
+        return regeneratorRuntime.wrap(
+          function(O) {
+            for (;;)
+              switch ((O.prev = O.next)) {
+                case 0:
+                  return (t = e.articles), (O.next = 3), Object(a.f)(g.a);
+                case 3:
+                  if (
+                    ((r = O.sent),
+                    !Object(n.a)(r.articles) && !Object(l.a)(r.articles))
+                  ) {
+                    O.next = 6;
+                    break;
+                  }
+                  return O.abrupt("return");
+                case 6:
+                  return (O.next = 8), Object(a.f)(v.a);
+                case 8:
+                  return (
+                    (o = O.sent),
+                    (f = Object(c.a)(function(e) {
+                      if (!Object(i.a)(Object(d.a)("id", e.id), t)) return e;
+                      var r = o[e.id],
+                        a = e.quantity < r.quantity ? e.quantity : r.quantity;
+                      return H(r, a);
+                    }, r.articles)),
+                    (E = {
+                      total: (b = function(e) {
+                        return Object(s.a)(
+                          Object(c.a)(function(t) {
+                            return t[e];
+                          }),
+                          u.a
+                        )(f);
+                      })("total"),
+                      tax: b("tax"),
+                      totalTTC: b("totalTTC"),
+                      busyStorage: b("busyStorage"),
+                      articles: f
+                    }),
+                    (O.next = 14),
+                    Object(a.e)(Object(p.k)(E))
+                  );
+                case 14:
+                case "end":
+                  return O.stop();
+              }
+          },
+          L,
+          this
+        );
+      }
+      var T,
         B,
-        T = regeneratorRuntime.mark(function e() {
+        R = regeneratorRuntime.mark(function e() {
           return regeneratorRuntime.wrap(
             function(e) {
               for (;;)
                 switch ((e.prev = e.next)) {
                   case 0:
-                    return (e.next = 2), Object(n.h)(f.a, S);
+                    return (e.next = 2), Object(a.h)(p.a, S);
                   case 2:
-                    return (e.next = 4), Object(n.h)(f.c, U);
+                    return (e.next = 4), Object(a.h)(p.c, G);
                   case 4:
-                    return (e.next = 6), Object(n.h)(v.a, j);
+                    return (e.next = 6), Object(a.h)(O.a, j);
                   case 6:
-                    return (e.next = 8), Object(n.h)(y.b, G);
+                    return (e.next = 8), Object(a.h)(y.b, P);
                   case 8:
                   case "end":
                     return e.stop();
@@ -3493,43 +3504,43 @@
             this
           );
         });
-      (t.a = T),
-        (w =
+      (t.a = R),
+        (T =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (w.register(
-            L,
+          (T.register(
+            C,
             "formatNumber",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\shopping-cart.js"
           ),
-          w.register(
+          T.register(
             H,
             "getShoppingCartArticleData",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\shopping-cart.js"
           ),
-          w.register(
+          T.register(
             S,
             "addArticleRequest",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\shopping-cart.js"
           ),
-          w.register(
-            U,
+          T.register(
+            G,
             "deleteArticleRequestSaga",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\shopping-cart.js"
           ),
-          w.register(
+          T.register(
             j,
             "resetShoppingCartRequest",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\shopping-cart.js"
           ),
-          w.register(
-            G,
+          T.register(
+            P,
             "checkUpdateShoppingCart",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\shopping-cart.js"
           ),
-          w.register(
-            T,
+          T.register(
+            R,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\shopping-cart.js"
           )),
@@ -3539,26 +3550,26 @@
             : void 0) && B(e);
     }.call(this, r(1)(e)));
   },
-  268: function(e, t, r) {
+  269: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)([], ["entities", "articles", "byId"]);
+        c = Object(a.a)([], ["entities", "articles", "byId"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\articles\\selectors\\select-articles-from-entities.js"
@@ -3569,20 +3580,20 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  269: function(e, t, r) {
+  270: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
-        return p;
+        return f;
       });
       var o,
-        n = r(3),
-        a = r(58),
+        a = r(3),
+        n = r(58),
         l = r(31),
         c = r(97),
         i = r(60),
-        s = r(151),
-        d = r(135);
+        d = r(151),
+        s = r(135);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -3590,8 +3601,8 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var u,
-        f,
-        p = regeneratorRuntime.mark(function e(t) {
+        p,
+        f = regeneratorRuntime.mark(function e(t) {
           var r, o;
           return regeneratorRuntime.wrap(
             function(e) {
@@ -3600,16 +3611,16 @@
                   case 0:
                     return (
                       (r = t.module),
-                      (o = Object(a.a)(d.a, r)),
+                      (o = Object(n.a)(s.a, r)),
                       (e.next = 4),
-                      Object(n.e)(Object(l.f)(o.config))
+                      Object(a.e)(Object(l.f)(o.config))
                     );
                   case 4:
-                    return (e.next = 6), Object(n.e)(Object(c.c)(o.player));
+                    return (e.next = 6), Object(a.e)(Object(c.c)(o.player));
                   case 6:
-                    return (e.next = 8), Object(n.e)(Object(i.c)(o.shop));
+                    return (e.next = 8), Object(a.e)(Object(i.c)(o.shop));
                   case 8:
-                    return (e.next = 10), Object(n.e)(Object(s.b)(o.effects));
+                    return (e.next = 10), Object(a.e)(Object(d.b)(o.effects));
                   case 10:
                   case "end":
                     return e.stop();
@@ -3624,22 +3635,22 @@
           ? reactHotLoaderGlobal.default
           : void 0) &&
         u.register(
-          p,
+          f,
           "initShop",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\init.js"
         ),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && f(e);
+            : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  270: function(e, t, r) {
+  271: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(3),
-        a = r(43),
+        a = r(3),
+        n = r(43),
         l = r(31),
         c = r(14),
         i = r(135);
@@ -3647,28 +3658,28 @@
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
-      var s = regeneratorRuntime.mark(d);
+      var d = regeneratorRuntime.mark(s);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      function d() {
+      function s() {
         return regeneratorRuntime.wrap(
           function(e) {
             for (;;)
               switch ((e.prev = e.next)) {
                 case 0:
-                  return (e.next = 2), Object(n.e)(Object(l.e)());
+                  return (e.next = 2), Object(a.e)(Object(l.e)());
                 case 2:
                 case "end":
                   return e.stop();
               }
           },
-          s,
+          d,
           this
         );
       }
       var u,
-        f,
-        p = regeneratorRuntime.mark(function e() {
+        p,
+        f = regeneratorRuntime.mark(function e() {
           return regeneratorRuntime.wrap(
             function(e) {
               for (;;)
@@ -3676,14 +3687,14 @@
                   case 0:
                     return (
                       (e.next = 2),
-                      Object(n.e)(
+                      Object(a.e)(
                         Object(l.d)({
                           style: Object(c.a)(["config", "style"], i.a)
                         })
                       )
                     );
                   case 2:
-                    return (e.next = 4), Object(n.h)(a.b, d);
+                    return (e.next = 4), Object(a.h)(n.b, s);
                   case 4:
                   case "end":
                     return e.stop();
@@ -3693,88 +3704,88 @@
             this
           );
         });
-      (t.a = p),
+      (t.a = f),
         (u =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (u.register(
-            d,
+            s,
             "resetConfigSaga",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\config.js"
           ),
           u.register(
-            p,
+            f,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\sagas\\config.js"
           )),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && f(e);
+            : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  271: function(e, t, r) {
+  272: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(99),
-        c = r(287),
-        i = r(289);
+        c = r(288),
+        i = r(290);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = function(e) {
           var t = e.bgColor,
             r = void 0 === t ? "#2a6041" : t,
             o = e.hasBgHeader;
-          return a.a.createElement(
+          return n.a.createElement(
             l.b,
             null,
-            a.a.createElement(c.a, { color: r }),
-            a.a.createElement(
+            n.a.createElement(c.a, { color: r }),
+            n.a.createElement(
               l.c,
               { bgColor: r },
-              a.a.createElement(l.e, { hasBgHeader: o }),
-              a.a.createElement(i.a, null)
+              n.a.createElement(l.e, { hasBgHeader: o }),
+              n.a.createElement(i.a, null)
             )
           );
         };
       (t.a = u),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          s.register(
+          d.register(
             u,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\component.js"
           ),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  272: function(e, t, r) {
+  273: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
-        n = r(8),
-        a = r(4),
+        a = r(8),
+        n = r(4),
         l = r(14),
-        c = r(273),
-        i = r(284),
-        s = r(285),
-        d = r(30),
+        c = r(274),
+        i = r(285),
+        d = r(286),
+        s = r(30),
         u = r(17);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -3782,11 +3793,11 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
+      var p,
+        f,
         g = function(e) {
           var t = Object(i.a)(e),
-            r = Object(d.a)(e),
+            r = Object(s.a)(e),
             o = Object(u.a)(e);
           return {
             articlesIdsByCategory: t,
@@ -3797,161 +3808,161 @@
             hasBgHeader: Object(l.a)(["style", "header", "backgroundColor"], r)
           };
         },
-        b = Object(a.b)(
-          Object(a.g)("OnShopArticles"),
-          Object(n.b)(g),
-          Object(a.a)(function(e) {
+        b = Object(n.b)(
+          Object(n.g)("OnShopArticles"),
+          Object(a.b)(g),
+          Object(n.a)(function(e) {
             return e.isEmpty;
-          }, Object(a.e)(s.a))
+          }, Object(n.e)(d.a))
         )(c.a),
         E = b;
       (t.a = E),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (f.register(
+          (p.register(
             g,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\index.js"
           ),
-          f.register(
+          p.register(
             b,
             "ArticlesContainer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\index.js"
           ),
-          f.register(
+          p.register(
             E,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\index.js"
           )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
-    }.call(this, r(1)(e)));
-  },
-  273: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var o,
-        n = r(0),
-        a = r.n(n),
-        l = r(66),
-        c = r(274),
-        i = r(278);
-      (o =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && o(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
-        u = function(e) {
-          return a.a.createElement(c.a, { id: e, key: "article-".concat(e) });
-        },
-        f = function(e) {
-          return a.a.createElement(
-            n.Fragment,
-            { key: "category-".concat(e.name) },
-            e.name &&
-              a.a.createElement(
-                l.b,
-                { key: "cat-".concat(e.name) },
-                a.a.createElement(
-                  "td",
-                  null,
-                  a.a.createElement("div", null, e.name),
-                  a.a.createElement(l.c, null)
-                )
-              ),
-            e.articlesIds.map(u)
-          );
-        },
-        p = function(e) {
-          var t = e.articlesIdsByCategory,
-            r = e.className,
-            o = e.hasTaxEnabled,
-            n = void 0 !== o && o,
-            c = e.wording,
-            s = e.titleColor,
-            d = void 0 === s ? "#8fb39f" : s;
-          return a.a.createElement(
-            l.i,
-            { className: r },
-            a.a.createElement(i.a, null),
-            a.a.createElement(
-              l.g,
-              { titleColor: d },
-              a.a.createElement(
-                "thead",
-                null,
-                a.a.createElement(
-                  "tr",
-                  null,
-                  a.a.createElement(l.d, null, c.article),
-                  n && a.a.createElement(l.e, null, c.priceExcludingTax),
-                  n && a.a.createElement(l.h, null, c.taxName),
-                  a.a.createElement(l.e, null, c.unitPrice),
-                  a.a.createElement(l.f, null, c.quantity),
-                  a.a.createElement(l.a, null, c.action)
-                )
-              ),
-              a.a.createElement("tbody", null, t.map(f))
-            )
-          );
-        },
-        g = p;
-      (t.a = g),
-        (s =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          (s.register(
-            u,
-            "renderArticle",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
-          ),
-          s.register(
-            f,
-            "renderCategory",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
-          ),
-          s.register(
-            p,
-            "ArticlesComponent",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
-          ),
-          s.register(
-            g,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
-          )),
-        (d =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
   274: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(4),
-        a = r(8),
-        l = r(535),
+        a = r(0),
+        n = r.n(a),
+        l = r(66),
+        c = r(275),
+        i = r(279);
+      (o =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && o(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var d,
+        s,
+        u = function(e) {
+          return n.a.createElement(c.a, { id: e, key: "article-".concat(e) });
+        },
+        p = function(e) {
+          return n.a.createElement(
+            a.Fragment,
+            { key: "category-".concat(e.name) },
+            e.name &&
+              n.a.createElement(
+                l.b,
+                { key: "cat-".concat(e.name) },
+                n.a.createElement(
+                  "td",
+                  null,
+                  n.a.createElement("div", null, e.name),
+                  n.a.createElement(l.c, null)
+                )
+              ),
+            e.articlesIds.map(u)
+          );
+        },
+        f = function(e) {
+          var t = e.articlesIdsByCategory,
+            r = e.className,
+            o = e.hasTaxEnabled,
+            a = void 0 !== o && o,
+            c = e.wording,
+            d = e.titleColor,
+            s = void 0 === d ? "#8fb39f" : d;
+          return n.a.createElement(
+            l.i,
+            { className: r },
+            n.a.createElement(i.a, null),
+            n.a.createElement(
+              l.g,
+              { titleColor: s },
+              n.a.createElement(
+                "thead",
+                null,
+                n.a.createElement(
+                  "tr",
+                  null,
+                  n.a.createElement(l.d, null, c.article),
+                  a && n.a.createElement(l.e, null, c.priceExcludingTax),
+                  a && n.a.createElement(l.h, null, c.taxName),
+                  n.a.createElement(l.e, null, c.unitPrice),
+                  n.a.createElement(l.f, null, c.quantity),
+                  n.a.createElement(l.a, null, c.action)
+                )
+              ),
+              n.a.createElement("tbody", null, t.map(p))
+            )
+          );
+        },
+        g = f;
+      (t.a = g),
+        (d =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          (d.register(
+            u,
+            "renderArticle",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
+          ),
+          d.register(
+            p,
+            "renderCategory",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
+          ),
+          d.register(
+            f,
+            "ArticlesComponent",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
+          ),
+          d.register(
+            g,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\component.js"
+          )),
+        (s =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && s(e);
+    }.call(this, r(1)(e)));
+  },
+  275: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var o,
+        a = r(4),
+        n = r(8),
+        l = r(537),
         c = r(77),
         i = r(14),
-        s = r(392),
-        d = r(275),
-        u = r(277),
-        f = r(70),
-        p = r(45),
+        d = r(393),
+        s = r(276),
+        u = r(278),
+        p = r(70),
+        f = r(45),
         g = r(152),
         b = r(30),
         E = r(17);
-      function m(e, t) {
+      function v(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e);
@@ -3963,7 +3974,7 @@
         }
         return r;
       }
-      function v(e, t, r) {
+      function O(e, t, r) {
         return (
           t in e
             ? Object.defineProperty(e, t, {
@@ -3984,13 +3995,13 @@
         reactHotLoaderGlobal.default.signature;
       var y,
         h,
-        C = function(e, t) {
-          return Object(f.a)(e, t.id);
+        m = function(e, t) {
+          return Object(p.a)(e, t.id);
         },
-        O = function() {
-          return Object(s.a)(
+        x = function() {
+          return Object(d.a)(
             [
-              C,
+              m,
               b.a,
               E.a,
               function(e, t, r) {
@@ -4000,25 +4011,25 @@
                 return t.id;
               }
             ],
-            function(e, t, r, o, n) {
-              var a = t.enabledStockLimitation,
-                s = t.maxQuantityForSelect,
-                d = t.intervalQuantityForSelect,
-                u = a && o <= s ? o : s,
-                f = Object(l.a)(1, u + 1);
+            function(e, t, r, o, a) {
+              var n = t.enabledStockLimitation,
+                d = t.maxQuantityForSelect,
+                s = t.intervalQuantityForSelect,
+                u = n && o <= d ? o : d,
+                p = Object(l.a)(1, u + 1);
               return (function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var r = null != arguments[t] ? arguments[t] : {};
                   t % 2
-                    ? m(Object(r), !0).forEach(function(t) {
-                        v(e, t, r[t]);
+                    ? v(Object(r), !0).forEach(function(t) {
+                        O(e, t, r[t]);
                       })
                     : Object.getOwnPropertyDescriptors
                     ? Object.defineProperties(
                         e,
                         Object.getOwnPropertyDescriptors(r)
                       )
-                    : m(Object(r)).forEach(function(t) {
+                    : v(Object(r)).forEach(function(t) {
                         Object.defineProperty(
                           e,
                           t,
@@ -4028,47 +4039,47 @@
                 }
                 return e;
               })({}, e, {
-                enabledStockLimitation: a,
+                enabledStockLimitation: n,
                 quantityAvailable: o,
                 quantitiesAvailables: Object(c.a)(function(e) {
-                  return 1 === e || u - d < 0 || (e / d) % 1 == 0;
-                }, f),
-                isInStock: !a || o > 0,
+                  return 1 === e || u - s < 0 || (e / s) % 1 == 0;
+                }, p),
+                isInStock: !n || o > 0,
                 hasTaxEnabled: t.hasTaxEnabled,
                 addToCartIconUrl: Object(i.a)(["iconsUrl", "addToCart"], t),
                 emptyBoxUrl: Object(i.a)(["iconsUrl", "emptyBox"], t),
                 wording: r,
                 greenColor: Object(i.a)(["style", "greenColor"], t),
                 redColor: Object(i.a)(["style", "redColor"], t),
-                id: n
+                id: a
               });
             }
           );
         },
-        x = function() {
-          var e = O();
+        L = function() {
+          var e = x();
           return function(t, r) {
             var o = Object(u.a)(t, r.id);
             return e(t, r, o);
           };
         },
-        L = { addArticleRequest: p.f, selectArticle: g.b },
-        H = Object(n.b)(
-          Object(n.g)("OnShopArticleContainer"),
-          Object(a.b)(x, L),
-          Object(n.j)("count", "setCount", 1),
-          Object(n.c)({
+        C = { addArticleRequest: f.f, selectArticle: g.b },
+        H = Object(a.b)(
+          Object(a.g)("OnShopArticleContainer"),
+          Object(n.b)(L, C),
+          Object(a.j)("count", "setCount", 1),
+          Object(a.c)({
             componentDidUpdate: function(e) {
               var t = this.props,
                 r = t.count,
                 o = t.isInStock,
-                n = t.quantityAvailable,
-                a = t.enabledStockLimitation,
+                a = t.quantityAvailable,
+                n = t.enabledStockLimitation,
                 l = t.setCount;
-              (e.isInStock !== o || (r > n && a && n > 0)) && l(1);
+              (e.isInStock !== o || (r > a && n && a > 0)) && l(1);
             }
           }),
-          Object(n.h)({
+          Object(a.h)({
             onAddToCart: function(e) {
               var t = e.addArticleRequest,
                 r = e.id,
@@ -4091,7 +4102,7 @@
               };
             }
           })
-        )(d.a),
+        )(s.a),
         S = H;
       (t.a = S),
         (y =
@@ -4099,22 +4110,22 @@
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (y.register(
-            C,
+            m,
             "getArticle",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\index.js"
           ),
           y.register(
-            O,
+            x,
             "getData",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\index.js"
           ),
           y.register(
-            x,
+            L,
             "makeMapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\index.js"
           ),
           y.register(
-            L,
+            C,
             "mapDispatchToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\index.js"
           ),
@@ -4134,20 +4145,20 @@
             : void 0) && h(e);
     }.call(this, r(1)(e)));
   },
-  275: function(e, t, r) {
+  276: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(35),
-        c = r(402),
+        c = r(403),
         i = r(24),
-        s = r(403),
-        d = r(49),
+        d = r(404),
+        s = r(50),
         u = r(7),
-        f = r(13),
-        p = r(12);
+        p = r(13),
+        f = r(12);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4156,90 +4167,90 @@
         reactHotLoaderGlobal.default.signature;
       var g,
         b,
-        E = Object(i.a)({ root: { color: "#A6A6A6" } })(s.a),
-        m = function(e, t) {
+        E = Object(i.a)({ root: { color: "#A6A6A6" } })(d.a),
+        v = function(e, t) {
           return Object(l.a)(function(e) {
-            return a.a.createElement(
-              d.c,
+            return n.a.createElement(
+              s.c,
               { key: "quantity-".concat(e, "-").concat(t), value: e },
               e
             );
           }, e);
         },
-        v = function(e) {
+        O = function(e) {
           var t = e.onAddToCart,
             r = e.name,
             o = e.price,
-            n = e.priceHT,
+            a = e.priceHT,
             l = e.onClickOnArticle,
             i = e.quantitiesAvailables,
-            s = e.isInStock,
+            d = e.isInStock,
             g = e.hasTaxEnabled,
             b = void 0 !== g && g,
-            v = e.tax,
+            O = e.tax,
             y = e.iconUrl,
             h = void 0 === y ? "" : y,
-            C = e.count,
-            O = e.addToCartIconUrl,
-            x = void 0 === O ? "" : O,
-            L = e.emptyBoxUrl,
-            H = void 0 === L ? "" : L,
+            m = e.count,
+            x = e.addToCartIconUrl,
+            L = void 0 === x ? "" : x,
+            C = e.emptyBoxUrl,
+            H = void 0 === C ? "" : C,
             S = e.onChange,
-            U = e.wording,
+            G = e.wording,
             j = e.greenColor,
-            G = void 0 === j ? f.c : j,
-            w = e.redColor,
-            B = void 0 === w ? f.d : w,
-            T = e.id;
-          return a.a.createElement(
+            P = void 0 === j ? p.c : j,
+            T = e.redColor,
+            B = void 0 === T ? p.d : T,
+            R = e.id;
+          return n.a.createElement(
             "tr",
             null,
-            a.a.createElement(
-              d.d,
-              { onClick: l, color: G },
-              a.a.createElement(d.g, { url: h, size: 30 }),
+            n.a.createElement(
+              s.d,
+              { onClick: l, color: P },
+              n.a.createElement(s.g, { url: h, size: 30 }),
               r
             ),
-            a.a.createElement(d.e, null, n, U.moneySymbol),
+            n.a.createElement(s.e, null, a, G.moneySymbol),
             b &&
-              a.a.createElement(
-                d.h,
-                { tax: v, greenColor: G, redColor: B },
-                v,
+              n.a.createElement(
+                s.h,
+                { tax: O, greenColor: P, redColor: B },
+                O,
                 "%"
               ),
-            b && a.a.createElement(d.e, null, o, U.moneySymbol),
-            a.a.createElement(
-              d.f,
-              { isInStock: s },
-              s
-                ? a.a.createElement(
+            b && n.a.createElement(s.e, null, o, G.moneySymbol),
+            n.a.createElement(
+              s.f,
+              { isInStock: d },
+              d
+                ? n.a.createElement(
                     c.a,
                     {
-                      value: C,
+                      value: m,
                       onChange: S,
-                      input: a.a.createElement(E, null)
+                      input: n.a.createElement(E, null)
                     },
-                    m(i, T)
+                    v(i, R)
                   )
-                : a.a.createElement(p.a, { url: H, size: 25, color: B })
+                : n.a.createElement(f.a, { url: H, size: 25, color: B })
             ),
-            a.a.createElement(
-              d.a,
+            n.a.createElement(
+              s.a,
               null,
-              a.a.createElement(d.b, {
-                disabled: !s,
-                iconLeftUrl: x,
+              n.a.createElement(s.b, {
+                disabled: !d,
+                iconLeftUrl: L,
                 onClick: t,
                 iconLeftSize: 25,
-                color: s ? "#A6A6A6" : B,
-                hoverColor: G,
+                color: d ? "#A6A6A6" : B,
+                hoverColor: P,
                 variant: u.b.special
               })
             )
           );
         };
-      (t.a = v),
+      (t.a = O),
         (g =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -4250,12 +4261,12 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\component.js"
           ),
           g.register(
-            m,
+            v,
             "renderOptions",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\component.js"
           ),
           g.register(
-            v,
+            O,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\component.js"
           )),
@@ -4265,12 +4276,12 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  277: function(e, t, r) {
+  278: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(70),
-        a = r(153);
+        a = r(70),
+        n = r(153);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4280,12 +4291,12 @@
       var l,
         c,
         i = function(e, t) {
-          var r = Object(n.a)(e, t),
-            o = Object(a.a)(e, t);
+          var r = Object(a.a)(e, t),
+            o = Object(n.a)(e, t);
           return r ? (o ? r.quantity - o.quantity : r.quantity) : 0;
         },
-        s = i;
-      (t.a = s),
+        d = i;
+      (t.a = d),
         (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -4296,7 +4307,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\articles\\getters\\get-quantity-available-by-article-id.js"
           ),
           l.register(
-            s,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\articles\\getters\\get-quantity-available-by-article-id.js"
           )),
@@ -4306,18 +4317,18 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  278: function(e, t, r) {
+  279: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
-        n = r(8),
-        a = r(279),
-        l = r(283),
+        a = r(8),
+        n = r(280),
+        l = r(284),
         c = r(70),
         i = r(17),
-        s = r(16);
-      function d(e, t) {
+        d = r(16);
+      function s(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e);
@@ -4333,12 +4344,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2
-            ? d(Object(r), !0).forEach(function(t) {
-                f(e, t, r[t]);
+            ? s(Object(r), !0).forEach(function(t) {
+                p(e, t, r[t]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : d(Object(r)).forEach(function(t) {
+            : s(Object(r)).forEach(function(t) {
                 Object.defineProperty(
                   e,
                   t,
@@ -4348,7 +4359,7 @@
         }
         return e;
       }
-      function f(e, t, r) {
+      function p(e, t, r) {
         return (
           t in e
             ? Object.defineProperty(e, t, {
@@ -4367,38 +4378,38 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var p,
+      var f,
         g,
         b = function(e) {
           var t = Object(l.a)(e),
             r = Object(i.a)(e),
-            o = Object(s.a)(e),
-            n = {
+            o = Object(d.a)(e),
+            a = {
               wording: r,
               titleColor: o.titleColor,
               hasBgHeader: o.header.backgroundColor
             };
-          return t ? u({}, Object(c.a)(e, t), {}, n) : u({}, n);
+          return t ? u({}, Object(c.a)(e, t), {}, a) : u({}, a);
         },
-        E = Object(n.b)(b)(a.a),
-        m = E;
-      (t.a = m),
-        (p =
+        E = Object(a.b)(b)(n.a),
+        v = E;
+      (t.a = v),
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (p.register(
+          (f.register(
             b,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\index.js"
           ),
-          p.register(
+          f.register(
             E,
             "InformationContainer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\index.js"
           ),
-          p.register(
-            m,
+          f.register(
+            v,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\index.js"
           )),
@@ -4408,32 +4419,32 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  279: function(e, t, r) {
+  280: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(72),
-        a = r(127),
+        a = r(72),
+        n = r(127),
         l = r(0),
         c = r.n(l),
-        i = r(280);
+        i = r(281);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = function(e, t) {
           return e
             ? c.a.createElement(
-                n.e,
+                a.e,
                 null,
                 c.a.createElement(
-                  n.b,
+                  a.b,
                   null,
-                  c.a.createElement(n.c, null, t.effects)
+                  c.a.createElement(a.c, null, t.effects)
                 ),
                 e.map(function(e) {
                   return c.a.createElement(i.a, {
@@ -4445,75 +4456,75 @@
               )
             : null;
         },
-        f = function(e) {
+        p = function(e) {
           var t = e.name,
             r = e.iconUrl,
             o = void 0 === r ? "" : r,
             l = e.description,
             i = void 0 === l ? "" : l,
-            s = e.effects,
-            d = e.wording,
-            f = e.hasBgHeader,
-            p = e.titleColor,
-            g = void 0 === p ? "#86a593" : p;
+            d = e.effects,
+            s = e.wording,
+            p = e.hasBgHeader,
+            f = e.titleColor,
+            g = void 0 === f ? "#86a593" : f;
           return c.a.createElement(
-            n.h,
-            { hasBgHeader: f },
-            c.a.createElement(n.d, { titleColor: g }, d.informations),
+            a.h,
+            { hasBgHeader: p },
+            c.a.createElement(a.d, { titleColor: g }, s.informations),
             c.a.createElement(
-              n.a,
+              a.a,
               null,
               t
                 ? c.a.createElement(
                     "div",
                     null,
                     c.a.createElement(
-                      n.i,
+                      a.i,
                       null,
-                      c.a.createElement(n.f, { url: o, size: 50 })
+                      c.a.createElement(a.f, { url: o, size: 50 })
                     ),
-                    c.a.createElement(n.g, null, t),
+                    c.a.createElement(a.g, null, t),
                     c.a.createElement(
                       "em",
                       null,
-                      Object(a.a)(i) ? d.noInformation : i
+                      Object(n.a)(i) ? s.noInformation : i
                     ),
-                    u(s, d)
+                    u(d, s)
                   )
-                : c.a.createElement("em", null, d.descriptionInformations)
+                : c.a.createElement("em", null, s.descriptionInformations)
             )
           );
         };
-      (t.a = f),
-        (s =
+      (t.a = p),
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (s.register(
+          (d.register(
             u,
             "renderEffects",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\component.js"
           ),
-          s.register(
-            f,
+          d.register(
+            p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\component.js"
           )),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  280: function(e, t, r) {
+  281: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
-        n = r(8),
-        a = r(4),
-        l = r(281),
-        c = r(282),
+        a = r(8),
+        n = r(4),
+        l = r(282),
+        c = r(283),
         i = r(16);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4521,97 +4532,37 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = function(e, t) {
           var r = t.id,
             o = t.value,
-            n = Object(c.a)(e, r),
-            a = Object(i.a)(e);
+            a = Object(c.a)(e, r),
+            n = Object(i.a)(e);
           return {
-            name: n.name,
-            iconUrl: n.iconUrl,
+            name: a.name,
+            iconUrl: a.iconUrl,
             value: o,
-            unit: n.unit,
-            greenColor: a.greenColor,
-            redColor: a.redColor
+            unit: a.unit,
+            greenColor: n.greenColor,
+            redColor: n.redColor
           };
         },
-        f = Object(a.b)(Object(a.g)("EffectContainer"), Object(n.b)(u))(l.a);
-      (t.a = f),
-        (s =
+        p = Object(n.b)(Object(n.g)("EffectContainer"), Object(a.b)(u))(l.a);
+      (t.a = p),
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (s.register(
+          (d.register(
             u,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\index.js"
           ),
-          s.register(
-            f,
+          d.register(
+            p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\index.js"
-          )),
-        (d =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
-    }.call(this, r(1)(e)));
-  },
-  281: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var o,
-        n = r(0),
-        a = r.n(n),
-        l = r(216),
-        c = r(13);
-      (o =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && o(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var i,
-        s,
-        d = function(e) {
-          var t = e.name,
-            r = e.iconUrl,
-            o = e.value,
-            n = e.unit,
-            i = e.greenColor,
-            s = void 0 === i ? c.c : i,
-            d = e.redColor,
-            u = void 0 === d ? c.d : d;
-          return a.a.createElement(
-            l.b,
-            { value: o, greenColor: s, redColor: u },
-            a.a.createElement(l.a, { size: 20, url: r }),
-            " ",
-            t,
-            " ",
-            o > 0 ? "+" : "",
-            " ",
-            o,
-            n
-          );
-        },
-        u = d;
-      (t.a = u),
-        (i =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          (i.register(
-            d,
-            "EffectComponent",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\component.js"
-          ),
-          i.register(
-            u,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\component.js"
           )),
         (s =
           "undefined" != typeof reactHotLoaderGlobal
@@ -4623,57 +4574,87 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(14);
+        a = r(0),
+        n = r.n(a),
+        l = r(216),
+        c = r(13);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
-        l,
-        c = function(e, t) {
-          return Object(n.a)(["entities", "effects", "byId", t], e);
-        };
-      (t.a = c),
-        (a =
+      var i,
+        d,
+        s = function(e) {
+          var t = e.name,
+            r = e.iconUrl,
+            o = e.value,
+            a = e.unit,
+            i = e.greenColor,
+            d = void 0 === i ? c.c : i,
+            s = e.redColor,
+            u = void 0 === s ? c.d : s;
+          return n.a.createElement(
+            l.b,
+            { value: o, greenColor: d, redColor: u },
+            n.a.createElement(l.a, { size: 20, url: r }),
+            " ",
+            t,
+            " ",
+            o > 0 ? "+" : "",
+            " ",
+            o,
+            a
+          );
+        },
+        u = s;
+      (t.a = u),
+        (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
-            c,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\effects\\selectors\\select-effect-by-id.js"
+          (i.register(
+            s,
+            "EffectComponent",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\component.js"
           ),
-        (l =
+          i.register(
+            u,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\Effect\\component.js"
+          )),
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && l(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
   283: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(14);
+        a = r(14);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)(["navigation", "articles", "selectedArticleId"]);
+        c = function(e, t) {
+          return Object(a.a)(["entities", "effects", "byId", t], e);
+        };
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\articles\\selectors\\select-article-id-selected.js"
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\effects\\selectors\\select-effect-by-id.js"
           ),
         (l =
           "undefined" != typeof reactHotLoaderGlobal
@@ -4685,31 +4666,25 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(14);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = function(e) {
-          return Object(n.a)(
-            [],
-            ["entities", "shop", "articlesIdsByCategory"],
-            e
-          );
-        };
+        c = Object(a.a)(["navigation", "articles", "selectedArticleId"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\shop\\selectors\\select-articles-Ids-by-category-from-shop.js"
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\articles\\selectors\\select-article-id-selected.js"
           ),
         (l =
           "undefined" != typeof reactHotLoaderGlobal
@@ -4721,50 +4696,86 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
-        l = r(8),
-        c = r(286),
-        i = r(12),
-        s = r(40);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
-        u,
-        f = function(e) {
-          var t = e.className,
-            r = e.emptyBoxUrl;
-          return a.a.createElement(
-            c.a,
-            { className: t },
-            a.a.createElement("h3", null, "Please send data ! "),
-            a.a.createElement(i.a, { url: r, size: 70 })
+      var n,
+        l,
+        c = function(e) {
+          return Object(a.a)(
+            [],
+            ["entities", "shop", "articlesIdsByCategory"],
+            e
           );
-        },
-        p = function(e) {
-          return { emptyBoxUrl: Object(s.a)(e).emptyBox };
-        },
-        g = Object(l.b)(p)(f);
-      (t.a = g),
-        (d =
+        };
+      (t.a = c),
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (d.register(
-            f,
+          n.register(
+            c,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\shop\\selectors\\select-articles-Ids-by-category-from-shop.js"
+          ),
+        (l =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && l(e);
+    }.call(this, r(1)(e)));
+  },
+  286: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var o,
+        a = r(0),
+        n = r.n(a),
+        l = r(8),
+        c = r(287),
+        i = r(12),
+        d = r(40);
+      (o =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && o(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var s,
+        u,
+        p = function(e) {
+          var t = e.className,
+            r = e.emptyBoxUrl;
+          return n.a.createElement(
+            c.a,
+            { className: t },
+            n.a.createElement("h3", null, "Please send data ! "),
+            n.a.createElement(i.a, { url: r, size: 70 })
+          );
+        },
+        f = function(e) {
+          return { emptyBoxUrl: Object(d.a)(e).emptyBox };
+        },
+        g = Object(l.b)(f)(p);
+      (t.a = g),
+        (s =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          (s.register(
+            p,
             "EmptyShop",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\EmptyShop\\index.js"
           ),
-          d.register(
-            p,
+          s.register(
+            f,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\EmptyShop\\index.js"
           ),
-          d.register(
+          s.register(
             g,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\EmptyShop\\index.js"
@@ -4775,7 +4786,7 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  286: function(e, t, r) {
+  287: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -4783,8 +4794,8 @@
       });
       r(0);
       var o,
-        n = r(2);
-      function a() {
+        a = r(2);
+      function n() {
         var e = (function(e, t) {
           t || (t = e.slice(0));
           return Object.freeze(
@@ -4794,7 +4805,7 @@
           "\n  flex-direction: column;\n  align-items: center;\n  display: flex;\n"
         ]);
         return (
-          (a = function() {
+          (n = function() {
             return e;
           }),
           e
@@ -4808,7 +4819,7 @@
         reactHotLoaderGlobal.default.signature;
       var l,
         c,
-        i = n.a.div(a());
+        i = a.a.div(n());
       (l =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
@@ -4824,14 +4835,14 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  287: function(e, t, r) {
+  288: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
-        n = r(8),
-        a = r(4),
-        l = r(288),
+        a = r(8),
+        n = r(4),
+        l = r(289),
         c = r(16),
         i = r(143);
       (o =
@@ -4840,8 +4851,8 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = function(e) {
           var t = Object(l.a)(e),
             r = Object(c.a)(e);
@@ -4854,50 +4865,50 @@
             titleColor: r.header.titleColor
           };
         },
-        f = Object(a.b)(Object(n.b)(u))(i.a);
-      (t.a = f),
-        (s =
+        p = Object(n.b)(Object(a.b)(u))(i.a);
+      (t.a = p),
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (s.register(
+          (d.register(
             u,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Header\\index.js"
           ),
-          s.register(
-            f,
+          d.register(
+            p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Header\\index.js"
           )),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  288: function(e, t, r) {
+  289: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(14);
+        a = r(14);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
         c = function(e) {
-          return Object(n.a)(["entities", "shop"], e);
+          return Object(a.a)(["entities", "shop"], e);
         };
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\shop\\selectors\\select-shop.js"
@@ -4908,20 +4919,20 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  289: function(e, t, r) {
+  290: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(8),
-        a = r(4),
+        a = r(8),
+        n = r(4),
         l = r(126),
-        c = r(290),
+        c = r(291),
         i = r(86),
-        s = r(16),
-        d = r(307),
+        d = r(16),
+        s = r(308),
         u = r(19),
-        f = r(63);
-      function p(e, t) {
+        p = r(63);
+      function f(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e);
@@ -4937,12 +4948,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2
-            ? p(Object(r), !0).forEach(function(t) {
+            ? f(Object(r), !0).forEach(function(t) {
                 b(e, t, r[t]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : p(Object(r)).forEach(function(t) {
+            : f(Object(r)).forEach(function(t) {
                 Object.defineProperty(
                   e,
                   t,
@@ -4972,11 +4983,11 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var E,
-        m,
-        v = function(e) {
+        v,
+        O = function(e) {
           var t = Object(i.a)(e),
-            r = Object(s.a)(e),
-            o = Object(d.a)(e);
+            r = Object(d.a)(e),
+            o = Object(s.a)(e);
           return g({}, t, {
             bgColor: r.basket.backgroundColor,
             hasBgHeader: r.header.backgroundColor,
@@ -4984,10 +4995,10 @@
             textBasketColor: r.basket.textColor
           });
         },
-        y = { setPaymentSuccess: f.f, setPaymentError: f.e },
-        h = Object(a.b)(
-          Object(n.b)(v, y),
-          Object(a.c)({
+        y = { setPaymentSuccess: p.f, setPaymentError: p.e },
+        h = Object(n.b)(
+          Object(a.b)(O, y),
+          Object(n.c)({
             componentDidMount: function() {
               var e,
                 t = this.props,
@@ -5002,16 +5013,16 @@
               );
             }
           }),
-          Object(a.d)(Object(l.a)(["setPaymentSuccess", "setPaymentError"]))
+          Object(n.d)(Object(l.a)(["setPaymentSuccess", "setPaymentError"]))
         )(c.a),
-        C = h;
-      (t.a = C),
+        m = h;
+      (t.a = m),
         (E =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (E.register(
-            v,
+            O,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\index.js"
           ),
@@ -5026,39 +5037,39 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\index.js"
           ),
           E.register(
-            C,
+            m,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\index.js"
           )),
-        (m =
+        (v =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && m(e);
+            : void 0) && v(e);
     }.call(this, r(1)(e)));
   },
-  290: function(e, t, r) {
+  291: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(183),
-        c = r(291),
-        i = r(293),
-        s = r(295),
-        d = r(301),
-        u = r(303),
-        f = r(305);
+        c = r(292),
+        i = r(294),
+        d = r(296),
+        s = r(302),
+        u = r(304),
+        p = r(306);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var p,
+      var f,
         g,
         b = function(e, t) {
-          return a.a.createElement(c.a, {
+          return n.a.createElement(c.a, {
             id: e.id,
             quantity: e.quantity,
             key: "shopping-cart-article".concat(t)
@@ -5066,50 +5077,50 @@
         },
         E = function(e) {
           return e.length <= 0
-            ? a.a.createElement(d.a, null)
-            : a.a.createElement(
+            ? n.a.createElement(s.a, null)
+            : n.a.createElement(
                 l.b,
                 null,
-                a.a.createElement("tbody", null, e.map(b))
+                n.a.createElement("tbody", null, e.map(b))
               );
         },
-        m = function(e) {
+        v = function(e) {
           var t = e.articles,
             r = void 0 === t ? [] : t,
             o = e.bgColor,
-            n = void 0 === o ? "#8fb19d" : o,
+            a = void 0 === o ? "#8fb19d" : o,
             c = e.textBasketColor,
-            d = void 0 === c ? "#3d7b56" : c,
-            p = e.hasBgHeader,
+            s = void 0 === c ? "#3d7b56" : c,
+            f = e.hasBgHeader,
             g = (e.successPayment, e.errorPayment, e.hasBody),
             b = void 0 === g || g;
-          return a.a.createElement(
+          return n.a.createElement(
             l.c,
-            { bgColor: n, color: d, hasBgHeader: p },
-            a.a.createElement(i.a, null),
-            a.a.createElement(u.a, null),
-            a.a.createElement(f.a, null),
-            b && a.a.createElement(l.a, null, E(r)),
-            a.a.createElement(s.a, null)
+            { bgColor: a, color: s, hasBgHeader: f },
+            n.a.createElement(i.a, null),
+            n.a.createElement(u.a, null),
+            n.a.createElement(p.a, null),
+            b && n.a.createElement(l.a, null, E(r)),
+            n.a.createElement(d.a, null)
           );
         };
-      (t.a = m),
-        (p =
+      (t.a = v),
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (p.register(
+          (f.register(
             b,
             "renderArticle",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\component.js"
           ),
-          p.register(
+          f.register(
             E,
             "renderBody",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\component.js"
           ),
-          p.register(
-            m,
+          f.register(
+            v,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\component.js"
           )),
@@ -5119,20 +5130,20 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  291: function(e, t, r) {
+  292: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(4),
-        a = r(8),
+        a = r(4),
+        n = r(8),
         l = (r(0), r(191)),
         c = r.n(l),
-        i = r(292),
-        s = r(70),
-        d = r(40),
+        i = r(293),
+        d = r(70),
+        s = r(40),
         u = r(45),
-        f = r(17),
-        p = r(16);
+        p = r(17),
+        f = r(16);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -5144,28 +5155,28 @@
         E = function(e, t) {
           var r = t.id,
             o = t.quantity,
-            n = Object(s.a)(e, r),
-            a = Object(d.a)(e),
-            l = Object(f.a)(e);
-          if (!n) return { wording: l };
-          var i = Object(p.a)(e),
+            a = Object(d.a)(e, r),
+            n = Object(s.a)(e),
+            l = Object(p.a)(e);
+          if (!a) return { wording: l };
+          var i = Object(f.a)(e),
             u = i.redColor,
             g = i.basket;
           return {
-            name: o > 1 ? n.pluralName || c()(n.name, o) : n.name,
+            name: o > 1 ? a.pluralName || c()(a.name, o) : a.name,
             quantity: o,
-            total: parseFloat((n.price * o).toFixed(2)),
-            removeIconUrl: a.removeToCart,
+            total: parseFloat((a.price * o).toFixed(2)),
+            removeIconUrl: n.removeToCart,
             textBasketColor: g.textColor,
             wording: l,
             redColor: u
           };
         },
-        m = { deleteArticleRequest: u.h },
-        v = Object(n.b)(
-          Object(n.g)("BasketArticleComponent"),
-          Object(a.b)(E, m),
-          Object(n.h)({
+        v = { deleteArticleRequest: u.h },
+        O = Object(a.b)(
+          Object(a.g)("BasketArticleComponent"),
+          Object(n.b)(E, v),
+          Object(a.h)({
             onDelete: function(e) {
               var t = e.deleteArticleRequest,
                 r = e.id;
@@ -5175,7 +5186,7 @@
             }
           })
         )(i.a),
-        y = v;
+        y = O;
       (t.a = y),
         (g =
           "undefined" != typeof reactHotLoaderGlobal
@@ -5187,12 +5198,12 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Article\\index.js"
           ),
           g.register(
-            m,
+            v,
             "mapDispatchToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Article\\index.js"
           ),
           g.register(
-            v,
+            O,
             "ArticleContainer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Article\\index.js"
           ),
@@ -5207,12 +5218,12 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  292: function(e, t, r) {
+  293: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(7),
         c = r(217),
         i = r(13);
@@ -5222,64 +5233,64 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = function(e) {
           var t = e.quantity,
             r = e.total,
             o = e.name,
-            n = e.onDelete,
-            s = e.removeIconUrl,
-            d = e.wording,
+            a = e.onDelete,
+            d = e.removeIconUrl,
+            s = e.wording,
             u = e.redColor,
-            f = void 0 === u ? i.d : u,
-            p = e.textBasketColor,
-            g = void 0 === p ? "#3d7b56" : p;
-          return a.a.createElement(
+            p = void 0 === u ? i.d : u,
+            f = e.textBasketColor,
+            g = void 0 === f ? "#3d7b56" : f;
+          return n.a.createElement(
             "tr",
             null,
-            a.a.createElement(
+            n.a.createElement(
               "td",
               null,
-              a.a.createElement(c.a, {
-                iconLeftUrl: s,
+              n.a.createElement(c.a, {
+                iconLeftUrl: d,
                 iconLeftSize: 20,
                 color: g,
-                hoverColor: f,
+                hoverColor: p,
                 variant: l.b.special,
-                onClick: n
+                onClick: a
               })
             ),
-            a.a.createElement(c.b, null, t, " ", o, " - ", r, d.moneySymbol)
+            n.a.createElement(c.b, null, t, " ", o, " - ", r, s.moneySymbol)
           );
         };
       (t.a = u),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          s.register(
+          d.register(
             u,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Article\\component.js"
           ),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  293: function(e, t, r) {
+  294: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(8),
-        a = r(4),
-        l = (r(0), r(294)),
+        a = r(8),
+        n = r(4),
+        l = (r(0), r(295)),
         c = r(156),
         i = r(17),
-        s = r(16),
-        d = r(19);
+        d = r(16),
+        s = r(19);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -5287,20 +5298,20 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var u,
-        f,
-        p = function(e) {
+        p,
+        f = function(e) {
           return {
             quantity: Object(c.a)(e),
             wording: Object(i.a)(e),
-            textBasketColor: Object(s.a)(e).basket.textColor
+            textBasketColor: Object(d.a)(e).basket.textColor
           };
         },
-        g = Object(a.b)(
-          Object(n.b)(p),
-          Object(a.h)({
+        g = Object(n.b)(
+          Object(a.b)(f),
+          Object(n.h)({
             onClose: function() {
               return function() {
-                return d.b.onClose();
+                return s.b.onClose();
               };
             }
           })
@@ -5312,7 +5323,7 @@
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (u.register(
-            p,
+            f,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\index.js"
           ),
@@ -5326,65 +5337,65 @@
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\index.js"
           )),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && f(e);
+            : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  294: function(e, t, r) {
+  295: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(191),
         c = r.n(l),
         i = r(118),
-        s = r(7);
+        d = r(7);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var s,
         u,
-        f = function(e) {
+        p = function(e) {
           var t = e.quantity,
             r = e.wording,
             o = e.textBasketColor,
-            n = void 0 === o ? "#3d7b56" : o,
+            a = void 0 === o ? "#3d7b56" : o,
             l = e.onClose;
-          return a.a.createElement(
+          return n.a.createElement(
             i.e,
             null,
-            a.a.createElement(i.d, null, r.basket),
-            a.a.createElement(
+            n.a.createElement(i.d, null, r.basket),
+            n.a.createElement(
               i.b,
               null,
-              a.a.createElement(
+              n.a.createElement(
                 i.c,
-                { textBasketColor: n },
-                a.a.createElement("strong", null, t, " "),
+                { textBasketColor: a },
+                n.a.createElement("strong", null, t, " "),
                 r.basketArticle && c()(r.basketArticle, t)
               ),
-              a.a.createElement(i.a, {
+              n.a.createElement(i.a, {
                 label: "X",
-                variant: s.b.secondary,
-                color: n,
+                variant: d.b.secondary,
+                color: a,
                 onClick: l
               })
             )
           );
         };
-      (t.a = f),
-        (d =
+      (t.a = p),
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          d.register(
-            f,
+          s.register(
+            p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Header\\component.js"
           ),
@@ -5394,81 +5405,81 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  295: function(e, t, r) {
+  296: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
-        n = r(8),
-        a = r(4),
+        a = r(8),
+        n = r(4),
         l = r(126),
-        c = r(296),
-        i = r(299),
-        s = r(86),
-        d = r(300),
+        c = r(297),
+        i = r(300),
+        d = r(86),
+        s = r(301),
         u = r(156),
-        f = r(30),
-        p = r(17),
+        p = r(30),
+        f = r(17),
         g = r(157),
         b = r(158),
         E = r(16),
-        m = r(19);
+        v = r(19);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var v,
+      var O,
         y,
         h = function(e) {
-          var t = Object(f.a)(e),
+          var t = Object(p.a)(e),
             r = Object(i.a)(e),
-            o = Object(d.a)(e) || {},
-            n = Object(s.a)(e),
-            a = n || {},
-            l = a.total,
-            c = a.totalTTC,
-            m = void 0 === c ? 0 : c,
-            v = a.tax,
+            o = Object(s.a)(e) || {},
+            a = Object(d.a)(e),
+            n = a || {},
+            l = n.total,
+            c = n.totalTTC,
+            v = void 0 === c ? 0 : c,
+            O = n.tax,
             y = Object(u.a)(e),
             h = t.iconsUrl,
-            C = void 0 === h ? {} : h,
-            O = Object(p.a)(e),
-            x = Object(g.a)(e),
-            L = Object(b.a)(e),
-            H = !!t.enabledWeightControl && L > x,
+            m = void 0 === h ? {} : h,
+            x = Object(f.a)(e),
+            L = Object(g.a)(e),
+            C = Object(b.a)(e),
+            H = !!t.enabledWeightControl && C > L,
             S = Object(E.a)(e),
-            U = S.greenColor,
+            G = S.greenColor,
             j = S.redColor,
-            G = S.backgroundColor;
+            P = S.backgroundColor;
           return {
             hasCardBreakdown: r,
             total: l,
-            totalTTC: m,
-            tax: v,
-            hasContactLessAvailable: m <= t.maxAmountContactLess,
+            totalTTC: v,
+            tax: O,
+            hasContactLessAvailable: v <= t.maxAmountContactLess,
             hasPaymentAvailable: y > 0 && !H,
-            hasMoneyAvailable: o.cash > m,
+            hasMoneyAvailable: o.cash > v,
             hasTaxEnabled: t.hasTaxEnabled,
-            paymentCashIconUrl: C.paymentCash,
-            paymentContactLessIconUrl: C.paymentContactLess,
-            paymentCardIconUrl: C.paymentCard,
-            paymentBreakdownIconUrl: C.breakdown,
-            wording: O,
-            bgColor: G,
-            greenColor: U,
+            paymentCashIconUrl: m.paymentCash,
+            paymentContactLessIconUrl: m.paymentContactLess,
+            paymentCardIconUrl: m.paymentCard,
+            paymentBreakdownIconUrl: m.breakdown,
+            wording: x,
+            bgColor: P,
+            greenColor: G,
             redColor: j,
-            shoppingCart: n
+            shoppingCart: a
           };
         },
-        C = Object(a.b)(
-          Object(n.b)(h),
-          Object(a.h)({
+        m = Object(n.b)(
+          Object(a.b)(h),
+          Object(n.h)({
             onCashPayment: function(e) {
               var t = e.shoppingCart;
               return function() {
-                return m.b.onCashPayment({ type: "cash", data: t });
+                return v.b.onCashPayment({ type: "cash", data: t });
               };
             },
             onBankPayment: function(e) {
@@ -5476,31 +5487,31 @@
                 r = e.shoppingCart;
               return function() {
                 return t
-                  ? m.b.onContactLessPayment({ type: "contact_less", data: r })
-                  : m.b.onCardPayment({ type: "card", data: r });
+                  ? v.b.onContactLessPayment({ type: "contact_less", data: r })
+                  : v.b.onCardPayment({ type: "card", data: r });
               };
             }
           }),
-          Object(a.d)(Object(l.a)(["shoppingCart"]))
+          Object(n.d)(Object(l.a)(["shoppingCart"]))
         )(c.a),
-        O = C;
-      (t.a = O),
-        (v =
+        x = m;
+      (t.a = x),
+        (O =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (v.register(
+          (O.register(
             h,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\index.js"
           ),
-          v.register(
-            C,
+          O.register(
+            m,
             "FooterContainer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\index.js"
           ),
-          v.register(
-            O,
+          O.register(
+            x,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\index.js"
           )),
@@ -5510,119 +5521,119 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  296: function(e, t, r) {
+  297: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(99),
         c = r(89),
-        i = r(297),
-        s = r(13);
+        i = r(298),
+        d = r(13);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var s,
         u,
-        f = function(e) {
+        p = function(e) {
           var t = e.total,
             r = void 0 === t ? 0 : t,
             o = e.tax,
-            n = void 0 === o ? 0 : o,
-            d = e.totalTTC,
-            u = void 0 === d ? 0 : d,
-            f = e.hasMoneyAvailable,
-            p = void 0 !== f && f,
+            a = void 0 === o ? 0 : o,
+            s = e.totalTTC,
+            u = void 0 === s ? 0 : s,
+            p = e.hasMoneyAvailable,
+            f = void 0 !== p && p,
             g = e.hasPaymentAvailable,
             b = void 0 !== g && g,
             E = e.hasCardBreakdown,
-            m = void 0 !== E && E,
-            v = e.hasContactLessAvailable,
-            y = void 0 === v || v,
+            v = void 0 !== E && E,
+            O = e.hasContactLessAvailable,
+            y = void 0 === O || O,
             h = e.hasTaxEnabled,
-            C = void 0 !== h && h,
-            O = e.onCashPayment,
-            x = void 0 === O ? Function.prototype : O,
-            L = e.onBankPayment,
-            H = void 0 === L ? Function.prototype : L,
+            m = void 0 !== h && h,
+            x = e.onCashPayment,
+            L = void 0 === x ? Function.prototype : x,
+            C = e.onBankPayment,
+            H = void 0 === C ? Function.prototype : C,
             S = e.paymentCashIconUrl,
-            U = void 0 === S ? "" : S,
+            G = void 0 === S ? "" : S,
             j = e.paymentContactLessIconUrl,
-            G = void 0 === j ? "" : j,
-            w = e.paymentCardIconUrl,
-            B = void 0 === w ? "" : w,
-            T = e.paymentBreakdownIconUrl,
-            P = void 0 === T ? "" : T,
+            P = void 0 === j ? "" : j,
+            T = e.paymentCardIconUrl,
+            B = void 0 === T ? "" : T,
+            R = e.paymentBreakdownIconUrl,
+            w = void 0 === R ? "" : R,
             M = e.wording,
-            F = e.bgColor,
-            R = void 0 === F ? "#2a6041" : F,
+            J = e.bgColor,
+            k = void 0 === J ? "#2a6041" : J,
             A = e.greenColor,
-            J = void 0 === A ? s.c : A,
-            k = e.redColor,
-            _ = void 0 === k ? s.d : k;
-          return a.a.createElement(
+            _ = void 0 === A ? d.c : A,
+            I = e.redColor,
+            z = void 0 === I ? d.d : I;
+          return n.a.createElement(
             c.e,
             null,
-            a.a.createElement(i.a, null),
-            a.a.createElement(l.d, { color: R }),
-            a.a.createElement(
+            n.a.createElement(i.a, null),
+            n.a.createElement(l.d, { color: k }),
+            n.a.createElement(
               c.b,
               null,
-              C &&
-                a.a.createElement(
+              m &&
+                n.a.createElement(
                   c.c,
                   null,
-                  a.a.createElement("span", null, M.totalExcludingTax),
-                  a.a.createElement("span", null, " ", r, " ", M.moneySymbol)
+                  n.a.createElement("span", null, M.totalExcludingTax),
+                  n.a.createElement("span", null, " ", r, " ", M.moneySymbol)
                 ),
-              C &&
-                a.a.createElement(
+              m &&
+                n.a.createElement(
                   c.c,
                   null,
-                  a.a.createElement("span", null, M.taxName, " "),
-                  a.a.createElement("span", null, n, " ", M.moneySymbol)
+                  n.a.createElement("span", null, M.taxName, " "),
+                  n.a.createElement("span", null, a, " ", M.moneySymbol)
                 ),
-              a.a.createElement(
+              n.a.createElement(
                 c.d,
                 null,
-                a.a.createElement("span", null, C ? M.totalAll : M.total, " "),
-                a.a.createElement("span", null, u, " ", M.moneySymbol)
+                n.a.createElement("span", null, m ? M.totalAll : M.total, " "),
+                n.a.createElement("span", null, u, " ", M.moneySymbol)
               )
             ),
-            a.a.createElement(
+            n.a.createElement(
               l.a,
               null,
-              a.a.createElement(c.a, {
-                disabled: !p || !b,
+              n.a.createElement(c.a, {
+                disabled: !f || !b,
                 isFullWidth: !0,
-                onClick: x,
-                iconLeftUrl: U,
+                onClick: L,
+                iconLeftUrl: G,
                 iconLeftSize: 40,
-                color: J
+                color: _
               }),
-              a.a.createElement(c.a, {
+              n.a.createElement(c.a, {
                 isLastButton: !0,
                 isFullWidth: !0,
-                disabled: !b || m,
+                disabled: !b || v,
                 onClick: H,
-                color: m ? _ : J,
-                iconLeftUrl: m ? P : y ? G : B,
+                color: v ? z : _,
+                iconLeftUrl: v ? w : y ? P : B,
                 iconLeftSize: 40
               })
             )
           );
         };
-      (t.a = f),
-        (d =
+      (t.a = p),
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          d.register(
-            f,
+          s.register(
+            p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\component.js"
           ),
@@ -5632,17 +5643,17 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  297: function(e, t, r) {
+  298: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(8),
-        a = r(4),
-        l = r(298),
+        a = r(8),
+        n = r(4),
+        l = r(299),
         c = r(40),
         i = r(157),
-        s = r(158),
-        d = r(30),
+        d = r(158),
+        s = r(30),
         u = r(16);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5650,59 +5661,59 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
+      var p,
+        f,
         g = function(e) {
           var t = Object(c.a)(e),
             r = Object(i.a)(e),
-            o = Object(s.a)(e),
-            n = Object(d.a)(e),
-            a = Object(u.a)(e);
+            o = Object(d.a)(e),
+            a = Object(s.a)(e),
+            n = Object(u.a)(e);
           return {
             weightIconUrl: t.weight,
             busyStorage: o,
             totalStorage: r,
             isOverweight: o > r,
-            enabledWeightControl: n.enabledWeightControl,
-            redColor: a.redColor,
-            textBasketColor: a.basket.textColor
+            enabledWeightControl: a.enabledWeightControl,
+            redColor: n.redColor,
+            textBasketColor: n.basket.textColor
           };
         },
-        b = Object(a.b)(
-          Object(n.b)(g),
-          Object(a.a)(function(e) {
+        b = Object(n.b)(
+          Object(a.b)(g),
+          Object(n.a)(function(e) {
             var t = e.totalStorage,
               r = e.enabledWeightControl;
             return !t || !r;
-          }, a.f)
+          }, n.f)
         )(l.a);
       (t.a = b),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (f.register(
+          (p.register(
             g,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\WeightControl\\index.js"
           ),
-          f.register(
+          p.register(
             b,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\WeightControl\\index.js"
           )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  298: function(e, t, r) {
+  299: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(0),
+        n = r.n(a),
         l = r(12),
         c = r(13),
         i = r(218);
@@ -5712,104 +5723,68 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        d,
+      var d,
+        s,
         u = function(e) {
           var t = e.weightIconUrl,
             r = void 0 === t ? "" : t,
             o = e.totalStorage,
-            n = e.busyStorage,
-            s = e.isOverweight,
-            d = void 0 !== s && s,
+            a = e.busyStorage,
+            d = e.isOverweight,
+            s = void 0 !== d && d,
             u = e.redColor,
-            f = void 0 === u ? c.d : u,
-            p = e.textBasketColor,
-            g = void 0 === p ? "#3d7b56" : p;
-          return a.a.createElement(
+            p = void 0 === u ? c.d : u,
+            f = e.textBasketColor,
+            g = void 0 === f ? "#3d7b56" : f;
+          return n.a.createElement(
             i.b,
             null,
-            a.a.createElement(l.a, { url: r, color: d ? f : g, size: 16 }),
-            a.a.createElement(
+            n.a.createElement(l.a, { url: r, color: s ? p : g, size: 16 }),
+            n.a.createElement(
               i.a,
-              { isOverweight: d, redColor: f, textBasketColor: g },
-              n,
+              { isOverweight: s, redColor: p, textBasketColor: g },
+              a,
               " / ",
               o
             )
           );
         };
       (t.a = u),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          s.register(
+          d.register(
             u,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\WeightControl\\component.js"
           ),
-        (d =
+        (s =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
-    }.call(this, r(1)(e)));
-  },
-  299: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var o,
-        n = r(11);
-      (o =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && o(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var a,
-        l,
-        c = function(e) {
-          return Object(n.a)(
-            !1,
-            ["entities", "shop", "hasPaymentTerminalBroken"],
-            e
-          );
-        };
-      (t.a = c),
-        (a =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          a.register(
-            c,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\shop\\selectors\\select-has-payment-terminal-broken-from-shop.js"
-          ),
-        (l =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && l(e);
+            : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
   30: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)({}, ["config"]);
+        c = Object(a.a)({}, ["config"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-config.js"
@@ -5824,25 +5799,31 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(14);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)(["entities", "player", "money"]);
+        c = function(e) {
+          return Object(a.a)(
+            !1,
+            ["entities", "shop", "hasPaymentTerminalBroken"],
+            e
+          );
+        };
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\player\\selectors\\select-player-money.js"
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\shop\\selectors\\select-has-payment-terminal-broken-from-shop.js"
           ),
         (l =
           "undefined" != typeof reactHotLoaderGlobal
@@ -5854,13 +5835,43 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(0),
-        a = r.n(n),
+        a = r(14);
+      (o =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && o(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var n,
+        l,
+        c = Object(a.a)(["entities", "player", "money"]);
+      (t.a = c),
+        (n =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          n.register(
+            c,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\player\\selectors\\select-player-money.js"
+          ),
+        (l =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && l(e);
+    }.call(this, r(1)(e)));
+  },
+  302: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var o,
+        a = r(0),
+        n = r.n(a),
         l = r(8),
-        c = r(302),
+        c = r(303),
         i = r(40),
-        s = r(12),
-        d = r(17),
+        d = r(12),
+        s = r(17),
         u = r(16);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5868,24 +5879,24 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
+      var p,
+        f,
         g = function(e) {
           var t = e.emptyBasketIconUrl,
             r = void 0 === t ? "" : t,
             o = e.wording,
-            n = e.textBasketColor,
-            l = void 0 === n ? "#3d7b56" : n;
-          return a.a.createElement(
+            a = e.textBasketColor,
+            l = void 0 === a ? "#3d7b56" : a;
+          return n.a.createElement(
             c.a,
             null,
-            a.a.createElement("h3", null, o.emptyBasket),
-            a.a.createElement(s.a, { url: r, size: 60, color: l })
+            n.a.createElement("h3", null, o.emptyBasket),
+            n.a.createElement(d.a, { url: r, size: 60, color: l })
           );
         },
         b = function(e) {
           var t = Object(i.a)(e),
-            r = Object(d.a)(e),
+            r = Object(s.a)(e),
             o = Object(u.a)(e);
           return {
             emptyBasketIconUrl: t.emptyBasket,
@@ -5895,32 +5906,32 @@
         },
         E = Object(l.b)(b)(g);
       (t.a = E),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (f.register(
+          (p.register(
             g,
             "EmptyBasket",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\EmptyBasket\\index.js"
           ),
-          f.register(
+          p.register(
             b,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\EmptyBasket\\index.js"
           ),
-          f.register(
+          p.register(
             E,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\EmptyBasket\\index.js"
           )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  302: function(e, t, r) {
+  303: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -5928,8 +5939,8 @@
       });
       r(0);
       var o,
-        n = r(2);
-      function a() {
+        a = r(2);
+      function n() {
         var e = (function(e, t) {
           t || (t = e.slice(0));
           return Object.freeze(
@@ -5937,7 +5948,7 @@
           );
         })(["\n  text-align: center;\n  margin: auto;\n"]);
         return (
-          (a = function() {
+          (n = function() {
             return e;
           }),
           e
@@ -5951,7 +5962,7 @@
         reactHotLoaderGlobal.default.signature;
       var l,
         c,
-        i = n.a.div(a());
+        i = a.a.div(n());
       (l =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
@@ -5967,18 +5978,18 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  303: function(e, t, r) {
+  304: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
-        n = r(8),
-        a = r(4),
+        a = r(8),
+        n = r(4),
         l = r(19),
         c = r(159),
         i = r(40),
-        s = r(304),
-        d = r(16),
+        d = r(305),
+        s = r(16),
         u = r(17);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5986,78 +5997,78 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
+      var p,
+        f,
         g = function(e) {
           var t = Object(i.a)(e).successPayment,
-            r = Object(s.a)(e),
+            r = Object(d.a)(e),
             o = r.title,
-            n = r.message,
-            a = r.iconUrl,
-            l = Object(d.a)(e);
+            a = r.message,
+            n = r.iconUrl,
+            l = Object(s.a)(e);
           return {
             title: o,
             labelButton: Object(u.a)(e).exit,
-            message: n,
-            iconUrl: a || t,
+            message: a,
+            iconUrl: n || t,
             color: l.greenColor
           };
         },
         b = { onClick: l.b.onClose },
-        E = Object(a.b)(
-          Object(n.b)(g, b),
-          Object(a.a)(function(e) {
+        E = Object(n.b)(
+          Object(a.b)(g, b),
+          Object(n.a)(function(e) {
             var t = e.title,
               r = e.message;
             return !t && !r;
-          }, a.f)
+          }, n.f)
         )(c.a);
       (t.a = E),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (f.register(
+          (p.register(
             g,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\SuccessPayment\\index.js"
           ),
-          f.register(
+          p.register(
             b,
             "mapDispatchToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\SuccessPayment\\index.js"
           ),
-          f.register(
+          p.register(
             E,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\SuccessPayment\\index.js"
           )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  304: function(e, t, r) {
+  305: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)({}, ["navigation", "payment", "success"]);
+        c = Object(a.a)({}, ["navigation", "payment", "success"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\payment\\selectors\\select-success-from-payment.js"
@@ -6068,18 +6079,18 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  305: function(e, t, r) {
+  306: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
-        n = r(8),
-        a = r(4),
+        a = r(8),
+        n = r(4),
         l = r(63),
         c = r(159),
         i = r(40),
-        s = r(306),
-        d = r(16),
+        d = r(307),
+        s = r(16),
         u = r(17);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -6087,79 +6098,79 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
+      var p,
+        f,
         g = function(e) {
           var t = Object(i.a)(e).errorPayment,
             r = Object(u.a)(e),
-            o = Object(d.a)(e),
-            n = Object(s.a)(e),
-            a = n.title,
-            l = n.message,
-            c = n.iconUrl;
+            o = Object(s.a)(e),
+            a = Object(d.a)(e),
+            n = a.title,
+            l = a.message,
+            c = a.iconUrl;
           return {
             labelButton: r.backBasket,
-            title: a,
+            title: n,
             message: l,
             iconUrl: c || t,
             color: o.redColor
           };
         },
         b = { onClick: l.d },
-        E = Object(a.b)(
-          Object(n.b)(g, b),
-          Object(a.a)(function(e) {
+        E = Object(n.b)(
+          Object(a.b)(g, b),
+          Object(n.a)(function(e) {
             var t = e.title,
               r = e.message;
             return !t && !r;
-          }, a.f)
+          }, n.f)
         )(c.a);
       (t.a = E),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (f.register(
+          (p.register(
             g,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\ErrorPayment\\index.js"
           ),
-          f.register(
+          p.register(
             b,
             "mapDispatchToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\ErrorPayment\\index.js"
           ),
-          f.register(
+          p.register(
             E,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\ErrorPayment\\index.js"
           )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  306: function(e, t, r) {
+  307: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)({}, ["navigation", "payment", "error"]);
+        c = Object(a.a)({}, ["navigation", "payment", "error"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\payment\\selectors\\select-error-from-payment.js"
@@ -6170,26 +6181,26 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  307: function(e, t, r) {
+  308: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)({}, ["navigation", "payment"]);
+        c = Object(a.a)({}, ["navigation", "payment"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\payment\\selectors\\select-payment.js"
@@ -6214,10 +6225,10 @@
           return i;
         }),
         r.d(t, "f", function() {
-          return s;
+          return d;
         }),
         r.d(t, "e", function() {
-          return d;
+          return s;
         }),
         r.d(t, "d", function() {
           return u;
@@ -6228,80 +6239,80 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "SET_CONFIG",
         c = "RESET_CONFIG",
         i = "INIT_STATE",
-        s = function(e) {
+        d = function(e) {
           return { type: l, data: e };
         },
-        d = function() {
+        s = function() {
           return { type: c };
         },
         u = function(e) {
           return { type: i, initialState: e };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "SET_CONFIG",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
-        n.register(
+        a.register(
           c,
           "RESET_CONFIG",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
-        n.register(
+        a.register(
           i,
           "INIT_STATE",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "setConfig",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
-        n.register(
-          d,
+        a.register(
+          s,
           "resetConfig",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
-        n.register(
+        a.register(
           u,
           "initialState",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   40: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)({}, ["config", "iconsUrl"]);
+        c = Object(a.a)({}, ["config", "iconsUrl"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-icons-from-config.js"
@@ -6326,7 +6337,7 @@
           return i;
         }),
         r.d(t, "d", function() {
-          return s;
+          return d;
         }),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
@@ -6334,58 +6345,58 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "RESET_REQUEST",
         c = "RESET_SUCCESS",
         i = function() {
           return { type: l };
         },
-        s = function() {
+        d = function() {
           return { type: c };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "RESET_REQUEST",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\reset.js"
         ),
-        n.register(
+        a.register(
           c,
           "RESET_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\reset.js"
         ),
-        n.register(
+        a.register(
           i,
           "resetRequest",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\reset.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "resetSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\reset.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
-  433: function(e, t, r) {
+  434: function(e, t, r) {
     var o = r(210),
-      n = r(434);
-    "string" == typeof (n = n.__esModule ? n.default : n) &&
-      (n = [[e.i, n, ""]]);
-    var a = { insert: "head", singleton: !1 },
+      a = r(435);
+    "string" == typeof (a = a.__esModule ? a.default : a) &&
+      (a = [[e.i, a, ""]]);
+    var n = { insert: "head", singleton: !1 },
       l =
-        (o("!!../../../node_modules/css-loader/dist/cjs.js!./styles.css", n, a),
-        n.locals ? n.locals : {});
+        (o("!!../../../node_modules/css-loader/dist/cjs.js!./styles.css", a, n),
+        a.locals ? a.locals : {});
     e.exports = l;
   },
-  434: function(e, t, r) {
+  435: function(e, t, r) {
     (t = r(211)(!1)).push([
       e.i,
       '\r\nbody {\r\n    font-family: "Montserrat, sans-serif;";\r\n}',
@@ -6407,19 +6418,19 @@
           return i;
         }),
         r.d(t, "d", function() {
-          return s;
+          return d;
         }),
         r.d(t, "e", function() {
-          return d;
+          return s;
         }),
         r.d(t, "f", function() {
           return u;
         }),
         r.d(t, "g", function() {
-          return f;
+          return p;
         }),
         r.d(t, "h", function() {
-          return p;
+          return f;
         }),
         r.d(t, "i", function() {
           return g;
@@ -6436,118 +6447,118 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "ADD_ARTICLE_REQUEST",
         c = "ADD_ARTICLE_SUCCESS",
         i = "DELETE_ARTICLE_REQUEST",
-        s = "DELETE_ARTICLE_SUCCESS",
-        d = "UPDATE_SHOPPING_CART",
+        d = "DELETE_ARTICLE_SUCCESS",
+        s = "UPDATE_SHOPPING_CART",
         u = function(e, t) {
           return { type: l, id: e, quantity: t };
         },
-        f = function(e, t) {
+        p = function(e, t) {
           return { type: c, newArticle: e, data: t };
         },
-        p = function(e) {
+        f = function(e) {
           return { type: i, id: e };
         },
         g = function(e, t) {
-          return { type: s, removedArticle: e, data: t };
+          return { type: d, removedArticle: e, data: t };
         },
         b = function(e) {
           return { type: "DELETE_ARTICLES_SUCCESS", removedArticles: e };
         },
         E = function(e) {
-          return { type: d, shoppingCart: e };
+          return { type: s, shoppingCart: e };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "ADD_ARTICLE_REQUEST",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
+        a.register(
           c,
           "ADD_ARTICLE_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
+        a.register(
           i,
           "DELETE_ARTICLE_REQUEST",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "DELETE_ARTICLE_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
+        a.register(
           "DELETE_ARTICLES_SUCCESS",
           "DELETE_ARTICLES_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
-          d,
+        a.register(
+          s,
           "UPDATE_SHOPPING_CART",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
+        a.register(
           u,
           "addArticleRequest",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
-          f,
+        a.register(
+          p,
           "addArticleSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
-          p,
+        a.register(
+          f,
           "deleteArticleRequest",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
+        a.register(
           g,
           "deleteArticleSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
+        a.register(
           b,
           "deleteArticlesSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         ),
-        n.register(
+        a.register(
           E,
           "updateShoppingCart",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shopping-cart.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
-  49: function(e, t, r) {
+  50: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "b", function() {
         return h;
       }),
         r.d(t, "f", function() {
-          return C;
+          return m;
         }),
         r.d(t, "a", function() {
-          return O;
-        }),
-        r.d(t, "d", function() {
           return x;
         }),
-        r.d(t, "h", function() {
+        r.d(t, "d", function() {
           return L;
+        }),
+        r.d(t, "h", function() {
+          return C;
         }),
         r.d(t, "e", function() {
           return H;
@@ -6556,27 +6567,27 @@
           return S;
         }),
         r.d(t, "g", function() {
-          return U;
+          return G;
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(24),
-        l = r(445),
+        a = r(2),
+        n = r(24),
+        l = r(447),
         c = r(13),
         i = r(25),
-        s = r(12);
-      function d() {
-        var e = m(["\n  max-height: 30px;\n"]);
+        d = r(12);
+      function s() {
+        var e = v(["\n  max-height: 30px;\n"]);
         return (
-          (d = function() {
+          (s = function() {
             return e;
           }),
           e
         );
       }
       function u() {
-        var e = m(["\n  width: 75px;\n"]);
+        var e = v(["\n  width: 75px;\n"]);
         return (
           (u = function() {
             return e;
@@ -6584,20 +6595,8 @@
           e
         );
       }
-      function f() {
-        var e = m(["\n  width: 50px;\n  color: ", ";\n  opacity: 0.5;\n"]);
-        return (
-          (f = function() {
-            return e;
-          }),
-          e
-        );
-      }
       function p() {
-        var e = m([
-          "\n  min-width: 160px;\n  line-height: 1;\n  color: ",
-          ";\n  cursor: pointer;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  text-align: justify !important;\n  > img {\n    padding: 0px 10px 0px 7px;\n  }\n"
-        ]);
+        var e = v(["\n  width: 50px;\n  color: ", ";\n  opacity: 0.5;\n"]);
         return (
           (p = function() {
             return e;
@@ -6605,8 +6604,20 @@
           e
         );
       }
+      function f() {
+        var e = v([
+          "\n  min-width: 160px;\n  line-height: 1;\n  color: ",
+          ";\n  cursor: pointer;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  text-align: justify !important;\n  > img {\n    padding: 0px 10px 0px 7px;\n  }\n"
+        ]);
+        return (
+          (f = function() {
+            return e;
+          }),
+          e
+        );
+      }
       function g() {
-        var e = m([
+        var e = v([
           "\n  justify-content: center;\n  display: flex;\n  max-width: 60px;\n"
         ]);
         return (
@@ -6617,7 +6628,7 @@
         );
       }
       function b() {
-        var e = m(["\n  max-width: 70px;\n  color: ", ";\n"]);
+        var e = v(["\n  max-width: 70px;\n  color: ", ";\n"]);
         return (
           (b = function() {
             return e;
@@ -6626,7 +6637,7 @@
         );
       }
       function E() {
-        var e = m(["\n  margin: 0;\n  padding: 0;\n"]);
+        var e = v(["\n  margin: 0;\n  padding: 0;\n"]);
         return (
           (E = function() {
             return e;
@@ -6634,7 +6645,7 @@
           e
         );
       }
-      function m(e, t) {
+      function v(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -6648,63 +6659,63 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var v,
+      var O,
         y,
-        h = Object(n.a)(i.a)(E()),
-        C = n.a.td(b(), function(e) {
+        h = Object(a.a)(i.a)(E()),
+        m = a.a.td(b(), function(e) {
           return e.isInStock ? c.a : c.d;
         }),
-        O = n.a.td(g()),
-        x = n.a.td(p(), function(e) {
+        x = a.a.td(g()),
+        L = a.a.td(f(), function(e) {
           return e.color;
         }),
-        L = n.a.td(f(), function(e) {
+        C = a.a.td(p(), function(e) {
           return e.tax > 0 ? e.redColor : e.greenColor;
         }),
-        H = n.a.td(u()),
-        S = Object(a.a)({ root: { padding: "3px" } })(l.a),
-        U = Object(n.a)(s.a)(d());
-      (v =
+        H = a.a.td(u()),
+        S = Object(n.a)({ root: { padding: "3px" } })(l.a),
+        G = Object(a.a)(d.a)(s());
+      (O =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (v.register(
+        (O.register(
           h,
           "AddButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
-        v.register(
-          C,
+        O.register(
+          m,
           "QuantityCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
-        v.register(
-          O,
+        O.register(
+          x,
           "ActionCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
-        v.register(
-          x,
+        O.register(
+          L,
           "NameCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
-        v.register(
-          L,
+        O.register(
+          C,
           "TaxCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
-        v.register(
+        O.register(
           H,
           "PriceCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
-        v.register(
+        O.register(
           S,
           "MenuItem",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
-        v.register(
-          U,
+        O.register(
+          G,
           "StyledIcon",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         )),
@@ -6725,10 +6736,10 @@
           return c;
         }),
         r.d(t, "c", function() {
-          return s;
+          return d;
         }),
         r.d(t, "d", function() {
-          return d;
+          return s;
         }),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
@@ -6736,57 +6747,57 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "GET_ARTICLES_SUCCESS",
         c = "UPDATE_ARTICLES_SUCCESS",
         i = function(e) {
           return { type: "GET_ARTICLES_REQUEST", shopId: e };
         },
-        s = function(e) {
+        d = function(e) {
           return { type: l, data: e };
         },
-        d = function(e) {
+        s = function(e) {
           return { type: c, articles: e };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           "GET_ARTICLES_REQUEST",
           "GET_ARTICLES_REQUEST",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shop.js"
         ),
-        n.register(
+        a.register(
           l,
           "GET_ARTICLES_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shop.js"
         ),
-        n.register(
+        a.register(
           c,
           "UPDATE_ARTICLES_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shop.js"
         ),
-        n.register(
+        a.register(
           i,
           "getArticlesRequest",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shop.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "getArticlesSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shop.js"
         ),
-        n.register(
-          d,
+        a.register(
+          s,
           "updateArticlesSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\shop.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   63: function(e, t, r) {
@@ -6803,10 +6814,10 @@
           return i;
         }),
         r.d(t, "e", function() {
-          return s;
+          return d;
         }),
         r.d(t, "f", function() {
-          return d;
+          return s;
         }),
         r.d(t, "d", function() {
           return u;
@@ -6817,18 +6828,18 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "SET_PAYMENT_ERROR",
         c = "SET_PAYMENT_SUCCESS",
         i = "RESET_PAYMENT",
-        s = function(e) {
+        d = function(e) {
           var t = e.title,
             r = e.message,
             o = e.iconUrl;
           return { type: l, title: t, message: r, iconUrl: o };
         },
-        d = function(e) {
+        s = function(e) {
           var t = e.title,
             r = e.message,
             o = e.iconUrl;
@@ -6837,68 +6848,68 @@
         u = function() {
           return { type: i };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "SET_PAYMENT_ERROR",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\payment.js"
         ),
-        n.register(
+        a.register(
           c,
           "SET_PAYMENT_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\payment.js"
         ),
-        n.register(
+        a.register(
           i,
           "RESET_PAYMENT",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\payment.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "setPaymentError",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\payment.js"
         ),
-        n.register(
-          d,
+        a.register(
+          s,
           "setPaymentSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\payment.js"
         ),
-        n.register(
+        a.register(
           u,
           "resetPayment",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\payment.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   65: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "c", function() {
-        return f;
+        return p;
       }),
         r.d(t, "d", function() {
           return g;
         }),
         r.d(t, "b", function() {
-          return v;
+          return O;
         }),
         r.d(t, "a", function() {
           return y;
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(7),
+        a = r(2),
+        n = r(7),
         l = r(13);
       function c() {
-        var e = s(["\n  margin-right: ", ";\n  display: flex;\n"]);
+        var e = d(["\n  margin-right: ", ";\n  display: flex;\n"]);
         return (
           (c = function() {
             return e;
@@ -6907,7 +6918,7 @@
         );
       }
       function i() {
-        var e = s([
+        var e = d([
           "\n  color: ",
           ";\n  flex: ",
           ";\n  opacity: ",
@@ -6927,7 +6938,7 @@
           e
         );
       }
-      function s(e, t) {
+      function d(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -6941,25 +6952,25 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var s,
         u,
-        f = function(e) {
+        p = function(e) {
           var t = e.color;
           switch (e.variant) {
-            case a.b.primary:
+            case n.b.primary:
               return l.f;
             default:
               return t;
           }
         },
-        p = function(e) {
+        f = function(e) {
           var t = e.color;
           switch (e.variant) {
-            case a.b.primary:
+            case n.b.primary:
               return t;
-            case a.b.secondary:
-            case a.b.none:
-            case a.b.special:
+            case n.b.secondary:
+            case n.b.none:
+            case n.b.special:
               return l.e;
             default:
               return t;
@@ -6969,15 +6980,15 @@
           var t = e.color,
             r = e.hoverColor,
             o = e.variant;
-          if (e.disabled) return f({ color: t, variant: o });
+          if (e.disabled) return p({ color: t, variant: o });
           switch (o) {
-            case a.b.primary:
-              return f({ color: t, variant: o });
-            case a.b.secondary:
-              return t !== a.a.white ? l.f : l.a;
-            case a.b.none:
+            case n.b.primary:
+              return p({ color: t, variant: o });
+            case n.b.secondary:
+              return t !== n.a.white ? l.f : l.a;
+            case n.b.none:
               return r || t;
-            case a.b.special:
+            case n.b.special:
               return r;
             default:
               return t;
@@ -6987,28 +6998,28 @@
           var t = e.color,
             r = e.variant;
           return e.disabled
-            ? p({ color: t, variant: r })
-            : r === a.b.none || r === a.b.special
+            ? f({ color: t, variant: r })
+            : r === n.b.none || r === n.b.special
             ? l.e
-            : (a.b.secondary, t);
+            : (n.b.secondary, t);
         },
         E = function(e) {
           var t = e.variant;
-          return e.disabled || (t !== a.b.none && t !== a.b.primary)
+          return e.disabled || (t !== n.b.none && t !== n.b.primary)
             ? "none"
             : "brightness(1.2)";
         },
-        m = function(e) {
+        v = function(e) {
           var t = e.variant,
             r = e.color;
-          return t === a.b.none || t === a.b.special
+          return t === n.b.none || t === n.b.special
             ? "none"
             : "1px solid ".concat(r);
         },
-        v = n.a.button(
+        O = a.a.button(
           i(),
           function(e) {
-            return f(e);
+            return p(e);
           },
           function(e) {
             return e.isFullWidth ? 1 : 0;
@@ -7017,13 +7028,13 @@
             return e.disabled ? 0.6 : 1;
           },
           function(e) {
-            return p(e);
-          },
-          function(e) {
-            return m(e);
-          },
-          function(e) {
             return f(e);
+          },
+          function(e) {
+            return v(e);
+          },
+          function(e) {
+            return p(e);
           },
           function(e) {
             return E(e);
@@ -7038,49 +7049,49 @@
             return g(e);
           }
         ),
-        y = n.a.div(c(), function(e) {
+        y = a.a.div(c(), function(e) {
           return e.hasMarginRight ? "5px" : "";
         });
-      (d =
+      (s =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (d.register(
-          f,
+        (s.register(
+          p,
           "getTextColor",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
         ),
-        d.register(
-          p,
+        s.register(
+          f,
           "getBgColor",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
         ),
-        d.register(
+        s.register(
           g,
           "getTextHoverColor",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
         ),
-        d.register(
+        s.register(
           b,
           "getBgHoverColor",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
         ),
-        d.register(
+        s.register(
           E,
           "getHoverFilter",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
         ),
-        d.register(
-          m,
+        s.register(
+          v,
           "getBorder",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
         ),
-        d.register(
-          v,
+        s.register(
+          O,
           "StyledButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
         ),
-        d.register(
+        s.register(
           y,
           "IconWrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\styles.js"
@@ -7095,10 +7106,10 @@
     "use strict";
     (function(e) {
       r.d(t, "i", function() {
-        return m;
+        return v;
       }),
         r.d(t, "g", function() {
-          return v;
+          return O;
         }),
         r.d(t, "d", function() {
           return y;
@@ -7107,29 +7118,29 @@
           return h;
         }),
         r.d(t, "f", function() {
-          return C;
+          return m;
         }),
         r.d(t, "a", function() {
-          return O;
-        }),
-        r.d(t, "e", function() {
           return x;
         }),
-        r.d(t, "b", function() {
+        r.d(t, "e", function() {
           return L;
+        }),
+        r.d(t, "b", function() {
+          return C;
         }),
         r.d(t, "c", function() {
           return H;
         });
       r(0);
       var o,
-        n = r(2);
-      function a() {
+        a = r(2);
+      function n() {
         var e = g([
           "\n  flex: 1;\n  border-bottom: 0;\n  border-top: 1.4px solid;\n  border-left: 0;\n  border-right: 0;\n  margin-left: 10px;\n  position: relative;\n  top: 2px;\n"
         ]);
         return (
-          (a = function() {
+          (n = function() {
             return e;
           }),
           e
@@ -7164,19 +7175,19 @@
           e
         );
       }
-      function s() {
+      function d() {
         var e = g(["\n  max-width: 70px;\n"]);
         return (
-          (s = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function s() {
         var e = g(["\n  width: 50px;\n"]);
         return (
-          (d = function() {
+          (s = function() {
             return e;
           }),
           e
@@ -7191,24 +7202,24 @@
           e
         );
       }
-      function f() {
+      function p() {
         var e = g([
           "\n  display: flex;\n  flex-direction: column;\n  flex: 1;\n  height: 100%;\n  border-top: none;\n  width: 100%;\n  > tbody {\n    border-bottom-right-radius: 10px;\n    max-height: 500px;\n    overflow: overlay;\n    display: block;\n    & tr {\n      flex-direction: row;\n      display: flex;\n      align-items: center;\n      margin: 8px 0;\n    }\n    & td {\n      text-align: center;\n      width: 100%;\n      font-size: 14px;\n    }\n    ::-webkit-scrollbar {\n      width: 4px;\n      height: 4px;\n    }\n    ::-webkit-scrollbar-button {\n      width: 0px;\n      height: 0px;\n    }\n    ::-webkit-scrollbar-thumb {\n      background: #eaeaea;\n      border: 0px none #ffffff;\n      border-radius: 50px;\n    }\n    ::-webkit-scrollbar-thumb:hover {\n      background: #a7a7a7;\n    }\n    ::-webkit-scrollbar-thumb:active {\n      background: #a7a7a7;\n    }\n    ::-webkit-scrollbar-track {\n      background: transparent;\n      border: 0px none #6b6b6b;\n      border-radius: 50px;\n    }\n    ::-webkit-scrollbar-track:hover {\n      background: transparent;\n    }\n    ::-webkit-scrollbar-track:active {\n      background: transparent;\n    }\n    ::-webkit-scrollbar-corner {\n      background: transparent;\n    }\n  }\n  > thead > tr {\n    display: flex;\n    flex: 1;\n  }\n  > thead th {\n    text-transform: uppercase;\n    font-size: 10px;\n    color: ",
           ";\n    border-top: none;\n    text-align: center;\n    padding: 10px 5px;\n    width: auto !important;\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: center;\n    &:last-child {\n      border-right: none;\n    }\n    &:first-child {\n      border-left: none;\n    }\n  }\n"
         ]);
         return (
-          (f = function() {
+          (p = function() {
             return e;
           }),
           e
         );
       }
-      function p() {
+      function f() {
         var e = g([
           "\n  flex-direction: row;\n  display: flex;\n  color: #a6a6a6;\n"
         ]);
         return (
-          (p = function() {
+          (f = function() {
             return e;
           }),
           e
@@ -7230,28 +7241,28 @@
         reactHotLoaderGlobal.default.signature;
       var b,
         E,
-        m = n.a.div(p()),
-        v = n.a.table(f(), function(e) {
+        v = a.a.div(f()),
+        O = a.a.table(p(), function(e) {
           return e.titleColor;
         }),
-        y = n.a.th(u()),
-        h = n.a.th(d()),
-        C = n.a.th(s()),
-        O = n.a.th(i()),
-        x = n.a.th(c()),
-        L = n.a.tr(l()),
-        H = n.a.hr(a());
+        y = a.a.th(u()),
+        h = a.a.th(s()),
+        m = a.a.th(d()),
+        x = a.a.th(i()),
+        L = a.a.th(c()),
+        C = a.a.tr(l()),
+        H = a.a.hr(n());
       (b =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
         (b.register(
-          m,
+          v,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\styles.js"
         ),
         b.register(
-          v,
+          O,
           "Table",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\styles.js"
         ),
@@ -7266,22 +7277,22 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\styles.js"
         ),
         b.register(
-          C,
+          m,
           "QuantityCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\styles.js"
         ),
         b.register(
-          O,
+          x,
           "ActionCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\styles.js"
         ),
         b.register(
-          x,
+          L,
           "PriceCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\styles.js"
         ),
         b.register(
-          L,
+          C,
           "CategoryStep",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\styles.js"
         ),
@@ -7306,32 +7317,32 @@
           return i;
         });
       var o,
-        n = r(13);
+        a = r(13);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = { business: n.c, info: n.b, danger: n.d, white: n.f },
+        c = { business: a.c, info: a.b, danger: a.d, white: a.f },
         i = {
           secondary: "secondary",
           primary: "primary",
           special: "special",
           none: "none"
         };
-      (a =
+      (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (a.register(
+        (n.register(
           c,
           "BTN_COLOR",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\constants.js"
         ),
-        a.register(
+        n.register(
           i,
           "BTN_VARIANT",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\constants.js"
@@ -7346,30 +7357,30 @@
     "use strict";
     (function(e) {
       var o,
-        n = r(11);
+        a = r(11);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
         c = {},
         i = function(e, t) {
-          return Object(n.a)(c, ["entities", "articles", "byId", t], e);
+          return Object(a.a)(c, ["entities", "articles", "byId", t], e);
         };
       (t.a = i),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (a.register(
+          (n.register(
             c,
             "emptyObject",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\articles\\selectors\\select-article-by-id.js"
           ),
-          a.register(
+          n.register(
             i,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\entities\\articles\\selectors\\select-article-by-id.js"
@@ -7384,7 +7395,7 @@
     "use strict";
     (function(e) {
       r.d(t, "h", function() {
-        return v;
+        return O;
       }),
         r.d(t, "d", function() {
           return y;
@@ -7393,16 +7404,16 @@
           return h;
         }),
         r.d(t, "i", function() {
-          return C;
+          return m;
         }),
         r.d(t, "f", function() {
-          return O;
-        }),
-        r.d(t, "g", function() {
           return x;
         }),
-        r.d(t, "c", function() {
+        r.d(t, "g", function() {
           return L;
+        }),
+        r.d(t, "c", function() {
+          return C;
         }),
         r.d(t, "b", function() {
           return H;
@@ -7411,8 +7422,8 @@
           return S;
         });
       var o,
-        n = r(2),
-        a = r(12);
+        a = r(2),
+        n = r(12);
       function l() {
         var e = b(["\n  padding-left: 0px;\n"]);
         return (
@@ -7442,21 +7453,21 @@
           e
         );
       }
-      function s() {
+      function d() {
         var e = b([
           "\n  text-align: center;\n  font-size: 14px;\n  color: #808080;\n  font-weight: 500;\n  margin: 10px 5px;\n"
         ]);
         return (
-          (s = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function s() {
         var e = b(["\n  max-height: 50px;\n"]);
         return (
-          (d = function() {
+          (s = function() {
             return e;
           }),
           e
@@ -7471,22 +7482,22 @@
           e
         );
       }
-      function f() {
+      function p() {
         var e = b(["\n  font-size: 12px;\n  color: #808080;\n"]);
         return (
-          (f = function() {
+          (p = function() {
             return e;
           }),
           e
         );
       }
-      function p() {
+      function f() {
         var e = b([
           "\n  margin-bottom: 5px;\n  margin-bottom: 15px;\n  margin-top: 0px;\n  color: ",
           ";\n  font-size: 14px;\n  font-weight: 600;\n"
         ]);
         return (
-          (p = function() {
+          (f = function() {
             return e;
           }),
           e
@@ -7519,26 +7530,26 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var E,
-        m,
-        v = n.a.div(g(), function(e) {
+        v,
+        O = a.a.div(g(), function(e) {
           return e.hasBgHeader ? "0 0 0 10px" : "10px 0px 0px 10px";
         }),
-        y = n.a.h5(p(), function(e) {
+        y = a.a.h5(f(), function(e) {
           return e.titleColor;
         }),
-        h = n.a.div(f()),
-        C = n.a.div(u()),
-        O = Object(n.a)(a.a)(d()),
-        x = n.a.h5(s()),
-        L = n.a.h6(i()),
-        H = n.a.li(c()),
-        S = n.a.ul(l());
+        h = a.a.div(p()),
+        m = a.a.div(u()),
+        x = Object(a.a)(n.a)(s()),
+        L = a.a.h5(d()),
+        C = a.a.h6(i()),
+        H = a.a.li(c()),
+        S = a.a.ul(l());
       (E =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
         (E.register(
-          v,
+          O,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\styles.js"
         ),
@@ -7553,22 +7564,22 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\styles.js"
         ),
         E.register(
-          C,
+          m,
           "WrapperIcon",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\styles.js"
         ),
         E.register(
-          O,
+          x,
           "StyledIcon",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\styles.js"
         ),
         E.register(
-          x,
+          L,
           "Title",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\styles.js"
         ),
         E.register(
-          L,
+          C,
           "EffectsTitle",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\styles.js"
         ),
@@ -7582,22 +7593,22 @@
           "ListEffects",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Informations\\styles.js"
         )),
-        (m =
+        (v =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && m(e);
+            : void 0) && v(e);
     }.call(this, r(1)(e)));
   },
-  747: function(e, t, r) {
+  749: function(e, t, r) {
     "use strict";
     r.r(t),
       function(e) {
         var t,
           o = r(0),
-          n = r.n(o),
-          a = r(39),
-          l = r.n(a),
-          c = r(256);
+          a = r.n(o),
+          n = r(39),
+          l = r.n(n),
+          c = r(257);
         r(253);
         (t =
           "undefined" != typeof reactHotLoaderGlobal
@@ -7606,44 +7617,44 @@
         "undefined" != typeof reactHotLoaderGlobal &&
           reactHotLoaderGlobal.default.signature;
         var i,
-          s,
-          d = document.getElementById("BURDIGALAX_onShop");
-        l.a.render(n.a.createElement(c.a, null), d),
+          d,
+          s = document.getElementById("BURDIGALAX_onShop");
+        l.a.render(a.a.createElement(c.a, null), s),
           (i =
             "undefined" != typeof reactHotLoaderGlobal
               ? reactHotLoaderGlobal.default
               : void 0) &&
             i.register(
-              d,
+              s,
               "mountNode",
               "E:\\PROJETS\\Onset\\Burdigalax\\src\\onShop.js"
             ),
-          (s =
+          (d =
             "undefined" != typeof reactHotLoaderGlobal
               ? reactHotLoaderGlobal.leaveModule
-              : void 0) && s(e);
+              : void 0) && d(e);
       }.call(this, r(1)(e));
   },
   86: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(14);
+        a = r(14);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var a,
+      var n,
         l,
-        c = Object(n.a)(["navigation", "shoppingCart"]);
+        c = Object(a.a)(["navigation", "shoppingCart"]);
       (t.a = c),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          a.register(
+          n.register(
             c,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\reducers\\navigation\\shopping-cart\\selectors\\select-shopping-cart.js"
@@ -7658,7 +7669,7 @@
     "use strict";
     (function(e) {
       r.d(t, "c", function() {
-        return p;
+        return f;
       }),
         r.d(t, "b", function() {
           return g;
@@ -7671,10 +7682,10 @@
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(25);
+        a = r(2),
+        n = r(25);
       function l() {
-        var e = d([
+        var e = s([
           "\n  font-size: 12px;\n  border-radius: 100px;\n  border-width: 2px;\n  font-weight: 800;\n  padding: 5px 9px;\n"
         ]);
         return (
@@ -7685,7 +7696,7 @@
         );
       }
       function c() {
-        var e = d(["\n  margin: 0 15px;\n  color: ", ";\n"]);
+        var e = s(["\n  margin: 0 15px;\n  color: ", ";\n"]);
         return (
           (c = function() {
             return e;
@@ -7694,7 +7705,7 @@
         );
       }
       function i() {
-        var e = d([
+        var e = s([
           "\n  display: flex;\n  flex-direction: row;\n  flex: 1;\n  justify-content: center;\n  align-items: center;\n"
         ]);
         return (
@@ -7704,19 +7715,19 @@
           e
         );
       }
-      function s() {
-        var e = d([
+      function d() {
+        var e = s([
           "\n  color: white;\n  display: flex;\n  flex: 1;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 2rem;\n  padding: 10px;\n  border-radius: 13px 13px 0 0;\n  background-color: ",
           ";\n"
         ]);
         return (
-          (s = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d(e, t) {
+      function s(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -7731,21 +7742,21 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var u,
-        f,
-        p = n.a.div(s(), function(e) {
+        p,
+        f = a.a.div(d(), function(e) {
           return e.bgColor;
         }),
-        g = n.a.div(i()),
-        b = n.a.h4(c(), function(e) {
+        g = a.a.div(i()),
+        b = a.a.h4(c(), function(e) {
           return e.color;
         }),
-        E = Object(n.a)(a.a)(l());
+        E = Object(a.a)(n.a)(l());
       (u =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
         (u.register(
-          p,
+          f,
           "Header",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Header\\styles.js"
         ),
@@ -7764,10 +7775,10 @@
           "CloseButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Header\\styles.js"
         )),
-        (f =
+        (p =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && f(e);
+            : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
   89: function(e, t, r) {
@@ -7783,15 +7794,15 @@
           return E;
         }),
         r.d(t, "d", function() {
-          return m;
+          return v;
         }),
         r.d(t, "c", function() {
-          return v;
+          return O;
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(25);
+        a = r(2),
+        n = r(25);
       function l() {
         var e = u([
           "\n  font-size: 13px;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n"
@@ -7826,21 +7837,21 @@
           e
         );
       }
-      function s() {
+      function d() {
         var e = u([
           "\n  flex-direction: column;\n  display: flex;\n  margin-left: 10px;\n  margin-right: 10px;\n"
         ]);
         return (
-          (s = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function s() {
         var e = u(["\n  display: flex;\n  flex-direction: column;\n"]);
         return (
-          (d = function() {
+          (s = function() {
             return e;
           }),
           e
@@ -7860,56 +7871,56 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var f,
-        p,
-        g = n.a.div(d()),
-        b = n.a.div(s()),
-        E = Object(n.a)(a.a)(i(), function(e) {
+      var p,
+        f,
+        g = a.a.div(s()),
+        b = a.a.div(d()),
+        E = Object(a.a)(n.a)(i(), function(e) {
           return e.isLastButton ? "0 0 10px" : "0";
         }),
-        m = n.a.div(c()),
-        v = n.a.span(l());
-      (f =
+        v = a.a.div(c()),
+        O = a.a.span(l());
+      (p =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (f.register(
+        (p.register(
           g,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\styles.js"
         ),
-        f.register(
+        p.register(
           b,
           "Resume",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\styles.js"
         ),
-        f.register(
+        p.register(
           E,
           "PaymentButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\styles.js"
         ),
-        f.register(
-          m,
+        p.register(
+          v,
           "TotalTTC",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\styles.js"
         ),
-        f.register(
-          v,
+        p.register(
+          O,
           "SubLine",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Basket\\Footer\\styles.js"
         )),
-        (p =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && p(e);
+            : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
   95: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        n = r(31);
-      function a(e, t) {
+        a = r(31);
+      function n(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var o = Object.getOwnPropertySymbols(e);
@@ -7925,12 +7936,12 @@
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2
-            ? a(Object(r), !0).forEach(function(t) {
+            ? n(Object(r), !0).forEach(function(t) {
                 c(e, t, r[t]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : a(Object(r)).forEach(function(t) {
+            : n(Object(r)).forEach(function(t) {
                 Object.defineProperty(
                   e,
                   t,
@@ -7960,20 +7971,20 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var i,
-        s,
-        d = {},
+        d,
+        s = {},
         u = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
-                : d,
+                : s,
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
-            case n.a:
+            case a.a:
               return t.initialState;
-            case n.c:
+            case a.c:
               return l({}, e, {}, t.data);
-            case n.b:
+            case a.b:
               return { style: e.style };
             default:
               return e;
@@ -7985,7 +7996,7 @@
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (i.register(
-            d,
+            s,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\index.js"
           ),
@@ -7994,10 +8005,10 @@
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\index.js"
           )),
-        (s =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && s(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
   97: function(e, t, r) {
@@ -8014,7 +8025,7 @@
           return i;
         }),
         r.d(t, "d", function() {
-          return s;
+          return d;
         }),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
@@ -8022,44 +8033,44 @@
             : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        a,
+      var a,
+        n,
         l = "GET_PLAYER_SUCCESS",
         c = "UPDATE_PLAYER_SUCCESS",
         i = function(e) {
           return { type: l, data: e };
         },
-        s = function(e) {
+        d = function(e) {
           return { type: c, player: e };
         };
-      (n =
+      (a =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (n.register(
+        (a.register(
           l,
           "GET_PLAYER_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\player.js"
         ),
-        n.register(
+        a.register(
           c,
           "UPDATE_PLAYER_SUCCESS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\player.js"
         ),
-        n.register(
+        a.register(
           i,
           "getPlayerSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\player.js"
         ),
-        n.register(
-          s,
+        a.register(
+          d,
           "updatePlayerSuccess",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\redux\\actions\\player.js"
         )),
-        (a =
+        (n =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && a(e);
+            : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
   99: function(e, t, r) {
@@ -8069,10 +8080,10 @@
         return E;
       }),
         r.d(t, "c", function() {
-          return m;
+          return v;
         }),
         r.d(t, "a", function() {
-          return v;
+          return O;
         }),
         r.d(t, "d", function() {
           return y;
@@ -8082,10 +8093,10 @@
         });
       r(0);
       var o,
-        n = r(2),
-        a = r(272);
+        a = r(2),
+        n = r(273);
       function l() {
-        var e = f([
+        var e = p([
           "\n  flex: 0.8;\n  border-radius: ",
           ";\n  background-color: white;\n  justify-content: center;\n"
         ]);
@@ -8097,7 +8108,7 @@
         );
       }
       function c() {
-        var e = f([
+        var e = p([
           "\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-color: ",
           ";\n  border-style: dashed;\n  width: 100%;\n  opacity: 0.3;\n"
         ]);
@@ -8109,7 +8120,7 @@
         );
       }
       function i() {
-        var e = f([
+        var e = p([
           "\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n  height: 60px;\n"
         ]);
         return (
@@ -8119,20 +8130,9 @@
           e
         );
       }
-      function s() {
-        var e = f([
-          "\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  align-items: stretch;\n"
-        ]);
-        return (
-          (s = function() {
-            return e;
-          }),
-          e
-        );
-      }
       function d() {
-        var e = f([
-          "\n  min-width: 700px;\n  max-width: 1000px;\n  max-height: 1500px;\n  margin: auto;\n  font-family: Montserrat, sans-serif;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -o-user-select: none;\n  user-select: none;\n\n  img {\n    -webkit-user-drag: none;\n    -khtml-user-drag: none;\n    -moz-user-drag: none;\n    -o-user-drag: none;\n    user-drag: none;\n  }\n"
+        var e = p([
+          "\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  align-items: stretch;\n"
         ]);
         return (
           (d = function() {
@@ -8141,8 +8141,19 @@
           e
         );
       }
+      function s() {
+        var e = p([
+          "\n  min-width: 700px;\n  max-width: 1000px;\n  max-height: 1500px;\n  margin: auto;\n  font-family: Montserrat, sans-serif;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -o-user-select: none;\n  user-select: none;\n\n  img {\n    -webkit-user-drag: none;\n    -khtml-user-drag: none;\n    -moz-user-drag: none;\n    -o-user-drag: none;\n    user-drag: none;\n  }\n"
+        ]);
+        return (
+          (s = function() {
+            return e;
+          }),
+          e
+        );
+      }
       function u() {
-        var e = f([
+        var e = p([
           "\n  max-width: 1300px;\n  margin: auto;\n  font-family: Montserrat, sans-serif;\n  h3 {\n    font-size: 20px;\n    margin: 5px 0;\n    font-weight: 500;\n  }\n"
         ]);
         return (
@@ -8152,7 +8163,7 @@
           e
         );
       }
-      function f(e, t) {
+      function p(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -8166,48 +8177,48 @@
           : void 0) && o(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var p,
+      var f,
         g,
-        b = n.a.div(u()),
-        E = n.a.div(d()),
-        m = n.a.div(s()),
-        v = n.a.div(i()),
-        y = n.a.hr(c(), function(e) {
+        b = a.a.div(u()),
+        E = a.a.div(s()),
+        v = a.a.div(d()),
+        O = a.a.div(i()),
+        y = a.a.hr(c(), function(e) {
           return e.color;
         }),
-        h = Object(n.a)(a.a)(l(), function(e) {
+        h = Object(a.a)(n.a)(l(), function(e) {
           return e.hasBgHeader ? "0 0 0 10px" : "10px 0px 0px 10px";
         });
-      (p =
+      (f =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (p.register(
+        (f.register(
           b,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
         ),
-        p.register(
+        f.register(
           E,
           "Interface",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
         ),
-        p.register(
-          m,
+        f.register(
+          v,
           "Row",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
         ),
-        p.register(
-          v,
+        f.register(
+          O,
           "BuyButtons",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
         ),
-        p.register(
+        f.register(
           y,
           "Separtor",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
         ),
-        p.register(
+        f.register(
           h,
           "StyledArticles",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"

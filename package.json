@@ -1,6 +1,6 @@
 {
   "name": "Burdigalax",
-  "version": "4.4.0",
+  "version": "4.4.1",
   "description": "",
   "main": "index.js",
   "author": "Rom Burdi",
@@ -9,7 +9,7 @@
     "build-dev": "del dist\\* /Q && webpack -d --mode development --env.dev",
     "build": "del dist\\* /Q && webpack -p --mode production --env.production",
     "start": "webpack-dev-server --hot --mode development --env.dev",
-    "deploy": "del ONSET_SERVER\\packages\\burdigalax\\client\\gui\\* /Q && del *.zip && Xcopy dist /Exclude:deploy_exclude_files.txt ONSET_SERVER\\packages\\burdigalax\\client\\gui\\ && C:\\7z1900-extra\\7za.exe a ONSET_SERVER.4.4.0.zip ONSET_SERVER\\ -mtc=on"
+    "deploy": "del ONSET_SERVER\\packages\\burdigalax\\client\\gui\\* /Q && del *.zip && Xcopy dist /Exclude:deploy_exclude_files.txt ONSET_SERVER\\packages\\burdigalax\\client\\gui\\ && C:\\7z1900-extra\\7za.exe a ONSET_SERVER.4.4.1.zip ONSET_SERVER\\ -mtc=on"
   },
   "dependencies": {
     "@material-ui/core": "^4.8.0",
@@ -40,6 +40,7 @@
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-template": "^6.2.0",
     "prettier": "^1.19.1",
