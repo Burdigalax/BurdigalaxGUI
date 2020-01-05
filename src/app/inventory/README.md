@@ -43,7 +43,7 @@ BURDIGALAX_inventory_onChangeNearbyInventorySelected
  BURDIGALAX_inventory.updateItems(items);
   
 ```
-##### onClose :
+#### onClose :
 
 Receive one parameter : it's context of inventory.  
 2 values possibles : `main` or `transfer`
@@ -57,7 +57,7 @@ _Exemple:_
   BURDIGALAX_inventory.updateInventory(mainInventoryId, { selectedNearbyInventoryId: null})
 ```
 
-##### onUse :
+#### onUse :
 
 Object receive for these events :
 
@@ -76,7 +76,7 @@ Object receive for these events :
 I recommend  not use the newQuantity field.  
 :warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\ 
 
-##### onEquip :
+#### onEquip :
 
 Object receive for these events :
 
@@ -93,7 +93,7 @@ Object receive for these events :
 </details>
 
 
-##### onDelete :
+#### onDelete :
 
 Object receive for these events :
 
@@ -114,7 +114,7 @@ I recommend  not use the newQuantity field.
 :warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\ 
 
 
-##### onTransfer :
+#### onTransfer :
 
 Object receive for these events :
 
@@ -158,6 +158,14 @@ The configuration you send will be merged with the default configuration :
 {
   config: {
     hasEquipableCategory: true,
+    startMainInventoryPosition: {
+      top: 40,
+      left: 50
+    },
+    startTransferInventoryPosition: {
+      top: 40,
+      left: 550
+    },
     iconUrlAllCategory:
       "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ctitle%3Eicon-filter-all%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg fill='%23000' fill-rule='nonzero'%3E%3Cpath d='M0 0h6.4v6.4h-6.4zM0 9.601h6.4v6.399h-6.4zM9.599 9.601h6.401v6.399h-6.401zM9.599 0h6.401v6.399h-6.401z'/%3E%3C/g%3E%3C/svg%3E",
     iconUrlEquipableCategory:
