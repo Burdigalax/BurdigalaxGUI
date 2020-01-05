@@ -1,22 +1,22 @@
 !(function(e) {
   function t(t) {
     for (
-      var n, i, c = t[0], l = t[1], d = t[2], u = 0, f = [];
+      var n, i, c = t[0], d = t[1], l = t[2], u = 0, f = [];
       u < c.length;
       u++
     )
       (i = c[u]),
         Object.prototype.hasOwnProperty.call(a, i) && a[i] && f.push(a[i][0]),
         (a[i] = 0);
-    for (n in l) Object.prototype.hasOwnProperty.call(l, n) && (e[n] = l[n]);
+    for (n in d) Object.prototype.hasOwnProperty.call(d, n) && (e[n] = d[n]);
     for (s && s(t); f.length; ) f.shift()();
-    return o.push.apply(o, d || []), r();
+    return o.push.apply(o, l || []), r();
   }
   function r() {
     for (var e, t = 0; t < o.length; t++) {
       for (var r = o[t], n = !0, c = 1; c < r.length; c++) {
-        var l = r[c];
-        0 !== a[l] && (n = !1);
+        var d = r[c];
+        0 !== a[d] && (n = !1);
       }
       n && (o.splice(t--, 1), (e = i((i.s = r[0]))));
     }
@@ -76,11 +76,11 @@
     }),
     (i.p = "http://asset/burdigalax/client/gui/");
   var c = (window.webpackJsonp = window.webpackJsonp || []),
-    l = c.push.bind(c);
+    d = c.push.bind(c);
   (c.push = t), (c = c.slice());
-  for (var d = 0; d < c.length; d++) t(c[d]);
-  var s = l;
-  o.push([758, 0]), r();
+  for (var l = 0; l < c.length; l++) t(c[l]);
+  var s = d;
+  o.push([759, 0]), r();
 })({
   100: function(e, t, r) {
     "use strict";
@@ -129,23 +129,23 @@
           e
         );
       }
-      function l() {
+      function d() {
         var e = u([
           "\n  font-weight: 700;\n  align-self: flex-end;\n  padding-top: 0;\n  padding-bottom: 0px;\n  margin-bottom: 0px;\n  margin-top: -9px;\n  margin-right: 7px;\n"
         ]);
         return (
-          (l = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function l() {
         var e = u([
           "\n  color: #9da6ae;\n  font-size: 10px;\n  text-transform: uppercase;\n  font-weight: 600;\n  margin-bottom: 10px;\n"
         ]);
         return (
-          (d = function() {
+          (l = function() {
             return e;
           }),
           e
@@ -179,8 +179,8 @@
       var f,
         p,
         b = a.a.div(s()),
-        v = a.a.span(d()),
-        g = Object(a.a)(o.a)(l()),
+        v = a.a.span(l()),
+        g = Object(a.a)(o.a)(d()),
         y = a.a.span(c()),
         O = function(e, t) {
           return (100 * e) / t > 95 ? "#fe6d67" : "#959da3";
@@ -235,87 +235,36 @@
     (function(e) {
       var n,
         a = r(35),
-        o = r(11),
-        i = r(113),
-        c = r(114);
-      function l(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          t &&
-            (n = n.filter(function(t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable;
-            })),
-            r.push.apply(r, n);
-        }
-        return r;
-      }
-      function d(e, t, r) {
-        return (
-          t in e
-            ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-              })
-            : (e[t] = r),
-          e
-        );
-      }
+        o = r(113),
+        i = r(170);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var s,
-        u,
-        f = function(e) {
-          var t = Object(i.a)(e);
+      var c,
+        d,
+        l = function(e) {
+          var t = Object(o.a)(e);
           return Object(a.a)(function(t) {
-            var r = Object(c.a)(e, t.id);
-            return (function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var r = null != arguments[t] ? arguments[t] : {};
-                t % 2
-                  ? l(Object(r), !0).forEach(function(t) {
-                      d(e, t, r[t]);
-                    })
-                  : Object.getOwnPropertyDescriptors
-                  ? Object.defineProperties(
-                      e,
-                      Object.getOwnPropertyDescriptors(r)
-                    )
-                  : l(Object(r)).forEach(function(t) {
-                      Object.defineProperty(
-                        e,
-                        t,
-                        Object.getOwnPropertyDescriptor(r, t)
-                      );
-                    });
-              }
-              return e;
-            })({}, r, {}, t, {
-              totalWeight:
-                Object(o.a)(0, ["quantity"], t) * Object(o.a)(0, ["weight"], r)
-            });
+            return Object(i.a)(e, t.id, t);
           }, t);
         };
-      (t.a = f),
-        (s =
+      (t.a = l),
+        (c =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          s.register(
-            f,
+          c.register(
+            l,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-items-completed-from-current-inventory.js"
           ),
-        (u =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && u(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
   113: function(e, t, r) {
@@ -332,23 +281,23 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = [],
-        d = function(e) {
+        d = [],
+        l = function(e) {
           var t = Object(o.a)(e);
-          return Object(a.a)(l, ["items", "byId"], t);
+          return Object(a.a)(d, ["items", "byId"], t);
         };
-      (t.a = d),
+      (t.a = l),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (i.register(
-            l,
+            d,
             "emptyArray",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-items-from-current-inventory.js"
           ),
           i.register(
-            d,
+            l,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-items-from-current-inventory.js"
           )),
@@ -362,44 +311,6 @@
     "use strict";
     (function(e) {
       var n,
-        a = r(11);
-      (n =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && n(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var o,
-        i,
-        c = {},
-        l = function(e, t) {
-          return Object(a.a)(c, ["entities", "items", "byId", t], e);
-        };
-      (t.a = l),
-        (o =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          (o.register(
-            c,
-            "emptyObject",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\items\\selectors\\select-items-by-id.js"
-          ),
-          o.register(
-            l,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\items\\selectors\\select-items-by-id.js"
-          )),
-        (i =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && i(e);
-    }.call(this, r(1)(e)));
-  },
-  115: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var n,
         a = r(11),
         o = r(113);
       (n =
@@ -410,23 +321,23 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = {},
-        d = function(e, t) {
+        d = {},
+        l = function(e, t) {
           var r = Object(o.a)(e);
-          return Object(a.a)(l, [t], r);
+          return Object(a.a)(d, [t], r);
         };
-      (t.a = d),
+      (t.a = l),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (i.register(
-            l,
+            d,
             "emptyObject",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-item-from-current-inventory-by-id.js"
           ),
           i.register(
-            d,
+            l,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-item-from-current-inventory-by-id.js"
           )),
@@ -436,7 +347,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  116: function(e, t, r) {
+  115: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -473,15 +384,15 @@
         a = r(0),
         o = r.n(a),
         i = r(4),
-        c = r(133);
+        c = r(132);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var l,
-        d,
+      var d,
+        l,
         s = function(e) {
           var t = e.size,
             r = void 0 === t ? 20 : t,
@@ -499,24 +410,24 @@
           return !e.url;
         }, i.f)(s);
       (t.a = u),
-        (l =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (l.register(
+          (d.register(
             s,
             "Icon",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Icon\\index.js"
           ),
-          l.register(
+          d.register(
             u,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Icon\\index.js"
           )),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
   13: function(e, t, r) {
@@ -530,10 +441,10 @@
           return c;
         }),
         r.d(t, "a", function() {
-          return l;
+          return d;
         }),
         r.d(t, "f", function() {
-          return d;
+          return l;
         }),
         r.d(t, "e", function() {
           return s;
@@ -551,8 +462,8 @@
         o,
         i = "#28a745",
         c = "#d02e22",
-        l = "#000",
-        d = "#ffffff",
+        d = "#000",
+        l = "#ffffff",
         s = "transparent",
         u = "#247ad2";
       (a =
@@ -590,12 +501,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
         a.register(
-          l,
+          d,
           "black",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
         a.register(
-          d,
+          l,
           "white",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\colors.js"
         ),
@@ -620,16 +531,16 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  133: function(e, t, r) {
+  132: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
-        return d;
+        return l;
       });
       r(0);
       var n,
         a = r(2),
-        o = r(134);
+        o = r(133);
       function i() {
         var e = (function(e, t) {
           t || (t = e.slice(0));
@@ -651,8 +562,8 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var c,
-        l,
-        d = a.a.img.attrs(function(e) {
+        d,
+        l = a.a.img.attrs(function(e) {
           return {
             style: {
               width: e.size ? "".concat(e.size, "px") : "",
@@ -665,17 +576,17 @@
           ? reactHotLoaderGlobal.default
           : void 0) &&
         c.register(
-          d,
+          l,
           "StyledImg",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\Icon\\styles.js"
         ),
-        (l =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && l(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
-  134: function(module, __webpack_exports__, __webpack_require__) {
+  133: function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
     (function(module) {
       var enterModule;
@@ -898,18 +809,18 @@
                     c = (o + i) / 2;
                   if (o === i) e = t = 0;
                   else {
-                    var l = o - i;
+                    var d = o - i;
                     switch (
-                      ((t = c > 0.5 ? l / (2 - o - i) : l / (o + i)), o)
+                      ((t = c > 0.5 ? d / (2 - o - i) : d / (o + i)), o)
                     ) {
                       case r:
-                        e = (n - a) / l + (n < a ? 6 : 0);
+                        e = (n - a) / d + (n < a ? 6 : 0);
                         break;
                       case n:
-                        e = (a - r) / l + 2;
+                        e = (a - r) / d + 2;
                         break;
                       case a:
-                        e = (r - n) / l + 4;
+                        e = (r - n) / d + 4;
                     }
                     e /= 6;
                   }
@@ -990,8 +901,8 @@
                     var o = null,
                       i = 1 / 0,
                       c = new Array(6),
-                      l = new Array(6),
                       d = new Array(6),
+                      l = new Array(6),
                       s = 0;
                     s < a;
                     s++
@@ -1002,10 +913,10 @@
                       f++
                     )
                       (c[f] = Math.random() > 0.5 ? 1 : -1),
-                        (l[f] = n[f] + u * c[f]),
-                        (d[f] = n[f] - u * c[f]);
+                        (d[f] = n[f] + u * c[f]),
+                        (l[f] = n[f] - u * c[f]);
                     for (
-                      var p = this.loss(l) - this.loss(d), b = 0;
+                      var p = this.loss(d) - this.loss(l), b = 0;
                       b < 6;
                       b++
                     ) {
@@ -1142,19 +1053,19 @@
         leaveModule && leaveModule(module);
     }.call(this, __webpack_require__(1)(module)));
   },
-  169: function(e, t, r) {
+  168: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
-        i = r(125),
+        i = r(124),
         c = r(91),
-        l = r(335),
-        d = r(337),
-        s = r(339),
-        u = r(342),
-        f = r(347),
+        d = r(336),
+        l = r(338),
+        s = r(340),
+        u = r(343),
+        f = r(348),
         p = r(12);
       function b() {
         return (b =
@@ -1185,7 +1096,7 @@
             g = e.wording,
             y = e.position,
             O = function(e) {
-              return o.a.createElement(d.a, {
+              return o.a.createElement(l.a, {
                 key: "item-".concat(e, "-").concat(t),
                 id: e
               });
@@ -1193,7 +1104,7 @@
           return o.a.createElement(
             c.d,
             { position: y },
-            o.a.createElement(l.a, null),
+            o.a.createElement(d.a, null),
             o.a.createElement(s.a, null),
             o.a.createElement(
               i.c,
@@ -1254,6 +1165,44 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
+  169: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var n,
+        a = r(11);
+      (n =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && n(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var o,
+        i,
+        c = {},
+        d = function(e, t) {
+          return Object(a.a)(c, ["entities", "inventories", "byId", t], e);
+        };
+      (t.a = d),
+        (o =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          (o.register(
+            c,
+            "emptyObject",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
+          ),
+          o.register(
+            d,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
+          )),
+        (i =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && i(e);
+    }.call(this, r(1)(e)));
+  },
   17: function(e, t, r) {
     "use strict";
     (function(e) {
@@ -1268,8 +1217,8 @@
       var o,
         i,
         c = {},
-        l = Object(a.a)(c, ["config", "wording"]);
-      (t.a = l),
+        d = Object(a.a)(c, ["config", "wording"]);
+      (t.a = d),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -1280,7 +1229,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-wording-from-config.js"
           ),
           o.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-wording-from-config.js"
           )),
@@ -1291,6 +1240,98 @@
     }.call(this, r(1)(e)));
   },
   170: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      r.d(t, "a", function() {
+        return u;
+      });
+      var n,
+        a = r(171),
+        o = r(11);
+      function i(e, t) {
+        var r = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e);
+          t &&
+            (n = n.filter(function(t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable;
+            })),
+            r.push.apply(r, n);
+        }
+        return r;
+      }
+      function c(e, t, r) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+              })
+            : (e[t] = r),
+          e
+        );
+      }
+      (n =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && n(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var d,
+        l,
+        s = function(e) {
+          return parseFloat(e.toFixed(2));
+        },
+        u = function(e, t, r) {
+          var n = Object(a.a)(e, t),
+            d = Object(o.a)(0, ["quantity"], r),
+            l = Object(o.a)(0, ["weight"], n);
+          return (function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var r = null != arguments[t] ? arguments[t] : {};
+              t % 2
+                ? i(Object(r), !0).forEach(function(t) {
+                    c(e, t, r[t]);
+                  })
+                : Object.getOwnPropertyDescriptors
+                ? Object.defineProperties(
+                    e,
+                    Object.getOwnPropertyDescriptors(r)
+                  )
+                : i(Object(r)).forEach(function(t) {
+                    Object.defineProperty(
+                      e,
+                      t,
+                      Object.getOwnPropertyDescriptor(r, t)
+                    );
+                  });
+            }
+            return e;
+          })({}, n, {}, r, { totalWeight: s(d * l) });
+        };
+      (d =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.default
+          : void 0) &&
+        (d.register(
+          s,
+          "formatNumber",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\helpers\\index.js"
+        ),
+        d.register(
+          u,
+          "getFormatedItemById",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\helpers\\index.js"
+        )),
+        (l =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && l(e);
+    }.call(this, r(1)(e)));
+  },
+  171: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1304,10 +1345,10 @@
       var o,
         i,
         c = {},
-        l = function(e, t) {
-          return Object(a.a)(c, ["entities", "inventories", "byId", t], e);
+        d = function(e, t) {
+          return Object(a.a)(c, ["entities", "items", "byId", t], e);
         };
-      (t.a = l),
+      (t.a = d),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -1315,12 +1356,12 @@
           (o.register(
             c,
             "emptyObject",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\items\\selectors\\select-items-by-id.js"
           ),
           o.register(
-            l,
+            d,
             "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\items\\selectors\\select-items-by-id.js"
           )),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
@@ -1328,7 +1369,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  171: function(e, t, r) {
+  172: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1358,108 +1399,50 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  172: function(e, t, r) {
+  173: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(11),
-        o = r(115),
-        i = r(114);
-      function c(e, t) {
-        var r = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          t &&
-            (n = n.filter(function(t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable;
-            })),
-            r.push.apply(r, n);
-        }
-        return r;
-      }
-      function l(e, t, r) {
-        return (
-          t in e
-            ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0
-              })
-            : (e[t] = r),
-          e
-        );
-      }
+        a = r(114),
+        o = r(170);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
-        s,
-        u = function(e) {
-          return parseFloat(e.toFixed(2));
-        },
-        f = function(e, t) {
-          var r = Object(o.a)(e, t),
-            n = Object(i.a)(e, t),
-            d = Object(a.a)(0, ["quantity"], r),
-            s = Object(a.a)(0, ["weight"], n);
-          return (function(e) {
-            for (var t = 1; t < arguments.length; t++) {
-              var r = null != arguments[t] ? arguments[t] : {};
-              t % 2
-                ? c(Object(r), !0).forEach(function(t) {
-                    l(e, t, r[t]);
-                  })
-                : Object.getOwnPropertyDescriptors
-                ? Object.defineProperties(
-                    e,
-                    Object.getOwnPropertyDescriptors(r)
-                  )
-                : c(Object(r)).forEach(function(t) {
-                    Object.defineProperty(
-                      e,
-                      t,
-                      Object.getOwnPropertyDescriptor(r, t)
-                    );
-                  });
-            }
-            return e;
-          })({}, n, {}, r, { totalWeight: u(d * s) });
+      var i,
+        c,
+        d = function(e, t) {
+          var r = Object(a.a)(e, t);
+          return Object(o.a)(e, t, r);
         };
-      (t.a = f),
-        (d =
+      (t.a = d),
+        (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (d.register(
-            u,
-            "formatNumber",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-item-completed-from-current-inventory-by-id.js"
-          ),
-          d.register(
-            f,
+          i.register(
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-item-completed-from-current-inventory-by-id.js"
-          )),
-        (s =
+          ),
+        (c =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && s(e);
+            : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  173: function(e, t, r) {
+  174: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(77),
         o = r(73),
         i = r(83),
-        c = r(352),
-        l = r(116),
-        d = r(112);
+        c = r(353),
+        d = r(115),
+        l = r(112);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -1469,14 +1452,14 @@
       var s,
         u,
         f = function(e) {
-          var t = Object(d.a)(e),
-            r = Object(l.a)(e);
+          var t = Object(l.a)(e),
+            r = Object(d.a)(e);
           if ("all" === r) return Object(c.a)(e);
           if ("equipable" === r) {
             var n = Object(a.a)(Object(o.a)("isEquipable", !0), t);
             return console.log("merde", n), Object(i.a)(n);
           }
-          var s = Object(d.a)(e);
+          var s = Object(l.a)(e);
           return Object(i.a)(Object(a.a)(Object(o.a)("categoryId", r), s));
         };
       (t.a = f),
@@ -1495,12 +1478,12 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  174: function(e, t, r) {
+  175: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(116),
-        o = r(353);
+        a = r(115),
+        o = r(354);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -1509,17 +1492,17 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = function(e) {
+        d = function(e) {
           var t = Object(a.a)(e);
           return Object(o.a)(e, t);
         };
-      (t.a = l),
+      (t.a = d),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           i.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\sceneState\\getters\\get-selected-category.js"
           ),
@@ -1529,7 +1512,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  175: function(e, t, r) {
+  176: function(e, t, r) {
     "use strict";
     (function(e) {
       var n;
@@ -1571,18 +1554,18 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  176: function(e, t, r) {
+  177: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(3),
-        o = r(120),
+        o = r(119),
         i = r(73),
         c = r(44),
-        l = r(84),
-        d = r(18),
+        d = r(84),
+        l = r(18),
         s = r(34),
-        u = r(177),
+        u = r(178),
         f = r(47),
         p = r(22),
         b = r(62);
@@ -1608,7 +1591,7 @@
                   return (
                     (e = n.length > 0 && void 0 !== n[0] ? n[0] : []),
                     (c.next = 3),
-                    Object(a.f)(l.a)
+                    Object(a.f)(d.a)
                   );
                 case 3:
                   if (
@@ -1621,7 +1604,7 @@
                     c.next = 8;
                     break;
                   }
-                  return (c.next = 8), Object(a.e)(Object(d.l)(null));
+                  return (c.next = 8), Object(a.e)(Object(l.l)(null));
                 case 8:
                 case "end":
                   return c.stop();
@@ -1665,35 +1648,35 @@
       function m(e) {
         var t, r, n;
         return regeneratorRuntime.wrap(
-          function(l) {
+          function(d) {
             for (;;)
-              switch ((l.prev = l.next)) {
+              switch ((d.prev = d.next)) {
                 case 0:
-                  return (t = e.inventories), (l.next = 3), Object(a.f)(f.a);
+                  return (t = e.inventories), (d.next = 3), Object(a.f)(f.a);
                 case 3:
-                  if (l.sent !== p.a.mainInventory) {
-                    l.next = 14;
+                  if (d.sent !== p.a.mainInventory) {
+                    d.next = 14;
                     break;
                   }
-                  return (l.next = 7), Object(a.f)(u.a);
+                  return (d.next = 7), Object(a.f)(u.a);
                 case 7:
                   if (
-                    ((r = l.sent),
+                    ((r = d.sent),
                     !(n = Object(o.a)(Object(i.a)("id", r), t)) ||
                       void 0 === n.selectedNearbyInventoryId)
                   ) {
-                    l.next = 12;
+                    d.next = 12;
                     break;
                   }
                   return (
-                    (l.next = 12),
+                    (d.next = 12),
                     Object(a.e)(Object(b.b)(r, n.selectedNearbyInventoryId))
                   );
                 case 12:
-                  return (l.next = 14), Object(a.e)(Object(c.h)(t, r));
+                  return (d.next = 14), Object(a.e)(Object(c.h)(t, r));
                 case 14:
                 case "end":
-                  return l.stop();
+                  return d.stop();
               }
           },
           y,
@@ -1701,8 +1684,8 @@
         );
       }
       var x,
-        j,
-        L = regeneratorRuntime.mark(function e() {
+        L,
+        j = regeneratorRuntime.mark(function e() {
           return regeneratorRuntime.wrap(
             function(e) {
               for (;;)
@@ -1720,7 +1703,7 @@
             this
           );
         });
-      (t.a = L),
+      (t.a = j),
         (x =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -1741,17 +1724,17 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\sagas\\inventories.js"
           ),
           x.register(
-            L,
+            j,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\sagas\\inventories.js"
           )),
-        (j =
+        (L =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && j(e);
+            : void 0) && L(e);
     }.call(this, r(1)(e)));
   },
-  177: function(e, t, r) {
+  178: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1781,7 +1764,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  178: function(e, t, r) {
+  179: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1789,12 +1772,12 @@
         o = r(20),
         i = r(62),
         c = r(34),
-        l = r(47),
-        d = r(177),
+        d = r(47),
+        l = r(178),
         s = r(22),
         u = r(18),
         f = r(55),
-        p = r(170);
+        p = r(169);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -1816,9 +1799,9 @@
                     Object(a.f)(c.a)
                   );
                 case 3:
-                  return (n = b.sent), (b.next = 6), Object(a.f)(d.a);
+                  return (n = b.sent), (b.next = 6), Object(a.f)(l.a);
                 case 6:
-                  return (v = b.sent), (b.next = 9), Object(a.f)(l.a);
+                  return (v = b.sent), (b.next = 9), Object(a.f)(d.a);
                 case 9:
                   if (
                     ((g = b.sent),
@@ -1901,16 +1884,178 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  179: function(e, t, r) {
+  18: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var n;
+      r.d(t, "f", function() {
+        return i;
+      }),
+        r.d(t, "e", function() {
+          return c;
+        }),
+        r.d(t, "g", function() {
+          return d;
+        }),
+        r.d(t, "d", function() {
+          return l;
+        }),
+        r.d(t, "b", function() {
+          return s;
+        }),
+        r.d(t, "a", function() {
+          return u;
+        }),
+        r.d(t, "c", function() {
+          return f;
+        }),
+        r.d(t, "l", function() {
+          return p;
+        }),
+        r.d(t, "m", function() {
+          return b;
+        }),
+        r.d(t, "n", function() {
+          return v;
+        }),
+        r.d(t, "k", function() {
+          return g;
+        }),
+        r.d(t, "i", function() {
+          return y;
+        }),
+        r.d(t, "h", function() {
+          return O;
+        }),
+        r.d(t, "j", function() {
+          return E;
+        }),
+        (n =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.enterModule
+            : void 0) && n(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var a,
+        o,
+        i = "SET_ITEM_SELECTED_ID",
+        c = "SET_ITEMS",
+        d = "SET_ITEMS",
+        l = "ON_USE_ITEM",
+        s = "ON_EQUIP_ITEM",
+        u = "ON_DELETE_ITEM",
+        f = "ON_TRANSFER_ITEM",
+        p = function(e) {
+          return { type: i, id: e };
+        },
+        b = function(e) {
+          return { type: c, items: e };
+        },
+        v = function(e) {
+          return { type: d, items: e };
+        },
+        g = function(e) {
+          return { type: l, data: e };
+        },
+        y = function(e) {
+          return { type: s, data: e };
+        },
+        O = function(e) {
+          return { type: u, data: e };
+        },
+        E = function(e) {
+          return { type: f, data: e };
+        };
+      (a =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.default
+          : void 0) &&
+        (a.register(
+          i,
+          "SET_ITEM_SELECTED_ID",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          c,
+          "SET_ITEMS",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          d,
+          "UPDATE_ITEMS",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          l,
+          "ON_USE_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          s,
+          "ON_EQUIP_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          u,
+          "ON_DELETE_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          f,
+          "ON_TRANSFER_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          p,
+          "setItemSelectedId",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          b,
+          "setItems",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          v,
+          "updateItems",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          g,
+          "onUseItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          y,
+          "onEquipItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          O,
+          "onDeleteItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          E,
+          "onTransferItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        )),
+        (o =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && o(e);
+    }.call(this, r(1)(e)));
+  },
+  180: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(3),
         o = r(18),
         i = r(20),
-        c = r(115),
-        l = r(34),
-        d = r(223);
+        c = r(114),
+        d = r(34),
+        l = r(224);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -1934,7 +2079,7 @@
                     (n = t.idItem),
                     (o = t.isEquipped),
                     (c.next = 3),
-                    Object(a.f)(l.a)
+                    Object(a.f)(d.a)
                   );
                 case 3:
                   c.sent === r &&
@@ -1961,7 +2106,7 @@
                     (n = t.idItem),
                     (o = t.quantity),
                     (c.next = 3),
-                    Object(a.f)(l.a)
+                    Object(a.f)(d.a)
                   );
                 case 3:
                   c.sent === r &&
@@ -1980,7 +2125,7 @@
         );
       }
       function g(e) {
-        var t, r, n, o, d, s;
+        var t, r, n, o, l, s;
         return regeneratorRuntime.wrap(
           function(u) {
             for (;;)
@@ -1992,7 +2137,7 @@
                     (n = t.idItem),
                     (o = t.quantity),
                     (u.next = 3),
-                    Object(a.f)(l.a)
+                    Object(a.f)(d.a)
                   );
                 case 3:
                   if (u.sent !== r) {
@@ -2006,8 +2151,8 @@
                     })
                   );
                 case 7:
-                  (d = u.sent),
-                    (s = d.quantity),
+                  (l = u.sent),
+                    (s = l.quantity),
                     i.b.onDelete({
                       idInventory: r,
                       idItem: n,
@@ -2037,7 +2182,7 @@
                     (o = t.idItem),
                     (c = t.quantity),
                     (p.next = 3),
-                    Object(a.f)(l.a)
+                    Object(a.f)(d.a)
                   );
                 case 3:
                   if (p.sent !== r) {
@@ -2047,7 +2192,7 @@
                   return (
                     (p.next = 7),
                     Object(a.f)(function(e) {
-                      return Object(d.a)(e, r, o);
+                      return Object(l.a)(e, r, o);
                     })
                   );
                 case 7:
@@ -2056,7 +2201,7 @@
                     (u = s.quantity),
                     (p.next = 11),
                     Object(a.f)(function(e) {
-                      return Object(d.a)(e, n, o);
+                      return Object(l.a)(e, n, o);
                     })
                   );
                 case 11:
@@ -2141,178 +2286,16 @@
             : void 0) && E(e);
     }.call(this, r(1)(e)));
   },
-  18: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var n;
-      r.d(t, "f", function() {
-        return i;
-      }),
-        r.d(t, "e", function() {
-          return c;
-        }),
-        r.d(t, "g", function() {
-          return l;
-        }),
-        r.d(t, "d", function() {
-          return d;
-        }),
-        r.d(t, "b", function() {
-          return s;
-        }),
-        r.d(t, "a", function() {
-          return u;
-        }),
-        r.d(t, "c", function() {
-          return f;
-        }),
-        r.d(t, "l", function() {
-          return p;
-        }),
-        r.d(t, "m", function() {
-          return b;
-        }),
-        r.d(t, "n", function() {
-          return v;
-        }),
-        r.d(t, "k", function() {
-          return g;
-        }),
-        r.d(t, "i", function() {
-          return y;
-        }),
-        r.d(t, "h", function() {
-          return O;
-        }),
-        r.d(t, "j", function() {
-          return E;
-        }),
-        (n =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.enterModule
-            : void 0) && n(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var a,
-        o,
-        i = "SET_ITEM_SELECTED_ID",
-        c = "SET_ITEMS",
-        l = "SET_ITEMS",
-        d = "ON_USE_ITEM",
-        s = "ON_EQUIP_ITEM",
-        u = "ON_DELETE_ITEM",
-        f = "ON_TRANSFER_ITEM",
-        p = function(e) {
-          return { type: i, id: e };
-        },
-        b = function(e) {
-          return { type: c, items: e };
-        },
-        v = function(e) {
-          return { type: l, items: e };
-        },
-        g = function(e) {
-          return { type: d, data: e };
-        },
-        y = function(e) {
-          return { type: s, data: e };
-        },
-        O = function(e) {
-          return { type: u, data: e };
-        },
-        E = function(e) {
-          return { type: f, data: e };
-        };
-      (a =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.default
-          : void 0) &&
-        (a.register(
-          i,
-          "SET_ITEM_SELECTED_ID",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          c,
-          "SET_ITEMS",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          l,
-          "UPDATE_ITEMS",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          d,
-          "ON_USE_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          s,
-          "ON_EQUIP_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          u,
-          "ON_DELETE_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          f,
-          "ON_TRANSFER_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          p,
-          "setItemSelectedId",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          b,
-          "setItems",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          v,
-          "updateItems",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          g,
-          "onUseItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          y,
-          "onEquipItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          O,
-          "onDeleteItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          E,
-          "onTransferItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        )),
-        (o =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && o(e);
-    }.call(this, r(1)(e)));
-  },
-  180: function(e, t, r) {
+  181: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(3),
         o = r(58),
         i = r(85),
-        c = r(175),
-        l = r(18),
-        d = r(44),
+        c = r(176),
+        d = r(18),
+        l = r(44),
         s = r(22),
         u = r(96),
         f = r(31);
@@ -2339,11 +2322,11 @@
                 case 4:
                   return (n.next = 6), Object(a.e)(Object(c.b)(t.effects));
                 case 6:
-                  return (n.next = 8), Object(a.e)(Object(l.m)(t.items));
+                  return (n.next = 8), Object(a.e)(Object(d.m)(t.items));
                 case 8:
                   return (
                     (n.next = 10),
-                    Object(a.e)(Object(d.f)(t.inventories, t.mainInventoryId))
+                    Object(a.e)(Object(l.f)(t.inventories, t.mainInventoryId))
                   );
                 case 10:
                   return (
@@ -2397,7 +2380,7 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  186: function(e, t, r) {
+  187: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -2442,8 +2425,8 @@
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var l,
-        d,
+      var d,
+        l,
         s = a.a.div(i()),
         u = a.a.div.attrs(function(e) {
           var t = e.top,
@@ -2453,24 +2436,24 @@
             style: { left: "".concat(r, "px"), top: "".concat(t, "px") }
           };
         })(o());
-      (l =
+      (d =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (l.register(
+        (d.register(
           s,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\styles.js"
         ),
-        l.register(
+        d.register(
           u,
           "WrapperDraggable",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\styles.js"
         )),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
   20: function(e, t, r) {
@@ -2546,15 +2529,15 @@
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
       var c,
-        l,
-        d = "BURDIGALAX_inventory",
+        d,
+        l = "BURDIGALAX_inventory",
         s = "BURDIGALAX_inventory_onClose",
         u = "BURDIGALAX_inventory_onUse",
         f = "BURDIGALAX_inventory_onEquip",
         p = "BURDIGALAX_inventory_onDelete",
         b = "BURDIGALAX_inventory_onTransfer",
         v = {
-          prefix: d,
+          prefix: l,
           setConfig: "setConfig",
           updateItems: "updateItems",
           updateInventories: "updateInventories",
@@ -2595,7 +2578,7 @@
           ? reactHotLoaderGlobal.default
           : void 0) &&
         (c.register(
-          d,
+          l,
           "prefix",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\events.js"
         ),
@@ -2669,10 +2652,10 @@
           "LUA_FUNCTIONS",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\events.js"
         )),
-        (l =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && l(e);
+            : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
   22: function(e, t, r) {
@@ -2686,10 +2669,10 @@
           return c;
         }),
         r.d(t, "c", function() {
-          return l;
+          return d;
         }),
         r.d(t, "a", function() {
-          return d;
+          return l;
         }),
         r.d(t, "g", function() {
           return s;
@@ -2710,8 +2693,8 @@
         o,
         i = "SET_CURRENT_CONTEXT",
         c = "SET_MAIN_INVENTORY_ID",
-        l = "SET_CURRENT_INVENTORY_ID",
-        d = { transferInventory: "transfer", mainInventory: "main" },
+        d = "SET_CURRENT_INVENTORY_ID",
+        l = { transferInventory: "transfer", mainInventory: "main" },
         s = function(e) {
           return { type: c, id: e };
         },
@@ -2719,7 +2702,7 @@
           return { type: i, context: e };
         },
         f = function(e) {
-          return { type: l, id: e };
+          return { type: d, id: e };
         };
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -2736,12 +2719,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\inventory.js"
         ),
         a.register(
-          l,
+          d,
           "SET_CURRENT_INVENTORY_ID",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\inventory.js"
         ),
         a.register(
-          d,
+          l,
           "CONTEXT_TYPE",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\inventory.js"
         ),
@@ -2766,7 +2749,7 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  221: function(e, t, r) {
+  222: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "b", function() {
@@ -2813,41 +2796,41 @@
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var l,
-        d,
+      var d,
+        l,
         s = a.a.div(i()),
         u = a.a.div(o());
-      (l =
+      (d =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (l.register(
+        (d.register(
           s,
           "Wrapper",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Filters\\styles.js"
         ),
-        l.register(
+        d.register(
           u,
           "Filter",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Filters\\styles.js"
         )),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  222: function(e, t, r) {
+  223: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(23),
         o = r(95),
-        i = r(354),
-        c = r(355),
-        l = r(356),
+        i = r(355),
+        c = r(356),
         d = r(357),
-        s = r(358);
+        l = r(358),
+        s = r(359);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2858,9 +2841,9 @@
         f,
         p = Object(a.c)({
           categories: c.a,
-          inventories: l.a,
+          inventories: d.a,
           items: s.a,
-          effects: d.a
+          effects: l.a
         }),
         b = Object(a.c)({ config: o.a, entities: p, sceneState: i.a });
       (t.a = b),
@@ -2884,7 +2867,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  223: function(e, t, r) {
+  224: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -2898,14 +2881,14 @@
       var o,
         i,
         c = {},
-        l = function(e, t, r) {
+        d = function(e, t, r) {
           return Object(a.a)(
             c,
             ["entities", "inventories", "byId", t, "items", "byId", r],
             e
           );
         };
-      (t.a = l),
+      (t.a = d),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -2916,7 +2899,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-item-from-inventories-by-id-inventory-and-id-item.js"
           ),
           o.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-item-from-inventories-by-id-inventory-and-id-item.js"
           )),
@@ -2933,9 +2916,9 @@
         a = r(0),
         o = r.n(a),
         i = r(4),
-        c = r(127),
-        l = r(65),
-        d = r(7),
+        c = r(126),
+        d = r(65),
+        l = r(7),
         s = r(12);
       function u() {
         return (u =
@@ -2959,35 +2942,35 @@
         p,
         b = function(e, t, r, n, a) {
           var i = a.color,
-            c = void 0 === i ? d.a.business : i,
+            c = void 0 === i ? l.a.business : i,
             u = a.variant,
-            f = void 0 === u ? d.b.primary : u,
+            f = void 0 === u ? l.b.primary : u,
             p = a.disabled,
             b = a.hoverColor,
             v = a.isHover,
             g = e;
           return o.a.createElement(
-            l.a,
+            d.a,
             { hasMarginRight: n },
             t
               ? o.a.createElement(s.a, {
                   size: r,
                   url: t,
                   color: v
-                    ? Object(l.d)({
+                    ? Object(d.d)({
                         color: c,
                         hoverColor: b,
                         variant: f,
                         disabled: p
                       })
-                    : Object(l.c)({ color: c, variant: f })
+                    : Object(d.c)({ color: c, variant: f })
                 })
               : o.a.createElement(g, { size: r })
           );
         },
         v = function(e) {
           var t = e.color,
-            r = void 0 === t ? d.a.business : t,
+            r = void 0 === t ? l.a.business : t,
             n = e.hoverColor,
             a = e.label,
             i = e.iconLeft,
@@ -2995,17 +2978,17 @@
             s = e.iconLeftSize,
             f = e.disabled,
             p = e.variant,
-            v = void 0 === p ? d.b.primary : p,
+            v = void 0 === p ? l.b.primary : p,
             g = e.className,
             y = e.isFullWidth,
             O = void 0 !== y && y,
             E = e.onMouseEnter,
             m = void 0 === E ? Function.prototype : E,
             x = e.onMouseLeave,
-            j = void 0 === x ? Function.prototype : x,
-            L = !!a;
+            L = void 0 === x ? Function.prototype : x,
+            j = !!a;
           return o.a.createElement(
-            l.b,
+            d.b,
             u(
               {
                 isFullWidth: O,
@@ -3015,11 +2998,11 @@
                 hoverColor: n,
                 variant: v,
                 onMouseEnter: m,
-                onMouseLeave: j
+                onMouseLeave: L
               },
               e
             ),
-            (i || c) && b(i, c, s, L, e),
+            (i || c) && b(i, c, s, j, e),
             a
           );
         },
@@ -3081,9 +3064,9 @@
             : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  253: function(e, t, r) {
-    var n = r(210),
-      a = r(254);
+  254: function(e, t, r) {
+    var n = r(211),
+      a = r(255);
     "string" == typeof (a = a.__esModule ? a.default : a) &&
       (a = [[e.i, a, ""]]);
     var o = { insert: "head", singleton: !1 },
@@ -3092,10 +3075,10 @@
         a.locals ? a.locals : {});
     e.exports = i;
   },
-  254: function(e, t, r) {
-    var n = r(211),
-      a = r(436),
-      o = r(255);
+  255: function(e, t, r) {
+    var n = r(212),
+      a = r(437),
+      o = r(256);
     t = n(!1);
     var i = a(o);
     t.push([
@@ -3107,7 +3090,7 @@
     ]),
       (e.exports = t);
   },
-  255: function(e, t, r) {
+  256: function(e, t, r) {
     "use strict";
     r.r(t), (t.default = r.p + "fonts/Montserrat-Regular.ttf");
   },
@@ -3152,10 +3135,10 @@
           return c;
         }),
         r.d(t, "a", function() {
-          return l;
+          return d;
         }),
         r.d(t, "f", function() {
-          return d;
+          return l;
         }),
         r.d(t, "e", function() {
           return s;
@@ -3173,15 +3156,15 @@
         o,
         i = "SET_CONFIG",
         c = "RESET_CONFIG",
-        l = "INIT_STATE",
-        d = function(e) {
+        d = "INIT_STATE",
+        l = function(e) {
           return { type: i, data: e };
         },
         s = function() {
           return { type: c };
         },
         u = function(e) {
-          return { type: l, initialState: e };
+          return { type: d, initialState: e };
         };
       (a =
         "undefined" != typeof reactHotLoaderGlobal
@@ -3198,12 +3181,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
         a.register(
-          l,
+          d,
           "INIT_STATE",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
         a.register(
-          d,
+          l,
           "setConfig",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\actions\\config.js"
         ),
@@ -3223,7 +3206,7 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  333: function(e, t, r) {
+  334: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -3231,19 +3214,19 @@
         o = r.n(a),
         i = r(8),
         c = r(75),
-        l = r(4),
-        d = r(23),
-        s = r(241),
+        d = r(4),
+        l = r(23),
+        s = r(242),
         u = r.n(s),
-        f = r(197),
-        p = r(245),
-        b = r(334),
-        v = r(222),
-        g = r(359),
-        y = r(360),
-        O = r(361),
-        E = r(186),
-        m = r(363);
+        f = r(198),
+        p = r(246),
+        b = r(335),
+        v = r(223),
+        g = r(360),
+        y = r(361),
+        O = r(362),
+        E = r(187),
+        m = r(364);
       function x(e, t) {
         return (
           (function(e) {
@@ -3290,18 +3273,18 @@
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && n(e);
-      var j =
+      var L =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default.signature
             : function(e) {
                 return e;
               },
-        L = Object(c.a)(),
-        G = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || l.b,
-        H = Object(d.e)(v.a, G(Object(d.a)(L)));
-      L.run(g.a);
-      var h = Object(d.e)(v.a, G(Object(d.a)(L)));
-      L.run(y.a);
+        j = Object(c.a)(),
+        G = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || d.b,
+        H = Object(l.e)(v.a, G(Object(l.a)(j)));
+      j.run(g.a);
+      var h = Object(l.e)(v.a, G(Object(l.a)(j)));
+      j.run(y.a);
       var I,
         S,
         T = function() {
@@ -3312,14 +3295,14 @@
           );
         },
         P = o.a.memo(T),
-        w = function() {
+        M = function() {
           return o.a.createElement(
             i.a,
             { store: h },
             o.a.createElement(O.a, null)
           );
         },
-        M = o.a.memo(w),
+        w = o.a.memo(M),
         R = function(e) {
           var t = document.getElementById(e),
             r = t.style.transform;
@@ -3341,9 +3324,9 @@
             n = x(Object(a.useState)(0), 2),
             i = n[0],
             c = n[1],
-            l = x(Object(a.useState)({ top: 0, left: 0 }), 2),
-            d = l[0],
-            s = l[1],
+            d = x(Object(a.useState)({ top: 0, left: 0 }), 2),
+            l = d[0],
+            s = d[1],
             f = x(Object(a.useState)(0), 2),
             p = f[0],
             b = f[1];
@@ -3398,20 +3381,20 @@
                     var e = R("transferInventory"),
                       t = e.left,
                       r = e.top;
-                    s({ left: t + d.left, top: r + d.top }), b(p + 1);
+                    s({ left: t + l.left, top: r + l.top }), b(p + 1);
                   },
                   key: "transfer-".concat(p)
                 },
                 o.a.createElement(
                   E.b,
-                  { id: "transferInventory", top: d.top, left: d.left },
-                  o.a.createElement(M, null)
+                  { id: "transferInventory", top: l.top, left: l.left },
+                  o.a.createElement(w, null)
                 )
               )
             )
           );
         };
-      j(
+      L(
         B,
         "useState{[mainPosition, setMainPosition]({ top: 0, left: 0 })}\nuseState{[keyMain, setKeyMain](0)}\nuseState{[transferPosition, setTransferPosition]({\r\n    top: 0,\r\n    left: 0\r\n  })}\nuseState{[keyTransfer, setKeyTransfer](0)}\nuseEffect{}\nuseEffect{}"
       ),
@@ -3421,7 +3404,7 @@
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (I.register(
-            L,
+            j,
             "sagaMiddleware",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\index.js"
           ),
@@ -3451,12 +3434,12 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\index.js"
           ),
           I.register(
-            w,
+            M,
             "TransferInventoryContainer",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\index.js"
           ),
           I.register(
-            M,
+            w,
             "TransferInventoryContainerMemoize",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\index.js"
           ),
@@ -3476,21 +3459,21 @@
             : void 0) && S(e);
     }.call(this, r(1)(e)));
   },
-  334: function(e, t, r) {
+  335: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(4),
         o = r(8),
         i = r(20),
-        c = r(169),
-        l = r(84),
-        d = r(85),
+        c = r(168),
+        d = r(84),
+        l = r(85),
         s = r(22),
         u = r(44),
         f = r(18),
-        p = r(173),
-        b = r(174),
+        p = r(174),
+        b = r(175),
         v = r(34),
         g = r(17),
         y = r(30);
@@ -3527,8 +3510,8 @@
         reactHotLoaderGlobal.default.signature;
       var m,
         x,
-        j = function(e) {
-          var t = Object(l.a)(e),
+        L = function(e) {
+          var t = Object(d.a)(e),
             r = Object(p.a)(e),
             n = Object(b.a)(e).name;
           return {
@@ -3540,8 +3523,8 @@
             position: Object(y.a)(e).startMainInventoryPosition
           };
         },
-        L = {
-          initModule: d.b,
+        j = {
+          initModule: l.b,
           updateItemsInventoriesRequest: u.i,
           setCurrentContext: s.e,
           onTransferItem: f.j,
@@ -3549,7 +3532,7 @@
           updateItemsRequest: f.n
         },
         G = Object(a.b)(
-          Object(o.b)(j, L),
+          Object(o.b)(L, j),
           Object(a.c)({
             componentDidMount: function() {
               var e,
@@ -3559,7 +3542,7 @@
                 a = t.updateInventoriesRequest,
                 o = t.setCurrentContext,
                 c = t.onTransferItem,
-                l = t.updateItemsRequest;
+                d = t.updateItemsRequest;
               o(s.a.mainInventory),
                 (window[i.a.prefix] = (function(e) {
                   for (var t = 1; t < arguments.length; t++) {
@@ -3587,7 +3570,7 @@
                   window[i.a.prefix],
                   (E((e = {}), i.a.setConfig, r),
                   E(e, i.a.updateInventories, a),
-                  E(e, i.a.updateItems, l),
+                  E(e, i.a.updateItems, d),
                   E(e, i.a.updateItemsInventories, n),
                   E(e, i.a.transferItem, c),
                   e)
@@ -3601,12 +3584,12 @@
             ? reactHotLoaderGlobal.default
             : void 0) &&
           (m.register(
-            j,
+            L,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Inventory\\index.js"
           ),
           m.register(
-            L,
+            j,
             "mapDispatchToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Inventory\\index.js"
           ),
@@ -3621,7 +3604,7 @@
             : void 0) && x(e);
     }.call(this, r(1)(e)));
   },
-  335: function(e, t, r) {
+  336: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -3629,12 +3612,12 @@
         o = r.n(a),
         i = r(8),
         c = r(4),
-        l = r(126),
-        d = r(100),
+        d = r(125),
+        l = r(100),
         s = r(7),
         u = r(12),
         f = r(71),
-        p = r(336),
+        p = r(337),
         b = r(20),
         v = r(47);
       (n =
@@ -3652,15 +3635,15 @@
             a = void 0 === n ? 0 : n,
             i = e.busyStorage,
             c = void 0 === i ? 0 : i,
-            l = e.onClose;
+            d = e.onClose;
           return o.a.createElement(
-            d.e,
+            l.e,
             { className: "header" },
             o.a.createElement(
-              d.c,
+              l.c,
               { busyStorage: c, storageSize: a },
               o.a.createElement(u.a, {
-                color: Object(d.f)(c, a),
+                color: Object(l.f)(c, a),
                 size: 15,
                 url:
                   "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik04Ny44LDgzLjNMNzIuMywzOC40Yy0wLjMtMC44LTEtMS4zLTEuOS0xLjNoLTcuN2gtNC4zYzIuOS0yLjQsNC44LTYuMiw0LjctMTAuM2MtMC4yLTYuOC01LjctMTIuNC0xMi41LTEyLjcgIGMtNy40LTAuMy0xMy41LDUuNi0xMy41LDEzYzAsNCwxLjgsNy42LDQuNywxMGgtNy41aC00LjZjLTAuOCwwLTEuNiwwLjUtMS45LDEuM0wxMi4yLDgzLjNjLTAuNSwxLjMsMC41LDIuNywxLjksMi43aDcxLjggIEM4Ny4zLDg1LjksODguMyw4NC42LDg3LjgsODMuM3ogTTUwLDIxLjZjMywwLDUuNSwyLjQsNS41LDUuNVM1MywzMi41LDUwLDMyLjVjLTMsMC01LjUtMi40LTUuNS01LjVTNDcsMjEuNiw1MCwyMS42eiI+PC9wYXRoPjwvc3ZnPg=="
@@ -3669,14 +3652,14 @@
               "/",
               a
             ),
-            o.a.createElement(d.a, {
+            o.a.createElement(l.a, {
               label: "x",
               variant: s.b.none,
               color: "#9da6ae",
-              onClick: l
+              onClick: d
             }),
-            o.a.createElement(d.d, null, t),
-            o.a.createElement(d.b, null, r)
+            o.a.createElement(l.d, null, t),
+            o.a.createElement(l.b, null, r)
           );
         },
         E = function(e) {
@@ -3703,7 +3686,7 @@
               };
             }
           }),
-          Object(c.d)(Object(l.a)(["context"]))
+          Object(c.d)(Object(d.a)(["context"]))
         )(O);
       (t.a = m),
         (g =
@@ -3731,16 +3714,16 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  336: function(e, t, r) {
+  337: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(78),
-        o = r(196),
+        o = r(197),
         i = r(35),
-        c = r(533),
-        l = r(244),
-        d = r(112);
+        c = r(534),
+        d = r(245),
+        l = r(112);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -3750,8 +3733,8 @@
       var s,
         u,
         f = function(e) {
-          var t = Object(d.a)(e);
-          return Object(a.a)(o.a, Object(i.a)(Object(c.a)("totalWeight")), l.a)(
+          var t = Object(l.a)(e);
+          return Object(a.a)(o.a, Object(i.a)(Object(c.a)("totalWeight")), d.a)(
             t
           );
         };
@@ -3771,21 +3754,21 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  337: function(e, t, r) {
+  338: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var n,
         a = r(4),
         o = r(8),
-        i = r(126),
-        c = r(338),
-        l = r(84),
-        d = r(18),
-        s = r(114),
-        u = r(115),
+        i = r(125),
+        c = r(339),
+        d = r(84),
+        l = r(18),
+        s = r(171),
+        u = r(114),
         f = r(34),
-        p = r(171),
+        p = r(172),
         b = r(47),
         v = r(22);
       (n =
@@ -3797,13 +3780,13 @@
       var g,
         y,
         O = function(e, t) {
-          var r = Object(l.a)(e),
+          var r = Object(d.a)(e),
             n = Object(s.a)(e, t.id),
             a = n.id,
             o = n.health,
             i = n.iconUrl,
             c = n.isEquipable,
-            d = n.isUsable,
+            l = n.isUsable,
             v = n.weight,
             g = Object(u.a)(e, t.id),
             y = g.quantity,
@@ -3820,14 +3803,14 @@
             iconUrl: i,
             isEquipable: c,
             weight: v,
-            isUsable: d
+            isUsable: l
           };
         },
         E = {
-          setItemSelectedId: d.l,
-          onUseItem: d.k,
-          onEquipItem: d.i,
-          onTransferItem: d.j
+          setItemSelectedId: l.l,
+          onUseItem: l.k,
+          onEquipItem: l.i,
+          onTransferItem: l.j
         },
         m = Object(a.b)(
           Object(o.b)(O, E),
@@ -3842,8 +3825,8 @@
                 o = e.clickTime,
                 i = e.quantity,
                 c = e.setClickTime,
-                l = e.onUseItem,
-                d = e.context,
+                d = e.onUseItem,
+                l = e.context,
                 s = e.onEquipItem,
                 u = e.isUsable;
               return function(e) {
@@ -3853,11 +3836,11 @@
                   0 === e.button &&
                     u &&
                     f - o < 200 &&
-                    l({ idInventory: r, idItem: t, quantity: i }),
+                    d({ idInventory: r, idItem: t, quantity: i }),
                   1 === e.button &&
                     a &&
                     f - o > 150 &&
-                    d === v.a.mainInventory &&
+                    l === v.a.mainInventory &&
                     s({ idInventory: r, idItem: t, isEquipped: !n }),
                   c(f),
                   !1
@@ -3921,17 +3904,17 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  338: function(e, t, r) {
+  339: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
-        i = r(125),
+        i = r(124),
         c = r(92),
-        l = r(12);
-      function d() {
-        return (d =
+        d = r(12);
+      function l() {
+        return (l =
           Object.assign ||
           function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -4032,7 +4015,7 @@
                 O = e.dragHandleProps;
               return o.a.createElement(
                 c.g,
-                d({ onMouseDown: g, ref: s, isSelected: r, onClick: v }, O, p, {
+                l({ onMouseDown: g, ref: s, isSelected: r, onClick: v }, O, p, {
                   style: f(p.style, i)
                 }),
                 !0 === u && o.a.createElement(c.a, { isEquipped: a }),
@@ -4042,7 +4025,7 @@
                   o.a.createElement(
                     c.f,
                     null,
-                    o.a.createElement(l.a, {
+                    o.a.createElement(d.a, {
                       color: "#959da3",
                       size: 11,
                       url:
@@ -4079,7 +4062,37 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  339: function(e, t, r) {
+  34: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var n,
+        a = r(14);
+      (n =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && n(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var o,
+        i,
+        c = Object(a.a)(["sceneState", "currentInventoryId"]);
+      (t.a = c),
+        (o =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          o.register(
+            c,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\sceneState\\selectors\\select-current-inventory-id.js"
+          ),
+        (i =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && i(e);
+    }.call(this, r(1)(e)));
+  },
+  340: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4087,11 +4100,11 @@
         o = r.n(a),
         i = r(8),
         c = r(35),
-        l = r(4),
-        d = r(221),
+        d = r(4),
+        l = r(222),
         s = r(12),
-        u = r(340),
-        f = r(116),
+        u = r(341),
+        f = r(115),
         p = r(55);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4107,13 +4120,13 @@
             n = e.selectedCategoryId,
             a = e.onClick;
           return o.a.createElement(
-            d.b,
+            l.b,
             null,
             Object(c.a)(function(e) {
               var t = e.iconUrl,
                 r = e.id;
               return o.a.createElement(
-                d.a,
+                l.a,
                 {
                   key: "category-".concat(r),
                   onClick: function() {
@@ -4136,9 +4149,9 @@
           };
         },
         O = { setCategorySelectedId: p.d },
-        E = Object(l.b)(
+        E = Object(d.b)(
           Object(i.b)(y, O),
-          Object(l.h)({
+          Object(d.h)({
             onClick: function(e) {
               var t = e.setCategorySelectedId,
                 r = e.selectedCategoryId;
@@ -4179,47 +4192,17 @@
             : void 0) && v(e);
     }.call(this, r(1)(e)));
   },
-  34: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var n,
-        a = r(14);
-      (n =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && n(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var o,
-        i,
-        c = Object(a.a)(["sceneState", "currentInventoryId"]);
-      (t.a = c),
-        (o =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          o.register(
-            c,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\sceneState\\selectors\\select-current-inventory-id.js"
-          ),
-        (i =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && i(e);
-    }.call(this, r(1)(e)));
-  },
-  340: function(e, t, r) {
+  341: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(78),
-        o = r(196),
+        o = r(197),
         i = r(77),
-        c = r(197),
-        l = r(246),
-        d = r(71),
-        s = r(341),
+        c = r(198),
+        d = r(247),
+        l = r(71),
+        s = r(342),
         u = r(47),
         f = r(22);
       (n =
@@ -4231,7 +4214,7 @@
       var p,
         b,
         v = function(e) {
-          var t = Object(d.a)(e).categoriesIds,
+          var t = Object(l.a)(e).categoriesIds,
             r = void 0 === t ? [] : t,
             n = Object(s.a)(e),
             p =
@@ -4249,7 +4232,7 @@
             Object(i.a)(function(e) {
               return Object(c.a)(e.id, r);
             }),
-            Object(l.a)(b)
+            Object(d.a)(b)
           )(n);
         };
       (t.a = v),
@@ -4268,7 +4251,7 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  341: function(e, t, r) {
+  342: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4282,8 +4265,8 @@
       var o,
         i,
         c = [],
-        l = Object(a.a)(c, ["entities", "categories", "byId"]);
-      (t.a = l),
+        d = Object(a.a)(c, ["entities", "categories", "byId"]);
+      (t.a = d),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -4294,7 +4277,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\categories\\selectors\\select-categories.js"
           ),
           o.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\categories\\selectors\\select-categories.js"
           )),
@@ -4304,7 +4287,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  342: function(e, t, r) {
+  343: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
@@ -4313,12 +4296,12 @@
         o = r(4),
         i = r(11),
         c = r(14),
-        l = r(126),
-        d = r(343),
-        s = r(172),
+        d = r(125),
+        l = r(344),
+        s = r(173),
         u = r(18),
-        f = r(344),
-        p = r(171),
+        f = r(345),
+        p = r(172),
         b = r(62),
         v = r(34),
         g = r(47),
@@ -4339,8 +4322,8 @@
             o = r.isEquipable,
             i = r.isEquipped,
             c = r.isDeletable,
-            l = r.isUsable,
-            d = Object(f.a)(e),
+            d = r.isUsable,
+            l = Object(f.a)(e),
             u = Object(p.a)(e) || "none",
             b = Object(v.a)(e),
             E = Object(g.a)(e),
@@ -4352,23 +4335,23 @@
             maxQuantity: a,
             isEquipable: E !== y.a.transferInventory && o,
             isEquipped: i,
-            isUsable: l,
-            nearbyInventories: d,
+            isUsable: d,
+            nearbyInventories: l,
             selectedNearbyInventoryId: u,
             isDisabledTransfer: "none" === u,
             isDeletable: c,
             wording: m
           };
         },
-        j = {
+        L = {
           onUseItem: u.k,
           onEquipItem: u.i,
           setNearbyInventorySelectedId: b.b,
           onDeleteItem: u.h,
           onTransferItem: u.j
         },
-        L = Object(o.b)(
-          Object(a.b)(x, j),
+        j = Object(o.b)(
+          Object(a.b)(x, L),
           Object(o.j)("quantity", "setQuantity", 1),
           Object(o.h)({
             onEquip: function(e) {
@@ -4456,9 +4439,9 @@
                 : void 0;
             }
           }),
-          Object(o.d)(Object(l.a)(["context", "idItem", "idInventory"]))
-        )(d.a);
-      (t.a = L),
+          Object(o.d)(Object(d.a)(["context", "idItem", "idInventory"]))
+        )(l.a);
+      (t.a = j),
         (E =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -4469,12 +4452,12 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\index.js"
           ),
           E.register(
-            j,
+            L,
             "mapDispatchToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\index.js"
           ),
           E.register(
-            L,
+            j,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\index.js"
           )),
@@ -4484,7 +4467,7 @@
             : void 0) && m(e);
     }.call(this, r(1)(e)));
   },
-  343: function(e, t, r) {
+  344: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4492,20 +4475,20 @@
         o = r.n(a),
         i = r(7),
         c = r(49),
-        l = r(50);
+        d = r(50);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var l,
         s,
         u = function(e) {
           var t = e.id,
             r = e.name;
           return o.a.createElement(
-            l.c,
+            d.c,
             { key: "nearbyInventory-".concat(t), value: t },
             r
           );
@@ -4515,7 +4498,7 @@
             r = e.onChangeQuantity,
             n = e.onUse,
             a = e.onEquip,
-            d = e.onSetMaxQuantity,
+            l = e.onSetMaxQuantity,
             s = e.nearbyInventories,
             f = void 0 === s ? [] : s,
             p = e.selectedNearbyInventoryId,
@@ -4527,9 +4510,9 @@
             E = e.onTransfer,
             m = e.isEquipped,
             x = void 0 !== m && m,
-            j = e.isDisabledTransfer,
-            L = e.isUsable,
-            G = void 0 === L || L,
+            L = e.isDisabledTransfer,
+            j = e.isUsable,
+            G = void 0 === j || j,
             H = e.isDeletable,
             h = void 0 === H || H,
             I = e.wording;
@@ -4573,7 +4556,7 @@
               o.a.createElement(c.d, {
                 color: "#3b4e5e",
                 label: I.max,
-                onClick: d
+                onClick: l
               }),
               f.length > 0
                 ? o.a.createElement(
@@ -4585,7 +4568,7 @@
                       input: o.a.createElement(c.g, null)
                     },
                     o.a.createElement(
-                      l.c,
+                      d.c,
                       { key: "nearbyInventory-none", value: "none" },
                       I.noneInventory
                     ),
@@ -4598,7 +4581,7 @@
                     "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTgyLDk2LjZIMThWODIuM2g2NFY5Ni42eiBNNDIuOSwzMC43bDAsMzAuNWwwLDYuNmwxNC4zLDBsMC02LjZsMC0zMC40bDMuNSwzLjVsOS4xLDkuMWwxMC4xLTEwLjFsLTkuMS05LjFMNjAuMSwxMy41bDAsMCAgTDUyLjYsNkw1MCwzLjRsMCwwbDAsMGwtOS4xLDkuMUwyMC4xLDMzLjNsMTAuMSwxMC4xTDQyLjksMzAuN3oiPjwvcGF0aD48L3N2Zz4=",
                   color: "#ffd948",
                   iconLeftSize: 25,
-                  disabled: j,
+                  disabled: L,
                   variant: i.b.none,
                   onClick: E
                 }),
@@ -4616,16 +4599,16 @@
           );
         };
       (t.a = f),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (d.register(
+          (l.register(
             u,
             "renderNearbyInventory",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\component.js"
           ),
-          d.register(
+          l.register(
             f,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\component.js"
@@ -4636,12 +4619,12 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  344: function(e, t, r) {
+  345: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(35),
-        o = r(345);
+        o = r(346);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4650,7 +4633,7 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = function(e) {
+        d = function(e) {
           var t = Object(o.a)(e);
           return Object(a.a)(function(e) {
             var t = e.id,
@@ -4659,13 +4642,13 @@
             return { id: t, name: r || n };
           }, t);
         };
-      (t.a = l),
+      (t.a = d),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           i.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-nearby-inventories-formatted-from-current-inventory.js"
           ),
@@ -4675,16 +4658,16 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  345: function(e, t, r) {
+  346: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(11),
-        o = r(196),
+        o = r(197),
         i = r(77),
-        c = r(197),
-        l = r(346),
-        d = r(71);
+        c = r(198),
+        d = r(347),
+        l = r(71);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4694,9 +4677,9 @@
       var s,
         u,
         f = function(e) {
-          var t = Object(d.a)(e),
+          var t = Object(l.a)(e),
             r = Object(a.a)([], ["nearbyInventoriesIds"], t),
-            n = Object(o.a)(Object(l.a)(e));
+            n = Object(o.a)(Object(d.a)(e));
           return Object(i.a)(function(e) {
             return Object(c.a)(e.id, r);
           }, n);
@@ -4717,7 +4700,7 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  346: function(e, t, r) {
+  347: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4731,8 +4714,8 @@
       var o,
         i,
         c = [],
-        l = Object(a.a)(c, ["entities", "inventories", "byId"]);
-      (t.a = l),
+        d = Object(a.a)(c, ["entities", "inventories", "byId"]);
+      (t.a = d),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -4743,7 +4726,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventories.js"
           ),
           o.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventories.js"
           )),
@@ -4753,14 +4736,14 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  347: function(e, t, r) {
+  348: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var n,
         a = r(8),
-        o = r(348),
-        i = r(172),
+        o = r(349),
+        i = r(173),
         c = r(17);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4768,8 +4751,8 @@
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var l,
-        d,
+      var d,
+        l,
         s = function(e, t) {
           var r = Object(i.a)(e, t.itemId),
             n = r.imageUrl,
@@ -4789,27 +4772,27 @@
         },
         u = Object(a.b)(s)(o.a);
       (t.a = u),
-        (l =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (l.register(
+          (d.register(
             s,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\index.js"
           ),
-          l.register(
+          d.register(
             u,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\index.js"
           )),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  348: function(e, t, r) {
+  349: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4817,19 +4800,19 @@
         o = r.n(a),
         i = r(51),
         c = r(12),
-        l = r(349);
+        d = r(350);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var l,
         s,
         u = function(e) {
           var t = e.id,
             r = e.value;
-          return o.a.createElement(l.a, {
+          return o.a.createElement(d.a, {
             key: "effect-".concat(t),
             id: t,
             value: r
@@ -4840,8 +4823,8 @@
             r = e.description,
             n = e.name,
             a = e.weight,
-            l = e.quantity,
-            d = void 0 === l ? 1 : l,
+            d = e.quantity,
+            l = void 0 === d ? 1 : d,
             s = e.totalWeight,
             f = e.effects,
             p = void 0 === f ? [] : f,
@@ -4877,7 +4860,7 @@
                     }),
                     a
                   ),
-                  o.a.createElement(i.e, null, " x", d, " "),
+                  o.a.createElement(i.e, null, " x", l, " "),
                   o.a.createElement(
                     i.e,
                     null,
@@ -4898,16 +4881,16 @@
           );
         };
       (t.a = f),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (d.register(
+          (l.register(
             u,
             "renderEffect",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\component.js"
           ),
-          d.register(
+          l.register(
             f,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\component.js"
@@ -4918,16 +4901,16 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  349: function(e, t, r) {
+  350: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
         i = r(8),
-        c = r(350),
-        l = r(12),
-        d = r(351);
+        c = r(351),
+        d = r(12),
+        l = r(352);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4944,14 +4927,14 @@
           return o.a.createElement(
             c.a,
             { value: r },
-            o.a.createElement(l.a, { url: t, size: 30 }),
+            o.a.createElement(d.a, { url: t, size: 30 }),
             r > 0 ? "+" : "",
             r,
             n
           );
         },
         p = function(e, t) {
-          var r = Object(d.a)(e, t.id),
+          var r = Object(l.a)(e, t.id),
             n = r.unit,
             a = (r.url, r.iconUrl);
           return { value: t.value, unit: n, iconUrl: a, name: name };
@@ -4983,11 +4966,11 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  350: function(e, t, r) {
+  351: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
-        return l;
+        return d;
       });
       var n,
         a = r(2);
@@ -5016,7 +4999,7 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = a.a.div(o(), function(e) {
+        d = a.a.div(o(), function(e) {
           return e.value >= 0 ? "#3d793d" : "#fe6d67";
         });
       (i =
@@ -5024,7 +5007,7 @@
           ? reactHotLoaderGlobal.default
           : void 0) &&
         i.register(
-          l,
+          d,
           "Effect",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\Effects\\styles.js"
         ),
@@ -5034,7 +5017,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  351: function(e, t, r) {
+  352: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -5066,7 +5049,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  352: function(e, t, r) {
+  353: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -5080,17 +5063,17 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = function(e) {
+        d = function(e) {
           var t = Object(o.a)(e);
           return Object(a.a)(t);
         };
-      (t.a = l),
+      (t.a = d),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           i.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-items-ids-from-inventory.js"
           ),
@@ -5100,7 +5083,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  353: function(e, t, r) {
+  354: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -5114,10 +5097,10 @@
       var o,
         i,
         c = {},
-        l = function(e, t) {
+        d = function(e, t) {
           return Object(a.a)(c, ["entities", "categories", "byId", t], e);
         };
-      (t.a = l),
+      (t.a = d),
         (o =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -5128,7 +5111,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\categories\\selectors\\select-category-by-id.js"
           ),
           o.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\categories\\selectors\\select-category-by-id.js"
           )),
@@ -5138,7 +5121,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  354: function(e, t, r) {
+  355: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -5146,7 +5129,7 @@
         o = r(62),
         i = r(55),
         c = r(22);
-      function l(e, t) {
+      function d(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
@@ -5158,16 +5141,16 @@
         }
         return r;
       }
-      function d(e) {
+      function l(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2
-            ? l(Object(r), !0).forEach(function(t) {
+            ? d(Object(r), !0).forEach(function(t) {
                 s(e, t, r[t]);
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-            : l(Object(r)).forEach(function(t) {
+            : d(Object(r)).forEach(function(t) {
                 Object.defineProperty(
                   e,
                   t,
@@ -5214,22 +5197,22 @@
             t = arguments.length > 1 ? arguments[1] : void 0;
           switch (t.type) {
             case a.f:
-              return d({}, e, { selectedItemId: t.id });
+              return l({}, e, { selectedItemId: t.id });
             case o.a:
-              return d({}, e, {
+              return l({}, e, {
                 selectedNearbyInventoryId: t.destinationInventoryId
               });
             case i.b:
-              return d({}, e, {
+              return l({}, e, {
                 selectedCategoryId: t.id,
                 selectedItemId: null
               });
             case c.b:
-              return d({}, e, { currentContext: t.context });
+              return l({}, e, { currentContext: t.context });
             case c.d:
-              return d({}, e, { mainInventoryId: t.id });
+              return l({}, e, { mainInventoryId: t.id });
             case c.c:
-              return d({}, e, { currentInventoryId: t.id });
+              return l({}, e, { currentInventoryId: t.id });
             default:
               return e;
           }
@@ -5255,13 +5238,13 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  355: function(e, t, r) {
+  356: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(146),
+        a = r(145),
         o = r(35),
-        i = r(243),
+        i = r(244),
         c = r(55);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5269,8 +5252,8 @@
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var l,
-        d,
+      var d,
+        l,
         s = { byId: {} },
         u = function(e) {
           return Object(a.a)(
@@ -5315,41 +5298,41 @@
           }
         };
       (t.a = f),
-        (l =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (l.register(
+          (d.register(
             s,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\categories\\index.js"
           ),
-          l.register(
+          d.register(
             u,
             "getById",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\categories\\index.js"
           ),
-          l.register(
+          d.register(
             f,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\categories\\index.js"
           )),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  356: function(e, t, r) {
+  357: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(35),
-        o = r(195),
+        o = r(196),
         i = r(78),
-        c = r(146),
-        l = r(11),
-        d = r(538),
+        c = r(145),
+        d = r(11),
+        l = r(539),
         s = r(58),
         u = r(44);
       function f(e, t) {
@@ -5428,7 +5411,7 @@
         },
         m = function(e, t) {
           if (!t) return null;
-          var r = Object(l.a)([], ["nearbyInventoriesIds"], e);
+          var r = Object(d.a)([], ["nearbyInventoriesIds"], e);
           return e.id === t
             ? e.nearbyInventoriesIds
               ? {
@@ -5439,7 +5422,7 @@
               : null
             : {
                 selectedNearbyInventoryId: e.selectedNearbyInventoryId || t,
-                nearbyInventoriesIds: Object(d.a)(
+                nearbyInventoriesIds: Object(l.a)(
                   t,
                   Object(o.a)(function(t) {
                     return t === e.id;
@@ -5458,7 +5441,7 @@
             }, e)
           );
         },
-        j = function() {
+        L = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
@@ -5480,7 +5463,7 @@
               return e;
           }
         };
-      (t.a = j),
+      (t.a = L),
         (v =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
@@ -5511,7 +5494,7 @@
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\index.js"
           ),
           v.register(
-            j,
+            L,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\index.js"
           )),
@@ -5521,11 +5504,11 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  357: function(e, t, r) {
+  358: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(175);
+        a = r(176);
       function o(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -5576,8 +5559,8 @@
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var l,
-        d,
+      var d,
+        l,
         s = {},
         u = function() {
           var e =
@@ -5593,33 +5576,33 @@
           }
         };
       (t.a = u),
-        (l =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (l.register(
+          (d.register(
             s,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\effects\\index.js"
           ),
-          l.register(
+          d.register(
             u,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\effects\\index.js"
           )),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  358: function(e, t, r) {
+  359: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(146),
+        a = r(145),
         o = r(35),
-        i = (r(243), r(18));
+        i = (r(244), r(18));
       function c(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -5632,7 +5615,7 @@
         }
         return r;
       }
-      function l(e, t, r) {
+      function d(e, t, r) {
         return (
           t in e
             ? Object.defineProperty(e, t, {
@@ -5651,13 +5634,13 @@
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var l,
         s,
         u = {},
         f = function(e) {
           return Object(a.a)(
             Object(o.a)(function(e) {
-              return l(
+              return d(
                 {},
                 "".concat(e.id),
                 (function(e) {
@@ -5665,7 +5648,7 @@
                     var r = null != arguments[t] ? arguments[t] : {};
                     t % 2
                       ? c(Object(r), !0).forEach(function(t) {
-                          l(e, t, r[t]);
+                          d(e, t, r[t]);
                         })
                       : Object.getOwnPropertyDescriptors
                       ? Object.defineProperties(
@@ -5708,21 +5691,21 @@
           }
         };
       (t.a = p),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (d.register(
+          (l.register(
             u,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\items\\index.js"
           ),
-          d.register(
+          l.register(
             f,
             "getItemsById",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\items\\index.js"
           ),
-          d.register(
+          l.register(
             p,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\items\\index.js"
@@ -5733,7 +5716,7 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  359: function(e, t, r) {
+  360: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -5744,16 +5727,16 @@
         o = r(14),
         i = r(58),
         c = r(11),
-        l = r(246),
-        d = r(120),
+        d = r(247),
+        l = r(119),
         s = r(73),
         u = r(85),
         f = r(55),
-        p = r(176),
-        b = r(178),
-        v = r(179),
+        p = r(177),
+        b = r(179),
+        v = r(180),
         g = r(22),
-        y = r(180),
+        y = r(181),
         O = r(62),
         E = r(96);
       (n =
@@ -5762,8 +5745,8 @@
           : void 0) && n(e);
       var m,
         x,
-        j = regeneratorRuntime.mark(h),
-        L = regeneratorRuntime.mark(I),
+        L = regeneratorRuntime.mark(h),
+        j = regeneratorRuntime.mark(I),
         G =
           ("undefined" != typeof reactHotLoaderGlobal &&
             reactHotLoaderGlobal.default.signature,
@@ -5787,9 +5770,9 @@
       function h(e) {
         var t, r, n, u, p, b, v, y, m, x;
         return regeneratorRuntime.wrap(
-          function(j) {
+          function(L) {
             for (;;)
-              switch ((j.prev = j.next)) {
+              switch ((L.prev = L.next)) {
                 case 0:
                   return (
                     (t = e.module),
@@ -5802,34 +5785,34 @@
                     (u = G(r)),
                     (p = H(r)),
                     (b = n ? [u, p] : [u]),
-                    (v = Object(l.a)(b, t.categories)),
-                    (j.next = 9),
+                    (v = Object(d.a)(b, t.categories)),
+                    (L.next = 9),
                     Object(a.e)(Object(f.c)(v))
                   );
                 case 9:
                   return (
                     (y = t.mainInventoryId),
                     (m = t.inventories),
-                    (j.next = 12),
+                    (L.next = 12),
                     Object(a.e)(Object(g.f)(y))
                   );
                 case 12:
-                  return (j.next = 14), Object(a.e)(Object(g.g)(y));
+                  return (L.next = 14), Object(a.e)(Object(g.g)(y));
                 case 14:
                   return (
                     (x = Object(o.a)(
                       ["selectedNearbyInventoryId"],
-                      Object(d.a)(Object(s.a)("id", y), m)
+                      Object(l.a)(Object(s.a)("id", y), m)
                     )),
-                    (j.next = 17),
+                    (L.next = 17),
                     Object(a.e)(Object(O.b)(y, x))
                   );
                 case 17:
                 case "end":
-                  return j.stop();
+                  return L.stop();
               }
           },
-          j,
+          L,
           this
         );
       }
@@ -5855,7 +5838,7 @@
                   return e.stop();
               }
           },
-          L,
+          j,
           this
         );
       }
@@ -5889,7 +5872,7 @@
             : void 0) && x(e);
     }.call(this, r(1)(e)));
   },
-  360: function(e, t, r) {
+  361: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -5899,14 +5882,14 @@
         a = r(3),
         o = r(85),
         i = r(55),
-        c = r(176),
-        l = r(178),
-        d = r(22),
-        s = r(179),
-        u = r(180),
+        c = r(177),
+        d = r(179),
+        l = r(22),
+        s = r(180),
+        u = r(181),
         f = r(58),
         p = r(14),
-        b = r(246),
+        b = r(247),
         v = r(96);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5921,9 +5904,9 @@
       function m(e) {
         var t, r, n, o, c;
         return regeneratorRuntime.wrap(
-          function(l) {
+          function(d) {
             for (;;)
-              switch ((l.prev = l.next)) {
+              switch ((d.prev = d.next)) {
                 case 0:
                   return (
                     (t = e.module),
@@ -5937,16 +5920,16 @@
                       [{ id: "all", name: n, iconUrl: o }],
                       t.categories
                     )),
-                    (l.next = 7),
+                    (d.next = 7),
                     Object(a.e)(Object(i.c)(c))
                   );
                 case 7:
                   return (
-                    (l.next = 9), Object(a.e)(Object(d.g)(t.mainInventoryId))
+                    (d.next = 9), Object(a.e)(Object(l.g)(t.mainInventoryId))
                   );
                 case 9:
                 case "end":
-                  return l.stop();
+                  return d.stop();
               }
           },
           O,
@@ -5962,7 +5945,7 @@
                   return (
                     (e.next = 2),
                     Object(a.a)([
-                      Object(a.d)(l.a),
+                      Object(a.d)(d.a),
                       Object(a.d)(c.a),
                       Object(a.d)(s.a),
                       Object(a.d)(u.a)
@@ -5999,18 +5982,18 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  361: function(e, t, r) {
+  362: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(4),
         o = r(8),
-        i = r(169),
+        i = r(168),
         c = r(84),
-        l = r(173),
         d = r(174),
+        l = r(175),
         s = r(22),
-        u = r(362),
+        u = r(363),
         f = r(47),
         p = r(34),
         b = r(17),
@@ -6025,8 +6008,8 @@
         y,
         O = function(e) {
           var t = Object(c.a)(e),
-            r = Object(l.a)(e),
-            n = Object(d.a)(e).name,
+            r = Object(d.a)(e),
+            n = Object(l.a)(e).name,
             a = Object(u.a)(e),
             o = Object(f.a)(e),
             i = Object(p.a)(e),
@@ -6081,7 +6064,7 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  362: function(e, t, r) {
+  363: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -6095,17 +6078,17 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = function(e) {
+        d = function(e) {
           var t = Object(o.a)(e);
           return Object(a.a)(!1, ["hasReadAccess"], t);
         };
-      (t.a = l),
+      (t.a = d),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           i.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-has-read-access-from-current-inventory.js"
           ),
@@ -6115,22 +6098,22 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  363: function(e, t, r) {
+  364: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
-        i = r(125),
+        i = r(124),
         c = r(4),
-        l = r(20);
+        d = r(20);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var d,
+      var l,
         s,
         u = function(e) {
           var t = e.children,
@@ -6156,7 +6139,7 @@
                     a = r.index,
                     o = parseInt(r.droppableId);
                   n !== o &&
-                    window[l.a.prefix][l.a.transferItem]({
+                    window[d.a.prefix][d.a.transferItem]({
                       originInventoryId: o,
                       destinationInventoryId: n,
                       idItem: a
@@ -6167,16 +6150,16 @@
           }
         })(u);
       (t.a = f),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (d.register(
+          (l.register(
             u,
             "DraggableComponent",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Draggable\\index.js"
           ),
-          d.register(
+          l.register(
             f,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Draggable\\index.js"
@@ -6198,10 +6181,10 @@
           return c;
         }),
         r.d(t, "a", function() {
-          return l;
+          return d;
         }),
         r.d(t, "b", function() {
-          return d;
+          return l;
         }),
         r.d(t, "c", function() {
           return s;
@@ -6231,17 +6214,17 @@
         o,
         i = "UPDATE_ITEMS_INVENTORIES_SUCCESS",
         c = "UPDATE_ITEMS_INVENTORIES_REQUEST",
-        l = "SET_INVENTORIES",
-        d = "UPDATE_INVENTORIES_REQUEST",
+        d = "SET_INVENTORIES",
+        l = "UPDATE_INVENTORIES_REQUEST",
         s = "UPDATE_INVENTORIES_SUCCESS",
         u = function(e, t) {
-          return { type: l, inventories: e, mainInventoryId: t };
+          return { type: d, inventories: e, mainInventoryId: t };
         },
         f = function(e, t) {
           return { type: s, inventories: e, mainInventoryId: t };
         },
         p = function(e) {
-          return { type: d, inventories: e };
+          return { type: l, inventories: e };
         },
         b = function(e, t) {
           return { type: i, idInventory: e, items: t };
@@ -6264,12 +6247,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\inventories.js"
         ),
         a.register(
-          l,
+          d,
           "SET_INVENTORIES",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\inventories.js"
         ),
         a.register(
-          d,
+          l,
           "UPDATE_INVENTORIES_REQUEST",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\inventories.js"
         ),
@@ -6346,10 +6329,10 @@
         return x;
       }),
         r.d(t, "i", function() {
-          return j;
+          return L;
         }),
         r.d(t, "g", function() {
-          return L;
+          return j;
         }),
         r.d(t, "f", function() {
           return G;
@@ -6373,15 +6356,15 @@
           return P;
         }),
         r.d(t, "e", function() {
-          return w;
+          return M;
         });
       var n,
         a = r(2),
         o = r(24),
-        i = r(404),
-        c = r(403),
-        l = r(535),
-        d = r(25);
+        i = r(405),
+        c = r(404),
+        d = r(536),
+        l = r(25);
       function s() {
         var e = O(["\n  color: #9da6a1;\n  font-size: 12px;\n"]);
         return (
@@ -6483,13 +6466,13 @@
       var E,
         m,
         x = a.a.div(y()),
-        j = Object(a.a)(d.a)(g()),
-        L = Object(o.a)({
+        L = Object(a.a)(l.a)(g()),
+        j = Object(o.a)({
           root: { color: "#A6A6A6", fontFamily: "Montserrat, sans-serif" }
         })(i.a),
         G = a.a.input(v()),
         H = a.a.div(b()),
-        h = Object(a.a)(d.a)(p()),
+        h = Object(a.a)(l.a)(p()),
         I = Object(o.a)({
           root: {
             color: "#ffffff",
@@ -6505,15 +6488,15 @@
           },
           icon: { color: "#ffffff" }
         })(c.a),
-        S = Object(a.a)(d.a)(f()),
+        S = Object(a.a)(l.a)(f()),
         T = a.a.div(u()),
         P = Object(o.a)({
           root: {
             "& .Mui-checked": { color: "#faa82a" },
             "& .MuiSwitch-track": { backgroundColor: "#faa82a !important" }
           }
-        })(l.a),
-        w = a.a.span(s());
+        })(d.a),
+        M = a.a.span(s());
       (E =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
@@ -6524,12 +6507,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
         ),
         E.register(
-          j,
+          L,
           "UseButton",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
         ),
         E.register(
-          L,
+          j,
           "StyledInputBase",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
         ),
@@ -6569,7 +6552,7 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
         ),
         E.register(
-          w,
+          M,
           "NoNearbyInventories",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Actions\\styles.js"
         )),
@@ -6589,10 +6572,10 @@
           return x;
         }),
         r.d(t, "a", function() {
-          return j;
+          return L;
         }),
         r.d(t, "d", function() {
-          return L;
+          return j;
         }),
         r.d(t, "h", function() {
           return G;
@@ -6610,10 +6593,10 @@
       var n,
         a = r(2),
         o = r(24),
-        i = r(447),
+        i = r(448),
         c = r(13),
-        l = r(25),
-        d = r(12);
+        d = r(25),
+        l = r(12);
       function s() {
         var e = y(["\n  max-height: 30px;\n"]);
         return (
@@ -6698,12 +6681,12 @@
         reactHotLoaderGlobal.default.signature;
       var O,
         E,
-        m = Object(a.a)(l.a)(g()),
+        m = Object(a.a)(d.a)(g()),
         x = a.a.td(v(), function(e) {
           return e.isInStock ? c.a : c.d;
         }),
-        j = a.a.td(b()),
-        L = a.a.td(p(), function(e) {
+        L = a.a.td(b()),
+        j = a.a.td(p(), function(e) {
           return e.color;
         }),
         G = a.a.td(f(), function(e) {
@@ -6711,7 +6694,7 @@
         }),
         H = a.a.td(u()),
         h = Object(o.a)({ root: { padding: "3px" } })(i.a),
-        I = Object(a.a)(d.a)(s());
+        I = Object(a.a)(l.a)(s());
       (O =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
@@ -6727,12 +6710,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
         O.register(
-          j,
+          L,
           "ActionCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
         O.register(
-          L,
+          j,
           "NameCol",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\Articles\\Article\\styles.js"
         ),
@@ -6781,10 +6764,10 @@
           return x;
         }),
         r.d(t, "d", function() {
-          return j;
+          return L;
         }),
         r.d(t, "i", function() {
-          return L;
+          return j;
         }),
         r.d(t, "e", function() {
           return G;
@@ -6828,21 +6811,21 @@
           e
         );
       }
-      function l() {
+      function d() {
         var e = b([
           "\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex: 1;\n"
         ]);
         return (
-          (l = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function l() {
         var e = b(["\n  font-size: 12px;\n  margin-top: 10px;\n"]);
         return (
-          (d = function() {
+          (l = function() {
             return e;
           }),
           e
@@ -6910,9 +6893,9 @@
         O = a.a.div(f()),
         E = a.a.span(u()),
         m = a.a.span(s()),
-        x = a.a.div(d()),
-        j = a.a.div(l()),
-        L = a.a.div(c()),
+        x = a.a.div(l()),
+        L = a.a.div(d()),
+        j = a.a.div(c()),
         G = a.a.div(i(), function(e) {
           return e.color || "#959da3";
         }),
@@ -6947,12 +6930,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\styles.js"
         ),
         v.register(
-          j,
+          L,
           "Header",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\styles.js"
         ),
         v.register(
-          L,
+          j,
           "WrapperIcon",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Description\\styles.js"
         ),
@@ -6983,10 +6966,10 @@
           return c;
         }),
         r.d(t, "c", function() {
-          return l;
+          return d;
         }),
         r.d(t, "d", function() {
-          return d;
+          return l;
         }),
         (n =
           "undefined" != typeof reactHotLoaderGlobal
@@ -6998,10 +6981,10 @@
         o,
         i = "SET_CATEGORIES",
         c = "SET_CATEGORY_SELECTED_ID",
-        l = function(e) {
+        d = function(e) {
           return { type: i, categories: e };
         },
-        d = function(e) {
+        l = function(e) {
           return { type: c, id: e };
         };
       (a =
@@ -7019,12 +7002,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\categories.js"
         ),
         a.register(
-          l,
+          d,
           "setCategories",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\categories.js"
         ),
         a.register(
-          d,
+          l,
           "setCategorySelectedId",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\categories.js"
         )),
@@ -7097,7 +7080,7 @@
         o = r(7),
         i = r(13);
       function c() {
-        var e = d(["\n  margin-right: ", ";\n  display: flex;\n"]);
+        var e = l(["\n  margin-right: ", ";\n  display: flex;\n"]);
         return (
           (c = function() {
             return e;
@@ -7105,8 +7088,8 @@
           e
         );
       }
-      function l() {
-        var e = d([
+      function d() {
+        var e = l([
           "\n  color: ",
           ";\n  flex: ",
           ";\n  opacity: ",
@@ -7120,13 +7103,13 @@
           ";\n    }\n  }\n"
         ]);
         return (
-          (l = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d(e, t) {
+      function l(e, t) {
         return (
           t || (t = e.slice(0)),
           Object.freeze(
@@ -7205,7 +7188,7 @@
             : "1px solid ".concat(r);
         },
         O = a.a.button(
-          l(),
+          d(),
           function(e) {
             return f(e);
           },
@@ -7297,7 +7280,7 @@
         return c;
       }),
         r.d(t, "b", function() {
-          return l;
+          return d;
         });
       var n,
         a = r(13);
@@ -7310,7 +7293,7 @@
       var o,
         i,
         c = { business: a.c, info: a.b, danger: a.d, white: a.f },
-        l = {
+        d = {
           secondary: "secondary",
           primary: "primary",
           special: "special",
@@ -7326,7 +7309,7 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\constants.js"
         ),
         o.register(
-          l,
+          d,
           "BTN_VARIANT",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\common\\components\\BurdiButton\\constants.js"
         )),
@@ -7341,7 +7324,7 @@
     (function(e) {
       var n,
         a = r(34),
-        o = r(170);
+        o = r(169);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -7350,17 +7333,17 @@
         reactHotLoaderGlobal.default.signature;
       var i,
         c,
-        l = function(e) {
+        d = function(e) {
           var t = Object(a.a)(e);
           return Object(o.a)(e, t);
         };
-      (t.a = l),
+      (t.a = d),
         (i =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
           i.register(
-            l,
+            d,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\getters\\get-current-inventory.js"
           ),
@@ -7370,7 +7353,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  758: function(e, t, r) {
+  759: function(e, t, r) {
     "use strict";
     r.r(t),
       function(e) {
@@ -7379,31 +7362,31 @@
           a = r.n(n),
           o = r(39),
           i = r.n(o),
-          c = r(333);
-        r(253);
+          c = r(334);
+        r(254);
         (t =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.enterModule
             : void 0) && t(e);
         "undefined" != typeof reactHotLoaderGlobal &&
           reactHotLoaderGlobal.default.signature;
-        var l,
-          d,
+        var d,
+          l,
           s = document.getElementById("BURDGIALAX_Inventory");
         i.a.render(a.a.createElement(c.a, null), s),
-          (l =
+          (d =
             "undefined" != typeof reactHotLoaderGlobal
               ? reactHotLoaderGlobal.default
               : void 0) &&
-            l.register(
+            d.register(
               s,
               "mountNode",
               "E:\\PROJETS\\Onset\\Burdigalax\\src\\inventory.js"
             ),
-          (d =
+          (l =
             "undefined" != typeof reactHotLoaderGlobal
               ? reactHotLoaderGlobal.leaveModule
-              : void 0) && d(e);
+              : void 0) && l(e);
       }.call(this, r(1)(e));
   },
   84: function(e, t, r) {
@@ -7537,23 +7520,23 @@
           e
         );
       }
-      function l() {
+      function d() {
         var e = f([
           "\n  background-color: #2d3c48c2;\n  padding: 10px;\n  min-height: 175px;\n"
         ]);
         return (
-          (l = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function l() {
         var e = f([
           "\n  color: #959da3;\n  text-transform: uppercase;\n  font-size: 10px;\n  font-weight: 700;\n  margin-left: 10px;\n  text-align: center;\n"
         ]);
         return (
-          (d = function() {
+          (l = function() {
             return e;
           }),
           e
@@ -7611,8 +7594,8 @@
           }
         ),
         g = a.a.div(s()),
-        y = a.a.div(d()),
-        O = a.a.div(l()),
+        y = a.a.div(l()),
+        O = a.a.div(d()),
         E = a.a.div(c()),
         m = a.a.div(i()),
         x = a.a.div(o());
@@ -7680,10 +7663,10 @@
           return x;
         }),
         r.d(t, "a", function() {
-          return j;
+          return L;
         }),
         r.d(t, "d", function() {
-          return L;
+          return j;
         });
       var n,
         a = r(2),
@@ -7712,23 +7695,23 @@
           e
         );
       }
-      function l() {
+      function d() {
         var e = p([
           "\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: baseline;\n  height: 19px;\n"
         ]);
         return (
-          (l = function() {
+          (d = function() {
             return e;
           }),
           e
         );
       }
-      function d() {
+      function l() {
         var e = p([
           "\n  align-self: center;\n  height: 42px;\n  width: auto !important;\n"
         ]);
         return (
-          (d = function() {
+          (l = function() {
             return e;
           }),
           e
@@ -7803,12 +7786,12 @@
           }
         ),
         E = a.a.div(s()),
-        m = Object(a.a)(o.a)(d()),
-        x = a.a.div(l()),
-        j = a.a.div(c(), function(e) {
+        m = Object(a.a)(o.a)(l()),
+        x = a.a.div(d()),
+        L = a.a.div(c(), function(e) {
           return e.isEquipped ? "#faa82a" : "#9da6ae";
         }),
-        L = a.a.div(i(), function(e) {
+        j = a.a.div(i(), function(e) {
           var t = e.value;
           return t < 1e5 ? 12 : t < 1e7 ? 9 : 7;
         });
@@ -7852,12 +7835,12 @@
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Item\\styles.js"
         ),
         b.register(
-          j,
+          L,
           "EquippedTag",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Item\\styles.js"
         ),
         b.register(
-          L,
+          j,
           "Quantity",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\components\\Item\\styles.js"
         )),
@@ -7922,8 +7905,8 @@
           : void 0) && n(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var l,
-        d,
+      var d,
+        l,
         s = {},
         u = function() {
           var e =
@@ -7943,24 +7926,24 @@
           }
         };
       (t.a = u),
-        (l =
+        (d =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (l.register(
+          (d.register(
             s,
             "INITIAL_STATE",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\index.js"
           ),
-          l.register(
+          d.register(
             u,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\index.js"
           )),
-        (d =
+        (l =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && d(e);
+            : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
   96: function(e, t, r) {

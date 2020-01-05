@@ -1,4 +1,4 @@
-# Burdigalax-project v4.4.1
+# Burdigalax-project v4.4.2
 
 Burdigalax project. 
 
@@ -7,7 +7,7 @@ Burdigalax project.
 DOWNLOAD Burdigalax Packages to install on your ONSET server.  
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](./download.svg "Download") Download Burdigalax package GUI v4.4.1.](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.4.1.zip)
+[![Download](./download.svg "Download") Download Burdigalax package GUI v4.4.2.](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.4.2.zip)
 
 # Avanced Usage 
 
