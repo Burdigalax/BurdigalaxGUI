@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   color: white;
   border-radius: 13px 13px 0 0;
   align-items: center;
+  cursor: grab;
 `;
 
 export const Description = styled.span`

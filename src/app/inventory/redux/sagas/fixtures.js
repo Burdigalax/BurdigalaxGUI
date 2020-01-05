@@ -1,6 +1,14 @@
 export default {
   config: {
     hasEquipableCategory: true,
+    startMainInventoryPosition: {
+      top: 40,
+      left: 50
+    },
+    startTransferInventoryPosition: {
+      top: 40,
+      left: 550
+    },
     iconUrlAllCategory:
       "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ctitle%3Eicon-filter-all%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg fill='%23000' fill-rule='nonzero'%3E%3Cpath d='M0 0h6.4v6.4h-6.4zM0 9.601h6.4v6.399h-6.4zM9.599 9.601h6.401v6.399h-6.401zM9.599 0h6.401v6.399h-6.401z'/%3E%3C/g%3E%3C/svg%3E",
     iconUrlEquipableCategory:

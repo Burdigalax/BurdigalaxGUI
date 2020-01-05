@@ -30,7 +30,7 @@ export default ({
   isSelected,
   health,
   isEquipped,
-  isEquipable,
+  isEquipable = false,
   quantity = 0,
   onClickItem,
   onMouseDownItem,
@@ -53,7 +53,7 @@ export default ({
         {...draggableProps}
         style={getStyle(draggableProps.style, snapshot)}
       >
-        {isEquipable && <EquippedTag isEquipped={isEquipped} />}
+        {isEquipable === true && <EquippedTag isEquipped={isEquipped} />}
         <Header>
           <Weight>
             <Icon

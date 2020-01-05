@@ -25,7 +25,7 @@ const HeaderComponent = ({
   busyStorage = 0,
   onClose
 }) => (
-  <Wrapper>
+  <Wrapper className={"header"}>
     <Storage busyStorage={busyStorage} storageSize={storageSize}>
       <Icon
         color={getColor(busyStorage, storageSize)}

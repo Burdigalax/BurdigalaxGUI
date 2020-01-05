@@ -10,6 +10,7 @@ import getHasReadAccessFromCurrentInventory from "../../redux/reducers/entities/
 import selectCurrentContext from "../../redux/reducers/sceneState/selectors/select-current-context";
 import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
 import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
+import selectConfig from "../../../redux/reducers/config/selectors/select-config";
 
 const mapStateToProps = state => {
   const selectedItemId = selectSelectedItemId(state);
@@ -19,6 +20,7 @@ const mapStateToProps = state => {
   const context = selectCurrentContext(state);
   const idInventory = selectCurrentInventoryId(state);
   const wording = selectWordingFromConfig(state);
+  const { startTransferInventoryPosition = {} } = selectConfig(state);
 
   return {
     idInventory,
@@ -27,7 +29,8 @@ const mapStateToProps = state => {
     itemsIds,
     categoryName: name,
     hasReadAccess,
-    wording
+    wording,
+    position: startTransferInventoryPosition
   };
 };
 

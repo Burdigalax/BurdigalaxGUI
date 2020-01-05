@@ -16,6 +16,7 @@ import getSelectedCategory from "../../redux/reducers/sceneState/getters/get-sel
 import selectCurrentInventoryId from "../../redux/reducers/sceneState/selectors/select-current-inventory-id";
 import { onTransferItem } from "../../redux/actions/items";
 import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
+import selectConfig from "../../../redux/reducers/config/selectors/select-config";
 
 const mapStateToProps = state => {
   const selectedItemId = selectSelectedItemId(state);
@@ -23,12 +24,14 @@ const mapStateToProps = state => {
   const { name } = getSelectedCategory(state);
   const idInventory = selectCurrentInventoryId(state);
   const wording = selectWordingFromConfig(state);
+  const { startMainInventoryPosition } = selectConfig(state);
   return {
     idInventory,
     selectedItemId,
     itemsIds,
     categoryName: name,
-    wording
+    wording,
+    position: startMainInventoryPosition
   };
 };
 

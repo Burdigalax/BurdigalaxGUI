@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Interface = styled.div`
   display: flex;
+  position: absolute;
+  top: ${({ position = {} }) => position.top || 0}px;
+  left: ${({ position = {} }) => position.left || 0}px;
   width: 459px;
   min-width: 380px;
   max-width: 475px;
@@ -76,6 +79,7 @@ export const CategoryName = styled.div`
 export const Body = styled.div`
   background-color: #2d3c48c2;
   padding: 10px;
+  min-height: 175px;
 `;
 
 export const Footer = styled.div`

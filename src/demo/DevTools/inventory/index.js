@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { compose, lifecycle, withProps } from "recompose";
+import { mergeDeepRight } from "ramda";
 
 import {
   JS_FUNCTIONS,
@@ -11,6 +12,7 @@ import {
 import Exemple from "../commons/exemple/";
 import { Button, Wrapper } from "./styles";
 import { setConfig, updateInventories } from "./fixtures";
+import fixturesDefaultConfig from "../../../app/inventory/redux/sagas/fixtures";
 
 const LiveDemo = ({ defaultCodeConfig, defaultCodeUpdateInventories }) => {
   const [hasSetConfigOpen, setSetConfigOpen] = useState(false);
@@ -70,7 +72,9 @@ const parseDefaultCode = code => JSON.stringify(code, null, 3);
 
 const LiveDemoContainer = compose(
   withProps({
-    defaultCodeConfig: parseDefaultCode(setConfig),
+    defaultCodeConfig: parseDefaultCode(
+      mergeDeepRight(fixturesDefaultConfig, setConfig)
+    ),
     defaultCodeUpdateInventories: parseDefaultCode(updateInventories)
   }),
   lifecycle({

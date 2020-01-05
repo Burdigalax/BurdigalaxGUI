@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   display: flex;
   width: 75px;
   opacity: 1;
-  z-index: 999;
   height: 75px;
   background: linear-gradient(45deg, #2e3d49, #3e4c57);
   flex-direction: column;
@@ -14,8 +13,6 @@ export const Wrapper = styled.div`
   border-radius: 10px;
   margin: 5px 4px;
   cursor: pointer;
-  position: ${({ isOnDrag }) => (isOnDrag ? "absolute" : "static")};
-  z-index: ${({ isOnDrag }) => (isOnDrag ? 999 : "")};
 `;
 
 const maxHealthBar = 86;

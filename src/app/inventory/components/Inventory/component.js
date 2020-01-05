@@ -22,14 +22,15 @@ export default ({
   selectedItemId,
   itemsIds = [],
   categoryName,
-  wording
+  wording,
+  position
 }) => {
   const renderItem = id => {
     return <ItemContainer key={`item-${id}-${idInventory}`} id={id} />;
   };
 
   return (
-    <Interface>
+    <Interface position={position}>
       <Header />
       <Filters />
       <Droppable droppableId={`${idInventory}-inventory-id`}>
