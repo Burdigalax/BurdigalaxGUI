@@ -36,6 +36,9 @@ export const Weight = styled.div`
   font-weight: 700;
   margin: 2px;
   align-items: center;
+  img {
+    margin-right: 2px;
+  }
 `;
 
 export const StyledIcon = styled(Icon)`
@@ -68,12 +71,13 @@ export const Quantity = styled.div`
   background-color: #515e68;
   color: white;
   border: 2px solid #2d3c48;
-  font-size: 13px;
+  font-size: ${({ value }) =>
+    value < 100000 ? 12 : value < 10000000 ? 9 : 7}px;
   font-weight: 500;
   position: relative;
   top: -9px;
   left: 10px;
-  padding: 2px;
+  padding: 2px 4px;
   min-width: 20px;
   text-align: center;
 `;

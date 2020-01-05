@@ -3,6 +3,8 @@ import { pathOr } from "ramda";
 import getItemFromCurrentInventoryById from "./get-item-from-current-inventory-by-id";
 import selectItemById from "../../items/selectors/select-items-by-id";
 
+const formatNumber = value => parseFloat(value.toFixed(2));
+
 export default (state, id) => {
   const itemInventory = getItemFromCurrentInventoryById(state, id);
   const item = selectItemById(state, id);
@@ -11,6 +13,6 @@ export default (state, id) => {
   return {
     ...item,
     ...itemInventory,
-    totalWeight: quantity * weight
+    totalWeight: formatNumber(quantity * weight)
   };
 };

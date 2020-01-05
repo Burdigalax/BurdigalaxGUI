@@ -65,7 +65,7 @@ export default ({
             />
             {weight}
           </Weight>
-          <Quantity>{quantity}</Quantity>
+          <Quantity value={quantity}>{quantity}</Quantity>
         </Header>
         <StyledIcon url={iconUrl} size={40} />
         {health >= 0 && <HealthBar value={health} />}

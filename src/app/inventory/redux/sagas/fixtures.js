@@ -22,7 +22,8 @@ export default {
       selectItem: "Sélectionner un item",
       equipped: "Equipé",
       max: "MAX",
-      noneInventory: "Aucun inventaire"
+      noneInventory: "Aucun inventaire",
+      noNearbyInventories: "Personne à proximité"
     }
   }
 };

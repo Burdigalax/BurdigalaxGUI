@@ -108,3 +108,8 @@ export const EquippedSwitch = withStyles({
     }
   }
 })(Switch);
+
+export const NoNearbyInventories = styled.span`
+  color: #9da6a1;
+  font-size: 12px;
+`;
