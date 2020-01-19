@@ -1,4 +1,4 @@
-import { END, eventChannel } from "redux-saga";
+import { eventChannel } from "redux-saga";
 import {
   call,
   cancelled,
@@ -23,6 +23,7 @@ import getHasBuyDisabled, {
 import { LUA_FUNCTIONS } from "../../events";
 import selectShoppingCart from "../reducers/sceneState/selectors/select-shopping-cart";
 import selectMoneyFromPlayer from "../reducers/entities/player/selectors/select-money-from-player";
+import { setCanUpdatePayment } from "../actions/payment";
 
 export const getPayment = (countBuy, gasSelected, initialMoney) => {
   const total = formatNumber(countBuy * gasSelected.price);
@@ -59,6 +60,7 @@ function buy(countBuy, gasSelected, initialMoney) {
 
 let chan;
 function* onBuy() {
+  yield put(setCanUpdatePayment(true));
   const hasBuyDisabled = yield select(getHasBuyDisabled);
   if (hasBuyDisabled) return;
 

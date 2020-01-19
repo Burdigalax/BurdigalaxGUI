@@ -4,7 +4,10 @@ import {
   STOP_BUY,
   UPDATE_GASES
 } from "../../actions/gases";
-import { SET_PAYMENT_ERROR } from "../../actions/payment";
+import {
+  SET_PAYMENT_ERROR,
+  SET_CAN_UPDATE_PAYMENT
+} from "../../actions/payment";
 import {
   RESET_SHOPPING_CART,
   UPDATE_SHOPPING_CART
@@ -14,7 +17,8 @@ const INITIAL_STATE = {
   shoppingCart: {
     countBuy: 0
   },
-  error: {}
+  error: {},
+  canUpdatePayment: true
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -59,6 +63,11 @@ export default (state = INITIAL_STATE, action) => {
           title: action.title,
           message: action.message
         }
+      };
+    case SET_CAN_UPDATE_PAYMENT:
+      return {
+        ...state,
+        canUpdatePayment: action.canUpdatePayment
       };
     default:
       return state;

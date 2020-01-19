@@ -80,9 +80,9 @@
   (i.push = t), (i = i.slice());
   for (var s = 0; s < i.length; s++) t(i[s]);
   var d = c;
-  n.push([758, 0]), a();
+  n.push([759, 0]), a();
 })({
-  105: function(e, t, a) {
+  106: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -118,7 +118,7 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  106: function(e, t, a) {
+  107: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -148,12 +148,12 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  107: function(e, t, a) {
+  108: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
         o = a(120),
-        n = a(73),
+        n = a(74),
         l = a(161);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -183,7 +183,7 @@
             : void 0) && c(e);
     }.call(this, a(1)(e)));
   },
-  108: function(e, t, a) {
+  109: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -219,14 +219,14 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  109: function(e, t, a) {
+  110: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "b", function() {
         return c;
       });
       var r,
-        o = a(110),
+        o = a(111),
         n = a(54);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -265,13 +265,13 @@
             : void 0) && i(e);
     }.call(this, a(1)(e)));
   },
-  110: function(e, t, a) {
+  111: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
         o = a(162),
-        n = a(108),
-        l = a(80);
+        n = a(109),
+        l = a(81);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -299,50 +299,6 @@
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
             : void 0) && c(e);
-    }.call(this, a(1)(e)));
-  },
-  111: function(e, t, a) {
-    "use strict";
-    (function(e) {
-      var r;
-      a.d(t, "a", function() {
-        return l;
-      }),
-        a.d(t, "b", function() {
-          return i;
-        }),
-        (r =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.enterModule
-            : void 0) && r(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var o,
-        n,
-        l = "SET_PAYMENT_ERROR",
-        i = function(e) {
-          var t = e.title,
-            a = e.message;
-          return { type: l, title: t, message: a };
-        };
-      (o =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.default
-          : void 0) &&
-        (o.register(
-          l,
-          "SET_PAYMENT_ERROR",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\actions\\payment.js"
-        ),
-        o.register(
-          i,
-          "setPaymentError",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\actions\\payment.js"
-        )),
-        (n =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && n(e);
     }.call(this, a(1)(e)));
   },
   119: function(e, t, a) {
@@ -1273,7 +1229,7 @@
         return d;
       });
       var r,
-        o = a(109),
+        o = a(110),
         n = a(164),
         l = a(165),
         i = a(167);
@@ -1324,7 +1280,7 @@
       var r,
         o = a(0),
         n = a.n(o),
-        l = a(88),
+        l = a(89),
         i = a(12),
         c = a(7);
       (r =
@@ -1570,7 +1526,7 @@
       });
       var r,
         o = a(54),
-        n = a(53),
+        n = a(71),
         l = a(30);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -1617,7 +1573,7 @@
         return s;
       });
       var r,
-        o = a(53),
+        o = a(71),
         n = a(163),
         l = a(166);
       (r =
@@ -1690,7 +1646,7 @@
     "use strict";
     (function(e) {
       var r,
-        o = a(168),
+        o = a(321),
         n = a(54);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -1719,42 +1675,6 @@
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
             : void 0) && i(e);
-    }.call(this, a(1)(e)));
-  },
-  168: function(e, t, a) {
-    "use strict";
-    (function(e) {
-      var r,
-        o = a(11);
-      (r =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && r(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var n,
-        l,
-        i = {},
-        c = Object(o.a)(i, ["entities", "player", "car"]);
-      (t.a = c),
-        (n =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          (n.register(
-            i,
-            "emptyObject",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\reducers\\entities\\player\\selectors\\select-car-from-player.js"
-          ),
-          n.register(
-            c,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\reducers\\entities\\player\\selectors\\select-car-from-player.js"
-          )),
-        (l =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
   17: function(e, t, a) {
@@ -1793,7 +1713,7 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  185: function(e, t, a) {
+  184: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "a", function() {
@@ -1884,7 +1804,7 @@
             : void 0) && d(e);
     }.call(this, a(1)(e)));
   },
-  186: function(e, t, a) {
+  185: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "a", function() {
@@ -1975,7 +1895,7 @@
             : void 0) && d(e);
     }.call(this, a(1)(e)));
   },
-  220: function(e, t, a) {
+  219: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -2050,7 +1970,7 @@
             : void 0) && i(e);
     }.call(this, a(1)(e)));
   },
-  221: function(e, t, a) {
+  220: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -2230,8 +2150,8 @@
           );
         },
         v = Object(l.b)(
-          Object(l.j)("isHover", "setHover", !1),
-          Object(l.h)({
+          Object(l.k)("isHover", "setHover", !1),
+          Object(l.i)({
             onMouseEnter: function(e) {
               var t = e.setHover,
                 a = e.iconLeftUrl,
@@ -2287,9 +2207,9 @@
             : void 0) && p(e);
     }.call(this, a(1)(e)));
   },
-  254: function(e, t, a) {
-    var r = a(211),
-      o = a(255);
+  253: function(e, t, a) {
+    var r = a(210),
+      o = a(254);
     "string" == typeof (o = o.__esModule ? o.default : o) &&
       (o = [[e.i, o, ""]]);
     var n = { insert: "head", singleton: !1 },
@@ -2298,10 +2218,10 @@
         o.locals ? o.locals : {});
     e.exports = l;
   },
-  255: function(e, t, a) {
-    var r = a(212),
-      o = a(437),
-      n = a(256);
+  254: function(e, t, a) {
+    var r = a(211),
+      o = a(438),
+      n = a(255);
     t = r(!1);
     var l = o(n);
     t.push([
@@ -2313,7 +2233,7 @@
     ]),
       (e.exports = t);
   },
-  256: function(e, t, a) {
+  255: function(e, t, a) {
     "use strict";
     a.r(t), (t.default = a.p + "fonts/Montserrat-Regular.ttf");
   },
@@ -2469,6 +2389,75 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
+  309: function(e, t, a) {
+    "use strict";
+    (function(e) {
+      var r,
+        o = a(0),
+        n = a.n(o),
+        l = a(310),
+        i = (a(439), a(8)),
+        c = a(76),
+        s = a(4),
+        d = a(23),
+        u = a(323),
+        f = a(328);
+      (r =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && r(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var p = Object(c.a)(),
+        g = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || s.b,
+        b = Object(d.e)(u.a, g(Object(d.a)(p)));
+      p.run(f.a);
+      var v,
+        L,
+        y = function() {
+          return n.a.createElement(
+            i.a,
+            { store: b },
+            n.a.createElement(l.a, null)
+          );
+        },
+        O = y;
+      (t.a = O),
+        (v =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          (v.register(
+            p,
+            "sagaMiddleware",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
+          ),
+          v.register(
+            g,
+            "composeEnhancers",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
+          ),
+          v.register(
+            b,
+            "store",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
+          ),
+          v.register(
+            y,
+            "GasStationContainer",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
+          ),
+          v.register(
+            O,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
+          )),
+        (L =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && L(e);
+    }.call(this, a(1)(e)));
+  },
   31: function(e, t, a) {
     "use strict";
     (function(e) {
@@ -2554,75 +2543,6 @@
   310: function(e, t, a) {
     "use strict";
     (function(e) {
-      var r,
-        o = a(0),
-        n = a.n(o),
-        l = a(311),
-        i = (a(438), a(8)),
-        c = a(75),
-        s = a(4),
-        d = a(23),
-        u = a(322),
-        f = a(327);
-      (r =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && r(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var p = Object(c.a)(),
-        g = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || s.b,
-        b = Object(d.e)(u.a, g(Object(d.a)(p)));
-      p.run(f.a);
-      var v,
-        L,
-        y = function() {
-          return n.a.createElement(
-            i.a,
-            { store: b },
-            n.a.createElement(l.a, null)
-          );
-        },
-        O = y;
-      (t.a = O),
-        (v =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          (v.register(
-            p,
-            "sagaMiddleware",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
-          ),
-          v.register(
-            g,
-            "composeEnhancers",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
-          ),
-          v.register(
-            b,
-            "store",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
-          ),
-          v.register(
-            y,
-            "GasStationContainer",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
-          ),
-          v.register(
-            O,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\index.js"
-          )),
-        (L =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && L(e);
-    }.call(this, a(1)(e)));
-  },
-  311: function(e, t, a) {
-    "use strict";
-    (function(e) {
       a(0);
       var r,
         o = a(4),
@@ -2630,7 +2550,7 @@
         l = a(160),
         i = a(28),
         c = a(161),
-        s = a(312),
+        s = a(311),
         d = a(320),
         u = a(54),
         f = a(163),
@@ -2638,12 +2558,12 @@
         g = a(166),
         b = a(17),
         v = a(32),
-        L = a(321),
+        L = a(322),
         y = a(16),
-        O = a(111),
+        O = a(51),
         E = a(61),
-        x = a(98),
-        G = a(105);
+        x = a(99),
+        G = a(106);
       function H(e, t) {
         var a = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -2733,7 +2653,7 @@
           initModule: l.b,
           onBuy: i.f,
           stopBuy: i.i,
-          setPaymentError: O.b,
+          setPaymentError: O.d,
           updatePlayer: E.d,
           updateStation: x.d,
           updateGases: i.j
@@ -2810,16 +2730,16 @@
             : void 0) && S(e);
     }.call(this, a(1)(e)));
   },
-  312: function(e, t, a) {
+  311: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
         o = a(0),
         n = a.n(o),
         l = a(38),
-        i = a(313),
-        c = a(314),
-        s = a(317),
+        i = a(312),
+        c = a(313),
+        s = a(316),
         d = a(318),
         u = a(7),
         f = a(319);
@@ -3000,7 +2920,7 @@
             : void 0) && g(e);
     }.call(this, a(1)(e)));
   },
-  313: function(e, t, a) {
+  312: function(e, t, a) {
     "use strict";
     (function(e) {
       a(0);
@@ -3009,7 +2929,7 @@
         n = a(4),
         l = a(143),
         i = a(16),
-        c = a(105),
+        c = a(106),
         s = a(32);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -3055,7 +2975,7 @@
             : void 0) && u(e);
     }.call(this, a(1)(e)));
   },
-  314: function(e, t, a) {
+  313: function(e, t, a) {
     "use strict";
     (function(e) {
       a(0);
@@ -3063,10 +2983,10 @@
         o = a(4),
         n = a(8),
         l = a(28),
-        i = a(315),
-        c = a(106),
-        s = a(107),
-        d = a(316),
+        i = a(314),
+        c = a(107),
+        s = a(108),
+        d = a(315),
         u = a(16),
         f = a(30),
         p = a(40);
@@ -3118,7 +3038,7 @@
         L = { setGasSelectedId: l.g },
         y = Object(o.b)(
           Object(n.b)(v, L),
-          Object(o.h)({
+          Object(o.i)({
             onClick: function(e) {
               var t = e.setGasSelectedId,
                 a = e.isInStock,
@@ -3156,7 +3076,7 @@
             : void 0) && b(e);
     }.call(this, a(1)(e)));
   },
-  315: function(e, t, a) {
+  314: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -3239,13 +3159,13 @@
             : void 0) && s(e);
     }.call(this, a(1)(e)));
   },
-  316: function(e, t, a) {
+  315: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
-        o = a(107),
-        n = a(53),
-        l = a(106),
+        o = a(108),
+        n = a(71),
+        l = a(107),
         i = a(30);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -3277,7 +3197,7 @@
             : void 0) && s(e);
     }.call(this, a(1)(e)));
   },
-  317: function(e, t, a) {
+  316: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -3285,23 +3205,24 @@
         n = a.n(o),
         l = a(8),
         i = a(4),
-        c = a(90),
-        s = a(108),
-        d = a(109),
-        u = a(110),
+        c = a(91),
+        s = a(109),
+        d = a(110),
+        u = a(111),
         f = a(54),
         p = a(17),
         g = a(30),
-        b = a(16);
+        b = a(16),
+        v = a(317);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && r(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var v,
-        L,
-        y = function(e) {
+      var L,
+        y,
+        O = function(e) {
           var t = e.hasTaxEnabled,
             a = void 0 === t || t,
             r = e.wording,
@@ -3376,77 +3297,114 @@
             )
           );
         },
-        O = function(e) {
+        E = function(e) {
           return e.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
         },
-        E = function(e) {
+        x = function(e) {
           var t = Object(s.a)(e),
             a = t.total,
             r = t.totalTTC,
             o = t.tax,
             n = t.countBuy,
-            l = (t.gasName, Object(d.a)(e)),
-            i = Object(u.a)(e),
-            c = Object(f.a)(e),
-            v = Object(p.a)(e),
-            L = Object(b.a)(e),
-            y = L.redColor,
-            E = L.greenColor,
-            x = Object(g.a)(e).hasTaxEnabled;
+            l = Object(v.a)(e),
+            i = Object(d.a)(e),
+            c = Object(u.a)(e),
+            L = Object(f.a)(e),
+            y = Object(p.a)(e),
+            O = Object(b.a)(e),
+            x = O.redColor,
+            G = O.greenColor,
+            H = Object(g.a)(e).hasTaxEnabled;
           return {
-            remainingMoney: O(i),
-            wording: v,
+            remainingMoney: E(c),
+            wording: y,
             total: a,
             totalTTC: r,
             tax: o,
             countBuy: n,
-            hasNoEnoughMoney: l,
-            name: c && c.name,
-            unit: c && c.unit,
-            hasTaxEnabled: x,
-            redColor: y,
-            greenColor: E
+            hasNoEnoughMoney: i,
+            name: L && L.name,
+            unit: L && L.unit,
+            hasTaxEnabled: H,
+            redColor: x,
+            greenColor: G,
+            canUpdatePayment: l
           };
         },
-        x = Object(i.b)(Object(l.b)(E))(y);
-      (t.a = x),
-        (v =
+        G = Object(i.b)(
+          Object(l.b)(x),
+          Object(i.h)(function(e, t) {
+            return t.canUpdatePayment;
+          })
+        )(O);
+      (t.a = G),
+        (L =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.default
             : void 0) &&
-          (v.register(
-            y,
+          (L.register(
+            O,
             "PaymentComponent",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\components\\Payment\\index.js"
           ),
-          v.register(
-            O,
+          L.register(
+            E,
             "numberWithSpace",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\components\\Payment\\index.js"
           ),
-          v.register(
-            E,
+          L.register(
+            x,
             "mapStateToProps",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\components\\Payment\\index.js"
           ),
-          v.register(
-            x,
+          L.register(
+            G,
             "default",
             "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\components\\Payment\\index.js"
           )),
-        (L =
+        (y =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && L(e);
+            : void 0) && y(e);
+    }.call(this, a(1)(e)));
+  },
+  317: function(e, t, a) {
+    "use strict";
+    (function(e) {
+      var r,
+        o = a(11);
+      (r =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && r(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var n,
+        l,
+        i = Object(o.a)(!0, ["sceneState", "canUpdatePayment"]);
+      (t.a = i),
+        (n =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          n.register(
+            i,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\reducers\\sceneState\\selectors\\select-can-update-payment.js"
+          ),
+        (l =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
   318: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
-        o = a(185),
-        n = a(220),
-        l = a(221),
+        o = a(184),
+        n = a(219),
+        l = a(220),
         i = a(0),
         c = a.n(i);
       (r =
@@ -3513,9 +3471,9 @@
         n = a.n(o),
         l = a(8),
         i = a(12),
-        c = a(186),
+        c = a(185),
         s = a(40),
-        d = a(105),
+        d = a(106),
         u = a(16);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -3730,6 +3688,42 @@
       var n,
         l,
         i = {},
+        c = Object(o.a)(i, ["entities", "player", "car"]);
+      (t.a = c),
+        (n =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          (n.register(
+            i,
+            "emptyObject",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\reducers\\entities\\player\\selectors\\select-car-from-player.js"
+          ),
+          n.register(
+            c,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\reducers\\entities\\player\\selectors\\select-car-from-player.js"
+          )),
+        (l =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && l(e);
+    }.call(this, a(1)(e)));
+  },
+  322: function(e, t, a) {
+    "use strict";
+    (function(e) {
+      var r,
+        o = a(11);
+      (r =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && r(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var n,
+        l,
+        i = {},
         c = Object(o.a)(i, ["sceneState", "error"]);
       (t.a = c),
         (n =
@@ -3752,16 +3746,16 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  322: function(e, t, a) {
+  323: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
         o = a(23),
-        n = a(95),
-        l = a(323),
-        i = a(324),
-        c = a(325),
-        s = a(326);
+        n = a(96),
+        l = a(324),
+        i = a(325),
+        c = a(326),
+        s = a(327);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -3793,17 +3787,17 @@
             : void 0) && u(e);
     }.call(this, a(1)(e)));
   },
-  323: function(e, t, a) {
+  324: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
         o = a(35),
         n = a(120),
-        l = a(73),
-        i = a(78),
-        c = a(447),
+        l = a(74),
+        i = a(79),
+        c = a(448),
         s = a(28),
-        d = a(80);
+        d = a(81);
       function u(e, t) {
         var a = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -3912,7 +3906,7 @@
             : void 0) && g(e);
     }.call(this, a(1)(e)));
   },
-  324: function(e, t, a) {
+  325: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -3963,11 +3957,11 @@
             : void 0) && i(e);
     }.call(this, a(1)(e)));
   },
-  325: function(e, t, a) {
+  326: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
-        o = a(98),
+        o = a(99),
         n = a(58);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4014,13 +4008,13 @@
             : void 0) && i(e);
     }.call(this, a(1)(e)));
   },
-  326: function(e, t, a) {
+  327: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
         o = a(28),
-        n = a(111),
-        l = a(87);
+        n = a(51),
+        l = a(82);
       function i(e, t) {
         var a = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -4073,7 +4067,7 @@
         reactHotLoaderGlobal.default.signature;
       var d,
         u,
-        f = { shoppingCart: { countBuy: 0 }, error: {} },
+        f = { shoppingCart: { countBuy: 0 }, error: {}, canUpdatePayment: !0 },
         p = function() {
           var e =
               arguments.length > 0 && void 0 !== arguments[0]
@@ -4094,10 +4088,12 @@
             case l.a:
             case o.e:
               return c({}, e, { shoppingCart: c({}, f.shoppingCart) });
-            case n.a:
+            case n.b:
               return c({}, e, {
                 error: { title: t.title, message: t.message }
               });
+            case n.a:
+              return c({}, e, { canUpdatePayment: t.canUpdatePayment });
             default:
               return e;
           }
@@ -4123,7 +4119,7 @@
             : void 0) && u(e);
     }.call(this, a(1)(e)));
   },
-  327: function(e, t, a) {
+  328: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "a", function() {
@@ -4131,12 +4127,12 @@
       });
       var r,
         o = a(3),
-        n = a(328),
+        n = a(329),
         l = a(160),
-        i = a(329),
-        c = a(330),
-        s = a(331),
-        d = a(333);
+        i = a(330),
+        c = a(331),
+        s = a(332),
+        d = a(334);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4187,7 +4183,7 @@
             : void 0) && f(e);
     }.call(this, a(1)(e)));
   },
-  328: function(e, t, a) {
+  329: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -4242,7 +4238,7 @@
             : void 0) && s(e);
     }.call(this, a(1)(e)));
   },
-  329: function(e, t, a) {
+  330: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "a", function() {
@@ -4254,7 +4250,7 @@
         l = a(28),
         i = a(136),
         c = a(61),
-        s = a(98),
+        s = a(99),
         d = a(31);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4322,35 +4318,36 @@
             : void 0) && f(e);
     }.call(this, a(1)(e)));
   },
-  330: function(e, t, a) {
+  331: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "a", function() {
-        return P;
+        return w;
       });
       var r,
-        o = a(75),
+        o = a(76),
         n = a(3),
-        l = a(53),
-        i = a(109),
+        l = a(71),
+        i = a(110),
         c = a(28),
-        s = a(87),
+        s = a(82),
         d = a(54),
-        u = a(80),
+        u = a(81),
         f = a(164),
         p = a(165),
         g = a(137),
         b = a(32),
-        v = a(108),
-        L = a(162);
+        v = a(109),
+        L = a(162),
+        y = a(51);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && r(e);
-      var y = regeneratorRuntime.mark(M),
-        O = regeneratorRuntime.mark(T),
-        E = regeneratorRuntime.mark(P);
-      function x(e, t) {
+      var O = regeneratorRuntime.mark(T),
+        E = regeneratorRuntime.mark(P),
+        x = regeneratorRuntime.mark(w);
+      function G(e, t) {
         var a = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -4362,7 +4359,7 @@
         }
         return a;
       }
-      function G(e, t, a) {
+      function H(e, t, a) {
         return (
           t in e
             ? Object.defineProperty(e, t, {
@@ -4377,10 +4374,10 @@
       }
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var H,
-        m,
+      var m,
         j,
-        S = function(e, t, a) {
+        S,
+        h = function(e, t, a) {
           var r = Object(u.a)(e * t.price),
             o = Object(u.a)((r * t.tax) / 100),
             n = Object(u.a)(r + o);
@@ -4391,25 +4388,25 @@
             remainingMoney: Object(u.a)(a - n)
           };
         };
-      function h(e, t, a) {
+      function M(e, t, a) {
         return Object(o.b)(function(r) {
           var o = setInterval(function() {
             e += t.speed || 1;
-            var o = S(e, t, a);
+            var o = h(e, t, a);
             r(
               (function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var a = null != arguments[t] ? arguments[t] : {};
                   t % 2
-                    ? x(Object(a), !0).forEach(function(t) {
-                        G(e, t, a[t]);
+                    ? G(Object(a), !0).forEach(function(t) {
+                        H(e, t, a[t]);
                       })
                     : Object.getOwnPropertyDescriptors
                     ? Object.defineProperties(
                         e,
                         Object.getOwnPropertyDescriptors(a)
                       )
-                    : x(Object(a)).forEach(function(t) {
+                    : G(Object(a)).forEach(function(t) {
                         Object.defineProperty(
                           e,
                           t,
@@ -4426,31 +4423,33 @@
           };
         });
       }
-      function M() {
+      function T() {
         var e, t, a, r;
         return regeneratorRuntime.wrap(
           function(o) {
             for (;;)
               switch ((o.prev = o.next)) {
                 case 0:
-                  return (o.next = 2), Object(n.f)(g.a);
+                  return (o.next = 2), Object(n.e)(Object(y.c)(!0));
                 case 2:
+                  return (o.next = 4), Object(n.f)(g.a);
+                case 4:
                   if (!o.sent) {
-                    o.next = 5;
+                    o.next = 7;
                     break;
                   }
                   return o.abrupt("return");
-                case 5:
-                  return (o.next = 7), Object(n.f)(l.a);
                 case 7:
-                  return (e = o.sent), (o.next = 10), Object(n.f)(d.a);
-                case 10:
-                  return (t = o.sent), (o.next = 13), Object(n.f)(L.a);
-                case 13:
-                  return (a = o.sent), (o.next = 16), Object(n.b)(h, e, t, a);
-                case 16:
-                  (H = o.sent),
-                    (o.prev = 17),
+                  return (o.next = 9), Object(n.f)(l.a);
+                case 9:
+                  return (e = o.sent), (o.next = 12), Object(n.f)(d.a);
+                case 12:
+                  return (t = o.sent), (o.next = 15), Object(n.f)(L.a);
+                case 15:
+                  return (a = o.sent), (o.next = 18), Object(n.b)(M, e, t, a);
+                case 18:
+                  (m = o.sent),
+                    (o.prev = 19),
                     (r = regeneratorRuntime.mark(function e() {
                       var t, a, r, o;
                       return regeneratorRuntime.wrap(
@@ -4458,7 +4457,7 @@
                           for (;;)
                             switch ((e.prev = e.next)) {
                               case 0:
-                                return (e.next = 2), Object(n.g)(H);
+                                return (e.next = 2), Object(n.g)(m);
                               case 2:
                                 return (
                                   (t = e.sent),
@@ -4489,7 +4488,7 @@
                                   break;
                                 }
                                 return (
-                                  H.close(),
+                                  m.close(),
                                   (e.next = 16),
                                   Object(n.e)(Object(c.i)())
                                 );
@@ -4506,45 +4505,45 @@
                         this
                       );
                     }));
-                case 19:
-                  return o.delegateYield(r(), "t0", 21);
                 case 21:
-                  o.next = 19;
-                  break;
+                  return o.delegateYield(r(), "t0", 23);
                 case 23:
-                  return (o.prev = 23), (o.next = 26), Object(n.c)();
-                case 26:
+                  o.next = 21;
+                  break;
+                case 25:
+                  return (o.prev = 25), (o.next = 28), Object(n.c)();
+                case 28:
                   if (!o.sent) {
-                    o.next = 31;
+                    o.next = 33;
                     break;
                   }
-                  if ((console.log("countBuy cancelled"), H)) {
-                    o.next = 30;
+                  if ((console.log("countBuy cancelled"), m)) {
+                    o.next = 32;
                     break;
                   }
                   return o.abrupt("return");
-                case 30:
-                  H.close();
-                case 31:
-                  return o.finish(23);
                 case 32:
+                  m.close();
+                case 33:
+                  return o.finish(25);
+                case 34:
                 case "end":
                   return o.stop();
               }
           },
-          y,
+          O,
           this,
-          [[17, , 23, 32]]
+          [[19, , 25, 34]]
         );
       }
-      function T() {
+      function P() {
         var e;
         return regeneratorRuntime.wrap(
           function(t) {
             for (;;)
               switch ((t.prev = t.next)) {
                 case 0:
-                  return H && H.close(), (t.next = 3), Object(n.f)(v.a);
+                  return m && m.close(), (t.next = 3), Object(n.f)(v.a);
                 case 3:
                   (e = t.sent), b.b.onPayment(e);
                 case 5:
@@ -4552,69 +4551,69 @@
                   return t.stop();
               }
           },
-          O,
+          E,
           this
         );
       }
-      function P() {
+      function w() {
         return regeneratorRuntime.wrap(
           function(e) {
             for (;;)
               switch ((e.prev = e.next)) {
                 case 0:
-                  return (e.next = 2), Object(n.h)(c.a, M);
+                  return (e.next = 2), Object(n.h)(c.a, T);
                 case 2:
-                  return (e.next = 4), Object(n.i)(c.d, T);
+                  return (e.next = 4), Object(n.i)(c.d, P);
                 case 4:
                 case "end":
                   return e.stop();
               }
           },
-          E,
+          x,
           this
         );
       }
-      (m =
+      (j =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (m.register(
-          S,
+        (j.register(
+          h,
           "getPayment",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\gases.js"
         ),
-        m.register(
-          h,
+        j.register(
+          M,
           "buy",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\gases.js"
         ),
-        m.register(
-          H,
+        j.register(
+          m,
           "chan",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\gases.js"
         ),
-        m.register(
-          M,
+        j.register(
+          T,
           "onBuy",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\gases.js"
         ),
-        m.register(
-          T,
+        j.register(
+          P,
           "stopBuySaga",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\gases.js"
         ),
-        m.register(
-          P,
+        j.register(
+          w,
           "root",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\gases.js"
         )),
-        (j =
+        (S =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && j(e);
+            : void 0) && S(e);
     }.call(this, a(1)(e)));
   },
-  331: function(e, t, a) {
+  332: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "a", function() {
@@ -4625,9 +4624,9 @@
         n = a(11),
         l = a(28),
         i = a(61),
-        c = a(332),
-        s = a(110),
-        d = a(53);
+        c = a(333),
+        s = a(111),
+        d = a(71);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4752,7 +4751,7 @@
             : void 0) && L(e);
     }.call(this, a(1)(e)));
   },
-  332: function(e, t, a) {
+  333: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -4788,44 +4787,42 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  333: function(e, t, a) {
+  334: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "a", function() {
-        return x;
+        return E;
       });
       var r,
         o = a(3),
-        n = a(53),
-        l = a(168),
-        i = a(11),
-        c = a(87),
-        s = a(28),
-        d = a(61),
-        u = a(167),
-        f = a(111),
-        p = a(17);
+        n = a(82),
+        l = a(28),
+        i = a(61),
+        c = a(51),
+        s = a(167),
+        d = a(17);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
           : void 0) && r(e);
-      var g,
-        b,
-        v = regeneratorRuntime.mark(O),
-        L = regeneratorRuntime.mark(E),
-        y = regeneratorRuntime.mark(x);
+      var u,
+        f,
+        p = regeneratorRuntime.mark(L),
+        g = regeneratorRuntime.mark(y),
+        b = regeneratorRuntime.mark(O),
+        v = regeneratorRuntime.mark(E);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      function O() {
+      function L() {
         var e, t;
         return regeneratorRuntime.wrap(
           function(a) {
             for (;;)
               switch ((a.prev = a.next)) {
                 case 0:
-                  return (a.next = 2), Object(o.f)(u.a);
+                  return (a.next = 2), Object(o.f)(s.a);
                 case 2:
-                  return (e = a.sent), (a.next = 5), Object(o.f)(p.a);
+                  return (e = a.sent), (a.next = 5), Object(o.f)(d.a);
                 case 5:
                   if (((t = a.sent), e)) {
                     a.next = 9;
@@ -4834,95 +4831,106 @@
                   return (
                     (a.next = 9),
                     Object(o.e)(
-                      Object(f.b)({
+                      Object(c.d)({
                         title: t.vehicleIncompatible || "Véhicule incompatible"
                       })
                     )
                   );
                 case 9:
-                  return (a.next = 11), Object(o.e)(Object(c.c)());
+                  return (a.next = 11), Object(o.e)(Object(n.c)());
                 case 11:
                 case "end":
                   return a.stop();
+              }
+          },
+          p,
+          this
+        );
+      }
+      function y() {
+        return regeneratorRuntime.wrap(
+          function(e) {
+            for (;;)
+              switch ((e.prev = e.next)) {
+                case 0:
+                  return (e.next = 2), Object(o.e)(Object(c.c)(!1));
+                case 2:
+                  return (e.next = 4), Object(o.e)(Object(n.c)());
+                case 4:
+                case "end":
+                  return e.stop();
+              }
+          },
+          g,
+          this
+        );
+      }
+      function O() {
+        return regeneratorRuntime.wrap(
+          function(e) {
+            for (;;)
+              switch ((e.prev = e.next)) {
+                case 0:
+                  return (e.next = 2), Object(o.e)(Object(c.c)(!0));
+                case 2:
+                  return (e.next = 4), Object(o.e)(Object(n.c)());
+                case 4:
+                case "end":
+                  return e.stop();
+              }
+          },
+          b,
+          this
+        );
+      }
+      function E() {
+        return regeneratorRuntime.wrap(
+          function(e) {
+            for (;;)
+              switch ((e.prev = e.next)) {
+                case 0:
+                  return (e.next = 2), Object(o.h)(l.c, L);
+                case 2:
+                  return (e.next = 4), Object(o.h)(i.b, y);
+                case 4:
+                  return (e.next = 6), Object(o.h)(c.b, O);
+                case 6:
+                case "end":
+                  return e.stop();
               }
           },
           v,
           this
         );
       }
-      function E(e) {
-        var t, a, r, s, d, u, f;
-        return regeneratorRuntime.wrap(
-          function(p) {
-            for (;;)
-              switch ((p.prev = p.next)) {
-                case 0:
-                  return (t = e.player), (p.next = 3), Object(o.f)(n.a);
-                case 3:
-                  return (a = p.sent), (p.next = 6), Object(o.f)(l.a);
-                case 6:
-                  if (
-                    ((r = p.sent),
-                    (s = r.fuelValue),
-                    (d = r.tank),
-                    (u = Object(i.a)(s, ["car", "fuelValue"], t)),
-                    (f = Object(i.a)(d, ["car", "tank"], t)),
-                    !(u + a > f || f < u + a))
-                  ) {
-                    p.next = 14;
-                    break;
-                  }
-                  return (p.next = 14), Object(o.e)(Object(c.c)());
-                case 14:
-                case "end":
-                  return p.stop();
-              }
-          },
-          L,
-          this
-        );
-      }
-      function x() {
-        return regeneratorRuntime.wrap(
-          function(e) {
-            for (;;)
-              switch ((e.prev = e.next)) {
-                case 0:
-                  return (e.next = 2), Object(o.h)(s.c, O);
-                case 2:
-                  return (e.next = 4), Object(o.h)(d.b, E);
-                case 4:
-                case "end":
-                  return e.stop();
-              }
-          },
-          y,
-          this
-        );
-      }
-      (g =
+      (u =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.default
           : void 0) &&
-        (g.register(
-          O,
+        (u.register(
+          L,
           "changeGasSelected",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\shopping-cart.js"
         ),
-        g.register(
-          E,
+        u.register(
+          y,
           "updatePlayer",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\shopping-cart.js"
         ),
-        g.register(
-          x,
+        u.register(
+          O,
+          "paymentError",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\shopping-cart.js"
+        ),
+        u.register(
+          E,
           "root",
           "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\sagas\\shopping-cart.js"
         )),
-        (b =
+        (f =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && b(e);
+            : void 0) && f(e);
     }.call(this, a(1)(e)));
   },
   38: function(e, t, a) {
@@ -5327,9 +5335,9 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  438: function(e, t, a) {
-    var r = a(211),
-      o = a(439);
+  439: function(e, t, a) {
+    var r = a(210),
+      o = a(440);
     "string" == typeof (o = o.__esModule ? o.default : o) &&
       (o = [[e.i, o, ""]]);
     var n = { insert: "head", singleton: !1 },
@@ -5338,50 +5346,84 @@
         o.locals ? o.locals : {});
     e.exports = l;
   },
-  439: function(e, t, a) {
-    (t = a(212)(!1)).push([
+  440: function(e, t, a) {
+    (t = a(211)(!1)).push([
       e.i,
       '\r\nbody {\r\n    font-family: "Montserrat, sans-serif;";\r\n}',
       ""
     ]),
       (e.exports = t);
   },
-  53: function(e, t, a) {
+  51: function(e, t, a) {
     "use strict";
     (function(e) {
-      var r,
-        o = a(14);
-      (r =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && r(e);
+      var r;
+      a.d(t, "b", function() {
+        return l;
+      }),
+        a.d(t, "a", function() {
+          return i;
+        }),
+        a.d(t, "d", function() {
+          return c;
+        }),
+        a.d(t, "c", function() {
+          return s;
+        }),
+        (r =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.enterModule
+            : void 0) && r(e);
       "undefined" != typeof reactHotLoaderGlobal &&
         reactHotLoaderGlobal.default.signature;
-      var n,
-        l,
-        i = Object(o.a)(["sceneState", "shoppingCart", "countBuy"]);
-      (t.a = i),
+      var o,
+        n,
+        l = "SET_PAYMENT_ERROR",
+        i = "SET_CAN_UPDATE_PAYMENT",
+        c = function(e) {
+          var t = e.title,
+            a = e.message;
+          return { type: l, title: t, message: a };
+        },
+        s = function(e) {
+          return { type: i, canUpdatePayment: e };
+        };
+      (o =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.default
+          : void 0) &&
+        (o.register(
+          l,
+          "SET_PAYMENT_ERROR",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\actions\\payment.js"
+        ),
+        o.register(
+          i,
+          "SET_CAN_UPDATE_PAYMENT",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\actions\\payment.js"
+        ),
+        o.register(
+          c,
+          "setPaymentError",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\actions\\payment.js"
+        ),
+        o.register(
+          s,
+          "setCanUpdatePayment",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\actions\\payment.js"
+        )),
         (n =
           "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          n.register(
-            i,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\reducers\\sceneState\\selectors\\select-count-buy.js"
-          ),
-        (l =
-          "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
-            : void 0) && l(e);
+            : void 0) && n(e);
     }.call(this, a(1)(e)));
   },
   54: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
-        o = a(106),
-        n = a(107);
+        o = a(107),
+        n = a(108);
       (r =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -5732,7 +5774,37 @@
             : void 0) && l(e);
     }.call(this, a(1)(e)));
   },
-  758: function(e, t, a) {
+  71: function(e, t, a) {
+    "use strict";
+    (function(e) {
+      var r,
+        o = a(14);
+      (r =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && r(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var n,
+        l,
+        i = Object(o.a)(["sceneState", "shoppingCart", "countBuy"]);
+      (t.a = i),
+        (n =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          n.register(
+            i,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\gasStation\\redux\\reducers\\sceneState\\selectors\\select-count-buy.js"
+          ),
+        (l =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && l(e);
+    }.call(this, a(1)(e)));
+  },
+  759: function(e, t, a) {
     "use strict";
     a.r(t),
       function(e) {
@@ -5741,8 +5813,8 @@
           o = a.n(r),
           n = a(39),
           l = a.n(n),
-          i = a(310);
-        a(254);
+          i = a(309);
+        a(253);
         (t =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.enterModule
@@ -5768,7 +5840,7 @@
               : void 0) && s(e);
       }.call(this, a(1)(e));
   },
-  80: function(e, t, a) {
+  81: function(e, t, a) {
     "use strict";
     (function(e) {
       var r;
@@ -5803,7 +5875,7 @@
             : void 0) && n(e);
     }.call(this, a(1)(e)));
   },
-  87: function(e, t, a) {
+  82: function(e, t, a) {
     "use strict";
     (function(e) {
       var r;
@@ -5865,7 +5937,7 @@
             : void 0) && n(e);
     }.call(this, a(1)(e)));
   },
-  88: function(e, t, a) {
+  89: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "c", function() {
@@ -5981,7 +6053,7 @@
             : void 0) && f(e);
     }.call(this, a(1)(e)));
   },
-  90: function(e, t, a) {
+  91: function(e, t, a) {
     "use strict";
     (function(e) {
       a.d(t, "b", function() {
@@ -6121,7 +6193,7 @@
             : void 0) && f(e);
     }.call(this, a(1)(e)));
   },
-  95: function(e, t, a) {
+  96: function(e, t, a) {
     "use strict";
     (function(e) {
       var r,
@@ -6217,7 +6289,7 @@
             : void 0) && s(e);
     }.call(this, a(1)(e)));
   },
-  98: function(e, t, a) {
+  99: function(e, t, a) {
     "use strict";
     (function(e) {
       var r;

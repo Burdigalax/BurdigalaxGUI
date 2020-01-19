@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
-import { compose } from "recompose";
+import { compose, shouldUpdate } from "recompose";
 
 import { Resume, Money, Separtor, SubLine, TotalTTC } from "./styles";
 import selectShoppingCart from "../../redux/reducers/sceneState/selectors/select-shopping-cart";
@@ -10,6 +10,7 @@ import getCurrentGasSelected from "../../redux/reducers/sceneState/getters/get-c
 import selectWordingFromConfig from "../../../redux/reducers/config/selectors/select-wording-from-config";
 import selectConfig from "../../../redux/reducers/config/selectors/select-config";
 import selectStyleFromConfig from "../../../redux/reducers/config/selectors/select-style-from-config";
+import selectCanUpdatePayment from "../../redux/reducers/sceneState/selectors/select-can-update-payment";
 
 const PaymentComponent = ({
   hasTaxEnabled = true,
@@ -81,7 +82,8 @@ const PaymentComponent = ({
 const numberWithSpace = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 
 const mapStateToProps = state => {
-  const { total, totalTTC, tax, countBuy, gasName } = selectShoppingCart(state);
+  const { total, totalTTC, tax, countBuy } = selectShoppingCart(state);
+  const canUpdatePayment = selectCanUpdatePayment(state);
 
   const hasNoEnoughMoney = getHasNoEnoughMoney(state);
   const remainingMoney = getRemainingMoney(state);
@@ -102,8 +104,12 @@ const mapStateToProps = state => {
     unit: currentGasSelected && currentGasSelected.unit,
     hasTaxEnabled,
     redColor,
-    greenColor
+    greenColor,
+    canUpdatePayment
   };
 };
 
-export default compose(connect(mapStateToProps))(PaymentComponent);
+export default compose(
+  connect(mapStateToProps),
+  shouldUpdate((props, { canUpdatePayment }) => canUpdatePayment)
+)(PaymentComponent);

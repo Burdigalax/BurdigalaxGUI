@@ -80,9 +80,9 @@
   (c.push = t), (c = c.slice());
   for (var l = 0; l < c.length; l++) t(c[l]);
   var s = d;
-  o.push([759, 0]), r();
+  o.push([760, 0]), r();
 })({
-  100: function(e, t, r) {
+  101: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "e", function() {
@@ -272,7 +272,7 @@
     (function(e) {
       var n,
         a = r(11),
-        o = r(71);
+        o = r(72);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -317,7 +317,7 @@
           return u;
         });
       var n,
-        a = r(171),
+        a = r(170),
         o = r(11);
       function i(e, t) {
         var r = Object.keys(e);
@@ -1148,19 +1148,19 @@
         leaveModule && leaveModule(module);
     }.call(this, __webpack_require__(1)(module)));
   },
-  169: function(e, t, r) {
+  168: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
         i = r(125),
-        c = r(91),
-        d = r(336),
-        l = r(338),
-        s = r(340),
-        u = r(343),
-        f = r(348),
+        c = r(92),
+        d = r(337),
+        l = r(339),
+        s = r(341),
+        u = r(344),
+        f = r(349),
         p = r(12);
       function b() {
         return (b =
@@ -1260,6 +1260,44 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
+  169: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var n,
+        a = r(11);
+      (n =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && n(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var o,
+        i,
+        c = {},
+        d = function(e, t) {
+          return Object(a.a)(c, ["entities", "inventories", "byId", t], e);
+        };
+      (t.a = d),
+        (o =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          (o.register(
+            c,
+            "emptyObject",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
+          ),
+          o.register(
+            d,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
+          )),
+        (i =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && i(e);
+    }.call(this, r(1)(e)));
+  },
   17: function(e, t, r) {
     "use strict";
     (function(e) {
@@ -1311,44 +1349,6 @@
         i,
         c = {},
         d = function(e, t) {
-          return Object(a.a)(c, ["entities", "inventories", "byId", t], e);
-        };
-      (t.a = d),
-        (o =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          (o.register(
-            c,
-            "emptyObject",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
-          ),
-          o.register(
-            d,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\entities\\inventories\\selectors\\select-inventory-by-id.js"
-          )),
-        (i =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && i(e);
-    }.call(this, r(1)(e)));
-  },
-  171: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var n,
-        a = r(11);
-      (n =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && n(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var o,
-        i,
-        c = {},
-        d = function(e, t) {
           return Object(a.a)(c, ["entities", "items", "byId", t], e);
         };
       (t.a = d),
@@ -1372,7 +1372,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  172: function(e, t, r) {
+  171: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1402,7 +1402,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  173: function(e, t, r) {
+  172: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1436,14 +1436,14 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  174: function(e, t, r) {
+  173: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(77),
-        o = r(73),
-        i = r(83),
-        c = r(353),
+        a = r(78),
+        o = r(74),
+        i = r(85),
+        c = r(354),
         d = r(116),
         l = r(112);
       (n =
@@ -1481,12 +1481,12 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  175: function(e, t, r) {
+  174: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(116),
-        o = r(354);
+        o = r(355);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -1515,7 +1515,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  176: function(e, t, r) {
+  175: function(e, t, r) {
     "use strict";
     (function(e) {
       var n;
@@ -1557,18 +1557,18 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  177: function(e, t, r) {
+  176: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(3),
         o = r(120),
-        i = r(73),
+        i = r(74),
         c = r(44),
-        d = r(84),
+        d = r(86),
         l = r(18),
         s = r(34),
-        u = r(178),
+        u = r(177),
         f = r(47),
         p = r(22),
         b = r(62);
@@ -1737,7 +1737,7 @@
             : void 0) && L(e);
     }.call(this, r(1)(e)));
   },
-  178: function(e, t, r) {
+  177: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1767,7 +1767,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  179: function(e, t, r) {
+  178: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -1776,11 +1776,11 @@
         i = r(62),
         c = r(34),
         d = r(47),
-        l = r(178),
+        l = r(177),
         s = r(22),
         u = r(18),
         f = r(55),
-        p = r(170);
+        p = r(169);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -1887,169 +1887,7 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  18: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var n;
-      r.d(t, "f", function() {
-        return i;
-      }),
-        r.d(t, "e", function() {
-          return c;
-        }),
-        r.d(t, "g", function() {
-          return d;
-        }),
-        r.d(t, "d", function() {
-          return l;
-        }),
-        r.d(t, "b", function() {
-          return s;
-        }),
-        r.d(t, "a", function() {
-          return u;
-        }),
-        r.d(t, "c", function() {
-          return f;
-        }),
-        r.d(t, "l", function() {
-          return p;
-        }),
-        r.d(t, "m", function() {
-          return b;
-        }),
-        r.d(t, "n", function() {
-          return v;
-        }),
-        r.d(t, "k", function() {
-          return g;
-        }),
-        r.d(t, "i", function() {
-          return y;
-        }),
-        r.d(t, "h", function() {
-          return O;
-        }),
-        r.d(t, "j", function() {
-          return E;
-        }),
-        (n =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.enterModule
-            : void 0) && n(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var a,
-        o,
-        i = "SET_ITEM_SELECTED_ID",
-        c = "SET_ITEMS",
-        d = "SET_ITEMS",
-        l = "ON_USE_ITEM",
-        s = "ON_EQUIP_ITEM",
-        u = "ON_DELETE_ITEM",
-        f = "ON_TRANSFER_ITEM",
-        p = function(e) {
-          return { type: i, id: e };
-        },
-        b = function(e) {
-          return { type: c, items: e };
-        },
-        v = function(e) {
-          return { type: d, items: e };
-        },
-        g = function(e) {
-          return { type: l, data: e };
-        },
-        y = function(e) {
-          return { type: s, data: e };
-        },
-        O = function(e) {
-          return { type: u, data: e };
-        },
-        E = function(e) {
-          return { type: f, data: e };
-        };
-      (a =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.default
-          : void 0) &&
-        (a.register(
-          i,
-          "SET_ITEM_SELECTED_ID",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          c,
-          "SET_ITEMS",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          d,
-          "UPDATE_ITEMS",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          l,
-          "ON_USE_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          s,
-          "ON_EQUIP_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          u,
-          "ON_DELETE_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          f,
-          "ON_TRANSFER_ITEM",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          p,
-          "setItemSelectedId",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          b,
-          "setItems",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          v,
-          "updateItems",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          g,
-          "onUseItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          y,
-          "onEquipItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          O,
-          "onDeleteItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        ),
-        a.register(
-          E,
-          "onTransferItem",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
-        )),
-        (o =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && o(e);
-    }.call(this, r(1)(e)));
-  },
-  180: function(e, t, r) {
+  179: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -2058,7 +1896,7 @@
         i = r(20),
         c = r(115),
         d = r(34),
-        l = r(224);
+        l = r(223);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2289,18 +2127,180 @@
             : void 0) && E(e);
     }.call(this, r(1)(e)));
   },
-  181: function(e, t, r) {
+  18: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var n;
+      r.d(t, "f", function() {
+        return i;
+      }),
+        r.d(t, "e", function() {
+          return c;
+        }),
+        r.d(t, "g", function() {
+          return d;
+        }),
+        r.d(t, "d", function() {
+          return l;
+        }),
+        r.d(t, "b", function() {
+          return s;
+        }),
+        r.d(t, "a", function() {
+          return u;
+        }),
+        r.d(t, "c", function() {
+          return f;
+        }),
+        r.d(t, "l", function() {
+          return p;
+        }),
+        r.d(t, "m", function() {
+          return b;
+        }),
+        r.d(t, "n", function() {
+          return v;
+        }),
+        r.d(t, "k", function() {
+          return g;
+        }),
+        r.d(t, "i", function() {
+          return y;
+        }),
+        r.d(t, "h", function() {
+          return O;
+        }),
+        r.d(t, "j", function() {
+          return E;
+        }),
+        (n =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.enterModule
+            : void 0) && n(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var a,
+        o,
+        i = "SET_ITEM_SELECTED_ID",
+        c = "SET_ITEMS",
+        d = "SET_ITEMS",
+        l = "ON_USE_ITEM",
+        s = "ON_EQUIP_ITEM",
+        u = "ON_DELETE_ITEM",
+        f = "ON_TRANSFER_ITEM",
+        p = function(e) {
+          return { type: i, id: e };
+        },
+        b = function(e) {
+          return { type: c, items: e };
+        },
+        v = function(e) {
+          return { type: d, items: e };
+        },
+        g = function(e) {
+          return { type: l, data: e };
+        },
+        y = function(e) {
+          return { type: s, data: e };
+        },
+        O = function(e) {
+          return { type: u, data: e };
+        },
+        E = function(e) {
+          return { type: f, data: e };
+        };
+      (a =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.default
+          : void 0) &&
+        (a.register(
+          i,
+          "SET_ITEM_SELECTED_ID",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          c,
+          "SET_ITEMS",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          d,
+          "UPDATE_ITEMS",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          l,
+          "ON_USE_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          s,
+          "ON_EQUIP_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          u,
+          "ON_DELETE_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          f,
+          "ON_TRANSFER_ITEM",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          p,
+          "setItemSelectedId",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          b,
+          "setItems",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          v,
+          "updateItems",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          g,
+          "onUseItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          y,
+          "onEquipItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          O,
+          "onDeleteItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        ),
+        a.register(
+          E,
+          "onTransferItem",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\actions\\items.js"
+        )),
+        (o =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && o(e);
+    }.call(this, r(1)(e)));
+  },
+  180: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(3),
         o = r(58),
-        i = r(85),
-        c = r(176),
+        i = r(87),
+        c = r(175),
         d = r(18),
         l = r(44),
         s = r(22),
-        u = r(96),
+        u = r(97),
         f = r(31);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -2383,7 +2383,7 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  187: function(e, t, r) {
+  186: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -2752,7 +2752,7 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  222: function(e, t, r) {
+  221: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "b", function() {
@@ -2823,17 +2823,17 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  223: function(e, t, r) {
+  222: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(23),
-        o = r(95),
-        i = r(355),
-        c = r(356),
-        d = r(357),
-        l = r(358),
-        s = r(359);
+        o = r(96),
+        i = r(356),
+        c = r(357),
+        d = r(358),
+        l = r(359),
+        s = r(360);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2870,7 +2870,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  224: function(e, t, r) {
+  223: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -3010,8 +3010,8 @@
           );
         },
         g = Object(i.b)(
-          Object(i.j)("isHover", "setHover", !1),
-          Object(i.h)({
+          Object(i.k)("isHover", "setHover", !1),
+          Object(i.i)({
             onMouseEnter: function(e) {
               var t = e.setHover,
                 r = e.iconLeftUrl,
@@ -3067,9 +3067,9 @@
             : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  254: function(e, t, r) {
-    var n = r(211),
-      a = r(255);
+  253: function(e, t, r) {
+    var n = r(210),
+      a = r(254);
     "string" == typeof (a = a.__esModule ? a.default : a) &&
       (a = [[e.i, a, ""]]);
     var o = { insert: "head", singleton: !1 },
@@ -3078,10 +3078,10 @@
         a.locals ? a.locals : {});
     e.exports = i;
   },
-  255: function(e, t, r) {
-    var n = r(212),
-      a = r(437),
-      o = r(256);
+  254: function(e, t, r) {
+    var n = r(211),
+      a = r(438),
+      o = r(255);
     t = n(!1);
     var i = a(o);
     t.push([
@@ -3093,7 +3093,7 @@
     ]),
       (e.exports = t);
   },
-  256: function(e, t, r) {
+  255: function(e, t, r) {
     "use strict";
     r.r(t), (t.default = r.p + "fonts/Montserrat-Regular.ttf");
   },
@@ -3209,27 +3209,27 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  334: function(e, t, r) {
+  335: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
         i = r(8),
-        c = r(75),
+        c = r(76),
         d = r(4),
         l = r(23),
-        s = r(242),
+        s = r(241),
         u = r.n(s),
-        f = r(198),
-        p = r(246),
-        b = r(335),
-        v = r(223),
-        g = r(360),
-        y = r(361),
-        O = r(362),
-        E = r(187),
-        m = r(364);
+        f = r(197),
+        p = r(245),
+        b = r(336),
+        v = r(222),
+        g = r(361),
+        y = r(362),
+        O = r(363),
+        E = r(186),
+        m = r(365);
       function x(e, t) {
         return (
           (function(e) {
@@ -3462,21 +3462,21 @@
             : void 0) && S(e);
     }.call(this, r(1)(e)));
   },
-  335: function(e, t, r) {
+  336: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(4),
         o = r(8),
         i = r(20),
-        c = r(169),
-        d = r(84),
-        l = r(85),
+        c = r(168),
+        d = r(86),
+        l = r(87),
         s = r(22),
         u = r(44),
         f = r(18),
-        p = r(174),
-        b = r(175),
+        p = r(173),
+        b = r(174),
         v = r(34),
         g = r(17),
         y = r(30);
@@ -3607,7 +3607,7 @@
             : void 0) && x(e);
     }.call(this, r(1)(e)));
   },
-  336: function(e, t, r) {
+  337: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -3616,11 +3616,11 @@
         i = r(8),
         c = r(4),
         d = r(126),
-        l = r(100),
+        l = r(101),
         s = r(7),
         u = r(12),
-        f = r(71),
-        p = r(337),
+        f = r(72),
+        p = r(338),
         b = r(20),
         v = r(47);
       (n =
@@ -3681,7 +3681,7 @@
         },
         m = Object(c.b)(
           Object(i.b)(E),
-          Object(c.h)({
+          Object(c.i)({
             onClose: function(e) {
               var t = e.context;
               return function() {
@@ -3717,15 +3717,15 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  337: function(e, t, r) {
+  338: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(78),
-        o = r(197),
+        a = r(79),
+        o = r(196),
         i = r(35),
-        c = r(534),
-        d = r(245),
+        c = r(535),
+        d = r(244),
         l = r(112),
         s = r(114);
       (n =
@@ -3761,7 +3761,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  338: function(e, t, r) {
+  339: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
@@ -3769,13 +3769,13 @@
         a = r(4),
         o = r(8),
         i = r(126),
-        c = r(339),
-        d = r(84),
+        c = r(340),
+        d = r(86),
         l = r(18),
-        s = r(171),
+        s = r(170),
         u = r(115),
         f = r(34),
-        p = r(172),
+        p = r(171),
         b = r(47),
         v = r(22);
       (n =
@@ -3821,9 +3821,9 @@
         },
         m = Object(a.b)(
           Object(o.b)(O, E),
-          Object(a.j)("clickTime", "setClickTime", 0),
-          Object(a.j)("isOnDrag", "setIsOnDrag", !1),
-          Object(a.h)({
+          Object(a.k)("clickTime", "setClickTime", 0),
+          Object(a.k)("isOnDrag", "setIsOnDrag", !1),
+          Object(a.i)({
             onMouseDownItem: function(e) {
               var t = e.idItem,
                 r = e.idInventory,
@@ -3911,14 +3911,44 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  339: function(e, t, r) {
+  34: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var n,
+        a = r(14);
+      (n =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && n(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var o,
+        i,
+        c = Object(a.a)(["sceneState", "currentInventoryId"]);
+      (t.a = c),
+        (o =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          o.register(
+            c,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\sceneState\\selectors\\select-current-inventory-id.js"
+          ),
+        (i =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && i(e);
+    }.call(this, r(1)(e)));
+  },
+  340: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
         i = r(125),
-        c = r(92),
+        c = r(93),
         d = r(12);
       function l() {
         return (l =
@@ -4069,37 +4099,7 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  34: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var n,
-        a = r(14);
-      (n =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && n(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var o,
-        i,
-        c = Object(a.a)(["sceneState", "currentInventoryId"]);
-      (t.a = c),
-        (o =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          o.register(
-            c,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\inventory\\redux\\reducers\\sceneState\\selectors\\select-current-inventory-id.js"
-          ),
-        (i =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && i(e);
-    }.call(this, r(1)(e)));
-  },
-  340: function(e, t, r) {
+  341: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4108,9 +4108,9 @@
         i = r(8),
         c = r(35),
         d = r(4),
-        l = r(222),
+        l = r(221),
         s = r(12),
-        u = r(341),
+        u = r(342),
         f = r(116),
         p = r(55);
       (n =
@@ -4158,7 +4158,7 @@
         O = { setCategorySelectedId: p.d },
         E = Object(d.b)(
           Object(i.b)(y, O),
-          Object(d.h)({
+          Object(d.i)({
             onClick: function(e) {
               var t = e.setCategorySelectedId,
                 r = e.selectedCategoryId;
@@ -4199,17 +4199,17 @@
             : void 0) && v(e);
     }.call(this, r(1)(e)));
   },
-  341: function(e, t, r) {
+  342: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(78),
-        o = r(197),
-        i = r(77),
-        c = r(198),
-        d = r(247),
-        l = r(71),
-        s = r(342),
+        a = r(79),
+        o = r(196),
+        i = r(78),
+        c = r(197),
+        d = r(246),
+        l = r(72),
+        s = r(343),
         u = r(47),
         f = r(22);
       (n =
@@ -4258,7 +4258,7 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  342: function(e, t, r) {
+  343: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4294,7 +4294,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  343: function(e, t, r) {
+  344: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
@@ -4304,11 +4304,11 @@
         i = r(11),
         c = r(14),
         d = r(126),
-        l = r(344),
-        s = r(173),
+        l = r(345),
+        s = r(172),
         u = r(18),
-        f = r(345),
-        p = r(172),
+        f = r(346),
+        p = r(171),
         b = r(62),
         v = r(34),
         g = r(47),
@@ -4359,8 +4359,8 @@
         },
         j = Object(o.b)(
           Object(a.b)(x, L),
-          Object(o.j)("quantity", "setQuantity", 1),
-          Object(o.h)({
+          Object(o.k)("quantity", "setQuantity", 1),
+          Object(o.i)({
             onEquip: function(e) {
               var t = e.isEquipped,
                 r = e.idInventory,
@@ -4474,7 +4474,7 @@
             : void 0) && m(e);
     }.call(this, r(1)(e)));
   },
-  344: function(e, t, r) {
+  345: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4626,12 +4626,12 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  345: function(e, t, r) {
+  346: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(35),
-        o = r(346);
+        o = r(347);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4665,16 +4665,16 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  346: function(e, t, r) {
+  347: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(11),
-        o = r(197),
-        i = r(77),
-        c = r(198),
-        d = r(347),
-        l = r(71);
+        o = r(196),
+        i = r(78),
+        c = r(197),
+        d = r(348),
+        l = r(72);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4707,7 +4707,7 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  347: function(e, t, r) {
+  348: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -4743,14 +4743,14 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  348: function(e, t, r) {
+  349: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var n,
         a = r(8),
-        o = r(349),
-        i = r(173),
+        o = r(350),
+        i = r(172),
         c = r(17);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4799,15 +4799,15 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  349: function(e, t, r) {
+  350: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
-        i = r(51),
+        i = r(52),
         c = r(12),
-        d = r(350);
+        d = r(351);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4908,16 +4908,16 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  350: function(e, t, r) {
+  351: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(0),
         o = r.n(a),
         i = r(8),
-        c = r(351),
+        c = r(352),
         d = r(12),
-        l = r(352);
+        l = r(353);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4973,7 +4973,7 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  351: function(e, t, r) {
+  352: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -5024,7 +5024,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  352: function(e, t, r) {
+  353: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -5056,11 +5056,11 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  353: function(e, t, r) {
+  354: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(83),
+        a = r(85),
         o = r(113);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5090,7 +5090,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  354: function(e, t, r) {
+  355: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -5128,7 +5128,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  355: function(e, t, r) {
+  356: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -5245,13 +5245,13 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  356: function(e, t, r) {
+  357: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(146),
         o = r(35),
-        i = r(244),
+        i = r(243),
         c = r(55);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5330,16 +5330,16 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  357: function(e, t, r) {
+  358: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(35),
-        o = r(196),
-        i = r(78),
+        o = r(195),
+        i = r(79),
         c = r(146),
         d = r(11),
-        l = r(539),
+        l = r(540),
         s = r(58),
         u = r(44);
       function f(e, t) {
@@ -5511,11 +5511,11 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  358: function(e, t, r) {
+  359: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
-        a = r(176);
+        a = r(175);
       function o(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -5603,13 +5603,13 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  359: function(e, t, r) {
+  360: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(146),
         o = r(35),
-        i = (r(244), r(18));
+        i = (r(243), r(18));
       function c(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -5723,7 +5723,7 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  360: function(e, t, r) {
+  361: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -5734,18 +5734,18 @@
         o = r(14),
         i = r(58),
         c = r(11),
-        d = r(247),
+        d = r(246),
         l = r(120),
-        s = r(73),
-        u = r(85),
+        s = r(74),
+        u = r(87),
         f = r(55),
-        p = r(177),
-        b = r(179),
-        v = r(180),
+        p = r(176),
+        b = r(178),
+        v = r(179),
         g = r(22),
-        y = r(181),
+        y = r(180),
         O = r(62),
-        E = r(96);
+        E = r(97);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -5879,7 +5879,7 @@
             : void 0) && x(e);
     }.call(this, r(1)(e)));
   },
-  361: function(e, t, r) {
+  362: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -5887,17 +5887,17 @@
       });
       var n,
         a = r(3),
-        o = r(85),
+        o = r(87),
         i = r(55),
-        c = r(177),
-        d = r(179),
+        c = r(176),
+        d = r(178),
         l = r(22),
-        s = r(180),
-        u = r(181),
+        s = r(179),
+        u = r(180),
         f = r(58),
         p = r(14),
-        b = r(247),
-        v = r(96);
+        b = r(246),
+        v = r(97);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -5989,18 +5989,18 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  362: function(e, t, r) {
+  363: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(4),
         o = r(8),
-        i = r(169),
-        c = r(84),
-        d = r(174),
-        l = r(175),
+        i = r(168),
+        c = r(86),
+        d = r(173),
+        l = r(174),
         s = r(22),
-        u = r(363),
+        u = r(364),
         f = r(47),
         p = r(34),
         b = r(17),
@@ -6071,12 +6071,12 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  363: function(e, t, r) {
+  364: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(11),
-        o = r(71);
+        o = r(72);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -6105,7 +6105,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  364: function(e, t, r) {
+  365: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -6127,7 +6127,7 @@
             r = e.onDragEnd;
           return o.a.createElement(i.a, { onDragEnd: r }, t);
         },
-        f = Object(c.h)({
+        f = Object(c.i)({
           onDragEnd: function(e) {
             return (
               (function(e) {
@@ -6368,9 +6368,9 @@
       var n,
         a = r(2),
         o = r(24),
-        i = r(405),
-        c = r(404),
-        d = r(536),
+        i = r(406),
+        c = r(405),
+        d = r(537),
         l = r(25);
       function s() {
         var e = O(["\n  color: #9da6a1;\n  font-size: 12px;\n"]);
@@ -6600,7 +6600,7 @@
       var n,
         a = r(2),
         o = r(24),
-        i = r(448),
+        i = r(449),
         c = r(13),
         d = r(25),
         l = r(12);
@@ -6752,7 +6752,7 @@
             : void 0) && E(e);
     }.call(this, r(1)(e)));
   },
-  51: function(e, t, r) {
+  52: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "h", function() {
@@ -7326,12 +7326,12 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  71: function(e, t, r) {
+  72: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
         a = r(34),
-        o = r(170);
+        o = r(169);
       (n =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -7360,7 +7360,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  759: function(e, t, r) {
+  760: function(e, t, r) {
     "use strict";
     r.r(t),
       function(e) {
@@ -7369,8 +7369,8 @@
           a = r.n(n),
           o = r(39),
           i = r.n(o),
-          c = r(334);
-        r(254);
+          c = r(335);
+        r(253);
         (t =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.enterModule
@@ -7396,7 +7396,7 @@
               : void 0) && l(e);
       }.call(this, r(1)(e));
   },
-  84: function(e, t, r) {
+  86: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -7426,7 +7426,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  85: function(e, t, r) {
+  87: function(e, t, r) {
     "use strict";
     (function(e) {
       var n;
@@ -7468,7 +7468,7 @@
             : void 0) && o(e);
     }.call(this, r(1)(e)));
   },
-  91: function(e, t, r) {
+  92: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "d", function() {
@@ -7651,7 +7651,7 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  92: function(e, t, r) {
+  93: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "g", function() {
@@ -7857,7 +7857,7 @@
             : void 0) && v(e);
     }.call(this, r(1)(e)));
   },
-  95: function(e, t, r) {
+  96: function(e, t, r) {
     "use strict";
     (function(e) {
       var n,
@@ -7953,7 +7953,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  96: function(e, t, r) {
+  97: function(e, t, r) {
     "use strict";
     (function(e) {
       var r;

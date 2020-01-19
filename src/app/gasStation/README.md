@@ -6,7 +6,7 @@
 DOWNLOAD Burdigalax Packages to install on your ONSET server.   
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.4.2](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.4.2.zip)
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.4.3](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.4.3.zip)
 
 ### Integration - Exemple for Onset : 
 
@@ -253,9 +253,13 @@ BURDIGALAX_gasStation.setPaymentError({title: 'Erreur', message: "Vous n'avez pa
 
 :information_source: If the error is triggered due to data desync between the interface and the server. Use the functions: `BURDIGALAX_gasStation.updatePlayer()` or/and `BURDIGALAX_gasStation.updateGases()` or/and `BURDIGALAX_gasStation.updateStation()` to resynchronize the GUI.
 
+This action resetting  payment information. 
+
 #### updatePlayer
 
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
+
+The payment informations will be reset on next click. _(new buy or change gas selected)_
 
 ```js
 BURDIGALAX_gasStation.updatePlayer({

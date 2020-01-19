@@ -80,8 +80,164 @@
   (c.push = t), (c = c.slice());
   for (var d = 0; d < c.length; d++) t(c[d]);
   var s = i;
-  n.push([750, 0]), r();
+  n.push([751, 0]), r();
 })({
+  100: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      r.d(t, "b", function() {
+        return E;
+      }),
+        r.d(t, "c", function() {
+          return v;
+        }),
+        r.d(t, "a", function() {
+          return O;
+        }),
+        r.d(t, "d", function() {
+          return y;
+        }),
+        r.d(t, "e", function() {
+          return h;
+        });
+      r(0);
+      var o,
+        a = r(2),
+        n = r(273);
+      function l() {
+        var e = p([
+          "\n  flex: 0.8;\n  border-radius: ",
+          ";\n  background-color: white;\n  justify-content: center;\n"
+        ]);
+        return (
+          (l = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function c() {
+        var e = p([
+          "\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-color: ",
+          ";\n  border-style: dashed;\n  width: 100%;\n  opacity: 0.3;\n"
+        ]);
+        return (
+          (c = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function i() {
+        var e = p([
+          "\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n  height: 60px;\n"
+        ]);
+        return (
+          (i = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function d() {
+        var e = p([
+          "\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  align-items: stretch;\n"
+        ]);
+        return (
+          (d = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function s() {
+        var e = p([
+          "\n  min-width: 700px;\n  max-width: 1000px;\n  max-height: 1500px;\n  margin: auto;\n  font-family: Montserrat, sans-serif;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -o-user-select: none;\n  user-select: none;\n\n  img {\n    -webkit-user-drag: none;\n    -khtml-user-drag: none;\n    -moz-user-drag: none;\n    -o-user-drag: none;\n    user-drag: none;\n  }\n"
+        ]);
+        return (
+          (s = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function u() {
+        var e = p([
+          "\n  max-width: 1300px;\n  margin: auto;\n  font-family: Montserrat, sans-serif;\n  h3 {\n    font-size: 20px;\n    margin: 5px 0;\n    font-weight: 500;\n  }\n"
+        ]);
+        return (
+          (u = function() {
+            return e;
+          }),
+          e
+        );
+      }
+      function p(e, t) {
+        return (
+          t || (t = e.slice(0)),
+          Object.freeze(
+            Object.defineProperties(e, { raw: { value: Object.freeze(t) } })
+          )
+        );
+      }
+      (o =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && o(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var f,
+        g,
+        b = a.a.div(u()),
+        E = a.a.div(s()),
+        v = a.a.div(d()),
+        O = a.a.div(i()),
+        y = a.a.hr(c(), function(e) {
+          return e.color;
+        }),
+        h = Object(a.a)(n.a)(l(), function(e) {
+          return e.hasBgHeader ? "0 0 0 10px" : "10px 0px 0px 10px";
+        });
+      (f =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.default
+          : void 0) &&
+        (f.register(
+          b,
+          "Wrapper",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
+        ),
+        f.register(
+          E,
+          "Interface",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
+        ),
+        f.register(
+          v,
+          "Row",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
+        ),
+        f.register(
+          O,
+          "BuyButtons",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
+        ),
+        f.register(
+          y,
+          "Separtor",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
+        ),
+        f.register(
+          h,
+          "StyledArticles",
+          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
+        )),
+        (g =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && g(e);
+    }.call(this, r(1)(e)));
+  },
   118: function(e, t, r) {
     "use strict";
     (function(e) {
@@ -1123,7 +1279,7 @@
       var o,
         a = r(0),
         n = r.n(a),
-        l = r(88),
+        l = r(89),
         c = r(12),
         i = r(7);
       (o =
@@ -1275,7 +1431,7 @@
     "use strict";
     (function(e) {
       var o,
-        a = r(78),
+        a = r(79),
         n = r(11),
         l = r(120);
       (o =
@@ -1386,9 +1542,9 @@
     "use strict";
     (function(e) {
       var o,
-        a = r(78),
+        a = r(79),
         n = r(35),
-        l = r(245),
+        l = r(244),
         c = r(154);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -1617,7 +1773,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  184: function(e, t, r) {
+  183: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "b", function() {
@@ -1850,7 +2006,7 @@
             : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
-  217: function(e, t, r) {
+  216: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "b", function() {
@@ -1924,7 +2080,7 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  218: function(e, t, r) {
+  217: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -1993,7 +2149,7 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  219: function(e, t, r) {
+  218: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "b", function() {
@@ -2170,8 +2326,8 @@
           );
         },
         E = Object(l.b)(
-          Object(l.j)("isHover", "setHover", !1),
-          Object(l.h)({
+          Object(l.k)("isHover", "setHover", !1),
+          Object(l.i)({
             onMouseEnter: function(e) {
               var t = e.setHover,
                 r = e.iconLeftUrl,
@@ -2227,9 +2383,9 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  254: function(e, t, r) {
-    var o = r(211),
-      a = r(255);
+  253: function(e, t, r) {
+    var o = r(210),
+      a = r(254);
     "string" == typeof (a = a.__esModule ? a.default : a) &&
       (a = [[e.i, a, ""]]);
     var n = { insert: "head", singleton: !1 },
@@ -2238,10 +2394,10 @@
         a.locals ? a.locals : {});
     e.exports = l;
   },
-  255: function(e, t, r) {
-    var o = r(212),
-      a = r(437),
-      n = r(256);
+  254: function(e, t, r) {
+    var o = r(211),
+      a = r(438),
+      n = r(255);
     t = o(!1);
     var l = a(n);
     t.push([
@@ -2253,18 +2409,18 @@
     ]),
       (e.exports = t);
   },
-  256: function(e, t, r) {
+  255: function(e, t, r) {
     "use strict";
     r.r(t), (t.default = r.p + "fonts/Montserrat-Regular.ttf");
   },
-  258: function(e, t, r) {
+  257: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
-        l = r(259);
-      r(435);
+        l = r(258);
+      r(436);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2292,7 +2448,7 @@
             : void 0) && i(e);
     }.call(this, r(1)(e)));
   },
-  259: function(e, t, r) {
+  258: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -2300,18 +2456,18 @@
         n = r(23),
         l = r(14),
         c = r(4),
-        i = r(75),
+        i = r(76),
         d = r(0),
         s = r.n(d),
-        u = r(260),
-        p = r(268),
-        f = r(273),
+        u = r(259),
+        p = r(267),
+        f = r(272),
         g = r(155),
         b = r(16),
         E = r(19),
         v = r(43),
         O = r(60),
-        y = r(97);
+        y = r(98);
       function h(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -2464,19 +2620,19 @@
             : void 0) && S(e);
     }.call(this, r(1)(e)));
   },
-  260: function(e, t, r) {
+  259: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(23),
-        n = r(261),
-        l = r(262),
-        c = r(263),
-        i = r(264),
-        d = r(265),
-        s = r(266),
-        u = r(267),
-        p = r(95);
+        n = r(260),
+        l = r(261),
+        c = r(262),
+        i = r(263),
+        d = r(264),
+        s = r(265),
+        u = r(266),
+        p = r(96);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2519,17 +2675,17 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  261: function(e, t, r) {
+  260: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(11),
-        n = r(78),
+        n = r(79),
         l = r(35),
         c = r(14),
-        i = r(535),
-        d = r(77),
-        s = r(73),
+        i = r(536),
+        d = r(78),
+        s = r(74),
         u = r(126),
         p = r(60),
         f = r(43);
@@ -2638,12 +2794,12 @@
             : void 0) && O(e);
     }.call(this, r(1)(e)));
   },
-  262: function(e, t, r) {
+  261: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(58),
-        n = r(97);
+        n = r(98);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -2689,7 +2845,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  263: function(e, t, r) {
+  262: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -2781,14 +2937,14 @@
             : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
-  264: function(e, t, r) {
+  263: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(146),
         n = r(35),
         l = r(11),
-        c = r(244),
+        c = r(243),
         i = r(60);
       function d(e, t) {
         var r = Object.keys(e);
@@ -2912,17 +3068,17 @@
             : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  265: function(e, t, r) {
+  264: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        a = r(537),
-        n = r(73),
-        l = r(401),
-        c = r(400),
-        i = r(77),
-        d = r(531),
-        s = r(532),
+        a = r(538),
+        n = r(74),
+        l = r(402),
+        c = r(401),
+        i = r(78),
+        d = r(532),
+        s = r(533),
         u = r(45),
         p = r(63),
         f = r(43);
@@ -3044,7 +3200,7 @@
             : void 0) && O(e);
     }.call(this, r(1)(e)));
   },
-  266: function(e, t, r) {
+  265: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -3139,7 +3295,7 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  267: function(e, t, r) {
+  266: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -3207,7 +3363,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  268: function(e, t, r) {
+  267: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -3215,10 +3371,10 @@
       });
       var o,
         a = r(3),
-        n = r(269),
+        n = r(268),
         l = r(155),
-        c = r(271),
-        i = r(272);
+        c = r(270),
+        i = r(271);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -3264,24 +3420,24 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  269: function(e, t, r) {
+  268: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(3),
-        n = r(533),
+        n = r(534),
         l = r(127),
         c = r(35),
-        i = r(77),
-        d = r(73),
-        s = r(78),
-        u = r(245),
+        i = r(78),
+        d = r(74),
+        s = r(79),
+        u = r(244),
         p = r(45),
         f = r(70),
-        g = r(86),
+        g = r(88),
         b = r(153),
         E = r(154),
-        v = r(270),
+        v = r(269),
         O = r(43),
         y = r(60);
       (o =
@@ -3550,7 +3706,7 @@
             : void 0) && B(e);
     }.call(this, r(1)(e)));
   },
-  270: function(e, t, r) {
+  269: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -3580,7 +3736,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  271: function(e, t, r) {
+  270: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -3590,7 +3746,7 @@
         a = r(3),
         n = r(58),
         l = r(31),
-        c = r(97),
+        c = r(98),
         i = r(60),
         d = r(151),
         s = r(135);
@@ -3645,7 +3801,7 @@
             : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  272: function(e, t, r) {
+  271: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -3725,15 +3881,15 @@
             : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  273: function(e, t, r) {
+  272: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
-        l = r(99),
-        c = r(289),
-        i = r(291);
+        l = r(100),
+        c = r(288),
+        i = r(290);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -3774,7 +3930,7 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  274: function(e, t, r) {
+  273: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
@@ -3782,9 +3938,9 @@
         a = r(8),
         n = r(4),
         l = r(14),
-        c = r(275),
-        i = r(286),
-        d = r(287),
+        c = r(274),
+        i = r(285),
+        d = r(286),
         s = r(30),
         u = r(17);
       (o =
@@ -3842,15 +3998,15 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  275: function(e, t, r) {
+  274: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
         l = r(66),
-        c = r(276),
-        i = r(280);
+        c = r(275),
+        i = r(279);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -3945,18 +4101,18 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  276: function(e, t, r) {
+  275: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(4),
         n = r(8),
-        l = r(538),
-        c = r(77),
+        l = r(539),
+        c = r(78),
         i = r(14),
-        d = r(394),
-        s = r(277),
-        u = r(279),
+        d = r(395),
+        s = r(276),
+        u = r(278),
         p = r(70),
         f = r(45),
         g = r(152),
@@ -4067,7 +4223,7 @@
         H = Object(a.b)(
           Object(a.g)("OnShopArticleContainer"),
           Object(n.b)(L, C),
-          Object(a.j)("count", "setCount", 1),
+          Object(a.k)("count", "setCount", 1),
           Object(a.c)({
             componentDidUpdate: function(e) {
               var t = this.props,
@@ -4079,7 +4235,7 @@
               (e.isInStock !== o || (r > a && n && a > 0)) && l(1);
             }
           }),
-          Object(a.h)({
+          Object(a.i)({
             onAddToCart: function(e) {
               var t = e.addArticleRequest,
                 r = e.id,
@@ -4145,16 +4301,16 @@
             : void 0) && h(e);
     }.call(this, r(1)(e)));
   },
-  277: function(e, t, r) {
+  276: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
         l = r(35),
-        c = r(404),
+        c = r(405),
         i = r(24),
-        d = r(405),
+        d = r(406),
         s = r(50),
         u = r(7),
         p = r(13),
@@ -4276,7 +4432,7 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  279: function(e, t, r) {
+  278: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -4317,14 +4473,14 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  280: function(e, t, r) {
+  279: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
         a = r(8),
-        n = r(281),
-        l = r(285),
+        n = r(280),
+        l = r(284),
         c = r(70),
         i = r(17),
         d = r(16);
@@ -4419,15 +4575,15 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  281: function(e, t, r) {
+  280: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
-        a = r(72),
+        a = r(73),
         n = r(127),
         l = r(0),
         c = r.n(l),
-        i = r(282);
+        i = r(281);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -4516,15 +4672,15 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  282: function(e, t, r) {
+  281: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
         a = r(8),
         n = r(4),
-        l = r(283),
-        c = r(284),
+        l = r(282),
+        c = r(283),
         i = r(16);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4570,13 +4726,13 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  283: function(e, t, r) {
+  282: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
-        l = r(217),
+        l = r(216),
         c = r(13);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -4630,7 +4786,7 @@
             : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
-  284: function(e, t, r) {
+  283: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -4662,7 +4818,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  285: function(e, t, r) {
+  284: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -4692,7 +4848,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  286: function(e, t, r) {
+  285: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -4728,14 +4884,14 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  287: function(e, t, r) {
+  286: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
         l = r(8),
-        c = r(288),
+        c = r(287),
         i = r(12),
         d = r(40);
       (o =
@@ -4786,7 +4942,7 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  288: function(e, t, r) {
+  287: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -4835,14 +4991,14 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  289: function(e, t, r) {
+  288: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
       var o,
         a = r(8),
         n = r(4),
-        l = r(290),
+        l = r(289),
         c = r(16),
         i = r(143);
       (o =
@@ -4887,7 +5043,7 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  290: function(e, t, r) {
+  289: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -4919,17 +5075,17 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  291: function(e, t, r) {
+  290: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(8),
         n = r(4),
         l = r(126),
-        c = r(292),
-        i = r(86),
+        c = r(291),
+        i = r(88),
         d = r(16),
-        s = r(309),
+        s = r(308),
         u = r(19),
         p = r(63);
       function f(e, t) {
@@ -5047,19 +5203,19 @@
             : void 0) && v(e);
     }.call(this, r(1)(e)));
   },
-  292: function(e, t, r) {
+  291: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
-        l = r(184),
-        c = r(293),
-        i = r(295),
-        d = r(297),
-        s = r(303),
-        u = r(305),
-        p = r(307);
+        l = r(183),
+        c = r(292),
+        i = r(294),
+        d = r(296),
+        s = r(302),
+        u = r(304),
+        p = r(306);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -5130,15 +5286,15 @@
             : void 0) && g(e);
     }.call(this, r(1)(e)));
   },
-  293: function(e, t, r) {
+  292: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(4),
         n = r(8),
-        l = (r(0), r(192)),
+        l = (r(0), r(191)),
         c = r.n(l),
-        i = r(294),
+        i = r(293),
         d = r(70),
         s = r(40),
         u = r(45),
@@ -5176,7 +5332,7 @@
         O = Object(a.b)(
           Object(a.g)("BasketArticleComponent"),
           Object(n.b)(E, v),
-          Object(a.h)({
+          Object(a.i)({
             onDelete: function(e) {
               var t = e.deleteArticleRequest,
                 r = e.id;
@@ -5218,14 +5374,14 @@
             : void 0) && b(e);
     }.call(this, r(1)(e)));
   },
-  294: function(e, t, r) {
+  293: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
         l = r(7),
-        c = r(218),
+        c = r(217),
         i = r(13);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5280,13 +5436,13 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  295: function(e, t, r) {
+  294: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(8),
         n = r(4),
-        l = (r(0), r(296)),
+        l = (r(0), r(295)),
         c = r(156),
         i = r(17),
         d = r(16),
@@ -5308,7 +5464,7 @@
         },
         g = Object(n.b)(
           Object(a.b)(f),
-          Object(n.h)({
+          Object(n.i)({
             onClose: function() {
               return function() {
                 return s.b.onClose();
@@ -5343,13 +5499,13 @@
             : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  296: function(e, t, r) {
+  295: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
-        l = r(192),
+        l = r(191),
         c = r.n(l),
         i = r(118),
         d = r(7);
@@ -5405,7 +5561,7 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  297: function(e, t, r) {
+  296: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
@@ -5413,10 +5569,10 @@
         a = r(8),
         n = r(4),
         l = r(126),
-        c = r(298),
-        i = r(301),
-        d = r(86),
-        s = r(302),
+        c = r(297),
+        i = r(300),
+        d = r(88),
+        s = r(301),
         u = r(156),
         p = r(30),
         f = r(17),
@@ -5475,7 +5631,7 @@
         },
         m = Object(n.b)(
           Object(a.b)(h),
-          Object(n.h)({
+          Object(n.i)({
             onCashPayment: function(e) {
               var t = e.shoppingCart;
               return function() {
@@ -5521,15 +5677,15 @@
             : void 0) && y(e);
     }.call(this, r(1)(e)));
   },
-  298: function(e, t, r) {
+  297: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
-        l = r(99),
-        c = r(89),
-        i = r(299),
+        l = r(100),
+        c = r(90),
+        i = r(298),
         d = r(13);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
@@ -5643,13 +5799,13 @@
             : void 0) && u(e);
     }.call(this, r(1)(e)));
   },
-  299: function(e, t, r) {
+  298: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(8),
         n = r(4),
-        l = r(300),
+        l = r(299),
         c = r(40),
         i = r(157),
         d = r(158),
@@ -5708,37 +5864,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  30: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      var o,
-        a = r(11);
-      (o =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && o(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var n,
-        l,
-        c = Object(a.a)({}, ["config"]);
-      (t.a = c),
-        (n =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.default
-            : void 0) &&
-          n.register(
-            c,
-            "default",
-            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-config.js"
-          ),
-        (l =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && l(e);
-    }.call(this, r(1)(e)));
-  },
-  300: function(e, t, r) {
+  299: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -5746,7 +5872,7 @@
         n = r.n(a),
         l = r(12),
         c = r(13),
-        i = r(219);
+        i = r(218);
       (o =
         "undefined" != typeof reactHotLoaderGlobal
           ? reactHotLoaderGlobal.enterModule
@@ -5795,7 +5921,37 @@
             : void 0) && s(e);
     }.call(this, r(1)(e)));
   },
-  301: function(e, t, r) {
+  30: function(e, t, r) {
+    "use strict";
+    (function(e) {
+      var o,
+        a = r(11);
+      (o =
+        "undefined" != typeof reactHotLoaderGlobal
+          ? reactHotLoaderGlobal.enterModule
+          : void 0) && o(e);
+      "undefined" != typeof reactHotLoaderGlobal &&
+        reactHotLoaderGlobal.default.signature;
+      var n,
+        l,
+        c = Object(a.a)({}, ["config"]);
+      (t.a = c),
+        (n =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.default
+            : void 0) &&
+          n.register(
+            c,
+            "default",
+            "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\redux\\reducers\\config\\selectors\\select-config.js"
+          ),
+        (l =
+          "undefined" != typeof reactHotLoaderGlobal
+            ? reactHotLoaderGlobal.leaveModule
+            : void 0) && l(e);
+    }.call(this, r(1)(e)));
+  },
+  300: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -5831,7 +5987,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  302: function(e, t, r) {
+  301: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -5861,14 +6017,14 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  303: function(e, t, r) {
+  302: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
         a = r(0),
         n = r.n(a),
         l = r(8),
-        c = r(304),
+        c = r(303),
         i = r(40),
         d = r(12),
         s = r(17),
@@ -5931,7 +6087,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  304: function(e, t, r) {
+  303: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "a", function() {
@@ -5978,7 +6134,7 @@
             : void 0) && c(e);
     }.call(this, r(1)(e)));
   },
-  305: function(e, t, r) {
+  304: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
@@ -5988,7 +6144,7 @@
         l = r(19),
         c = r(159),
         i = r(40),
-        d = r(306),
+        d = r(305),
         s = r(16),
         u = r(17);
       (o =
@@ -6049,7 +6205,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  306: function(e, t, r) {
+  305: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -6079,7 +6235,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  307: function(e, t, r) {
+  306: function(e, t, r) {
     "use strict";
     (function(e) {
       r(0);
@@ -6089,7 +6245,7 @@
         l = r(63),
         c = r(159),
         i = r(40),
-        d = r(308),
+        d = r(307),
         s = r(16),
         u = r(17);
       (o =
@@ -6151,7 +6307,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  308: function(e, t, r) {
+  307: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -6181,7 +6337,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  309: function(e, t, r) {
+  308: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -6385,9 +6541,9 @@
             : void 0) && n(e);
     }.call(this, r(1)(e)));
   },
-  435: function(e, t, r) {
-    var o = r(211),
-      a = r(436);
+  436: function(e, t, r) {
+    var o = r(210),
+      a = r(437);
     "string" == typeof (a = a.__esModule ? a.default : a) &&
       (a = [[e.i, a, ""]]);
     var n = { insert: "head", singleton: !1 },
@@ -6396,8 +6552,8 @@
         a.locals ? a.locals : {});
     e.exports = l;
   },
-  436: function(e, t, r) {
-    (t = r(212)(!1)).push([
+  437: function(e, t, r) {
+    (t = r(211)(!1)).push([
       e.i,
       '\r\nbody {\r\n    font-family: "Montserrat, sans-serif;";\r\n}',
       ""
@@ -6573,7 +6729,7 @@
       var o,
         a = r(2),
         n = r(24),
-        l = r(448),
+        l = r(449),
         c = r(13),
         i = r(25),
         d = r(12);
@@ -7391,7 +7547,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  72: function(e, t, r) {
+  73: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "h", function() {
@@ -7599,7 +7755,7 @@
             : void 0) && v(e);
     }.call(this, r(1)(e)));
   },
-  750: function(e, t, r) {
+  751: function(e, t, r) {
     "use strict";
     r.r(t),
       function(e) {
@@ -7608,8 +7764,8 @@
           a = r.n(o),
           n = r(39),
           l = r.n(n),
-          c = r(258);
-        r(254);
+          c = r(257);
+        r(253);
         (t =
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.enterModule
@@ -7635,7 +7791,7 @@
               : void 0) && d(e);
       }.call(this, r(1)(e));
   },
-  86: function(e, t, r) {
+  88: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -7665,7 +7821,7 @@
             : void 0) && l(e);
     }.call(this, r(1)(e)));
   },
-  88: function(e, t, r) {
+  89: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "c", function() {
@@ -7781,7 +7937,7 @@
             : void 0) && p(e);
     }.call(this, r(1)(e)));
   },
-  89: function(e, t, r) {
+  90: function(e, t, r) {
     "use strict";
     (function(e) {
       r.d(t, "e", function() {
@@ -7915,7 +8071,7 @@
             : void 0) && f(e);
     }.call(this, r(1)(e)));
   },
-  95: function(e, t, r) {
+  96: function(e, t, r) {
     "use strict";
     (function(e) {
       var o,
@@ -8011,7 +8167,7 @@
             : void 0) && d(e);
     }.call(this, r(1)(e)));
   },
-  97: function(e, t, r) {
+  98: function(e, t, r) {
     "use strict";
     (function(e) {
       var o;
@@ -8071,162 +8227,6 @@
           "undefined" != typeof reactHotLoaderGlobal
             ? reactHotLoaderGlobal.leaveModule
             : void 0) && n(e);
-    }.call(this, r(1)(e)));
-  },
-  99: function(e, t, r) {
-    "use strict";
-    (function(e) {
-      r.d(t, "b", function() {
-        return E;
-      }),
-        r.d(t, "c", function() {
-          return v;
-        }),
-        r.d(t, "a", function() {
-          return O;
-        }),
-        r.d(t, "d", function() {
-          return y;
-        }),
-        r.d(t, "e", function() {
-          return h;
-        });
-      r(0);
-      var o,
-        a = r(2),
-        n = r(274);
-      function l() {
-        var e = p([
-          "\n  flex: 0.8;\n  border-radius: ",
-          ";\n  background-color: white;\n  justify-content: center;\n"
-        ]);
-        return (
-          (l = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function c() {
-        var e = p([
-          "\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-color: ",
-          ";\n  border-style: dashed;\n  width: 100%;\n  opacity: 0.3;\n"
-        ]);
-        return (
-          (c = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function i() {
-        var e = p([
-          "\n  display: flex;\n  flex-direction: row;\n  justify-content: space-evenly;\n  height: 60px;\n"
-        ]);
-        return (
-          (i = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function d() {
-        var e = p([
-          "\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  align-items: stretch;\n"
-        ]);
-        return (
-          (d = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function s() {
-        var e = p([
-          "\n  min-width: 700px;\n  max-width: 1000px;\n  max-height: 1500px;\n  margin: auto;\n  font-family: Montserrat, sans-serif;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -o-user-select: none;\n  user-select: none;\n\n  img {\n    -webkit-user-drag: none;\n    -khtml-user-drag: none;\n    -moz-user-drag: none;\n    -o-user-drag: none;\n    user-drag: none;\n  }\n"
-        ]);
-        return (
-          (s = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function u() {
-        var e = p([
-          "\n  max-width: 1300px;\n  margin: auto;\n  font-family: Montserrat, sans-serif;\n  h3 {\n    font-size: 20px;\n    margin: 5px 0;\n    font-weight: 500;\n  }\n"
-        ]);
-        return (
-          (u = function() {
-            return e;
-          }),
-          e
-        );
-      }
-      function p(e, t) {
-        return (
-          t || (t = e.slice(0)),
-          Object.freeze(
-            Object.defineProperties(e, { raw: { value: Object.freeze(t) } })
-          )
-        );
-      }
-      (o =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.enterModule
-          : void 0) && o(e);
-      "undefined" != typeof reactHotLoaderGlobal &&
-        reactHotLoaderGlobal.default.signature;
-      var f,
-        g,
-        b = a.a.div(u()),
-        E = a.a.div(s()),
-        v = a.a.div(d()),
-        O = a.a.div(i()),
-        y = a.a.hr(c(), function(e) {
-          return e.color;
-        }),
-        h = Object(a.a)(n.a)(l(), function(e) {
-          return e.hasBgHeader ? "0 0 0 10px" : "10px 0px 0px 10px";
-        });
-      (f =
-        "undefined" != typeof reactHotLoaderGlobal
-          ? reactHotLoaderGlobal.default
-          : void 0) &&
-        (f.register(
-          b,
-          "Wrapper",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
-        ),
-        f.register(
-          E,
-          "Interface",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
-        ),
-        f.register(
-          v,
-          "Row",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
-        ),
-        f.register(
-          O,
-          "BuyButtons",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
-        ),
-        f.register(
-          y,
-          "Separtor",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
-        ),
-        f.register(
-          h,
-          "StyledArticles",
-          "E:\\PROJETS\\Onset\\Burdigalax\\src\\app\\onShop\\components\\styles.js"
-        )),
-        (g =
-          "undefined" != typeof reactHotLoaderGlobal
-            ? reactHotLoaderGlobal.leaveModule
-            : void 0) && g(e);
     }.call(this, r(1)(e)));
   }
 });

@@ -34,7 +34,7 @@ const LiveDemo = ({ defaultCodeConfig, defaultCodeUpdateInventories }) => {
       </p>
       <strong>Readme:</strong> Check github project :{" "}
       <a
-        href="https://github.com/Burdigalax/BurdigalaxGUI/src/app/inventory"
+        href="https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/inventory"
         target="_blank"
       >
         https://github.com/Burdigalax/BurdigalaxGUI/src/app/inventory
