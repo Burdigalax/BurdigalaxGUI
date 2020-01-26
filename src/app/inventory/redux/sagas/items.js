@@ -54,6 +54,17 @@ function* onTransfer({
       )
     );
 
+    const quantityToTransfer = quantity || nowQuantityOrigin;
+
+    if (!destinationInventoryId) {
+      return LUA_FUNCTIONS.onDelete({
+        idInventory: originInventoryId,
+        idItem,
+        quantity: quantityToTransfer,
+        newQuantity: nowQuantityOrigin - quantityToTransfer
+      });
+    }
+
     const { quantity: nowQuantityDestination = 0 } = yield select(state =>
       selectItemFromInventoriesByIdInventoryAndIdItem(
         state,
@@ -61,8 +72,6 @@ function* onTransfer({
         idItem
       )
     );
-
-    const quantityToTransfer = quantity || nowQuantityOrigin;
 
     LUA_FUNCTIONS.onTransfer({
       originInventoryId,

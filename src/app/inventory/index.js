@@ -52,7 +52,7 @@ const getNewPosition = id => {
   const element = document.getElementById(id);
   const transform = element.style.transform;
   if (!includes("translate", transform)) return;
-  console.log("transform", transform);
+
   const firstParenthesisIndex = indexOf("(", transform);
   const comaIndex = indexOf(",", transform);
   const secondParenthesisIndex = indexOf(")", transform);
@@ -64,7 +64,6 @@ const getNewPosition = id => {
     transform.substring(comaIndex + 2, secondParenthesisIndex)
   );
 
-  console.log("LEFT", left, "top", top);
   return { top, left };
 };
 
@@ -85,7 +84,7 @@ export default () => {
     document.getElementById("transferInventory").style.transform = "none";
   }, [keyTransfer]);
 
-  const onStopMain = () => {
+  const onStopMain = e => {
     const { left, top } = getNewPosition("mainInventory");
     setMainPosition({
       left: left + mainPosition.left,

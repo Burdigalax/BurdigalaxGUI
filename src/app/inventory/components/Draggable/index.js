@@ -10,9 +10,10 @@ const DraggableComponent = ({ children, onDragEnd }) => (
 export default withHandlers({
   onDragEnd: ({}) => (event = {}) => {
     const { destination, source } = event;
-    if (!destination) return;
+    if (!source) return;
 
-    const destinationInventoryId = parseInt(destination.droppableId);
+    const destinationInventoryId =
+      destination && parseInt(destination.droppableId);
     const idItem = source.index;
     const originInventoryId = parseInt(source.droppableId);
 

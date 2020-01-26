@@ -23,7 +23,7 @@ const Demo = () => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
       />
-      <h1>Burdigalax v4.4.3</h1>
+      <h1>Burdigalax v4.5.0</h1>
       <div>
         <h2>
           Contact: <br />
