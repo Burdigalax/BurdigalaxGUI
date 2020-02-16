@@ -31,7 +31,7 @@ export default ({
 
   return (
     <Interface position={position}>
-      <Droppable droppableId={`${idInventory}-inventory-id`}>
+      <Droppable droppableId={idInventory}>
         {({ innerRef, placeholder, droppableProps }) => (
           <div ref={innerRef} {...droppableProps}>
             <Header />

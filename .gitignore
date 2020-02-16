@@ -4,6 +4,7 @@ coverage/
 dist/
 !dist/index.html
 node_modules/
+ONSET_SERVER/packages/burdigalax/client/gui/
 *.log
 
 # OS generated files

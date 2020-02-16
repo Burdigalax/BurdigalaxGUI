@@ -13,6 +13,7 @@ import transferInventorySaga from "./redux/sagas/transferInventory/";
 import TransferInventory from "./components/TransferInventory";
 import { Wrapper, WrapperDraggable } from "./styles";
 import DraggableContainer from "./components/Draggable";
+import { JS_FUNCTIONS } from "./events";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -24,11 +25,15 @@ const store = createStore(
 );
 sagaMiddleware.run(mainInventorySaga);
 
+window.MAIN_STORE = store;
+
 const storeTransferInventory = createStore(
   inventoryReducers,
   composeEnhancers(applyMiddleware(sagaMiddleware))
 );
 sagaMiddleware.run(transferInventorySaga);
+
+window.INVENTORY_STORE = storeTransferInventory;
 
 const InventoryContainer = () => (
   <Provider store={store}>
@@ -75,6 +80,7 @@ export default () => {
     left: 0
   });
   const [keyTransfer, setKeyTransfer] = useState(0);
+  const [isDisplay, setDisplay] = useState(true);
 
   useEffect(() => {
     document.getElementById("mainInventory").style.transform = "none";
@@ -93,6 +99,12 @@ export default () => {
     setKeyMain(keyMain + 1);
   };
 
+  window[JS_FUNCTIONS.prefix] = {
+    ...window[JS_FUNCTIONS.prefix],
+    [JS_FUNCTIONS.show]: () => setDisplay(true),
+    [JS_FUNCTIONS.hide]: () => setDisplay(false)
+  };
+
   const onStopTransfer = () => {
     const { left, top } = getNewPosition("transferInventory");
     setTransferPosition({
@@ -104,7 +116,7 @@ export default () => {
 
   return (
     <DraggableContainer>
-      <Wrapper onContextMenu={e => e.preventDefault()}>
+      <Wrapper onContextMenu={e => e.preventDefault()} isDisplay={isDisplay}>
         <Draggable
           handle=".header"
           cancel="button"

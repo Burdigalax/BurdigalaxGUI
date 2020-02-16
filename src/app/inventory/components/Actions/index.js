@@ -118,6 +118,7 @@ export default compose(
       const { idItem, maxQuantity, setQuantity } = this.props;
 
       if (idItem !== prevProps.idItem) return setQuantity(1);
+      if (prevProps.maxQuantity !== maxQuantity) return;
 
       if (
         maxQuantity !== prevProps.maxQuantity &&

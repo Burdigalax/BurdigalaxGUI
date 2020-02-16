@@ -6,7 +6,7 @@
 DOWNLOAD Burdigalax Packages to install on your ONSET server.   
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.5.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.5.0.zip)
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.6.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.6.0.zip)
 
 
 ### Integration - Exemple for Onset : 
@@ -41,7 +41,8 @@ BURDIGALAX_inventory_onChangeNearbyInventorySelected
  BURDIGALAX_inventory.updateItemsInventories(inventoryId, items);
  BURDIGALAX_inventory.updateInventories(inventories);
  BURDIGALAX_inventory.updateItems(items);
-  
+ BURDIGALAX_inventory_hide();
+ BURDIGALAX_inventory_show();
 ```
 #### onClose :
 
@@ -373,5 +374,23 @@ BURDIGALAX_inventory.updateItems(
     ]
 );
 ```
+
+#### hide 
+
+Hide GUI. _This method is optional_   
+:information_source: I recommand this method on ONSET before command `SetWebVisibility(inventory, WEB_HIDDEN)` to avoid flashing GUI when it reappears.
+
+```js 
+BURDIGALAX_inventory.hide(); 
+```
+
+#### show
+
+Show GUI - GUI is display by default. _This method is optional_   
+:information_source: I recommand this method on ONSET after command `SetWebVisibility(inventory, WEB_VISIBLE)`.
+```js 
+BURDIGALAX_inventory.show(); 
+```
+
 ### Contact
 > Discord: RomBurdi#9770

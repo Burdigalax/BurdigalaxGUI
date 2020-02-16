@@ -12,10 +12,9 @@ export default withHandlers({
     const { destination, source } = event;
     if (!source) return;
 
-    const destinationInventoryId =
-      destination && parseInt(destination.droppableId);
+    const destinationInventoryId = destination && destination.droppableId;
     const idItem = source.index;
-    const originInventoryId = parseInt(source.droppableId);
+    const originInventoryId = source && source.droppableId;
 
     if (destinationInventoryId === originInventoryId) return;
 

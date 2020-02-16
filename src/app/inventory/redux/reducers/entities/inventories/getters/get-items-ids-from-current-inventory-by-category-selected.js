@@ -18,7 +18,6 @@ export default state => {
       propEq("isEquipable", true),
       itemsInventory
     );
-    console.log("merde", itemsEquipableInventory);
     return keys(itemsEquipableInventory);
   }
 

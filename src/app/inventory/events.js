@@ -5,6 +5,8 @@ export const updateItems = "updateItems";
 export const updateInventories = "updateInventories";
 export const updateItemsInventories = "updateItemsInventories";
 export const transferItem = "transferItem";
+export const show = "show";
+export const hide = "hide";
 
 export const onClose = "BURDIGALAX_inventory_onClose";
 export const onUse = "BURDIGALAX_inventory_onUse";
@@ -20,7 +22,9 @@ export const JS_FUNCTIONS = {
   updateItems,
   updateInventories,
   updateItemsInventories,
-  transferItem
+  transferItem,
+  show,
+  hide
 };
 
 const callEvent = (name, value) => {

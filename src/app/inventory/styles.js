@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  display: flex;
+  display: ${({ isDisplay }) => (isDisplay ? "flex" : "none")};
   flex-direction: row;
   align-items: baseline;
 `;
