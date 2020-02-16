@@ -33,7 +33,7 @@ const storeTransferInventory = createStore(
 );
 sagaMiddleware.run(transferInventorySaga);
 
-window.INVENTORY_STORE = storeTransferInventory;
+window.TRANSFER_STORE = storeTransferInventory;
 
 const InventoryContainer = () => (
   <Provider store={store}>
