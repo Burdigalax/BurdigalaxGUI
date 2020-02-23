@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import { BTN_VARIANT } from "../../../common/components/BurdiButton/constants";
 import {
@@ -12,7 +12,8 @@ import {
   Bloc,
   WrapperSwitch,
   EquippedSwitch,
-  NoNearbyInventories
+  NoNearbyInventories,
+  NoItemSelected
 } from "./styles";
 import { MenuItem } from "../../../onShop/components/Articles/Article/styles";
 
@@ -39,12 +40,40 @@ export default ({
   isDisabledTransfer,
   isUsable = true,
   isDeletable = true,
-  wording
+  wording,
+  hasItemSelected = false
 }) => {
   const selectAllInput = event => event.target.select();
 
-  return (
-    <Wrapper>
+  const renderNearbyInventoriesSelectBox = () => (
+    <Fragment>
+      {nearbyInventories.length > 0 ? (
+        <StyledSelect
+          displayEmpty
+          value={selectedNearbyInventoryId}
+          onChange={onChangeNearbyInventory}
+          input={<StyledInputBase />}
+        >
+          <MenuItem key={`nearbyInventory-none`} value={"none"}>
+            {wording.noneInventory}
+          </MenuItem>
+          {nearbyInventories.map(renderNearbyInventory)}
+        </StyledSelect>
+      ) : (
+        <NoNearbyInventories>{wording.noNearbyInventories}</NoNearbyInventories>
+      )}
+    </Fragment>
+  );
+
+  const renderNoItemSelected = () => (
+    <Bloc noItemSelected>
+      <NoItemSelected>- {wording.selectItem} - </NoItemSelected>
+      {renderNearbyInventoriesSelectBox()}
+    </Bloc>
+  );
+
+  const renderItemSelected = () => (
+    <Fragment>
       <Bloc>
         {isUsable && (
           <UseButton
@@ -78,23 +107,7 @@ export default ({
           label={wording.max}
           onClick={onSetMaxQuantity}
         />
-        {nearbyInventories.length > 0 ? (
-          <StyledSelect
-            displayEmpty
-            value={selectedNearbyInventoryId}
-            onChange={onChangeNearbyInventory}
-            input={<StyledInputBase />}
-          >
-            <MenuItem key={`nearbyInventory-none`} value={"none"}>
-              {wording.noneInventory}
-            </MenuItem>
-            {nearbyInventories.map(renderNearbyInventory)}
-          </StyledSelect>
-        ) : (
-          <NoNearbyInventories>
-            {wording.noNearbyInventories}
-          </NoNearbyInventories>
-        )}
+        {renderNearbyInventoriesSelectBox()}
         {nearbyInventories.length > 0 && (
           <BurdiButtonAction
             iconLeftUrl={
@@ -120,6 +133,12 @@ export default ({
           />
         )}
       </Bloc>
+    </Fragment>
+  );
+
+  return (
+    <Wrapper>
+      {hasItemSelected ? renderNoItemSelected() : renderItemSelected()}
     </Wrapper>
   );
 };

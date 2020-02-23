@@ -1,15 +1,13 @@
-
-# Burdigalax RP - Inventory 
+# Burdigalax RP - Inventory
 
 ## Quick installation GUI
 
-DOWNLOAD Burdigalax Packages to install on your ONSET server.   
+DOWNLOAD Burdigalax Packages to install on your ONSET server.  
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.6.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.6.0.zip)
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.7.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.7.0.zip)
 
-
-### Integration - Exemple for Onset : 
+### Integration - Exemple for Onset :
 
 https://github.com/Burdigalax/BurdigalaxRP-Onset
 
@@ -21,11 +19,12 @@ https://github.com/Burdigalax/BurdigalaxRP-Onset
 
 ### Live Demo
 
-Full readme and live demo of exemple usage inventory module on : http://rom444.free.fr/BurdigalaxRP/ 
+Full readme and live demo of exemple usage inventory module on : http://rom444.free.fr/BurdigalaxRP/
 
 ### API
 
-- List of functions called : 
+- List of functions called :
+
 ```
  BURDIGALAX_inventory_onClose
 BURDIGALAX_inventory_onEquip
@@ -35,7 +34,8 @@ BURDIGALAX_inventory_onTransfer
 BURDIGALAX_inventory_onChangeNearbyInventorySelected
 ```
 
-- List of callable functions : 
+- List of callable functions :
+
 ```
  BURDIGALAX_inventory.setConfig(JSON);
  BURDIGALAX_inventory.updateItemsInventories(inventoryId, items);
@@ -44,18 +44,24 @@ BURDIGALAX_inventory_onChangeNearbyInventorySelected
  BURDIGALAX_inventory_hide();
  BURDIGALAX_inventory_show();
 ```
+
 #### onClose :
 
 Receive one parameter : it's context of inventory.  
 2 values possibles : `main` or `transfer`
 
-If context egal main i recommand to close GUI. Else you can updateInventory of the mainInventory for reset selectedNearbyInventoryId.  
-This will close the transfer inventory.  
+If context egal main i recommand to close GUI. Else you can updateInventories of the mainInventory for reset selectedNearbyInventoryId.  
+This will close the transfer inventory. Please check `updateInventories` documentation for more information.
 
-_Exemple:_ 
+_Exemple:_
 
 ```js
-  BURDIGALAX_inventory.updateInventory(mainInventoryId, { selectedNearbyInventoryId: null})
+BURDIGALAX_inventory.updateInventories([
+  {
+    id: mainInventoryId,
+    selectedNearbyInventoryId: null
+  }
+]);
 ```
 
 #### onUse :
@@ -72,10 +78,11 @@ Object receive for these events :
   "newQuantity": 0
 }
 ```
+
 </details>
 
-I recommend  not use the newQuantity field.  
-:warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\ 
+I recommend not use the newQuantity field.  
+:warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\
 
 #### onEquip :
 
@@ -91,8 +98,8 @@ Object receive for these events :
   "isEquipped": false
 }
 ```
-</details>
 
+</details>
 
 #### onDelete :
 
@@ -106,14 +113,14 @@ Object receive for these events :
   "idInventory": 1,
   "idItem": 3,
   "quantity": 1,
-  "newQuantity": 1,
+  "newQuantity": 1
 }
 ```
+
 </details>
 
-I recommend  not use the newQuantity field.  
-:warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\ 
-
+I recommend not use the newQuantity field.  
+:warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\
 
 #### onTransfer :
 
@@ -124,33 +131,36 @@ Object receive for these events :
 
 ```json
 {
-    "originInventoryId": 1,
-    "destinationInventoryId": 26,
-    "idItem": 6,
-    "quantity": 5,
-    "newQuantityOrigin": 0,
-    "newQuantityDestination": 5
+  "originInventoryId": 1,
+  "destinationInventoryId": 26,
+  "idItem": 6,
+  "quantity": 5,
+  "newQuantityOrigin": 0,
+  "newQuantityDestination": 5
 }
 ```
+
 </details>
 
-I recommend  not use the newQuantityOrigin and newQuantityDestination fields.  
-:warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\ 
+I recommend not use the newQuantityOrigin and newQuantityDestination fields.  
+:warning: **WARNING** : You must recalculate the new quantity on the server side for security /!\
 
-------
+---
 
 #### setConfig
 
 Send config for show IHM :  
 `BURDIGALAX_inventory.setConfig(JSON);`
 
-:information_source: **INFORMATION**: 
+:information_source: **INFORMATION**:
+
 - For `iconUrl` use the DataURI format to limit the import of files on your `package.json` server.
 - You can sort your articles by Category with the field `categoryName`, but it's not mandatory.
 - _You can add custom Articles and Effects_
 
 The configuration you send will be merged with the default configuration :
-- Default config : 
+
+- Default config :
 
 <details>
     <summary>SHOW / HIDE JSON</summary>
@@ -283,60 +293,52 @@ The configuration you send will be merged with the default configuration :
   ]
 }
 ```
+
 </details>
 
-
-#### updateItemsInventories 
+#### updateItemsInventories
 
 :warning: `id` of the article is mandatory for its update.  
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
-```js 
-BURDIGALAX_inventory.updateItemsInventories(
-    inventoryId,
-    [
-      {
-        id: idItem,
-        quantity: newQuantity
-      }
-    ]
-);
+```js
+BURDIGALAX_inventory.updateItemsInventories(inventoryId, [
+  {
+    id: idItem,
+    quantity: newQuantity
+  }
+]);
 ```
 
-#### updateInventories 
+#### updateInventories
 
 :warning: `id` of the inventories is mandatory for its update.  
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
-```js 
-BURDIGALAX_inventory.updateInventories(
-    [
+```js
+BURDIGALAX_inventory.updateInventories([
+  {
+    id: 1,
+    storageSize: 1500,
+    selectedNearbyInventoryId: null,
+    nearbyInventoriesIds: [26, 35, 44]
+  },
+  {
+    id: 44,
+    storageSize: 2000,
+    name: "4x4 Sport",
+    description: "Rom Burdi",
+    selectName: "Voiture Rom Burdi",
+    categoriesIds: [1, 2],
+    hasReadAccess: true,
+    items: [
       {
-         id: 1,
-         storageSize: 1500,
-         selectedNearbyInventoryId: null,
-         nearbyInventoriesIds: [26, 35, 44]
-      }, 
-      {
-         id: 44,
-         storageSize: 2000,
-         name: "4x4 Sport",
-         description: "Rom Burdi",
-         selectName: "Voiture Rom Burdi",
-         categoriesIds: [
-            1,
-            2
-         ],
-         hasReadAccess: true,
-         items: [
-            {
-               id: 2,
-               quantity: 10
-            }
-         ]
+        id: 2,
+        quantity: 10
       }
     ]
-);
+  }
+]);
 ```
 
 #### updateItems
@@ -345,52 +347,53 @@ BURDIGALAX_inventory.updateInventories(
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 Or only new item to add on list.
 
-```js 
-BURDIGALAX_inventory.updateItems(
-    [
+```js
+BURDIGALAX_inventory.updateItems([
+  {
+    id: 36,
+    name: "Donut",
+    categoryId: 1,
+    description: "",
+    health: 45,
+    imageUrl: null,
+    isEquipable: false,
+    isDeletable: true,
+    isUsable: true,
+    iconUrl:
+      "data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Eico-donut@1x%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cpath d='M11.995.002c6.623 0 11.992 5.368 11.992 11.992 0 6.623-5.368 11.992-11.992 11.992-6.624 0-11.992-5.368-11.992-11.992 0-6.623 5.369-11.992 11.992-11.992zm-8.951 17.367c.755-.676 2.163-1.52 3.718-.369 1.362 1.009 1.447.862 1.547.688 1.181-2.048 2.875-1.109 4.124.225 1.929 2.062 2.732 1.821 4.176-.945 1.982-3.795 3.805-1.875 4.739-.335.695-1.398 1.086-2.973 1.086-4.639 0-5.766-4.674-10.44-10.44-10.44-5.766 0-10.44 4.674-10.44 10.44 0 1.966.544 3.805 1.489 5.375zm17.37.798c-.379-.771-1.409-2.447-2.434-.483-1.98 3.791-3.931 4.218-6.674 1.285-.385-.411-1.161-1.371-1.657-.51-.572.99-1.054 1.826-3.809-.215-.762-.565-1.526.02-1.897.396 1.915 2.317 4.811 3.794 8.052 3.794 3.456 0 6.519-1.68 8.419-4.267zm-1.025-4.179c-.664.77-1.836-.24-1.172-1.01l.758-.877c.663-.77 1.836.24 1.172 1.01l-.758.877zm-8.148-8.328c-.664.77-1.836-.24-1.172-1.01l.758-.877c.663-.77 1.836.24 1.172 1.01l-.758.877zm-5.545 4.997c-.664.77-1.836-.24-1.172-1.01l.758-.877c.663-.77 1.836.24 1.172 1.01l-.758.877zm8.568-4.488c-1.011-.105-.852-1.644.159-1.54l1.153.121c1.011.104.852 1.644-.159 1.539l-1.153-.12zm3.882 2.555c-.641-.789.56-1.765 1.201-.976l.73.9c.641.789-.56 1.765-1.201.976l-.73-.9zm-13.884 5.507c-.641-.789.56-1.765 1.201-.976l.73.9c.641.789-.56 1.765-1.201.976l-.73-.9zm1.609-8.489c-.641-.789.56-1.765 1.201-.976l.73.9c.641.789-.56 1.765-1.201.976l-.73-.9zm6.124 2.075c2.303 0 4.177 1.874 4.177 4.177 0 2.306-1.873 4.177-4.177 4.177-2.307 0-4.177-1.87-4.177-4.177 0-2.304 1.873-4.177 4.177-4.177zm0 1.552c-1.45 0-2.625 1.175-2.625 2.625s1.175 2.625 2.625 2.625c1.451 0 2.625-1.173 2.625-2.625 0-1.453-1.172-2.625-2.625-2.625z' fill='%23D48CD2' fill-rule='nonzero'/%3E%3C/svg%3E",
+    weight: 0.5,
+    effects: [
       {
-         "id": 36,
-         "name": "Donut",
-         "categoryId": 1,
-         "description": "",
-         "health": 45,
-         "imageUrl": null,
-         "isEquipable": false,
-         "isDeletable": true,
-         "isUsable": true,
-         "iconUrl": "data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Eico-donut@1x%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cpath d='M11.995.002c6.623 0 11.992 5.368 11.992 11.992 0 6.623-5.368 11.992-11.992 11.992-6.624 0-11.992-5.368-11.992-11.992 0-6.623 5.369-11.992 11.992-11.992zm-8.951 17.367c.755-.676 2.163-1.52 3.718-.369 1.362 1.009 1.447.862 1.547.688 1.181-2.048 2.875-1.109 4.124.225 1.929 2.062 2.732 1.821 4.176-.945 1.982-3.795 3.805-1.875 4.739-.335.695-1.398 1.086-2.973 1.086-4.639 0-5.766-4.674-10.44-10.44-10.44-5.766 0-10.44 4.674-10.44 10.44 0 1.966.544 3.805 1.489 5.375zm17.37.798c-.379-.771-1.409-2.447-2.434-.483-1.98 3.791-3.931 4.218-6.674 1.285-.385-.411-1.161-1.371-1.657-.51-.572.99-1.054 1.826-3.809-.215-.762-.565-1.526.02-1.897.396 1.915 2.317 4.811 3.794 8.052 3.794 3.456 0 6.519-1.68 8.419-4.267zm-1.025-4.179c-.664.77-1.836-.24-1.172-1.01l.758-.877c.663-.77 1.836.24 1.172 1.01l-.758.877zm-8.148-8.328c-.664.77-1.836-.24-1.172-1.01l.758-.877c.663-.77 1.836.24 1.172 1.01l-.758.877zm-5.545 4.997c-.664.77-1.836-.24-1.172-1.01l.758-.877c.663-.77 1.836.24 1.172 1.01l-.758.877zm8.568-4.488c-1.011-.105-.852-1.644.159-1.54l1.153.121c1.011.104.852 1.644-.159 1.539l-1.153-.12zm3.882 2.555c-.641-.789.56-1.765 1.201-.976l.73.9c.641.789-.56 1.765-1.201.976l-.73-.9zm-13.884 5.507c-.641-.789.56-1.765 1.201-.976l.73.9c.641.789-.56 1.765-1.201.976l-.73-.9zm1.609-8.489c-.641-.789.56-1.765 1.201-.976l.73.9c.641.789-.56 1.765-1.201.976l-.73-.9zm6.124 2.075c2.303 0 4.177 1.874 4.177 4.177 0 2.306-1.873 4.177-4.177 4.177-2.307 0-4.177-1.87-4.177-4.177 0-2.304 1.873-4.177 4.177-4.177zm0 1.552c-1.45 0-2.625 1.175-2.625 2.625s1.175 2.625 2.625 2.625c1.451 0 2.625-1.173 2.625-2.625 0-1.453-1.172-2.625-2.625-2.625z' fill='%23D48CD2' fill-rule='nonzero'/%3E%3C/svg%3E",
-         "weight": 0.5,
-         "effects": [
-            {
-               "id": "food",
-               "value": 3
-            },
-            {
-               "id": "hydration",
-               "value": -5
-            }
-         ]
+        id: "food",
+        value: 3
+      },
+      {
+        id: "hydration",
+        value: -5
       }
     ]
-);
+  }
+]);
 ```
 
-#### hide 
+#### hide
 
-Hide GUI. _This method is optional_   
+Hide GUI. _This method is optional_  
 :information_source: I recommand this method on ONSET before command `SetWebVisibility(inventory, WEB_HIDDEN)` to avoid flashing GUI when it reappears.
 
-```js 
-BURDIGALAX_inventory.hide(); 
+```js
+BURDIGALAX_inventory.hide();
 ```
 
 #### show
 
-Show GUI - GUI is display by default. _This method is optional_   
+Show GUI - GUI is display by default. _This method is optional_  
 :information_source: I recommand this method on ONSET after command `SetWebVisibility(inventory, WEB_VISIBLE)`.
-```js 
-BURDIGALAX_inventory.show(); 
+
+```js
+BURDIGALAX_inventory.show();
 ```
 
 ### Contact
+
 > Discord: RomBurdi#9770

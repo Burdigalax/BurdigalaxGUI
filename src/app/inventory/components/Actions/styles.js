@@ -51,6 +51,8 @@ export const StyledInput = styled.input`
 
 export const Bloc = styled.div`
   display: flex;
+  flex: 1;
+  justify-content: ${({ noItemSelected }) => noItemSelected && "space-evenly"};
   flex-direction: row;
   margin: 3px;
   align-items: center;
@@ -112,4 +114,14 @@ export const EquippedSwitch = withStyles({
 export const NoNearbyInventories = styled.span`
   color: #9da6a1;
   font-size: 12px;
+`;
+
+export const NoItemSelected = styled.div`
+  display: flex;
+  text-transform: uppercase;
+  color: #949da3;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px;
 `;

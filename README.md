@@ -1,15 +1,15 @@
-# Burdigalax-project v4.6.0
+# Burdigalax-project v4.7.0
 
-Burdigalax project. 
+Burdigalax project.
 
 # Quick installation GUI
 
 DOWNLOAD Burdigalax Packages to install on your ONSET server.  
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](./download.svg "Download") Download Burdigalax package GUI v4.6.0.](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.6.0.zip)
+[![Download](./download.svg "Download") Download Burdigalax package GUI v4.7.0.](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.7.0.zip)
 
-# Avanced Usage 
+# Avanced Usage
 
 ## Building and running on localhost
 
@@ -24,21 +24,23 @@ yarn
 To run in hot module reloading mode on localhost browser:
 
 ```sh
-npm run start 
-// or 
+npm run start
+// or
 yarn start
 ```
 
 To create a production build:
 
 - Edit **config.js** file for specify your package server name.
+
 ```js
 module.exports = {
   serverPackageName: "burdigalax"
 };
 ```
 
-- Execute build 
+- Execute build
+
 ```sh
 yarn build
 ```
@@ -46,13 +48,9 @@ yarn build
 ## Installation on you server
 
 - Copy generate files on folder `dist/` to your server to `{serverPackageName}/client/gui/`  
-/!\ List of generated files to copy _(Exemple with onShop)_ : 
-    - onShop.html
-    - onShop.burdigalax.js
-    - vendors.burdigalax.js
-    - commons.burdigalax.js
-    
+  /!\ List of generated files to copy _(Exemple with onShop)_ : - onShop.html - onShop.burdigalax.js - vendors.burdigalax.js - commons.burdigalax.js
 - For **Onset** game declare this files on your `package.json` server. _(Exemple with onShop)_
+
 ```json
   "files": [
     "client/gui/onShop.html",
@@ -61,9 +59,10 @@ yarn build
     "client/gui/commons.burdigalax.js",
   ]
 ```
+
 The commons and vendors files are the same and mandatory for all BurdigalaxRP modules.
 
-## onShop 
+## onShop
 
 Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/onShop/README.md
 
@@ -76,4 +75,5 @@ Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/gasStat
 Readme : https://github.com/Burdigalax/BurdigalaxGUI/tree/master/src/app/inventory/README.md
 
 ### Contact
+
 > Discord: RomBurdi#9770

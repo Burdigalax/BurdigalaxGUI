@@ -91,16 +91,6 @@ export const Footer = styled.div`
   min-height: 15px;
 `;
 
-export const NoItemSelected = styled.div`
-  text-transform: uppercase;
-  color: #949da3;
-  text-align: center;
-  flex: 1;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 10px;
-`;
-
 export const NoItems = styled.div`
   display: flex;
   flex-direction: column;

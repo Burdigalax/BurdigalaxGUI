@@ -1,15 +1,13 @@
-
-# Burdigalax RP - Shop 
+# Burdigalax RP - Shop
 
 ## Quick installation GUI
 
-DOWNLOAD Burdigalax Packages to install on your ONSET server.   
+DOWNLOAD Burdigalax Packages to install on your ONSET server.  
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.6.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.6.0.zip)
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.7.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.7.0.zip)
 
-
-### Integration - Exemple for Onset : 
+### Integration - Exemple for Onset :
 
 https://github.com/Burdigalax/BurdigalaxRP-Onset
 
@@ -21,11 +19,12 @@ https://github.com/Burdigalax/BurdigalaxRP-Onset
 
 ### Live Demo
 
-Full readme and live demo of exemple usage shop module on : http://rom444.free.fr/BurdigalaxRP/ 
+Full readme and live demo of exemple usage shop module on : http://rom444.free.fr/BurdigalaxRP/
 
 ### API
 
-- List of functions called : 
+- List of functions called :
+
 ```
  BURDIGALAX_onShop_onClose
  BURDIGALAX_onShop_onCashPayment
@@ -33,7 +32,8 @@ Full readme and live demo of exemple usage shop module on : http://rom444.free.f
  BURDIGALAX_onShop_onCardPayment
 ```
 
-- List of callable functions : 
+- List of callable functions :
+
 ```
  BURDIGALAX_onShop.setConfig(JSON);
  BURDIGALAX_onShop.setPaymentError(title, message, iconUrl);
@@ -54,13 +54,13 @@ Object receive for these events :
 {
   "type": "cash",
   "data": {
-  "articles": [
+    "articles": [
       {
         "id": 7,
         "quantity": 1,
         "total": 30,
         "tax": 5,
-        "totalTTC":35,
+        "totalTTC": 35,
         "busyStorage": 1
       },
       {
@@ -68,7 +68,7 @@ Object receive for these events :
         "quantity": 1,
         "total": 5.3,
         "tax": 2,
-        "totalTTC":7.3,
+        "totalTTC": 7.3,
         "busyStorage": 1
       }
     ],
@@ -79,28 +79,31 @@ Object receive for these events :
   }
 }
 ```
+
 </details>
 
-I recommend  use only articles with id and quantity.  
-:warning: **WARNING** : You must recalculate the total price on the server side for security /!\ 
+I recommend use only articles with id and quantity.  
+:warning: **WARNING** : You must recalculate the total price on the server side for security /!\
 
 Possible values for the `type` field : `["cash", "card", "contact_less"]`;
 
-------
+---
 
 #### setConfig
 
 Send config for show IHM :  
 `BURDIGALAX_onShop.setConfig(JSON);`
 
-:information_source: **INFORMATION**: 
+:information_source: **INFORMATION**:
+
 - For `iconUrl` use the DataURI format to limit the import of files on your `package.json` server.
 - For manage exception of plural names of article, use field `pluralName`. By default i add a `s` of the end of name.
 - You can sort your articles by Category with the field `categoryName`, but it's not mandatory.
 - _You can add custom Articles and Effects_
 
 The configuration you send will be merged with the default configuration :
-- Default config : 
+
+- Default config :
 
 <details>
     <summary>SHOW / HIDE JSON</summary>
@@ -183,169 +186,169 @@ The configuration you send will be merged with the default configuration :
 
 ```json
 {
-     "player": {
-       "money": {
-         "cash": 300
-       },
-       "freeStorageSpace": 20
-     },
-     "shop": {
-       "articles": [
-         {
-           "id": 1,
-           "name": "Bouteille d'eau",
-           "pluralName": "Bouteilles d'eau",
-           "categoryName": "Consommables",
-           "price": 5,
-           "quantity": 100,
-           "description": "Eau de la ville, avec un léger coût de javel.",
-           "iconUrl": "https://image.flaticon.com/icons/svg/824/824239.svg",
-           "storageCost": 2,
-           "tax": 6,
-           "effects": [
-             {
-               "id": "hydration",
-               "value": 40
-             }
-           ]
-         },
-         {
-           "id": 7,
-           "name": "Bandage",
-           "categoryName": "Santé",
-           "price": 25,
-           "quantity": 25,
-           "description": "",
-           "iconUrl": "https://image.flaticon.com/icons/svg/1546/1546109.svg",
-           "storageCost": 2,
-           "tax": 20,
-           "effects": [
-             {
-               "id": "bleeding",
-               "value": -70
-             }
-           ]
-         },
-         {
-           "id": 6,
-           "name": "Jerrican d'essence",
-           "pluralName": "Jerricans d'essence",
-           "categoryName": "Outillage",
-           "price": 50,
-           "quantity": 2,
-           "description": "",
-           "iconUrl": "https://image.flaticon.com/icons/svg/140/140638.svg",
-           "storageCost": 5,
-           "tax": 35,
-           "effects": [
-             {
-               "id": "petrol",
-               "value": 15
-             }
-           ]
-         },
-         {
-           "id": 4,
-           "name": "Médicament",
-           "categoryName": "Santé",
-           "price": 15,
-           "quantity": 10,
-           "description": "",
-           "iconUrl": "https://image.flaticon.com/icons/svg/1546/1546140.svg",
-           "storageCost": 2,
-           "tax": 20,
-           "effects": [
-             {
-               "id": "health",
-               "value": 20
-             }
-           ]
-         },
-         {
-           "id": 5,
-           "name": "Chocolatine",
-           "categoryName": "Consommables",
-           "price": 1,
-           "quantity": 50,
-           "description": "Meilleure qu'un pain au chocolat !",
-           "iconUrl": "https://pbs.twimg.com/media/C45FiwpWYAAW_dm.png",
-           "storageCost": 1,
-           "tax": 6,
-           "effects": [
-             {
-               "id": "food",
-               "value": 20
-             },
-             {
-               "id": "hydration",
-               "value": -5
-             }
-           ]
-         },
-         {
-           "id": 2,
-           "name": "Pomme",
-           "categoryName": "Consommables",
-           "price": 0.5,
-           "quantity": 5,
-           "description": "",
-           "iconUrl": "https://image.flaticon.com/icons/svg/415/415682.svg",
-           "storageCost": 1,
-           "tax": -15,
-           "effects": [
-             {
-               "id": "food",
-               "value": 7
-             },
-             {
-               "id": "hydration",
-               "value": 5
-             }
-           ]
-         },
-         {
-           "id": 3,
-           "name": "Téléphone",
-           "categoryName": "Outillage",
-           "price": 500,
-           "quantity": 0,
-           "description": "",
-           "iconUrl": "https://image.flaticon.com/icons/svg/186/186239.svg",
-           "storageCost": 1,
-           "tax": 20
-         }
-       ]
-     },
-     "effects": {
-       "hydration": {
-         "name": "Hydratation",
-         "unit": "%",
-         "iconUrl": "https://image.flaticon.com/icons/svg/414/414974.svg"
-       },
-       "petrol": {
-         "name": "Essence",
-         "unit": "L",
-         "iconUrl":
-           "http://free-pictures-hosting.org/upload/2019-11-20-23-51-10-203080-petrol.svg"
-       },
-       "food": {
-         "name": "Alimentation",
-         "iconUrl": "https://image.flaticon.com/icons/svg/1046/1046755.svg",
-         "unit": "%"
-       },
-       "health": {
-         "name": "Santé",
-         "iconUrl": "https://image.flaticon.com/icons/svg/148/148838.svg",
-         "unit": "%"
-       },
-       "bleeding": {
-         "name": "Saignement",
-         "iconUrl": "https://image.flaticon.com/icons/svg/1101/1101334.svg",
-         "unit": "%"
-       }
-     }
+  "player": {
+    "money": {
+      "cash": 300
+    },
+    "freeStorageSpace": 20
+  },
+  "shop": {
+    "articles": [
+      {
+        "id": 1,
+        "name": "Bouteille d'eau",
+        "pluralName": "Bouteilles d'eau",
+        "categoryName": "Consommables",
+        "price": 5,
+        "quantity": 100,
+        "description": "Eau de la ville, avec un léger coût de javel.",
+        "iconUrl": "https://image.flaticon.com/icons/svg/824/824239.svg",
+        "storageCost": 2,
+        "tax": 6,
+        "effects": [
+          {
+            "id": "hydration",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Bandage",
+        "categoryName": "Santé",
+        "price": 25,
+        "quantity": 25,
+        "description": "",
+        "iconUrl": "https://image.flaticon.com/icons/svg/1546/1546109.svg",
+        "storageCost": 2,
+        "tax": 20,
+        "effects": [
+          {
+            "id": "bleeding",
+            "value": -70
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Jerrican d'essence",
+        "pluralName": "Jerricans d'essence",
+        "categoryName": "Outillage",
+        "price": 50,
+        "quantity": 2,
+        "description": "",
+        "iconUrl": "https://image.flaticon.com/icons/svg/140/140638.svg",
+        "storageCost": 5,
+        "tax": 35,
+        "effects": [
+          {
+            "id": "petrol",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Médicament",
+        "categoryName": "Santé",
+        "price": 15,
+        "quantity": 10,
+        "description": "",
+        "iconUrl": "https://image.flaticon.com/icons/svg/1546/1546140.svg",
+        "storageCost": 2,
+        "tax": 20,
+        "effects": [
+          {
+            "id": "health",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Chocolatine",
+        "categoryName": "Consommables",
+        "price": 1,
+        "quantity": 50,
+        "description": "Meilleure qu'un pain au chocolat !",
+        "iconUrl": "https://pbs.twimg.com/media/C45FiwpWYAAW_dm.png",
+        "storageCost": 1,
+        "tax": 6,
+        "effects": [
+          {
+            "id": "food",
+            "value": 20
+          },
+          {
+            "id": "hydration",
+            "value": -5
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Pomme",
+        "categoryName": "Consommables",
+        "price": 0.5,
+        "quantity": 5,
+        "description": "",
+        "iconUrl": "https://image.flaticon.com/icons/svg/415/415682.svg",
+        "storageCost": 1,
+        "tax": -15,
+        "effects": [
+          {
+            "id": "food",
+            "value": 7
+          },
+          {
+            "id": "hydration",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Téléphone",
+        "categoryName": "Outillage",
+        "price": 500,
+        "quantity": 0,
+        "description": "",
+        "iconUrl": "https://image.flaticon.com/icons/svg/186/186239.svg",
+        "storageCost": 1,
+        "tax": 20
+      }
+    ]
+  },
+  "effects": {
+    "hydration": {
+      "name": "Hydratation",
+      "unit": "%",
+      "iconUrl": "https://image.flaticon.com/icons/svg/414/414974.svg"
+    },
+    "petrol": {
+      "name": "Essence",
+      "unit": "L",
+      "iconUrl": "http://free-pictures-hosting.org/upload/2019-11-20-23-51-10-203080-petrol.svg"
+    },
+    "food": {
+      "name": "Alimentation",
+      "iconUrl": "https://image.flaticon.com/icons/svg/1046/1046755.svg",
+      "unit": "%"
+    },
+    "health": {
+      "name": "Santé",
+      "iconUrl": "https://image.flaticon.com/icons/svg/148/148838.svg",
+      "unit": "%"
+    },
+    "bleeding": {
+      "name": "Saignement",
+      "iconUrl": "https://image.flaticon.com/icons/svg/1101/1101334.svg",
+      "unit": "%"
+    }
+  }
 }
 ```
+
 </details>
 
 #### setPaymentError
@@ -356,11 +359,11 @@ BURDIGALAX_onShop.setPaymentError({title, message, iconUrl});
 BURDIGALAX_onShop.setPaymentError({title:"Erreur", message:"Vous n'avez pas assez d'argent", iconUrl: "//Optional use for override config.");
 ```
 
-:information_source: If the error is triggered due to data desync between the interface and the server. Use the functions: `BURDIGALAX_onShop.updatePlayer()` or/and `BURDIGALAX_onShop.updateArticles()` to resynchronize the GUI. : 
+:information_source: If the error is triggered due to data desync between the interface and the server. Use the functions: `BURDIGALAX_onShop.updatePlayer()` or/and `BURDIGALAX_onShop.updateArticles()` to resynchronize the GUI. :
 
 #### setPaymentSuccess
 
-```js 
+```js
 BURDIGALAX_onShop.setPaymentSuccess({title, message, iconUrl});
 // exemple
 BURDIGALAX_onShop.setPaymentSuccess({title:'Félicitation', message:"Paiement validé", iconUrl: "//Optional use for override config.");
@@ -370,10 +373,10 @@ BURDIGALAX_onShop.setPaymentSuccess({title:'Félicitation', message:"Paiement va
 
 #### reset
 
-Reset all config (except style). 
+Reset all config (except style).
 You can execute this function on `BURDIGALAX_onShop_onClose()` for exemple.
 
-```js 
+```js
 BURDIGALAX_onShop.reset();
 ```
 
@@ -381,31 +384,30 @@ BURDIGALAX_onShop.reset();
 
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
-```js 
+```js
 BURDIGALAX_onShop.updatePlayer({
-    "money": {
-       "cash": 500
-    },
-    "freeStorageSpace": 200
+  money: {
+    cash: 500
+  },
+  freeStorageSpace: 200
 });
 ```
 
-#### updateArticles 
+#### updateArticles
 
 :warning: `id` of the article is mandatory for its update.  
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
-```js 
-BURDIGALAX_onShop.updateArticles(
-  [
-    {
-        "id": 1,
-        "quantity": 10,
-    },
-  ]
-);
+```js
+BURDIGALAX_onShop.updateArticles([
+  {
+    id: 1,
+    quantity: 10
+  }
+]);
 ```
 
 ### Contact
-> Discord: RomBurdi#9770  _(Developer)_  
+
+> Discord: RomBurdi#9770 _(Developer)_  
 > Discord : Shelby#4145 _(Designer)_

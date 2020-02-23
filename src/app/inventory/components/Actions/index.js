@@ -58,7 +58,8 @@ const mapStateToProps = (state, props) => {
     selectedNearbyInventoryId,
     isDisabledTransfer: selectedNearbyInventoryId === "none",
     isDeletable,
-    wording
+    wording,
+    hasItemSelected: !props.itemId
   };
 };
 

@@ -1,14 +1,13 @@
-
 # Burdigalax RP - GasStation
 
 ## Quick installation GUI
 
-DOWNLOAD Burdigalax Packages to install on your ONSET server.   
+DOWNLOAD Burdigalax Packages to install on your ONSET server.  
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.6.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.6.0.zip)
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.7.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.7.0.zip)
 
-### Integration - Exemple for Onset : 
+### Integration - Exemple for Onset :
 
 https://github.com/Burdigalax/BurdigalaxRP-Onset
 
@@ -20,17 +19,19 @@ https://github.com/Burdigalax/BurdigalaxRP-Onset
 
 ### Live Demo
 
-Full readme and live demo of exemple usage gas station module on : http://rom444.free.fr/BurdigalaxRP/ 
+Full readme and live demo of exemple usage gas station module on : http://rom444.free.fr/BurdigalaxRP/
 
 ### API
 
 - List of functions called :
+
 ```
  BURDIGALAX_gasStation_onClose
  BURDIGALAX_gasStation_onPayment
 ```
 
 - List of callable functions :
+
 ```
  BURDIGALAX_gasStation.setConfig(JSON);
  BURDIGALAX_gasStation.setPaymentError(title, message, iconUrl);
@@ -48,21 +49,22 @@ Object receive for these events :
 
 ```json
 {
-    "countBuy": 38,
-    "total": 41.91,
-    "tax": 31.43,
-    "totalTTC": 73.34,
-    "remainingMoney": 426.66,
-    "gasId": 2,
-    "gasName": "GASOIL+"
+  "countBuy": 38,
+  "total": 41.91,
+  "tax": 31.43,
+  "totalTTC": 73.34,
+  "remainingMoney": 426.66,
+  "gasId": 2,
+  "gasName": "GASOIL+"
 }
 ```
+
 </details>
 
-I recommend  use only `countBuy` and `gasId`.  
+I recommend use only `countBuy` and `gasId`.  
 :warning: **WARNING** : You must recalculate the total price on the server side for security /!\
 
-------
+---
 
 #### setConfig
 
@@ -70,13 +72,15 @@ Send config for show IHM :
 `BURDIGALAX_gasStation.setConfig(JSON);`
 
 :information_source: **INFORMATION**:
+
 - For `iconUrl` use the DataURI format to limit the import of files on your `package.json` server.
 - Types of gas availables : `['fuel', 'electric', 'hybrid']` default is `fuel`;  
    `hybrid` is compatible with all gas.
-- Types of car : // identical to gas. default  is `fuel`;
-- Field `speed` of gas is quantity added every 100ms. 
+- Types of car : // identical to gas. default is `fuel`;
+- Field `speed` of gas is quantity added every 100ms.
 
 The configuration you send will be merged with the default configuration :
+
 - Default config :
 
 <details>
@@ -128,6 +132,7 @@ The configuration you send will be merged with the default configuration :
     }
 }
 ```
+
 </details>
 
 - List of all OTHERS parameters :
@@ -241,19 +246,23 @@ The configuration you send will be merged with the default configuration :
   ]
 };
 ```
+
 </details>
 
 #### setPaymentError
 
 ```js
-BURDIGALAX_gasStation.setPaymentError({title, message});
+BURDIGALAX_gasStation.setPaymentError({ title, message });
 // exemple
-BURDIGALAX_gasStation.setPaymentError({title: 'Erreur', message: "Vous n'avez pas assez d'argent"});
+BURDIGALAX_gasStation.setPaymentError({
+  title: "Erreur",
+  message: "Vous n'avez pas assez d'argent"
+});
 ```
 
 :information_source: If the error is triggered due to data desync between the interface and the server. Use the functions: `BURDIGALAX_gasStation.updatePlayer()` or/and `BURDIGALAX_gasStation.updateGases()` or/and `BURDIGALAX_gasStation.updateStation()` to resynchronize the GUI.
 
-This action resetting  payment information. 
+This action resetting payment information.
 
 #### updatePlayer
 
@@ -263,14 +272,14 @@ The payment informations will be reset on next click. _(new buy or change gas se
 
 ```js
 BURDIGALAX_gasStation.updatePlayer({
-    "money": {
-       "money": 500,
-        car: {
-          tank: 250,
-          type: "fuel",
-          fuelValue: 10
-        }
-    },
+  money: {
+    money: 500,
+    car: {
+      tank: 250,
+      type: "fuel",
+      fuelValue: 10
+    }
+  }
 });
 ```
 
@@ -280,14 +289,12 @@ BURDIGALAX_gasStation.updatePlayer({
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
 ```js
-BURDIGALAX_gasStation.updateGases(
-  [
-    {
-        "id": 1,
-        "quantity": 100,
-    },
-  ]
-);
+BURDIGALAX_gasStation.updateGases([
+  {
+    id: 1,
+    quantity: 100
+  }
+]);
 ```
 
 #### updateStation
@@ -295,15 +302,15 @@ BURDIGALAX_gasStation.updateGases(
 :information_source: It's not necessary to send all DATA for update. You can send only the field to update.
 
 ```js
-BURDIGALAX_gasStation.updateStation(
-    {
-       "name": "7 GAS",
-       "isOpen": false,
-       "closeTitle": "La station est fermée !",
-       "closeMessage": "En panne - En attente d'un réparateur. \n Merci de votre compréhension"
-    },
-);
+BURDIGALAX_gasStation.updateStation({
+  name: "7 GAS",
+  isOpen: false,
+  closeTitle: "La station est fermée !",
+  closeMessage:
+    "En panne - En attente d'un réparateur. \n Merci de votre compréhension"
+});
 ```
 
 ### Contact
+
 > Discord: RomBurdi#9770

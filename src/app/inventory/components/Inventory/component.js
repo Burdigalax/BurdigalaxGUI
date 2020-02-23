@@ -67,10 +67,7 @@ export default ({
       </Droppable>
 
       <Footer>
-        {selectedItemId == null && itemsIds.length > 0 && (
-          <NoItemSelected>- {wording.selectItem} - </NoItemSelected>
-        )}
-        {selectedItemId !== null && <Actions itemId={selectedItemId} />}
+        <Actions itemId={selectedItemId} />
       </Footer>
       {selectedItemId !== null && <Description itemId={selectedItemId} />}
     </Interface>
