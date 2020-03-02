@@ -72,6 +72,12 @@ const getNewPosition = id => {
   return { top, left };
 };
 
+const overrideSpaceKeyAction = e => {
+  if (e.keyCode === 32) {
+    e.preventDefault();
+  }
+};
+
 export default () => {
   const [mainPosition, setMainPosition] = useState({ top: 0, left: 0 });
   const [keyMain, setKeyMain] = useState(0);
@@ -89,6 +95,15 @@ export default () => {
   useEffect(() => {
     document.getElementById("transferInventory").style.transform = "none";
   }, [keyTransfer]);
+
+  useEffect(() => {
+    document
+      .getElementById("mainInventory")
+      .addEventListener("keyup", overrideSpaceKeyAction);
+    document
+      .getElementById("transferInventory")
+      .addEventListener("keyup", overrideSpaceKeyAction);
+  });
 
   const onStopMain = e => {
     const { left, top } = getNewPosition("mainInventory");

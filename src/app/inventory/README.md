@@ -5,7 +5,7 @@
 DOWNLOAD Burdigalax Packages to install on your ONSET server.  
 :warning: If you move these files in a package other than "burdigalax" be sure to rename imports of js files in HTML files.
 
-[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.7.0](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.7.0.zip)
+[![Download](../../../download.svg "Download") Download Burdigalax package GUI. v4.7.1](https://github.com//Burdigalax/BurdigalaxGUI/raw/master/ONSET_SERVER.4.7.1.zip)
 
 ### Integration - Exemple for Onset :
 
@@ -392,6 +392,14 @@ Show GUI - GUI is display by default. _This method is optional_
 
 ```js
 BURDIGALAX_inventory.show();
+```
+
+### Debug
+
+Adding variables `MAIN_STORE` & `TRANSFER_STORE` to window for view REACT store for help to debug.
+
+```js
+MAIN_STORE.getState();
 ```
 
 ### Contact
